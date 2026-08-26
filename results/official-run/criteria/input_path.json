@@ -1,0 +1,61 @@
+{
+  "coverage": 0.0,
+  "required_elements": [
+    {
+      "path": "/v1/estudantes",
+      "covered": false
+    },
+    {
+      "path": "/v1/estudantes/{cpfNis}",
+      "covered": false
+    },
+    {
+      "path": "/v1/estudantes/lote/{id}",
+      "covered": false
+    },
+    {
+      "path": "/v1/estudantes/lote/{id}/erros",
+      "covered": false
+    },
+    {
+      "path": "/v1/estudantes/lote",
+      "covered": false
+    },
+    {
+      "path": "/v1/estudantes/inep/{inep}",
+      "covered": false
+    },
+    {
+      "path": "/v1/estudantes/solicitacoes-alteracoes",
+      "covered": false
+    },
+    {
+      "path": "/v1/estudantes/validacao-cadastro",
+      "covered": false
+    },
+    {
+      "path": "/v1/profissionais/lote",
+      "covered": false
+    },
+    {
+      "path": "/v1/profissionais",
+      "covered": false
+    },
+    {
+      "path": "/v1/profissionais/{cpf}",
+      "covered": false
+    },
+    {
+      "path": "/v1/profissionais/inep/{inep}",
+      "covered": false
+    },
+    {
+      "path": "/v1/profissionais/lote/{id}",
+      "covered": false
+    },
+    {
+      "path": "/v1/profissionais/lote/{id}/erros",
+      "covered": false
+    }
+  ]
+}

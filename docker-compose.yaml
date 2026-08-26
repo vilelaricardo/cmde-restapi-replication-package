@@ -1,0 +1,11 @@
+services:
+  tcc-tool:
+    build: .
+    volumes:
+      - ./tool/data_generated:/app/tool/data_generated
+      - ./tool/configs:/app/tool/configs
+    environment:
+      - PYTHONUNBUFFERED=1
+      - TZ=America/Sao_Paulo
+    tty: true
+    stdin_open: true

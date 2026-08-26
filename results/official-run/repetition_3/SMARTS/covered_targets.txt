@@ -1,0 +1,861 @@
+description
+200:GET:/v1/estudantes
+200:GET:/v1/estudantes/inep/{inep}
+200:GET:/v1/estudantes/lote
+200:GET:/v1/estudantes/lote/{id}
+200:GET:/v1/estudantes/validacao-cadastro
+200:GET:/v1/estudantes/{cpfNis}
+200:GET:/v1/profissionais
+200:GET:/v1/profissionais/inep/{inep}
+200:GET:/v1/profissionais/lote
+200:GET:/v1/profissionais/lote/{id}
+200:PATCH:/v1/estudantes/lote
+201:POST:/v1/estudantes/lote
+201:POST:/v1/profissionais/lote
+400:GET:/v1/estudantes/lote/{id}
+400:GET:/v1/estudantes/lote/{id}/erros
+400:GET:/v1/profissionais/lote/{id}
+400:GET:/v1/profissionais/lote/{id}/erros
+401:GET:/v1/estudantes
+401:GET:/v1/estudantes/inep/{inep}
+401:GET:/v1/estudantes/lote
+401:GET:/v1/estudantes/lote/{id}
+401:GET:/v1/estudantes/lote/{id}/erros
+401:GET:/v1/estudantes/solicitacoes-alteracoes
+401:GET:/v1/estudantes/validacao-cadastro
+401:GET:/v1/estudantes/{cpfNis}
+401:GET:/v1/profissionais
+401:GET:/v1/profissionais/inep/{inep}
+401:GET:/v1/profissionais/lote
+401:GET:/v1/profissionais/lote/{id}
+401:GET:/v1/profissionais/lote/{id}/erros
+401:GET:/v1/profissionais/{cpf}
+401:PATCH:/v1/estudantes/lote
+401:POST:/v1/estudantes
+401:POST:/v1/estudantes/lote
+401:POST:/v1/profissionais
+401:POST:/v1/profissionais/lote
+404:GET:/v1/estudantes/solicitacoes-alteracoes
+404:GET:/v1/estudantes/validacao-cadastro
+404:GET:/v1/estudantes/{cpfNis}
+404:GET:/v1/profissionais/{cpf}
+422:PATCH:/v1/estudantes/lote
+422:POST:/v1/profissionais
+422:POST:/v1/profissionais/lote
+500:GET:/v1/estudantes
+500:GET:/v1/estudantes/inep/{inep}
+500:GET:/v1/estudantes/lote/{id}/erros
+500:GET:/v1/profissionais/lote/{id}
+500:GET:/v1/profissionais/lote/{id}/erros
+500:POST:/v1/estudantes
+500:POST:/v1/estudantes/lote
+HTTP_FAULT:GET:/v1/estudantes
+HTTP_FAULT:GET:/v1/estudantes/inep/{inep}
+HTTP_FAULT:GET:/v1/estudantes/lote/{id}/erros
+HTTP_FAULT:GET:/v1/profissionais/lote/{id}
+HTTP_FAULT:GET:/v1/profissionais/lote/{id}/erros
+HTTP_FAULT:POST:/v1/estudantes
+HTTP_FAULT:POST:/v1/estudantes/lote
+HTTP_SUCCESS:GET:/v1/estudantes
+HTTP_SUCCESS:GET:/v1/estudantes/inep/{inep}
+HTTP_SUCCESS:GET:/v1/estudantes/lote
+HTTP_SUCCESS:GET:/v1/estudantes/lote/{id}
+HTTP_SUCCESS:GET:/v1/estudantes/validacao-cadastro
+HTTP_SUCCESS:GET:/v1/estudantes/{cpfNis}
+HTTP_SUCCESS:GET:/v1/profissionais
+HTTP_SUCCESS:GET:/v1/profissionais/inep/{inep}
+HTTP_SUCCESS:GET:/v1/profissionais/lote
+HTTP_SUCCESS:GET:/v1/profissionais/lote/{id}
+HTTP_SUCCESS:PATCH:/v1/estudantes/lote
+HTTP_SUCCESS:POST:/v1/estudantes/lote
+HTTP_SUCCESS:POST:/v1/profissionais/lote
+INPUT_GET/v1/estudantes/inep/{inep}_QueryParam_ano_matricula_ano_matricula_SUCCESS_positive
+INPUT_GET/v1/estudantes/inep/{inep}_QueryParam_ano_matricula_ano_matricula_positive
+INPUT_GET/v1/estudantes/inep/{inep}_QueryParam_page_page_SUCCESS_positive
+INPUT_GET/v1/estudantes/inep/{inep}_QueryParam_page_page_positive
+INPUT_GET/v1/estudantes/inep/{inep}_QueryParam_per_page_default_10
+INPUT_GET/v1/estudantes/inep/{inep}_QueryParam_per_page_per_page_SUCCESS_positive
+INPUT_GET/v1/estudantes/inep/{inep}_QueryParam_per_page_per_page_positive
+INPUT_GET/v1/estudantes/inep/{inep}_QueryParam_situacao_final_situacao_final_APROVADAS
+INPUT_GET/v1/estudantes/inep/{inep}_QueryParam_situacao_matricula_situacao_matricula_EVOMASTER
+INPUT_GET/v1/estudantes/lote/{id}/erros_QueryParam_page_default_1
+INPUT_GET/v1/estudantes/lote/{id}/erros_QueryParam_page_page_positive
+INPUT_GET/v1/estudantes/lote/{id}/erros_QueryParam_per_page_default_10
+INPUT_GET/v1/estudantes/lote/{id}/erros_QueryParam_per_page_per_page_positive
+INPUT_GET/v1/estudantes/lote/{id}_QueryParam_incluir_objetos_processados_incluir_objetos_processados_SUCCESS_false
+INPUT_GET/v1/estudantes/lote/{id}_QueryParam_incluir_objetos_processados_incluir_objetos_processados_SUCCESS_true
+INPUT_GET/v1/estudantes/lote/{id}_QueryParam_incluir_objetos_processados_incluir_objetos_processados_false
+INPUT_GET/v1/estudantes/lote/{id}_QueryParam_incluir_objetos_processados_incluir_objetos_processados_true
+INPUT_GET/v1/estudantes/lote/{id}_QueryParam_page_page_SUCCESS_positive
+INPUT_GET/v1/estudantes/lote/{id}_QueryParam_page_page_positive
+INPUT_GET/v1/estudantes/lote/{id}_QueryParam_per_page_default_10
+INPUT_GET/v1/estudantes/lote/{id}_QueryParam_per_page_default_SUCCESS_10
+INPUT_GET/v1/estudantes/lote/{id}_QueryParam_per_page_per_page_SUCCESS_positive
+INPUT_GET/v1/estudantes/lote/{id}_QueryParam_per_page_per_page_positive
+INPUT_GET/v1/estudantes/lote_QueryParam_page_page_SUCCESS_positive
+INPUT_GET/v1/estudantes/lote_QueryParam_page_page_positive
+INPUT_GET/v1/estudantes/lote_QueryParam_per_page_per_page_SUCCESS_positive
+INPUT_GET/v1/estudantes/lote_QueryParam_per_page_per_page_positive
+INPUT_GET/v1/estudantes/solicitacoes-alteracoes_QueryParam_page_page_positive
+INPUT_GET/v1/estudantes/solicitacoes-alteracoes_QueryParam_per_page_per_page_positive
+INPUT_GET/v1/estudantes/validacao-cadastro_QueryParam_page_page_SUCCESS_positive
+INPUT_GET/v1/estudantes/validacao-cadastro_QueryParam_page_page_negative
+INPUT_GET/v1/estudantes/validacao-cadastro_QueryParam_page_page_positive
+INPUT_GET/v1/estudantes/validacao-cadastro_QueryParam_per_page_per_page_positive
+INPUT_GET/v1/estudantes_QueryParam_ano_matricula_SCHEMA_EXAMPLES_2024
+INPUT_GET/v1/estudantes_QueryParam_ano_matricula_SCHEMA_EXAMPLES_SUCCESS_2024
+INPUT_GET/v1/estudantes_QueryParam_ano_matricula_ano_matricula_SUCCESS_positive
+INPUT_GET/v1/estudantes_QueryParam_ano_matricula_ano_matricula_positive
+INPUT_GET/v1/estudantes_QueryParam_page_default_1
+INPUT_GET/v1/estudantes_QueryParam_page_page_SUCCESS_positive
+INPUT_GET/v1/estudantes_QueryParam_page_page_positive
+INPUT_GET/v1/estudantes_QueryParam_per_page_default_10
+INPUT_GET/v1/estudantes_QueryParam_per_page_default_SUCCESS_10
+INPUT_GET/v1/estudantes_QueryParam_per_page_per_page_SUCCESS_positive
+INPUT_GET/v1/estudantes_QueryParam_per_page_per_page_positive
+INPUT_GET/v1/estudantes_QueryParam_situacao_final_situacao_final_APROVADAS
+INPUT_GET/v1/estudantes_QueryParam_situacao_final_situacao_final_EVOMASTER
+INPUT_GET/v1/estudantes_QueryParam_situacao_final_situacao_final_REPROVADAS
+INPUT_GET/v1/estudantes_QueryParam_situacao_final_situacao_final_SUCCESS_APROVADAS
+INPUT_GET/v1/estudantes_QueryParam_situacao_final_situacao_final_SUCCESS_REPROVADAS
+INPUT_GET/v1/estudantes_QueryParam_situacao_matricula_situacao_matricula_ATIVAS
+INPUT_GET/v1/estudantes_QueryParam_situacao_matricula_situacao_matricula_EVOMASTER
+INPUT_GET/v1/estudantes_QueryParam_situacao_matricula_situacao_matricula_INATIVAS
+INPUT_GET/v1/estudantes_QueryParam_situacao_matricula_situacao_matricula_SUCCESS_ATIVAS
+INPUT_GET/v1/estudantes_QueryParam_situacao_matricula_situacao_matricula_SUCCESS_INATIVAS
+INPUT_GET/v1/profissionais/inep/{inep}_QueryParam_page_page_SUCCESS_positive
+INPUT_GET/v1/profissionais/inep/{inep}_QueryParam_page_page_positive
+INPUT_GET/v1/profissionais/lote/{id}/erros_QueryParam_page_page_positive
+INPUT_GET/v1/profissionais/lote/{id}/erros_QueryParam_per_page_default_10
+INPUT_GET/v1/profissionais/lote/{id}/erros_QueryParam_per_page_per_page_positive
+INPUT_GET/v1/profissionais/lote/{id}_QueryParam_incluir_objetos_processados_incluir_objetos_processados_SUCCESS_false
+INPUT_GET/v1/profissionais/lote/{id}_QueryParam_incluir_objetos_processados_incluir_objetos_processados_SUCCESS_true
+INPUT_GET/v1/profissionais/lote/{id}_QueryParam_incluir_objetos_processados_incluir_objetos_processados_false
+INPUT_GET/v1/profissionais/lote/{id}_QueryParam_incluir_objetos_processados_incluir_objetos_processados_true
+INPUT_GET/v1/profissionais/lote/{id}_QueryParam_page_page_SUCCESS_positive
+INPUT_GET/v1/profissionais/lote/{id}_QueryParam_page_page_positive
+INPUT_GET/v1/profissionais/lote/{id}_QueryParam_per_page_default_10
+INPUT_GET/v1/profissionais/lote/{id}_QueryParam_per_page_default_SUCCESS_10
+INPUT_GET/v1/profissionais/lote/{id}_QueryParam_per_page_per_page_SUCCESS_positive
+INPUT_GET/v1/profissionais/lote/{id}_QueryParam_per_page_per_page_positive
+INPUT_GET/v1/profissionais/lote_QueryParam_page_page_SUCCESS_negative
+INPUT_GET/v1/profissionais/lote_QueryParam_page_page_SUCCESS_positive
+INPUT_GET/v1/profissionais/lote_QueryParam_page_page_negative
+INPUT_GET/v1/profissionais/lote_QueryParam_page_page_positive
+INPUT_GET/v1/profissionais/lote_QueryParam_per_page_per_page_SUCCESS_positive
+INPUT_GET/v1/profissionais/lote_QueryParam_per_page_per_page_positive
+INPUT_GET/v1/profissionais_QueryParam_page_page_SUCCESS_positive
+INPUT_GET/v1/profissionais_QueryParam_page_page_positive
+INPUT_GET/v1/profissionais_QueryParam_per_page_default_10
+INPUT_GET/v1/profissionais_QueryParam_per_page_default_SUCCESS_10
+INPUT_GET/v1/profissionais_QueryParam_per_page_per_page_SUCCESS_positive
+INPUT_GET/v1/profissionais_QueryParam_per_page_per_page_positive
+INPUT_PATCH/v1/estudantes/lote_BodyParam_body_contentType_SUCCESS_application/json
+INPUT_PATCH/v1/estudantes/lote_BodyParam_body_contentType_application/json
+INPUT_POST/v1/estudantes/lote_BodyParam_body_contentType_SUCCESS_application/json
+INPUT_POST/v1/estudantes/lote_BodyParam_body_contentType_application/json
+INPUT_POST/v1/estudantes_BodyParam_body_contentType_application/json
+INPUT_POST/v1/profissionais/lote_BodyParam_body_contentType_SUCCESS_application/json
+INPUT_POST/v1/profissionais/lote_BodyParam_body_contentType_application/json
+INPUT_POST/v1/profissionais_BodyParam_body_contentType_application/json
+PotentialFault F100:HTTP Status 500 GET:/v1/estudantes
+PotentialFault F100:HTTP Status 500 GET:/v1/estudantes/inep/{inep}
+PotentialFault F100:HTTP Status 500 GET:/v1/estudantes/lote/{id}/erros
+PotentialFault F100:HTTP Status 500 GET:/v1/profissionais/lote/{id}
+PotentialFault F100:HTTP Status 500 GET:/v1/profissionais/lote/{id}/erros
+PotentialFault F100:HTTP Status 500 POST:/v1/estudantes
+PotentialFault F100:HTTP Status 500 POST:/v1/estudantes/lote
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/estudantes -> Invalid JSON Schema, cannot continue
+Syntax errors:
+[ {
+  "level" : "error",
+  "message" : "array must not contain duplicate elements",
+  "domain" : "syntax",
+  "schema" : {
+    "loadingURI" : "#",
+    "pointer" : "/properties/data/items/allOf/4/properties/matriculas/items/properties/situacaoMatricula"
+  },
+  "keyword" : "enum"
+} ]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/estudantes -> Response status 401 not defined for path '/v1/estudantes'.
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/estudantes/inep/{inep} -> Invalid JSON Schema, cannot continue
+Syntax errors:
+[ {
+  "level" : "error",
+  "message" : "array must not contain duplicate elements",
+  "domain" : "syntax",
+  "schema" : {
+    "loadingURI" : "#",
+    "pointer" : "/properties/data/items/allOf/4/properties/matriculas/items/properties/situacaoMatricula"
+  },
+  "keyword" : "enum"
+} ]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/estudantes/inep/{inep} -> Response status 401 not defined for path '/v1/estudantes/inep/{inep}'.
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/estudantes/lote -> Object instance has properties which are not allowed by the schema: ["message","success"]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/estudantes/lote -> Response status 401 not defined for path '/v1/estudantes/lote'.
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/estudantes/lote -> [Path '/pagination/links/next'] Instance type (integer) does not match any allowed primitive type (allowed: ["string"])
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/estudantes/lote -> [Path '/pagination/links/previous'] Instance type (integer) does not match any allowed primitive type (allowed: ["string"])
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/estudantes/lote -> [Path '/pagination/links/previous'] Instance type (null) does not match any allowed primitive type (allowed: ["string"])
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/estudantes/lote/{id} -> Invalid JSON Schema, cannot continue
+Syntax errors:
+[ {
+  "level" : "error",
+  "message" : "array must not contain duplicate elements",
+  "domain" : "syntax",
+  "schema" : {
+    "loadingURI" : "#",
+    "pointer" : "/properties/data/items/allOf/4/properties/matriculas/items/properties/situacaoMatricula"
+  },
+  "keyword" : "enum"
+} ]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/estudantes/lote/{id} -> Object instance has properties which are not allowed by the schema: ["success"]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/estudantes/lote/{id} -> Response status 401 not defined for path '/v1/estudantes/lote/{id}'.
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/estudantes/lote/{id}/erros -> Response status 400 not defined for path '/v1/estudantes/lote/{id}/erros'.
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/estudantes/lote/{id}/erros -> Response status 401 not defined for path '/v1/estudantes/lote/{id}/erros'.
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/estudantes/solicitacoes-alteracoes -> Response status 401 not defined for path '/v1/estudantes/solicitacoes-alteracoes'.
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/estudantes/solicitacoes-alteracoes -> Response status 404 not defined for path '/v1/estudantes/solicitacoes-alteracoes'.
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/estudantes/validacao-cadastro -> Object instance has properties which are not allowed by the schema: ["message","success"]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/estudantes/validacao-cadastro -> Response status 401 not defined for path '/v1/estudantes/validacao-cadastro'.
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/estudantes/validacao-cadastro -> Response status 404 not defined for path '/v1/estudantes/validacao-cadastro'.
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/estudantes/validacao-cadastro -> [Path '/data/0'] Instance failed to match all required schemas (matched only 0 out of 1)
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/estudantes/validacao-cadastro -> [Path '/data/1'] Instance failed to match all required schemas (matched only 0 out of 1)
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/estudantes/validacao-cadastro -> [Path '/data/10'] Instance failed to match all required schemas (matched only 0 out of 1)
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/estudantes/validacao-cadastro -> [Path '/data/11'] Instance failed to match all required schemas (matched only 0 out of 1)
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/estudantes/validacao-cadastro -> [Path '/data/12'] Instance failed to match all required schemas (matched only 0 out of 1)
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/estudantes/validacao-cadastro -> [Path '/data/13'] Instance failed to match all required schemas (matched only 0 out of 1)
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/estudantes/validacao-cadastro -> [Path '/data/14'] Instance failed to match all required schemas (matched only 0 out of 1)
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/estudantes/validacao-cadastro -> [Path '/data/2'] Instance failed to match all required schemas (matched only 0 out of 1)
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/estudantes/validacao-cadastro -> [Path '/data/3'] Instance failed to match all required schemas (matched only 0 out of 1)
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/estudantes/validacao-cadastro -> [Path '/data/4'] Instance failed to match all required schemas (matched only 0 out of 1)
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/estudantes/validacao-cadastro -> [Path '/data/5'] Instance failed to match all required schemas (matched only 0 out of 1)
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/estudantes/validacao-cadastro -> [Path '/data/6'] Instance failed to match all required schemas (matched only 0 out of 1)
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/estudantes/validacao-cadastro -> [Path '/data/7'] Instance failed to match all required schemas (matched only 0 out of 1)
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/estudantes/validacao-cadastro -> [Path '/data/8'] Instance failed to match all required schemas (matched only 0 out of 1)
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/estudantes/validacao-cadastro -> [Path '/data/9'] Instance failed to match all required schemas (matched only 0 out of 1)
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/estudantes/validacao-cadastro -> [Path '/pagination/links/next'] Instance type (integer) does not match any allowed primitive type (allowed: ["string"])
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/estudantes/validacao-cadastro -> [Path '/pagination/links/previous'] Instance type (integer) does not match any allowed primitive type (allowed: ["string"])
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/estudantes/{cpfNis} -> Invalid JSON Schema, cannot continue
+Syntax errors:
+[ {
+  "level" : "error",
+  "message" : "array must not contain duplicate elements",
+  "domain" : "syntax",
+  "schema" : {
+    "loadingURI" : "#",
+    "pointer" : "/allOf/4/properties/matriculas/items/properties/situacaoMatricula"
+  },
+  "keyword" : "enum"
+} ]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/estudantes/{cpfNis} -> Response status 401 not defined for path '/v1/estudantes/{cpfNis}'.
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais -> Response status 401 not defined for path '/v1/profissionais'.
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais -> [Path '/data/0'] Instance failed to match all required schemas (matched only 0 out of 5)
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais -> [Path '/data/1'] Instance failed to match all required schemas (matched only 0 out of 5)
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais -> [Path '/data/2'] Instance failed to match all required schemas (matched only 0 out of 5)
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais -> [Path '/pagination/links/next'] Instance type (null) does not match any allowed primitive type (allowed: ["string"])
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais -> [Path '/pagination/links/previous'] Instance type (integer) does not match any allowed primitive type (allowed: ["string"])
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais -> [Path '/pagination/links/previous'] Instance type (null) does not match any allowed primitive type (allowed: ["string"])
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/inep/{inep} -> Response status 401 not defined for path '/v1/profissionais/inep/{inep}'.
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/inep/{inep} -> [Path '/pagination/links/next'] Instance type (null) does not match any allowed primitive type (allowed: ["string"])
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/inep/{inep} -> [Path '/pagination/links/previous'] Instance type (integer) does not match any allowed primitive type (allowed: ["string"])
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> Response status 401 not defined for path '/v1/profissionais/lote'.
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/0/dataEnvio'] String "2025-05-03 01:23:40" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/0/dataEnvio'] String "2025-05-04 02:57:04" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/0/dataEnvio'] String "2025-05-04 03:00:33" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/0/dataEnvio'] String "2025-05-04 03:00:40" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/0/dataEnvio'] String "2025-05-04 03:02:15" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/0/dataEnvio'] String "2025-05-04 03:04:14" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/0/dataEnvio'] String "2025-05-04 03:05:09" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/0/dataEnvio'] String "2025-05-04 03:07:15" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/0/dataEnvio'] String "2025-05-04 03:07:45" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/1/dataEnvio'] String "2025-05-03 01:18:58" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/1/dataEnvio'] String "2025-05-04 02:56:40" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/1/dataEnvio'] String "2025-05-04 03:00:28" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/1/dataEnvio'] String "2025-05-04 03:00:33" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/1/dataEnvio'] String "2025-05-04 03:02:09" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/1/dataEnvio'] String "2025-05-04 03:04:11" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/1/dataEnvio'] String "2025-05-04 03:05:06" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/1/dataEnvio'] String "2025-05-04 03:07:06" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/1/dataEnvio'] String "2025-05-04 03:07:40" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/10/dataEnvio'] String "2025-05-04 02:50:57" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/10/dataEnvio'] String "2025-05-04 02:57:04" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/10/dataEnvio'] String "2025-05-04 03:00:47" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/10/dataEnvio'] String "2025-05-04 03:04:14" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/100/dataEnvio'] String "2025-05-04 02:31:13" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/101/dataEnvio'] String "2025-05-04 02:31:10" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/102/dataEnvio'] String "2025-05-04 02:31:07" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/103/dataEnvio'] String "2025-05-04 02:31:04" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/104/dataEnvio'] String "2025-05-04 02:30:59" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/105/dataEnvio'] String "2025-05-04 02:29:42" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/106/dataEnvio'] String "2025-05-04 02:29:33" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/107/dataEnvio'] String "2025-05-04 02:29:30" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/108/dataEnvio'] String "2025-05-04 02:29:27" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/109/dataEnvio'] String "2025-05-04 02:29:24" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/11/dataEnvio'] String "2025-05-04 02:50:54" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/11/dataEnvio'] String "2025-05-04 02:56:40" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/11/dataEnvio'] String "2025-05-04 03:00:40" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/11/dataEnvio'] String "2025-05-04 03:04:11" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/110/dataEnvio'] String "2025-05-04 02:29:20" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/111/dataEnvio'] String "2025-05-04 02:29:17" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/112/dataEnvio'] String "2025-05-04 02:29:08" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/113/dataEnvio'] String "2025-05-04 02:29:02" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/114/dataEnvio'] String "2025-05-04 02:28:23" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/115/dataEnvio'] String "2025-05-04 02:28:16" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/116/dataEnvio'] String "2025-05-04 02:26:32" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/117/dataEnvio'] String "2025-05-04 02:23:14" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/118/dataEnvio'] String "2025-05-04 02:21:07" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/119/dataEnvio'] String "2025-05-04 02:19:47" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/12/dataEnvio'] String "2025-05-04 02:50:51" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/12/dataEnvio'] String "2025-05-04 02:56:33" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/12/dataEnvio'] String "2025-05-04 03:00:33" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/12/dataEnvio'] String "2025-05-04 03:04:07" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/120/dataEnvio'] String "2025-05-04 02:19:41" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/121/dataEnvio'] String "2025-05-04 02:19:31" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/122/dataEnvio'] String "2025-05-04 02:19:06" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/123/dataEnvio'] String "2025-05-04 02:16:55" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/124/dataEnvio'] String "2025-05-04 02:15:51" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/125/dataEnvio'] String "2025-05-04 02:11:44" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/126/dataEnvio'] String "2025-05-04 02:10:28" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/127/dataEnvio'] String "2025-05-04 02:07:51" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/128/dataEnvio'] String "2025-05-04 02:06:01" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/129/dataEnvio'] String "2025-05-04 02:03:47" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/13/dataEnvio'] String "2025-05-04 02:50:46" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/13/dataEnvio'] String "2025-05-04 02:55:19" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/13/dataEnvio'] String "2025-05-04 03:00:28" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/13/dataEnvio'] String "2025-05-04 03:04:00" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/130/dataEnvio'] String "2025-05-04 02:03:38" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/131/dataEnvio'] String "2025-05-04 02:03:03" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/132/dataEnvio'] String "2025-05-04 02:01:49" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/133/dataEnvio'] String "2025-05-04 01:59:05" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/134/dataEnvio'] String "2025-05-04 01:58:11" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/135/dataEnvio'] String "2025-05-04 01:58:00" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/136/dataEnvio'] String "2025-05-04 01:57:53" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/137/dataEnvio'] String "2025-05-04 01:56:18" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/138/dataEnvio'] String "2025-05-04 01:53:34" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/139/dataEnvio'] String "2025-05-04 01:52:26" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/14/dataEnvio'] String "2025-05-04 02:50:40" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/14/dataEnvio'] String "2025-05-04 02:54:40" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/14/dataEnvio'] String "2025-05-04 03:00:25" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/14/dataEnvio'] String "2025-05-04 03:02:15" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/140/dataEnvio'] String "2025-05-04 01:49:54" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/141/dataEnvio'] String "2025-05-04 01:49:50" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/142/dataEnvio'] String "2025-05-04 01:48:39" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/143/dataEnvio'] String "2025-05-04 01:48:21" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/144/dataEnvio'] String "2025-05-04 01:46:43" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/145/dataEnvio'] String "2025-05-04 01:46:01" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/146/dataEnvio'] String "2025-05-04 01:42:46" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/147/dataEnvio'] String "2025-05-04 01:41:22" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/148/dataEnvio'] String "2025-05-04 01:40:00" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/149/dataEnvio'] String "2025-05-04 01:38:06" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/15/dataEnvio'] String "2025-05-04 02:50:07" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/15/dataEnvio'] String "2025-05-04 02:53:30" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/15/dataEnvio'] String "2025-05-04 03:02:09" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/150/dataEnvio'] String "2025-05-04 01:37:28" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/151/dataEnvio'] String "2025-05-04 01:36:55" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/152/dataEnvio'] String "2025-05-04 01:36:49" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/153/dataEnvio'] String "2025-05-04 01:36:43" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/154/dataEnvio'] String "2025-05-04 01:31:32" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/155/dataEnvio'] String "2025-05-04 01:31:22" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/156/dataEnvio'] String "2025-05-04 01:30:32" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/157/dataEnvio'] String "2025-05-04 01:21:24" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/158/dataEnvio'] String "2025-05-04 01:20:55" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/159/dataEnvio'] String "2025-05-04 01:15:48" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/16/dataEnvio'] String "2025-05-04 02:48:54" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/16/dataEnvio'] String "2025-05-04 02:52:55" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/16/dataEnvio'] String "2025-05-04 03:02:06" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/160/dataEnvio'] String "2025-05-04 01:15:25" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/161/dataEnvio'] String "2025-05-04 01:13:38" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/162/dataEnvio'] String "2025-05-04 01:12:03" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/163/dataEnvio'] String "2025-05-04 01:11:43" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/164/dataEnvio'] String "2025-05-04 01:06:18" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/165/dataEnvio'] String "2025-05-04 01:05:47" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/166/dataEnvio'] String "2025-05-04 01:05:00" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/167/dataEnvio'] String "2025-05-04 01:03:45" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/168/dataEnvio'] String "2025-05-04 01:02:08" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/169/dataEnvio'] String "2025-05-04 01:01:27" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/17/dataEnvio'] String "2025-05-04 02:47:59" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/17/dataEnvio'] String "2025-05-04 02:52:50" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/17/dataEnvio'] String "2025-05-04 03:02:03" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/170/dataEnvio'] String "2025-05-04 01:01:02" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/171/dataEnvio'] String "2025-05-04 01:00:17" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/172/dataEnvio'] String "2025-05-04 00:59:28" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/173/dataEnvio'] String "2025-05-04 00:55:58" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/174/dataEnvio'] String "2025-05-04 00:54:28" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/175/dataEnvio'] String "2025-05-04 00:53:15" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/176/dataEnvio'] String "2025-05-04 00:52:52" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/177/dataEnvio'] String "2025-05-04 00:51:49" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/178/dataEnvio'] String "2025-05-04 00:51:08" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/179/dataEnvio'] String "2025-05-04 00:50:55" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/18/dataEnvio'] String "2025-05-04 02:47:56" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/18/dataEnvio'] String "2025-05-04 02:51:42" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/18/dataEnvio'] String "2025-05-04 03:02:00" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/180/dataEnvio'] String "2025-05-04 00:44:59" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/181/dataEnvio'] String "2025-05-04 00:44:56" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/182/dataEnvio'] String "2025-05-04 00:44:51" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/183/dataEnvio'] String "2025-05-04 00:44:20" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/184/dataEnvio'] String "2025-05-04 00:44:17" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/185/dataEnvio'] String "2025-05-04 00:44:14" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/186/dataEnvio'] String "2025-05-04 00:44:11" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/187/dataEnvio'] String "2025-05-04 00:44:08" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/188/dataEnvio'] String "2025-05-04 00:43:57" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/189/dataEnvio'] String "2025-05-04 00:43:52" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/19/dataEnvio'] String "2025-05-04 02:47:52" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/19/dataEnvio'] String "2025-05-04 02:51:03" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/19/dataEnvio'] String "2025-05-04 03:00:52" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/190/dataEnvio'] String "2025-05-04 00:43:47" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/191/dataEnvio'] String "2025-05-04 00:43:43" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/192/dataEnvio'] String "2025-05-04 00:43:39" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/193/dataEnvio'] String "2025-05-04 00:43:36" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/194/dataEnvio'] String "2025-05-04 00:43:32" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/195/dataEnvio'] String "2025-05-04 00:43:29" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/196/dataEnvio'] String "2025-05-04 00:43:10" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/197/dataEnvio'] String "2025-05-04 00:42:41" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/198/dataEnvio'] String "2025-05-04 00:42:26" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/199/dataEnvio'] String "2025-05-04 00:41:51" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/2/dataEnvio'] String "2025-05-03 01:17:55" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/2/dataEnvio'] String "2025-05-04 02:56:33" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/2/dataEnvio'] String "2025-05-04 03:00:25" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/2/dataEnvio'] String "2025-05-04 03:00:28" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/2/dataEnvio'] String "2025-05-04 03:02:06" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/2/dataEnvio'] String "2025-05-04 03:04:07" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/2/dataEnvio'] String "2025-05-04 03:05:03" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/2/dataEnvio'] String "2025-05-04 03:07:03" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/2/dataEnvio'] String "2025-05-04 03:07:33" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/20/dataEnvio'] String "2025-05-04 02:47:49" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/20/dataEnvio'] String "2025-05-04 02:50:57" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/20/dataEnvio'] String "2025-05-04 03:00:47" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/200/dataEnvio'] String "2025-05-04 00:41:02" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/201/dataEnvio'] String "2025-05-04 00:40:54" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/202/dataEnvio'] String "2025-05-04 00:38:13" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/203/dataEnvio'] String "2025-05-04 00:38:10" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/204/dataEnvio'] String "2025-05-04 00:38:06" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/205/dataEnvio'] String "2025-05-04 00:37:41" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/206/dataEnvio'] String "2025-05-04 00:37:35" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/207/dataEnvio'] String "2025-05-04 00:37:32" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/208/dataEnvio'] String "2025-05-04 00:37:29" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/209/dataEnvio'] String "2025-05-04 00:37:22" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/21/dataEnvio'] String "2025-05-04 02:47:46" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/21/dataEnvio'] String "2025-05-04 02:50:54" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/21/dataEnvio'] String "2025-05-04 03:00:40" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/210/dataEnvio'] String "2025-05-04 00:37:15" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/211/dataEnvio'] String "2025-05-04 00:37:08" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/212/dataEnvio'] String "2025-05-04 00:36:26" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/213/dataEnvio'] String "2025-05-04 00:35:08" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/214/dataEnvio'] String "2025-05-04 00:33:51" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/215/dataEnvio'] String "2025-05-04 00:33:24" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/216/dataEnvio'] String "2025-05-04 00:33:19" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/217/dataEnvio'] String "2025-05-04 00:33:12" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/218/dataEnvio'] String "2025-05-04 00:32:35" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/219/dataEnvio'] String "2025-05-04 00:32:32" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/22/dataEnvio'] String "2025-05-04 02:47:43" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/22/dataEnvio'] String "2025-05-04 02:50:51" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/22/dataEnvio'] String "2025-05-04 03:00:33" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/220/dataEnvio'] String "2025-05-04 00:32:28" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/221/dataEnvio'] String "2025-05-04 00:32:23" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/23/dataEnvio'] String "2025-05-04 02:47:40" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/23/dataEnvio'] String "2025-05-04 02:50:46" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/23/dataEnvio'] String "2025-05-04 03:00:28" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/24/dataEnvio'] String "2025-05-04 02:47:36" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/24/dataEnvio'] String "2025-05-04 02:50:40" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/24/dataEnvio'] String "2025-05-04 03:00:25" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/25/dataEnvio'] String "2025-05-04 02:46:30" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/25/dataEnvio'] String "2025-05-04 02:50:07" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/25/dataEnvio'] String "2025-05-04 03:00:20" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/26/dataEnvio'] String "2025-05-04 02:46:27" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/26/dataEnvio'] String "2025-05-04 02:48:54" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/26/dataEnvio'] String "2025-05-04 03:00:15" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/27/dataEnvio'] String "2025-05-04 02:46:24" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/27/dataEnvio'] String "2025-05-04 02:47:59" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/27/dataEnvio'] String "2025-05-04 03:00:12" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/28/dataEnvio'] String "2025-05-04 02:46:19" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/28/dataEnvio'] String "2025-05-04 02:47:56" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/28/dataEnvio'] String "2025-05-04 02:59:55" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/29/dataEnvio'] String "2025-05-04 02:46:16" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/29/dataEnvio'] String "2025-05-04 02:47:52" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/29/dataEnvio'] String "2025-05-04 02:59:48" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/3/dataEnvio'] String "2025-05-03 01:15:51" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/3/dataEnvio'] String "2025-05-04 02:55:19" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/3/dataEnvio'] String "2025-05-04 03:00:20" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/3/dataEnvio'] String "2025-05-04 03:00:25" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/3/dataEnvio'] String "2025-05-04 03:02:03" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/3/dataEnvio'] String "2025-05-04 03:04:00" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/3/dataEnvio'] String "2025-05-04 03:04:59" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/3/dataEnvio'] String "2025-05-04 03:06:58" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/3/dataEnvio'] String "2025-05-04 03:07:27" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/30/dataEnvio'] String "2025-05-04 02:46:11" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/30/dataEnvio'] String "2025-05-04 02:47:49" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/30/dataEnvio'] String "2025-05-04 02:59:41" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/31/dataEnvio'] String "2025-05-04 02:46:02" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/31/dataEnvio'] String "2025-05-04 02:47:46" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/31/dataEnvio'] String "2025-05-04 02:59:35" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/32/dataEnvio'] String "2025-05-04 02:45:57" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/32/dataEnvio'] String "2025-05-04 02:47:43" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/32/dataEnvio'] String "2025-05-04 02:57:04" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/33/dataEnvio'] String "2025-05-04 02:45:54" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/33/dataEnvio'] String "2025-05-04 02:47:40" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/33/dataEnvio'] String "2025-05-04 02:56:40" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/34/dataEnvio'] String "2025-05-04 02:45:48" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/34/dataEnvio'] String "2025-05-04 02:47:36" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/34/dataEnvio'] String "2025-05-04 02:56:33" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/35/dataEnvio'] String "2025-05-04 02:45:42" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/35/dataEnvio'] String "2025-05-04 02:46:30" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/35/dataEnvio'] String "2025-05-04 02:55:19" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/36/dataEnvio'] String "2025-05-04 02:45:37" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/36/dataEnvio'] String "2025-05-04 02:46:27" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/36/dataEnvio'] String "2025-05-04 02:54:40" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/37/dataEnvio'] String "2025-05-04 02:45:28" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/37/dataEnvio'] String "2025-05-04 02:46:24" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/37/dataEnvio'] String "2025-05-04 02:53:30" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/38/dataEnvio'] String "2025-05-04 02:45:19" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/38/dataEnvio'] String "2025-05-04 02:46:19" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/38/dataEnvio'] String "2025-05-04 02:52:55" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/39/dataEnvio'] String "2025-05-04 02:45:15" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/39/dataEnvio'] String "2025-05-04 02:46:16" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/39/dataEnvio'] String "2025-05-04 02:52:50" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/4/dataEnvio'] String "2025-05-03 01:15:38" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/4/dataEnvio'] String "2025-05-04 02:54:40" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/4/dataEnvio'] String "2025-05-04 03:00:15" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/4/dataEnvio'] String "2025-05-04 03:00:20" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/4/dataEnvio'] String "2025-05-04 03:02:00" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/4/dataEnvio'] String "2025-05-04 03:02:15" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/4/dataEnvio'] String "2025-05-04 03:04:55" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/4/dataEnvio'] String "2025-05-04 03:06:52" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/4/dataEnvio'] String "2025-05-04 03:07:24" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/40/dataEnvio'] String "2025-05-04 02:45:12" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/40/dataEnvio'] String "2025-05-04 02:46:11" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/40/dataEnvio'] String "2025-05-04 02:51:42" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/41/dataEnvio'] String "2025-05-04 02:45:06" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/41/dataEnvio'] String "2025-05-04 02:46:02" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/41/dataEnvio'] String "2025-05-04 02:51:03" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/42/dataEnvio'] String "2025-05-04 02:45:02" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/42/dataEnvio'] String "2025-05-04 02:45:57" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/42/dataEnvio'] String "2025-05-04 02:50:57" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/43/dataEnvio'] String "2025-05-04 02:44:56" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/43/dataEnvio'] String "2025-05-04 02:45:54" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/43/dataEnvio'] String "2025-05-04 02:50:54" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/44/dataEnvio'] String "2025-05-04 02:44:02" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/44/dataEnvio'] String "2025-05-04 02:45:48" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/44/dataEnvio'] String "2025-05-04 02:50:51" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/45/dataEnvio'] String "2025-05-04 02:43:59" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/45/dataEnvio'] String "2025-05-04 02:45:42" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/45/dataEnvio'] String "2025-05-04 02:50:46" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/46/dataEnvio'] String "2025-05-04 02:43:56" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/46/dataEnvio'] String "2025-05-04 02:45:37" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/46/dataEnvio'] String "2025-05-04 02:50:40" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/47/dataEnvio'] String "2025-05-04 02:43:53" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/47/dataEnvio'] String "2025-05-04 02:45:28" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/47/dataEnvio'] String "2025-05-04 02:50:07" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/48/dataEnvio'] String "2025-05-04 02:43:49" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/48/dataEnvio'] String "2025-05-04 02:45:19" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/48/dataEnvio'] String "2025-05-04 02:48:54" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/49/dataEnvio'] String "2025-05-04 02:43:42" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/49/dataEnvio'] String "2025-05-04 02:45:15" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/49/dataEnvio'] String "2025-05-04 02:47:59" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/5/dataEnvio'] String "2025-05-03 01:14:30" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/5/dataEnvio'] String "2025-05-04 02:53:30" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/5/dataEnvio'] String "2025-05-04 03:00:12" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/5/dataEnvio'] String "2025-05-04 03:00:15" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/5/dataEnvio'] String "2025-05-04 03:00:52" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/5/dataEnvio'] String "2025-05-04 03:02:09" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/5/dataEnvio'] String "2025-05-04 03:04:47" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/5/dataEnvio'] String "2025-05-04 03:06:49" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/5/dataEnvio'] String "2025-05-04 03:07:15" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/50/dataEnvio'] String "2025-05-04 02:42:24" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/50/dataEnvio'] String "2025-05-04 02:45:12" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/50/dataEnvio'] String "2025-05-04 02:47:56" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/51/dataEnvio'] String "2025-05-04 02:41:47" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/51/dataEnvio'] String "2025-05-04 02:45:06" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/51/dataEnvio'] String "2025-05-04 02:47:52" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/52/dataEnvio'] String "2025-05-04 02:41:43" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/52/dataEnvio'] String "2025-05-04 02:45:02" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/52/dataEnvio'] String "2025-05-04 02:47:49" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/53/dataEnvio'] String "2025-05-04 02:41:40" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/53/dataEnvio'] String "2025-05-04 02:44:56" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/53/dataEnvio'] String "2025-05-04 02:47:46" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/54/dataEnvio'] String "2025-05-04 02:41:37" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/54/dataEnvio'] String "2025-05-04 02:44:02" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/54/dataEnvio'] String "2025-05-04 02:47:43" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/55/dataEnvio'] String "2025-05-04 02:41:34" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/55/dataEnvio'] String "2025-05-04 02:43:59" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/55/dataEnvio'] String "2025-05-04 02:47:40" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/56/dataEnvio'] String "2025-05-04 02:41:30" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/56/dataEnvio'] String "2025-05-04 02:43:56" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/56/dataEnvio'] String "2025-05-04 02:47:36" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/57/dataEnvio'] String "2025-05-04 02:41:26" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/57/dataEnvio'] String "2025-05-04 02:43:53" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/57/dataEnvio'] String "2025-05-04 02:46:30" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/58/dataEnvio'] String "2025-05-04 02:41:23" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/58/dataEnvio'] String "2025-05-04 02:43:49" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/58/dataEnvio'] String "2025-05-04 02:46:27" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/59/dataEnvio'] String "2025-05-04 02:41:00" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/59/dataEnvio'] String "2025-05-04 02:43:42" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/59/dataEnvio'] String "2025-05-04 02:46:24" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/6/dataEnvio'] String "2025-05-03 01:10:10" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/6/dataEnvio'] String "2025-05-04 02:52:55" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/6/dataEnvio'] String "2025-05-04 02:59:55" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/6/dataEnvio'] String "2025-05-04 03:00:12" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/6/dataEnvio'] String "2025-05-04 03:00:47" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/6/dataEnvio'] String "2025-05-04 03:02:06" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/6/dataEnvio'] String "2025-05-04 03:04:42" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/6/dataEnvio'] String "2025-05-04 03:05:56" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/6/dataEnvio'] String "2025-05-04 03:07:06" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/60/dataEnvio'] String "2025-05-04 02:40:51" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/60/dataEnvio'] String "2025-05-04 02:42:24" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/60/dataEnvio'] String "2025-05-04 02:46:19" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/61/dataEnvio'] String "2025-05-04 02:40:46" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/61/dataEnvio'] String "2025-05-04 02:41:47" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/61/dataEnvio'] String "2025-05-04 02:46:16" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/62/dataEnvio'] String "2025-05-04 02:40:18" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/62/dataEnvio'] String "2025-05-04 02:41:43" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/62/dataEnvio'] String "2025-05-04 02:46:11" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/63/dataEnvio'] String "2025-05-04 02:39:57" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/63/dataEnvio'] String "2025-05-04 02:41:40" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/63/dataEnvio'] String "2025-05-04 02:46:02" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/64/dataEnvio'] String "2025-05-04 02:39:09" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/64/dataEnvio'] String "2025-05-04 02:41:37" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/64/dataEnvio'] String "2025-05-04 02:45:57" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/65/dataEnvio'] String "2025-05-04 02:38:39" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/65/dataEnvio'] String "2025-05-04 02:41:34" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/65/dataEnvio'] String "2025-05-04 02:45:54" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/66/dataEnvio'] String "2025-05-04 02:38:33" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/66/dataEnvio'] String "2025-05-04 02:41:30" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/66/dataEnvio'] String "2025-05-04 02:45:48" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/67/dataEnvio'] String "2025-05-04 02:38:30" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/67/dataEnvio'] String "2025-05-04 02:41:26" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/67/dataEnvio'] String "2025-05-04 02:45:42" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/68/dataEnvio'] String "2025-05-04 02:38:25" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/68/dataEnvio'] String "2025-05-04 02:41:23" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/68/dataEnvio'] String "2025-05-04 02:45:37" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/69/dataEnvio'] String "2025-05-04 02:38:20" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/69/dataEnvio'] String "2025-05-04 02:41:00" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/69/dataEnvio'] String "2025-05-04 02:45:28" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/7/dataEnvio'] String "2025-05-03 01:08:08" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/7/dataEnvio'] String "2025-05-04 02:52:50" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/7/dataEnvio'] String "2025-05-04 02:59:48" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/7/dataEnvio'] String "2025-05-04 02:59:55" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/7/dataEnvio'] String "2025-05-04 03:00:40" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/7/dataEnvio'] String "2025-05-04 03:02:03" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/7/dataEnvio'] String "2025-05-04 03:04:37" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/7/dataEnvio'] String "2025-05-04 03:05:47" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/7/dataEnvio'] String "2025-05-04 03:07:03" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/70/dataEnvio'] String "2025-05-04 02:37:13" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/70/dataEnvio'] String "2025-05-04 02:40:51" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/70/dataEnvio'] String "2025-05-04 02:45:19" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/71/dataEnvio'] String "2025-05-04 02:37:07" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/71/dataEnvio'] String "2025-05-04 02:40:46" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/71/dataEnvio'] String "2025-05-04 02:45:15" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/72/dataEnvio'] String "2025-05-04 02:36:27" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/72/dataEnvio'] String "2025-05-04 02:40:18" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/72/dataEnvio'] String "2025-05-04 02:45:12" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/73/dataEnvio'] String "2025-05-04 02:36:20" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/73/dataEnvio'] String "2025-05-04 02:39:57" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/73/dataEnvio'] String "2025-05-04 02:45:06" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/74/dataEnvio'] String "2025-05-04 02:36:16" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/74/dataEnvio'] String "2025-05-04 02:39:09" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/74/dataEnvio'] String "2025-05-04 02:45:02" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/75/dataEnvio'] String "2025-05-04 02:35:47" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/75/dataEnvio'] String "2025-05-04 02:38:39" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/75/dataEnvio'] String "2025-05-04 02:44:56" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/76/dataEnvio'] String "2025-05-04 02:32:56" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/76/dataEnvio'] String "2025-05-04 02:38:33" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/76/dataEnvio'] String "2025-05-04 02:44:02" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/77/dataEnvio'] String "2025-05-04 02:32:48" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/77/dataEnvio'] String "2025-05-04 02:38:30" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/77/dataEnvio'] String "2025-05-04 02:43:59" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/78/dataEnvio'] String "2025-05-04 02:32:43" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/78/dataEnvio'] String "2025-05-04 02:38:25" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/78/dataEnvio'] String "2025-05-04 02:43:56" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/79/dataEnvio'] String "2025-05-04 02:32:30" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/79/dataEnvio'] String "2025-05-04 02:38:20" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/79/dataEnvio'] String "2025-05-04 02:43:53" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/8/dataEnvio'] String "2025-05-03 01:07:36" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/8/dataEnvio'] String "2025-05-04 02:51:42" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/8/dataEnvio'] String "2025-05-04 02:59:41" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/8/dataEnvio'] String "2025-05-04 02:59:48" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/8/dataEnvio'] String "2025-05-04 03:00:33" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/8/dataEnvio'] String "2025-05-04 03:02:00" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/8/dataEnvio'] String "2025-05-04 03:04:25" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/8/dataEnvio'] String "2025-05-04 03:05:09" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/8/dataEnvio'] String "2025-05-04 03:06:58" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/80/dataEnvio'] String "2025-05-04 02:32:24" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/80/dataEnvio'] String "2025-05-04 02:37:13" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/80/dataEnvio'] String "2025-05-04 02:43:49" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/81/dataEnvio'] String "2025-05-04 02:37:07" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/82/dataEnvio'] String "2025-05-04 02:36:27" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/83/dataEnvio'] String "2025-05-04 02:36:20" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/84/dataEnvio'] String "2025-05-04 02:36:16" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/85/dataEnvio'] String "2025-05-04 02:35:47" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/86/dataEnvio'] String "2025-05-04 02:32:56" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/87/dataEnvio'] String "2025-05-04 02:32:48" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/88/dataEnvio'] String "2025-05-04 02:32:43" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/89/dataEnvio'] String "2025-05-04 02:32:30" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/9/dataEnvio'] String "2025-05-03 01:05:24" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/9/dataEnvio'] String "2025-05-04 02:51:03" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/9/dataEnvio'] String "2025-05-04 02:59:35" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/9/dataEnvio'] String "2025-05-04 02:59:41" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/9/dataEnvio'] String "2025-05-04 03:00:28" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/9/dataEnvio'] String "2025-05-04 03:00:52" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/9/dataEnvio'] String "2025-05-04 03:04:20" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/9/dataEnvio'] String "2025-05-04 03:05:06" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/9/dataEnvio'] String "2025-05-04 03:06:52" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/90/dataEnvio'] String "2025-05-04 02:32:24" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/91/dataEnvio'] String "2025-05-04 02:32:18" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/92/dataEnvio'] String "2025-05-04 02:32:13" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/93/dataEnvio'] String "2025-05-04 02:32:08" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/94/dataEnvio'] String "2025-05-04 02:32:05" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/95/dataEnvio'] String "2025-05-04 02:32:02" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/96/dataEnvio'] String "2025-05-04 02:31:55" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/97/dataEnvio'] String "2025-05-04 02:31:24" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/98/dataEnvio'] String "2025-05-04 02:31:21" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/data/99/dataEnvio'] String "2025-05-04 02:31:16" is invalid against requested date format(s) [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.[0-9]{1,12}Z]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/pagination/links/next'] Instance type (integer) does not match any allowed primitive type (allowed: ["string"])
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/pagination/links/next'] Instance type (null) does not match any allowed primitive type (allowed: ["string"])
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/pagination/links/previous'] Instance type (integer) does not match any allowed primitive type (allowed: ["string"])
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote -> [Path '/pagination/links/previous'] Instance type (null) does not match any allowed primitive type (allowed: ["string"])
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote/{id} -> Object instance has properties which are not allowed by the schema: ["message","success"]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote/{id} -> Object instance has properties which are not allowed by the schema: ["success"]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote/{id} -> Response status 401 not defined for path '/v1/profissionais/lote/{id}'.
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote/{id}/erros -> Response status 400 not defined for path '/v1/profissionais/lote/{id}/erros'.
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/lote/{id}/erros -> Response status 401 not defined for path '/v1/profissionais/lote/{id}/erros'.
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema GET:/v1/profissionais/{cpf} -> Response status 401 not defined for path '/v1/profissionais/{cpf}'.
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema PATCH:/v1/estudantes/lote -> Response status 401 not defined for path '/v1/estudantes/lote'.
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema POST:/v1/estudantes -> Response status 401 not defined for path '/v1/estudantes'.
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema POST:/v1/estudantes -> Response status 500 not defined for path '/v1/estudantes'.
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema POST:/v1/estudantes/lote -> Object instance has properties which are not allowed by the schema: ["errors"]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema POST:/v1/estudantes/lote -> Response status 401 not defined for path '/v1/estudantes/lote'.
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema POST:/v1/profissionais -> Response status 401 not defined for path '/v1/profissionais'.
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema POST:/v1/profissionais/lote -> Object instance has properties which are not allowed by the schema: ["message","success"]
+PotentialFault F200:Received A Response From API That Is Not Valid According To Its Schema POST:/v1/profissionais/lote -> Response status 401 not defined for path '/v1/profissionais/lote'.
+QUERY_PARAM_SUCCESS_false_ano_matricula_GET/v1/estudantes
+QUERY_PARAM_SUCCESS_false_cpf_GET/v1/estudantes/validacao-cadastro
+QUERY_PARAM_SUCCESS_false_incluir_objetos_processados_GET/v1/estudantes/lote/{id}
+QUERY_PARAM_SUCCESS_false_incluir_objetos_processados_GET/v1/profissionais/lote/{id}
+QUERY_PARAM_SUCCESS_false_page_GET/v1/estudantes
+QUERY_PARAM_SUCCESS_false_page_GET/v1/estudantes/inep/{inep}
+QUERY_PARAM_SUCCESS_false_page_GET/v1/estudantes/lote
+QUERY_PARAM_SUCCESS_false_page_GET/v1/estudantes/lote/{id}
+QUERY_PARAM_SUCCESS_false_page_GET/v1/profissionais
+QUERY_PARAM_SUCCESS_false_page_GET/v1/profissionais/lote
+QUERY_PARAM_SUCCESS_false_page_GET/v1/profissionais/lote/{id}
+QUERY_PARAM_SUCCESS_false_per_page_GET/v1/estudantes
+QUERY_PARAM_SUCCESS_false_per_page_GET/v1/estudantes/inep/{inep}
+QUERY_PARAM_SUCCESS_false_per_page_GET/v1/estudantes/lote
+QUERY_PARAM_SUCCESS_false_per_page_GET/v1/estudantes/lote/{id}
+QUERY_PARAM_SUCCESS_false_per_page_GET/v1/estudantes/validacao-cadastro
+QUERY_PARAM_SUCCESS_false_per_page_GET/v1/profissionais
+QUERY_PARAM_SUCCESS_false_per_page_GET/v1/profissionais/inep/{inep}
+QUERY_PARAM_SUCCESS_false_per_page_GET/v1/profissionais/lote
+QUERY_PARAM_SUCCESS_false_per_page_GET/v1/profissionais/lote/{id}
+QUERY_PARAM_SUCCESS_false_situacao_final_GET/v1/estudantes
+QUERY_PARAM_SUCCESS_false_situacao_final_GET/v1/estudantes/inep/{inep}
+QUERY_PARAM_SUCCESS_false_situacao_matricula_GET/v1/estudantes
+QUERY_PARAM_SUCCESS_false_situacao_matricula_GET/v1/estudantes/inep/{inep}
+QUERY_PARAM_SUCCESS_true_ano_matricula_GET/v1/estudantes
+QUERY_PARAM_SUCCESS_true_ano_matricula_GET/v1/estudantes/inep/{inep}
+QUERY_PARAM_SUCCESS_true_incluir_objetos_processados_GET/v1/estudantes/lote/{id}
+QUERY_PARAM_SUCCESS_true_incluir_objetos_processados_GET/v1/profissionais/lote/{id}
+QUERY_PARAM_SUCCESS_true_page_GET/v1/estudantes
+QUERY_PARAM_SUCCESS_true_page_GET/v1/estudantes/inep/{inep}
+QUERY_PARAM_SUCCESS_true_page_GET/v1/estudantes/lote
+QUERY_PARAM_SUCCESS_true_page_GET/v1/estudantes/lote/{id}
+QUERY_PARAM_SUCCESS_true_page_GET/v1/estudantes/validacao-cadastro
+QUERY_PARAM_SUCCESS_true_page_GET/v1/profissionais
+QUERY_PARAM_SUCCESS_true_page_GET/v1/profissionais/inep/{inep}
+QUERY_PARAM_SUCCESS_true_page_GET/v1/profissionais/lote
+QUERY_PARAM_SUCCESS_true_page_GET/v1/profissionais/lote/{id}
+QUERY_PARAM_SUCCESS_true_per_page_GET/v1/estudantes
+QUERY_PARAM_SUCCESS_true_per_page_GET/v1/estudantes/inep/{inep}
+QUERY_PARAM_SUCCESS_true_per_page_GET/v1/estudantes/lote
+QUERY_PARAM_SUCCESS_true_per_page_GET/v1/estudantes/lote/{id}
+QUERY_PARAM_SUCCESS_true_per_page_GET/v1/profissionais
+QUERY_PARAM_SUCCESS_true_per_page_GET/v1/profissionais/lote
+QUERY_PARAM_SUCCESS_true_per_page_GET/v1/profissionais/lote/{id}
+QUERY_PARAM_SUCCESS_true_situacao_final_GET/v1/estudantes
+QUERY_PARAM_SUCCESS_true_situacao_matricula_GET/v1/estudantes
+QUERY_PARAM_false_ano_matricula_GET/v1/estudantes
+QUERY_PARAM_false_ano_matricula_GET/v1/estudantes/inep/{inep}
+QUERY_PARAM_false_cpfAtual_GET/v1/estudantes/solicitacoes-alteracoes
+QUERY_PARAM_false_cpfNovo_GET/v1/estudantes/solicitacoes-alteracoes
+QUERY_PARAM_false_cpf_GET/v1/estudantes/validacao-cadastro
+QUERY_PARAM_false_incluir_objetos_processados_GET/v1/estudantes/lote/{id}
+QUERY_PARAM_false_incluir_objetos_processados_GET/v1/profissionais/lote/{id}
+QUERY_PARAM_false_page_GET/v1/estudantes
+QUERY_PARAM_false_page_GET/v1/estudantes/inep/{inep}
+QUERY_PARAM_false_page_GET/v1/estudantes/lote
+QUERY_PARAM_false_page_GET/v1/estudantes/lote/{id}
+QUERY_PARAM_false_page_GET/v1/estudantes/lote/{id}/erros
+QUERY_PARAM_false_page_GET/v1/estudantes/solicitacoes-alteracoes
+QUERY_PARAM_false_page_GET/v1/estudantes/validacao-cadastro
+QUERY_PARAM_false_page_GET/v1/profissionais
+QUERY_PARAM_false_page_GET/v1/profissionais/inep/{inep}
+QUERY_PARAM_false_page_GET/v1/profissionais/lote
+QUERY_PARAM_false_page_GET/v1/profissionais/lote/{id}
+QUERY_PARAM_false_page_GET/v1/profissionais/lote/{id}/erros
+QUERY_PARAM_false_per_page_GET/v1/estudantes
+QUERY_PARAM_false_per_page_GET/v1/estudantes/inep/{inep}
+QUERY_PARAM_false_per_page_GET/v1/estudantes/lote
+QUERY_PARAM_false_per_page_GET/v1/estudantes/lote/{id}
+QUERY_PARAM_false_per_page_GET/v1/estudantes/lote/{id}/erros
+QUERY_PARAM_false_per_page_GET/v1/estudantes/solicitacoes-alteracoes
+QUERY_PARAM_false_per_page_GET/v1/estudantes/validacao-cadastro
+QUERY_PARAM_false_per_page_GET/v1/profissionais
+QUERY_PARAM_false_per_page_GET/v1/profissionais/inep/{inep}
+QUERY_PARAM_false_per_page_GET/v1/profissionais/lote
+QUERY_PARAM_false_per_page_GET/v1/profissionais/lote/{id}
+QUERY_PARAM_false_per_page_GET/v1/profissionais/lote/{id}/erros
+QUERY_PARAM_false_situacao_final_GET/v1/estudantes
+QUERY_PARAM_false_situacao_final_GET/v1/estudantes/inep/{inep}
+QUERY_PARAM_false_situacao_matricula_GET/v1/estudantes
+QUERY_PARAM_false_situacao_matricula_GET/v1/estudantes/inep/{inep}
+QUERY_PARAM_true_ano_matricula_GET/v1/estudantes
+QUERY_PARAM_true_ano_matricula_GET/v1/estudantes/inep/{inep}
+QUERY_PARAM_true_cpfAtual_GET/v1/estudantes/solicitacoes-alteracoes
+QUERY_PARAM_true_cpfNovo_GET/v1/estudantes/solicitacoes-alteracoes
+QUERY_PARAM_true_cpf_GET/v1/estudantes/validacao-cadastro
+QUERY_PARAM_true_incluir_objetos_processados_GET/v1/estudantes/lote/{id}
+QUERY_PARAM_true_incluir_objetos_processados_GET/v1/profissionais/lote/{id}
+QUERY_PARAM_true_page_GET/v1/estudantes
+QUERY_PARAM_true_page_GET/v1/estudantes/inep/{inep}
+QUERY_PARAM_true_page_GET/v1/estudantes/lote
+QUERY_PARAM_true_page_GET/v1/estudantes/lote/{id}
+QUERY_PARAM_true_page_GET/v1/estudantes/lote/{id}/erros
+QUERY_PARAM_true_page_GET/v1/estudantes/solicitacoes-alteracoes
+QUERY_PARAM_true_page_GET/v1/estudantes/validacao-cadastro
+QUERY_PARAM_true_page_GET/v1/profissionais
+QUERY_PARAM_true_page_GET/v1/profissionais/inep/{inep}
+QUERY_PARAM_true_page_GET/v1/profissionais/lote
+QUERY_PARAM_true_page_GET/v1/profissionais/lote/{id}
+QUERY_PARAM_true_page_GET/v1/profissionais/lote/{id}/erros
+QUERY_PARAM_true_per_page_GET/v1/estudantes
+QUERY_PARAM_true_per_page_GET/v1/estudantes/inep/{inep}
+QUERY_PARAM_true_per_page_GET/v1/estudantes/lote
+QUERY_PARAM_true_per_page_GET/v1/estudantes/lote/{id}
+QUERY_PARAM_true_per_page_GET/v1/estudantes/lote/{id}/erros
+QUERY_PARAM_true_per_page_GET/v1/estudantes/solicitacoes-alteracoes
+QUERY_PARAM_true_per_page_GET/v1/estudantes/validacao-cadastro
+QUERY_PARAM_true_per_page_GET/v1/profissionais
+QUERY_PARAM_true_per_page_GET/v1/profissionais/lote
+QUERY_PARAM_true_per_page_GET/v1/profissionais/lote/{id}
+QUERY_PARAM_true_per_page_GET/v1/profissionais/lote/{id}/erros
+QUERY_PARAM_true_situacao_final_GET/v1/estudantes
+QUERY_PARAM_true_situacao_final_GET/v1/estudantes/inep/{inep}
+QUERY_PARAM_true_situacao_matricula_GET/v1/estudantes
+QUERY_PARAM_true_situacao_matricula_GET/v1/estudantes/inep/{inep}
+RESPONSE_BODY_PAYLOAD_GET/v1/estudantes/inep/{inep}_application/json
+RESPONSE_BODY_PAYLOAD_GET/v1/estudantes/lote/{id}/erros_application/json
+RESPONSE_BODY_PAYLOAD_GET/v1/estudantes/lote/{id}_application/json
+RESPONSE_BODY_PAYLOAD_GET/v1/estudantes/lote_application/json
+RESPONSE_BODY_PAYLOAD_GET/v1/estudantes/solicitacoes-alteracoes_application/json
+RESPONSE_BODY_PAYLOAD_GET/v1/estudantes/validacao-cadastro_application/json
+RESPONSE_BODY_PAYLOAD_GET/v1/estudantes/{cpfNis}_application/json
+RESPONSE_BODY_PAYLOAD_GET/v1/estudantes_application/json
+RESPONSE_BODY_PAYLOAD_GET/v1/profissionais/inep/{inep}_application/json
+RESPONSE_BODY_PAYLOAD_GET/v1/profissionais/lote/{id}/erros_application/json
+RESPONSE_BODY_PAYLOAD_GET/v1/profissionais/lote/{id}_application/json
+RESPONSE_BODY_PAYLOAD_GET/v1/profissionais/lote_application/json
+RESPONSE_BODY_PAYLOAD_GET/v1/profissionais/{cpf}_application/json
+RESPONSE_BODY_PAYLOAD_GET/v1/profissionais_application/json
+RESPONSE_BODY_PAYLOAD_PATCH/v1/estudantes/lote_application/json
+RESPONSE_BODY_PAYLOAD_POST/v1/estudantes/lote_application/json
+RESPONSE_BODY_PAYLOAD_POST/v1/estudantes_application/json
+RESPONSE_BODY_PAYLOAD_POST/v1/profissionais/lote_application/json
+RESPONSE_BODY_PAYLOAD_POST/v1/profissionais_application/json

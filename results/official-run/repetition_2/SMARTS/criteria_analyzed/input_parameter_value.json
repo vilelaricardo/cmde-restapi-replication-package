@@ -1,0 +1,113 @@
+{
+  "coverage": 50.0,
+  "required_elements": [
+    {
+      "path": "/v1/estudantes",
+      "method": "GET",
+      "parameter": "situacao_matricula",
+      "parameter_type": "query",
+      "covered": true,
+      "value": "ATIVAS",
+      "value_type": "enum"
+    },
+    {
+      "path": "/v1/estudantes",
+      "method": "GET",
+      "parameter": "situacao_matricula",
+      "parameter_type": "query",
+      "covered": true,
+      "value": "INATIVAS",
+      "value_type": "enum"
+    },
+    {
+      "path": "/v1/estudantes",
+      "method": "GET",
+      "parameter": "situacao_final",
+      "parameter_type": "query",
+      "covered": true,
+      "value": "APROVADAS",
+      "value_type": "enum"
+    },
+    {
+      "path": "/v1/estudantes",
+      "method": "GET",
+      "parameter": "situacao_final",
+      "parameter_type": "query",
+      "covered": true,
+      "value": "REPROVADAS",
+      "value_type": "enum"
+    },
+    {
+      "path": "/v1/estudantes/lote/{id}",
+      "method": "GET",
+      "parameter": "incluir_objetos_processados",
+      "parameter_type": "query",
+      "covered": false,
+      "value": true,
+      "value_type": "boolean"
+    },
+    {
+      "path": "/v1/estudantes/lote/{id}",
+      "method": "GET",
+      "parameter": "incluir_objetos_processados",
+      "parameter_type": "query",
+      "covered": false,
+      "value": false,
+      "value_type": "boolean"
+    },
+    {
+      "path": "/v1/estudantes/inep/{inep}",
+      "method": "GET",
+      "parameter": "situacao_matricula",
+      "parameter_type": "query",
+      "covered": false,
+      "value": "ATIVAS",
+      "value_type": "enum"
+    },
+    {
+      "path": "/v1/estudantes/inep/{inep}",
+      "method": "GET",
+      "parameter": "situacao_matricula",
+      "parameter_type": "query",
+      "covered": true,
+      "value": "INATIVAS",
+      "value_type": "enum"
+    },
+    {
+      "path": "/v1/estudantes/inep/{inep}",
+      "method": "GET",
+      "parameter": "situacao_final",
+      "parameter_type": "query",
+      "covered": false,
+      "value": "APROVADAS",
+      "value_type": "enum"
+    },
+    {
+      "path": "/v1/estudantes/inep/{inep}",
+      "method": "GET",
+      "parameter": "situacao_final",
+      "parameter_type": "query",
+      "covered": true,
+      "value": "REPROVADAS",
+      "value_type": "enum"
+    },
+    {
+      "path": "/v1/profissionais/lote/{id}",
+      "method": "GET",
+      "parameter": "incluir_objetos_processados",
+      "parameter_type": "query",
+      "covered": false,
+      "value": true,
+      "value_type": "boolean"
+    },
+    {
+      "path": "/v1/profissionais/lote/{id}",
+      "method": "GET",
+      "parameter": "incluir_objetos_processados",
+      "parameter_type": "query",
+      "covered": false,
+      "value": false,
+      "value_type": "boolean"
+    }
+  ]
+}

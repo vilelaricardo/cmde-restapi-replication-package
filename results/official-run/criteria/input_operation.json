@@ -1,0 +1,100 @@
+{
+  "coverage": 0.0,
+  "required_elements": [
+    {
+      "path": "/v1/estudantes",
+      "method": "GET",
+      "covered": false
+    },
+    {
+      "path": "/v1/estudantes",
+      "method": "POST",
+      "covered": false
+    },
+    {
+      "path": "/v1/estudantes/{cpfNis}",
+      "method": "GET",
+      "covered": false
+    },
+    {
+      "path": "/v1/estudantes/lote/{id}",
+      "method": "GET",
+      "covered": false
+    },
+    {
+      "path": "/v1/estudantes/lote/{id}/erros",
+      "method": "GET",
+      "covered": false
+    },
+    {
+      "path": "/v1/estudantes/lote",
+      "method": "GET",
+      "covered": false
+    },
+    {
+      "path": "/v1/estudantes/lote",
+      "method": "POST",
+      "covered": false
+    },
+    {
+      "path": "/v1/estudantes/lote",
+      "method": "PATCH",
+      "covered": false
+    },
+    {
+      "path": "/v1/estudantes/inep/{inep}",
+      "method": "GET",
+      "covered": false
+    },
+    {
+      "path": "/v1/estudantes/solicitacoes-alteracoes",
+      "method": "GET",
+      "covered": false
+    },
+    {
+      "path": "/v1/estudantes/validacao-cadastro",
+      "method": "GET",
+      "covered": false
+    },
+    {
+      "path": "/v1/profissionais/lote",
+      "method": "GET",
+      "covered": false
+    },
+    {
+      "path": "/v1/profissionais/lote",
+      "method": "POST",
+      "covered": false
+    },
+    {
+      "path": "/v1/profissionais",
+      "method": "GET",
+      "covered": false
+    },
+    {
+      "path": "/v1/profissionais",
+      "method": "POST",
+      "covered": false
+    },
+    {
+      "path": "/v1/profissionais/{cpf}",
+      "method": "GET",
+      "covered": false
+    },
+    {
+      "path": "/v1/profissionais/inep/{inep}",
+      "method": "GET",
+      "covered": false
+    },
+    {
+      "path": "/v1/profissionais/lote/{id}",
+      "method": "GET",
+      "covered": false
+    },
+    {
+      "path": "/v1/profissionais/lote/{id}/erros",
+      "method": "GET",
+      "covered": false
+    }
+  ]
+}

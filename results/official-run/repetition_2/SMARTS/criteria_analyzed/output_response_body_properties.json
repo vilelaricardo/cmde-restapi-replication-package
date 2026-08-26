@@ -1,0 +1,4751 @@
+{
+  "coverage": 38.64306784660767,
+  "required_elements": [
+    {
+      "path": "/v1/estudantes",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.matriculas.dataConclusaoEnsinoMedio",
+      "covered": true
+    },
+    {
+      "path": "/v1/estudantes",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.logradouro",
+      "covered": true
+    },
+    {
+      "path": "/v1/estudantes",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.outrasMatriculas.codigoMatriculaSgp",
+      "covered": false
+    },
+    {
+      "path": "/v1/estudantes",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.matriculas.formaOrganizacaoTurma",
+      "covered": true
+    },
+    {
+      "path": "/v1/estudantes",
+      "method": "GET",
+      "status_code": "200",
+      "property": "pagination.per_page",
+      "covered": true
+    },
+    {
+      "path": "/v1/estudantes",
+      "method": "GET",
+      "status_code": "200",
+      "property": "pagination.links.next",
+      "covered": true
+    },
+    {
+      "path": "/v1/estudantes",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.matriculas.etapaEnsinoConsolidado",
+      "covered": true
+    },
+    {
+      "path": "/v1/estudantes",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data",
+      "covered": true
+    },
+    {
+      "path": "/v1/estudantes",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.matriculas.dataAtivacaoMatricula",
+      "covered": true
+    },
+    {
+      "path": "/v1/estudantes",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.matriculas.estudantePpl",
+      "covered": true
+    },
+    {
+      "path": "/v1/estudantes",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.numero",
+      "covered": true
+    },
+    {
+      "path": "/v1/estudantes",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.bairro",
+      "covered": true
+    },
+    {
+      "path": "/v1/estudantes",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.outrasMatriculas.nomeRede",
+      "covered": false
+    },
+    {
+      "path": "/v1/estudantes",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.racaCor",
+      "covered": true
+    },
+    {
+      "path": "/v1/estudantes",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.matriculas.codigoMatriculaSgp",
+      "covered": true
+    },
+    {
+      "path": "/v1/estudantes",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.uf",
+      "covered": true
+    },
+    {
+      "path": "/v1/estudantes",
+      "method": "GET",
+      "status_code": "200",
+      "property": "pagination.count",
+      "covered": true
+    },
+    {
+      "path": "/v1/estudantes",
+      "method": "GET",
+      "status_code": "200",
+      "property": "pagination.links.previous",
+      "covered": true
+    },
+    {
+      "path": "/v1/estudantes",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.nome",
+      "covered": true
+    },
+    {
+      "path": "/v1/estudantes",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.numeroNIS",
+      "covered": true
+    },
+    {
+      "path": "/v1/estudantes",
+      "method": "GET",
+      "status_code": "200",
+      "property": "pagination.total_pages",
+      "covered": true
+    },
+    {
+      "path": "/v1/estudantes",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.matriculas.deletadaEm",
+      "covered": true
+    },
+    {
+      "path": "/v1/estudantes",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.outrasMatriculas.dataAtivacaoMatricula",
+      "covered": false
+    },
+    {
+      "path": "/v1/estudantes",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.tipoDeficiencia",
+      "covered": true
+    },
+    {
+      "path": "/v1/estudantes",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.matriculas.codInstituicao",
+      "covered": true
+    },
+    {
+      "path": "/v1/estudantes",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.cpfResponsavel",
+      "covered": true
+    },
+    {
+      "path": "/v1/estudantes",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.matriculas.dataFimOuAprovacao",
+      "covered": true
+    },
+    {
+      "path": "/v1/estudantes",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.matriculas.matriculaRede",
+      "covered": true
+    },
+    {
+      "path": "/v1/estudantes",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.matriculas.serieAno",
+      "covered": true
+    },
+    {
+      "path": "/v1/estudantes",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.matriculas.inep",
+      "covered": true
+    },
+    {
+      "path": "/v1/estudantes",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.outrasMatriculas.nomeMunicipio",
+      "covered": false
+    },
+    {
+      "path": "/v1/estudantes",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.id",
+      "covered": false
+    },
+    {
+      "path": "/v1/estudantes",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.matriculas.estudanteSituacaoFinal",
+      "covered": true
+    },
+    {
+      "path": "/v1/estudantes",
+      "method": "GET",
+      "status_code": "200",
+      "property": "message",
+      "covered": true
+    },
+    {
+      "path": "/v1/estudantes",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.outrasMatriculas.etapaEnsinoConsolidado",
+      "covered": false
+    },
+    {
+      "path": "/v1/estudantes",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.genero",
+      "covered": true
+    },
+    {
+      "path": "/v1/estudantes",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.cpf",
+      "covered": true
+    },
+    {
+      "path": "/v1/estudantes",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.outrasMatriculas.uf",
+      "covered": false
+    },
+    {
+      "path": "/v1/estudantes",
+      "method": "GET",
+      "status_code": "200",
+      "property": "pagination.total",
+      "covered": true
+    },
+    {
+      "path": "/v1/estudantes",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.matriculas.turmaOrganizacaoQuantidadeTotal",
+      "covered": true
+    },
+    {
+      "path": "/v1/estudantes",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.matriculas.estudanteIntegral",
+      "covered": true
+    },
+    {
+      "path": "/v1/estudantes",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.matriculas.estudanteAnoPeriodo",
+      "covered": true
+    },
+    {
+      "path": "/v1/estudantes",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.numeroNISResponsavel",
+      "covered": true
+    },
+    {
+      "path": "/v1/estudantes",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.situacaoCadastroValidado",
+      "covered": true
+    },
+    {
+      "path": "/v1/estudantes",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.dataNascimento",
+      "covered": true
+    },
+    {
+      "path": "/v1/estudantes",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.outrasMatriculas",
+      "covered": true
+    },
+    {
+      "path": "/v1/estudantes",
+      "method": "GET",
+      "status_code": "200",
+      "property": "success",
+      "covered": true
+    },
+    {
+      "path": "/v1/estudantes",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.matriculas.situacaoMatricula",
+      "covered": true
+    },
+    {
+      "path": "/v1/estudantes",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.rg",
+      "covered": true
+    },
+    {
+      "path": "/v1/estudantes",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.orgaoEmissor",
+      "covered": true
+    },
+    {
+      "path": "/v1/estudantes",
+      "method": "GET",
+      "status_code": "200",
+      "property": "pagination.current_page",
+      "covered": true
+    },
+    {
+      "path": "/v1/estudantes",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.outrasMatriculas.serieAno",
+      "covered": false
+    },
+    {
+      "path": "/v1/estudantes",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.nomeMaeEstudante",
+      "covered": true
+    },
+    {
+      "path": "/v1/estudantes",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.matriculas",
+      "covered": true
+    },
+    {
+      "path": "/v1/estudantes",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.matriculas.dataInicioMatricula",
+      "covered": true
+    },
+    {
+      "path": "/v1/estudantes",
+      "method": "GET",
+      "status_code": "200",
+      "property": "pagination.links",
+      "covered": false
+    },
+    {
+      "path": "/v1/estudantes",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.municipio",
+      "covered": true
+    },
+    {
+      "path": "/v1/estudantes",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.certidaoNascimento",
+      "covered": true
+    },
+    {
+      "path": "/v1/estudantes",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.matriculas.dataInicioPeriodoLetivo",
+      "covered": true
+    },
+    {
+      "path": "/v1/estudantes",
+      "method": "GET",
+      "status_code": "200",
+      "property": "pagination",
+      "covered": false
+    },
+    {
+      "path": "/v1/estudantes",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.email",
+      "covered": true
+    },
+    {
+      "path": "/v1/estudantes",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.telefone",
+      "covered": true
+    },
+    {
+      "path": "/v1/estudantes",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.cnh",
+      "covered": true
+    },
+    {
+      "path": "/v1/estudantes",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.nomeSocial",
+      "covered": true
+    },
+    {
+      "path": "/v1/estudantes",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.cep",
+      "covered": true
+    },
+    {
+      "path": "/v1/estudantes",
+      "method": "GET",
+      "status_code": "404",
+      "property": "data",
+      "covered": false
+    },
+    {
+      "path": "/v1/estudantes",
+      "method": "GET",
+      "status_code": "404",
+      "property": "errors.message",
+      "covered": false
+    },
+    {
+      "path": "/v1/estudantes",
+      "method": "GET",
+      "status_code": "404",
+      "property": "message",
+      "covered": false
+    },
+    {
+      "path": "/v1/estudantes",
+      "method": "GET",
+      "status_code": "404",
+      "property": "success",
+      "covered": false
+    },
+    {
+      "path": "/v1/estudantes",
+      "method": "GET",
+      "status_code": "404",
+      "property": "errors",
+      "covered": false
+    },
+    {
+      "path": "/v1/estudantes",
+      "method": "GET",
+      "status_code": "500",
+      "property": "data",
+      "covered": false
+    },
+    {
+      "path": "/v1/estudantes",
+      "method": "GET",
+      "status_code": "500",
+      "property": "errors.message",
+      "covered": true
+    },
+    {
+      "path": "/v1/estudantes",
+      "method": "GET",
+      "status_code": "500",
+      "property": "message",
+      "covered": true
+    },
+    {
+      "path": "/v1/estudantes",
+      "method": "GET",
+      "status_code": "500",
+      "property": "success",
+      "covered": true
+    },
+    {
+      "path": "/v1/estudantes",
+      "method": "GET",
+      "status_code": "500",
+      "property": "errors",
+      "covered": false
+    },
+    {
+      "path": "/v1/estudantes",
+      "method": "POST",
+      "status_code": "201",
+      "property": "matriculas.matriculaRede",
+      "covered": false
+    },
+    {
+      "path": "/v1/estudantes",
+      "method": "POST",
+      "status_code": "201",
+      "property": "numero",
+      "covered": false
+    },
+    {
+      "path": "/v1/estudantes",
+      "method": "POST",
+      "status_code": "201",
+      "property": "tipoDeficiencia",
+      "covered": false
+    },
+    {
+      "path": "/v1/estudantes",
+      "method": "POST",
+      "status_code": "201",
+      "property": "numeroNISResponsavel",
+      "covered": false
+    },
+    {
+      "path": "/v1/estudantes",
+      "method": "POST",
+      "status_code": "201",
+      "property": "matriculas",
+      "covered": false
+    },
+    {
+      "path": "/v1/estudantes",
+      "method": "POST",
+      "status_code": "201",
+      "property": "certidaoNascimento",
+      "covered": false
+    },
+    {
+      "path": "/v1/estudantes",
+      "method": "POST",
+      "status_code": "201",
+      "property": "dataNascimento",
+      "covered": false
+    },
+    {
+      "path": "/v1/estudantes",
+      "method": "POST",
+      "status_code": "201",
+      "property": "logradouro",
+      "covered": false
+    },
+    {
+      "path": "/v1/estudantes",
+      "method": "POST",
+      "status_code": "201",
+      "property": "cpf",
+      "covered": false
+    },
+    {
+      "path": "/v1/estudantes",
+      "method": "POST",
+      "status_code": "201",
+      "property": "matriculas.dataInicioPeriodoLetivo",
+      "covered": false
+    },
+    {
+      "path": "/v1/estudantes",
+      "method": "POST",
+      "status_code": "201",
+      "property": "matriculas.dataAtivacaoMatricula",
+      "covered": false
+    },
+    {
+      "path": "/v1/estudantes",
+      "method": "POST",
+      "status_code": "201",
+      "property": "bairro",
+      "covered": false
+    },
+    {
+      "path": "/v1/estudantes",
+      "method": "POST",
+      "status_code": "201",
+      "property": "racaCor",
+      "covered": false
+    },
+    {
+      "path": "/v1/estudantes",
+      "method": "POST",
+      "status_code": "201",
+      "property": "email",
+      "covered": false
+    },
+    {
+      "path": "/v1/estudantes",
+      "method": "POST",
+      "status_code": "201",
+      "property": "orgaoEmissor",
+      "covered": false
+    },
+    {
+      "path": "/v1/estudantes",
+      "method": "POST",
+      "status_code": "201",
+      "property": "matriculas.inep",
+      "covered": false
+    },
+    {
+      "path": "/v1/estudantes",
+      "method": "POST",
+      "status_code": "201",
+      "property": "matriculas.deletadaEm",
+      "covered": false
+    },
+    {
+      "path": "/v1/estudantes",
+      "method": "POST",
+      "status_code": "201",
+      "property": "matriculas.codInstituicao",
+      "covered": false
+    },
+    {
+      "path": "/v1/estudantes",
+      "method": "POST",
+      "status_code": "201",
+      "property": "matriculas.dataFimOuAprovacao",
+      "covered": false
+    },
+    {
+      "path": "/v1/estudantes",
+      "method": "POST",
+      "status_code": "201",
+      "property": "matriculas.estudanteSituacaoFinal",
+      "covered": false
+    },
+    {
+      "path": "/v1/estudantes",
+      "method": "POST",
+      "status_code": "201",
+      "property": "uf",
+      "covered": false
+    },
+    {
+      "path": "/v1/estudantes",
+      "method": "POST",
+      "status_code": "201",
+      "property": "matriculas.codigoMatriculaSgp",
+      "covered": false
+    },
+    {
+      "path": "/v1/estudantes",
+      "method": "POST",
+      "status_code": "201",
+      "property": "matriculas.etapaEnsinoConsolidado",
+      "covered": false
+    },
+    {
+      "path": "/v1/estudantes",
+      "method": "POST",
+      "status_code": "201",
+      "property": "situacaoCadastroValidado",
+      "covered": false
+    },
+    {
+      "path": "/v1/estudantes",
+      "method": "POST",
+      "status_code": "201",
+      "property": "id",
+      "covered": false
+    },
+    {
+      "path": "/v1/estudantes",
+      "method": "POST",
+      "status_code": "201",
+      "property": "matriculas.dataInicioMatricula",
+      "covered": false
+    },
+    {
+      "path": "/v1/estudantes",
+      "method": "POST",
+      "status_code": "201",
+      "property": "matriculas.turmaOrganizacaoQuantidadeTotal",
+      "covered": false
+    },
+    {
+      "path": "/v1/estudantes",
+      "method": "POST",
+      "status_code": "201",
+      "property": "nomeMaeEstudante",
+      "covered": false
+    },
+    {
+      "path": "/v1/estudantes",
+      "method": "POST",
+      "status_code": "201",
+      "property": "genero",
+      "covered": false
+    },
+    {
+      "path": "/v1/estudantes",
+      "method": "POST",
+      "status_code": "201",
+      "property": "rg",
+      "covered": false
+    },
+    {
+      "path": "/v1/estudantes",
+      "method": "POST",
+      "status_code": "201",
+      "property": "matriculas.estudanteIntegral",
+      "covered": false
+    },
+    {
+      "path": "/v1/estudantes",
+      "method": "POST",
+      "status_code": "201",
+      "property": "cep",
+      "covered": false
+    },
+    {
+      "path": "/v1/estudantes",
+      "method": "POST",
+      "status_code": "201",
+      "property": "matriculas.dataConclusaoEnsinoMedio",
+      "covered": false
+    },
+    {
+      "path": "/v1/estudantes",
+      "method": "POST",
+      "status_code": "201",
+      "property": "matriculas.estudantePpl",
+      "covered": false
+    },
+    {
+      "path": "/v1/estudantes",
+      "method": "POST",
+      "status_code": "201",
+      "property": "telefone",
+      "covered": false
+    },
+    {
+      "path": "/v1/estudantes",
+      "method": "POST",
+      "status_code": "201",
+      "property": "matriculas.estudanteAnoPeriodo",
+      "covered": false
+    },
+    {
+      "path": "/v1/estudantes",
+      "method": "POST",
+      "status_code": "201",
+      "property": "municipio",
+      "covered": false
+    },
+    {
+      "path": "/v1/estudantes",
+      "method": "POST",
+      "status_code": "201",
+      "property": "matriculas.formaOrganizacaoTurma",
+      "covered": false
+    },
+    {
+      "path": "/v1/estudantes",
+      "method": "POST",
+      "status_code": "201",
+      "property": "cnh",
+      "covered": false
+    },
+    {
+      "path": "/v1/estudantes",
+      "method": "POST",
+      "status_code": "201",
+      "property": "nomeSocial",
+      "covered": false
+    },
+    {
+      "path": "/v1/estudantes",
+      "method": "POST",
+      "status_code": "201",
+      "property": "cpfResponsavel",
+      "covered": false
+    },
+    {
+      "path": "/v1/estudantes",
+      "method": "POST",
+      "status_code": "201",
+      "property": "nome",
+      "covered": false
+    },
+    {
+      "path": "/v1/estudantes",
+      "method": "POST",
+      "status_code": "201",
+      "property": "matriculas.serieAno",
+      "covered": false
+    },
+    {
+      "path": "/v1/estudantes",
+      "method": "POST",
+      "status_code": "201",
+      "property": "numeroNIS",
+      "covered": false
+    },
+    {
+      "path": "/v1/estudantes",
+      "method": "POST",
+      "status_code": "201",
+      "property": "matriculas.situacaoMatricula",
+      "covered": false
+    },
+    {
+      "path": "/v1/estudantes",
+      "method": "POST",
+      "status_code": "422",
+      "property": "error",
+      "covered": false
+    },
+    {
+      "path": "/v1/estudantes",
+      "method": "POST",
+      "status_code": "422",
+      "property": "message",
+      "covered": false
+    },
+    {
+      "path": "/v1/estudantes/{cpfNis}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "matriculas.matriculaRede",
+      "covered": false
+    },
+    {
+      "path": "/v1/estudantes/{cpfNis}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "numero",
+      "covered": false
+    },
+    {
+      "path": "/v1/estudantes/{cpfNis}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "tipoDeficiencia",
+      "covered": false
+    },
+    {
+      "path": "/v1/estudantes/{cpfNis}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "numeroNISResponsavel",
+      "covered": false
+    },
+    {
+      "path": "/v1/estudantes/{cpfNis}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "matriculas",
+      "covered": false
+    },
+    {
+      "path": "/v1/estudantes/{cpfNis}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "certidaoNascimento",
+      "covered": false
+    },
+    {
+      "path": "/v1/estudantes/{cpfNis}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "dataNascimento",
+      "covered": false
+    },
+    {
+      "path": "/v1/estudantes/{cpfNis}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "logradouro",
+      "covered": false
+    },
+    {
+      "path": "/v1/estudantes/{cpfNis}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "cpf",
+      "covered": false
+    },
+    {
+      "path": "/v1/estudantes/{cpfNis}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "matriculas.dataInicioPeriodoLetivo",
+      "covered": false
+    },
+    {
+      "path": "/v1/estudantes/{cpfNis}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "matriculas.dataAtivacaoMatricula",
+      "covered": false
+    },
+    {
+      "path": "/v1/estudantes/{cpfNis}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "bairro",
+      "covered": false
+    },
+    {
+      "path": "/v1/estudantes/{cpfNis}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "racaCor",
+      "covered": false
+    },
+    {
+      "path": "/v1/estudantes/{cpfNis}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "email",
+      "covered": false
+    },
+    {
+      "path": "/v1/estudantes/{cpfNis}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "orgaoEmissor",
+      "covered": false
+    },
+    {
+      "path": "/v1/estudantes/{cpfNis}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "matriculas.inep",
+      "covered": false
+    },
+    {
+      "path": "/v1/estudantes/{cpfNis}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "matriculas.deletadaEm",
+      "covered": false
+    },
+    {
+      "path": "/v1/estudantes/{cpfNis}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "matriculas.codInstituicao",
+      "covered": false
+    },
+    {
+      "path": "/v1/estudantes/{cpfNis}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "matriculas.dataFimOuAprovacao",
+      "covered": false
+    },
+    {
+      "path": "/v1/estudantes/{cpfNis}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "matriculas.estudanteSituacaoFinal",
+      "covered": false
+    },
+    {
+      "path": "/v1/estudantes/{cpfNis}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "uf",
+      "covered": false
+    },
+    {
+      "path": "/v1/estudantes/{cpfNis}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "matriculas.codigoMatriculaSgp",
+      "covered": false
+    },
+    {
+      "path": "/v1/estudantes/{cpfNis}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "matriculas.etapaEnsinoConsolidado",
+      "covered": false
+    },
+    {
+      "path": "/v1/estudantes/{cpfNis}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "situacaoCadastroValidado",
+      "covered": false
+    },
+    {
+      "path": "/v1/estudantes/{cpfNis}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "id",
+      "covered": false
+    },
+    {
+      "path": "/v1/estudantes/{cpfNis}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "matriculas.dataInicioMatricula",
+      "covered": false
+    },
+    {
+      "path": "/v1/estudantes/{cpfNis}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "matriculas.turmaOrganizacaoQuantidadeTotal",
+      "covered": false
+    },
+    {
+      "path": "/v1/estudantes/{cpfNis}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "nomeMaeEstudante",
+      "covered": false
+    },
+    {
+      "path": "/v1/estudantes/{cpfNis}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "genero",
+      "covered": false
+    },
+    {
+      "path": "/v1/estudantes/{cpfNis}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "rg",
+      "covered": false
+    },
+    {
+      "path": "/v1/estudantes/{cpfNis}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "matriculas.estudanteIntegral",
+      "covered": false
+    },
+    {
+      "path": "/v1/estudantes/{cpfNis}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "cep",
+      "covered": false
+    },
+    {
+      "path": "/v1/estudantes/{cpfNis}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "matriculas.dataConclusaoEnsinoMedio",
+      "covered": false
+    },
+    {
+      "path": "/v1/estudantes/{cpfNis}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "matriculas.estudantePpl",
+      "covered": false
+    },
+    {
+      "path": "/v1/estudantes/{cpfNis}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "telefone",
+      "covered": false
+    },
+    {
+      "path": "/v1/estudantes/{cpfNis}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "matriculas.estudanteAnoPeriodo",
+      "covered": false
+    },
+    {
+      "path": "/v1/estudantes/{cpfNis}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "municipio",
+      "covered": false
+    },
+    {
+      "path": "/v1/estudantes/{cpfNis}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "matriculas.formaOrganizacaoTurma",
+      "covered": false
+    },
+    {
+      "path": "/v1/estudantes/{cpfNis}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "cnh",
+      "covered": false
+    },
+    {
+      "path": "/v1/estudantes/{cpfNis}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "nomeSocial",
+      "covered": false
+    },
+    {
+      "path": "/v1/estudantes/{cpfNis}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "cpfResponsavel",
+      "covered": false
+    },
+    {
+      "path": "/v1/estudantes/{cpfNis}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "nome",
+      "covered": false
+    },
+    {
+      "path": "/v1/estudantes/{cpfNis}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "matriculas.serieAno",
+      "covered": false
+    },
+    {
+      "path": "/v1/estudantes/{cpfNis}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "numeroNIS",
+      "covered": false
+    },
+    {
+      "path": "/v1/estudantes/{cpfNis}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "matriculas.situacaoMatricula",
+      "covered": false
+    },
+    {
+      "path": "/v1/estudantes/{cpfNis}",
+      "method": "GET",
+      "status_code": "404",
+      "property": "message",
+      "covered": true
+    },
+    {
+      "path": "/v1/estudantes/{cpfNis}",
+      "method": "GET",
+      "status_code": "404",
+      "property": "success",
+      "covered": true
+    },
+    {
+      "path": "/v1/estudantes/{cpfNis}",
+      "method": "GET",
+      "status_code": "500",
+      "property": "data",
+      "covered": false
+    },
+    {
+      "path": "/v1/estudantes/{cpfNis}",
+      "method": "GET",
+      "status_code": "500",
+      "property": "errors.message",
+      "covered": false
+    },
+    {
+      "path": "/v1/estudantes/{cpfNis}",
+      "method": "GET",
+      "status_code": "500",
+      "property": "message",
+      "covered": false
+    },
+    {
+      "path": "/v1/estudantes/{cpfNis}",
+      "method": "GET",
+      "status_code": "500",
+      "property": "success",
+      "covered": false
+    },
+    {
+      "path": "/v1/estudantes/{cpfNis}",
+      "method": "GET",
+      "status_code": "500",
+      "property": "errors",
+      "covered": false
+    },
+    {
+      "path": "/v1/estudantes/lote/{id}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.matriculas.dataConclusaoEnsinoMedio",
+      "covered": false
+    },
+    {
+      "path": "/v1/estudantes/lote/{id}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.logradouro",
+      "covered": false
+    },
+    {
+      "path": "/v1/estudantes/lote/{id}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.outrasMatriculas.codigoMatriculaSgp",
+      "covered": false
+    },
+    {
+      "path": "/v1/estudantes/lote/{id}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.matriculas.formaOrganizacaoTurma",
+      "covered": false
+    },
+    {
+      "path": "/v1/estudantes/lote/{id}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "pagination.per_page",
+      "covered": false
+    },
+    {
+      "path": "/v1/estudantes/lote/{id}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "errors",
+      "covered": false
+    },
+    {
+      "path": "/v1/estudantes/lote/{id}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "pagination.links.next",
+      "covered": false
+    },
+    {
+      "path": "/v1/estudantes/lote/{id}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.matriculas.etapaEnsinoConsolidado",
+      "covered": false
+    },
+    {
+      "path": "/v1/estudantes/lote/{id}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data",
+      "covered": false
+    },
+    {
+      "path": "/v1/estudantes/lote/{id}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.matriculas.dataAtivacaoMatricula",
+      "covered": false
+    },
+    {
+      "path": "/v1/estudantes/lote/{id}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.matriculas.estudantePpl",
+      "covered": false
+    },
+    {
+      "path": "/v1/estudantes/lote/{id}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.numero",
+      "covered": false
+    },
+    {
+      "path": "/v1/estudantes/lote/{id}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.bairro",
+      "covered": false
+    },
+    {
+      "path": "/v1/estudantes/lote/{id}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.outrasMatriculas.nomeRede",
+      "covered": false
+    },
+    {
+      "path": "/v1/estudantes/lote/{id}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.racaCor",
+      "covered": false
+    },
+    {
+      "path": "/v1/estudantes/lote/{id}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.matriculas.codigoMatriculaSgp",
+      "covered": false
+    },
+    {
+      "path": "/v1/estudantes/lote/{id}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.uf",
+      "covered": false
+    },
+    {
+      "path": "/v1/estudantes/lote/{id}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "pagination.count",
+      "covered": false
+    },
+    {
+      "path": "/v1/estudantes/lote/{id}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "pagination.links.previous",
+      "covered": false
+    },
+    {
+      "path": "/v1/estudantes/lote/{id}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.nome",
+      "covered": false
+    },
+    {
+      "path": "/v1/estudantes/lote/{id}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.numeroNIS",
+      "covered": false
+    },
+    {
+      "path": "/v1/estudantes/lote/{id}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "pagination.total_pages",
+      "covered": false
+    },
+    {
+      "path": "/v1/estudantes/lote/{id}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.matriculas.deletadaEm",
+      "covered": false
+    },
+    {
+      "path": "/v1/estudantes/lote/{id}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.outrasMatriculas.dataAtivacaoMatricula",
+      "covered": false
+    },
+    {
+      "path": "/v1/estudantes/lote/{id}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.tipoDeficiencia",
+      "covered": false
+    },
+    {
+      "path": "/v1/estudantes/lote/{id}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.matriculas.codInstituicao",
+      "covered": false
+    },
+    {
+      "path": "/v1/estudantes/lote/{id}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.cpfResponsavel",
+      "covered": false
+    },
+    {
+      "path": "/v1/estudantes/lote/{id}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.matriculas.dataFimOuAprovacao",
+      "covered": false
+    },
+    {
+      "path": "/v1/estudantes/lote/{id}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.matriculas.matriculaRede",
+      "covered": false
+    },
+    {
+      "path": "/v1/estudantes/lote/{id}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.matriculas.serieAno",
+      "covered": false
+    },
+    {
+      "path": "/v1/estudantes/lote/{id}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.matriculas.inep",
+      "covered": false
+    },
+    {
+      "path": "/v1/estudantes/lote/{id}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.outrasMatriculas.nomeMunicipio",
+      "covered": false
+    },
+    {
+      "path": "/v1/estudantes/lote/{id}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.id",
+      "covered": false
+    },
+    {
+      "path": "/v1/estudantes/lote/{id}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "status_processamento",
+      "covered": true
+    },
+    {
+      "path": "/v1/estudantes/lote/{id}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.matriculas.estudanteSituacaoFinal",
+      "covered": false
+    },
+    {
+      "path": "/v1/estudantes/lote/{id}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.outrasMatriculas.etapaEnsinoConsolidado",
+      "covered": false
+    },
+    {
+      "path": "/v1/estudantes/lote/{id}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.genero",
+      "covered": false
+    },
+    {
+      "path": "/v1/estudantes/lote/{id}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.cpf",
+      "covered": false
+    },
+    {
+      "path": "/v1/estudantes/lote/{id}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.outrasMatriculas.uf",
+      "covered": false
+    },
+    {
+      "path": "/v1/estudantes/lote/{id}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "pagination.total",
+      "covered": false
+    },
+    {
+      "path": "/v1/estudantes/lote/{id}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.matriculas.turmaOrganizacaoQuantidadeTotal",
+      "covered": false
+    },
+    {
+      "path": "/v1/estudantes/lote/{id}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.matriculas.estudanteIntegral",
+      "covered": false
+    },
+    {
+      "path": "/v1/estudantes/lote/{id}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.matriculas.estudanteAnoPeriodo",
+      "covered": false
+    },
+    {
+      "path": "/v1/estudantes/lote/{id}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.numeroNISResponsavel",
+      "covered": false
+    },
+    {
+      "path": "/v1/estudantes/lote/{id}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.situacaoCadastroValidado",
+      "covered": false
+    },
+    {
+      "path": "/v1/estudantes/lote/{id}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.dataNascimento",
+      "covered": false
+    },
+    {
+      "path": "/v1/estudantes/lote/{id}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.outrasMatriculas",
+      "covered": false
+    },
+    {
+      "path": "/v1/estudantes/lote/{id}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.matriculas.situacaoMatricula",
+      "covered": false
+    },
+    {
+      "path": "/v1/estudantes/lote/{id}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.rg",
+      "covered": false
+    },
+    {
+      "path": "/v1/estudantes/lote/{id}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.orgaoEmissor",
+      "covered": false
+    },
+    {
+      "path": "/v1/estudantes/lote/{id}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "pagination.current_page",
+      "covered": false
+    },
+    {
+      "path": "/v1/estudantes/lote/{id}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.outrasMatriculas.serieAno",
+      "covered": false
+    },
+    {
+      "path": "/v1/estudantes/lote/{id}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.nomeMaeEstudante",
+      "covered": false
+    },
+    {
+      "path": "/v1/estudantes/lote/{id}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.matriculas",
+      "covered": false
+    },
+    {
+      "path": "/v1/estudantes/lote/{id}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.matriculas.dataInicioMatricula",
+      "covered": false
+    },
+    {
+      "path": "/v1/estudantes/lote/{id}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "pagination.links",
+      "covered": false
+    },
+    {
+      "path": "/v1/estudantes/lote/{id}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.municipio",
+      "covered": false
+    },
+    {
+      "path": "/v1/estudantes/lote/{id}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.certidaoNascimento",
+      "covered": false
+    },
+    {
+      "path": "/v1/estudantes/lote/{id}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.matriculas.dataInicioPeriodoLetivo",
+      "covered": false
+    },
+    {
+      "path": "/v1/estudantes/lote/{id}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "pagination",
+      "covered": false
+    },
+    {
+      "path": "/v1/estudantes/lote/{id}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.email",
+      "covered": false
+    },
+    {
+      "path": "/v1/estudantes/lote/{id}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.telefone",
+      "covered": false
+    },
+    {
+      "path": "/v1/estudantes/lote/{id}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.cnh",
+      "covered": false
+    },
+    {
+      "path": "/v1/estudantes/lote/{id}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.nomeSocial",
+      "covered": false
+    },
+    {
+      "path": "/v1/estudantes/lote/{id}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.cep",
+      "covered": false
+    },
+    {
+      "path": "/v1/estudantes/lote/{id}",
+      "method": "GET",
+      "status_code": "400",
+      "property": "message",
+      "covered": true
+    },
+    {
+      "path": "/v1/estudantes/lote/{id}",
+      "method": "GET",
+      "status_code": "500",
+      "property": "message",
+      "covered": true
+    },
+    {
+      "path": "/v1/estudantes/lote/{id}",
+      "method": "GET",
+      "status_code": "500",
+      "property": "success",
+      "covered": true
+    },
+    {
+      "path": "/v1/estudantes/lote/{id}/erros",
+      "method": "GET",
+      "status_code": "200",
+      "property": "pagination.current_page",
+      "covered": false
+    },
+    {
+      "path": "/v1/estudantes/lote/{id}/erros",
+      "method": "GET",
+      "status_code": "200",
+      "property": "errors.cpf",
+      "covered": false
+    },
+    {
+      "path": "/v1/estudantes/lote/{id}/erros",
+      "method": "GET",
+      "status_code": "200",
+      "property": "status_processamento",
+      "covered": false
+    },
+    {
+      "path": "/v1/estudantes/lote/{id}/erros",
+      "method": "GET",
+      "status_code": "200",
+      "property": "errors.numeroNIS",
+      "covered": false
+    },
+    {
+      "path": "/v1/estudantes/lote/{id}/erros",
+      "method": "GET",
+      "status_code": "200",
+      "property": "pagination.per_page",
+      "covered": false
+    },
+    {
+      "path": "/v1/estudantes/lote/{id}/erros",
+      "method": "GET",
+      "status_code": "200",
+      "property": "pagination.total",
+      "covered": false
+    },
+    {
+      "path": "/v1/estudantes/lote/{id}/erros",
+      "method": "GET",
+      "status_code": "200",
+      "property": "errors",
+      "covered": false
+    },
+    {
+      "path": "/v1/estudantes/lote/{id}/erros",
+      "method": "GET",
+      "status_code": "200",
+      "property": "pagination.count",
+      "covered": false
+    },
+    {
+      "path": "/v1/estudantes/lote/{id}/erros",
+      "method": "GET",
+      "status_code": "200",
+      "property": "pagination.links",
+      "covered": false
+    },
+    {
+      "path": "/v1/estudantes/lote/{id}/erros",
+      "method": "GET",
+      "status_code": "200",
+      "property": "pagination.links.previous",
+      "covered": false
+    },
+    {
+      "path": "/v1/estudantes/lote/{id}/erros",
+      "method": "GET",
+      "status_code": "200",
+      "property": "pagination.links.next",
+      "covered": false
+    },
+    {
+      "path": "/v1/estudantes/lote/{id}/erros",
+      "method": "GET",
+      "status_code": "200",
+      "property": "pagination.total_pages",
+      "covered": false
+    },
+    {
+      "path": "/v1/estudantes/lote/{id}/erros",
+      "method": "GET",
+      "status_code": "200",
+      "property": "errors.erro",
+      "covered": false
+    },
+    {
+      "path": "/v1/estudantes/lote/{id}/erros",
+      "method": "GET",
+      "status_code": "200",
+      "property": "errors.nome",
+      "covered": false
+    },
+    {
+      "path": "/v1/estudantes/lote/{id}/erros",
+      "method": "GET",
+      "status_code": "200",
+      "property": "pagination",
+      "covered": false
+    },
+    {
+      "path": "/v1/estudantes/lote/{id}/erros",
+      "method": "GET",
+      "status_code": "500",
+      "property": "message",
+      "covered": true
+    },
+    {
+      "path": "/v1/estudantes/lote/{id}/erros",
+      "method": "GET",
+      "status_code": "500",
+      "property": "errors",
+      "covered": false
+    },
+    {
+      "path": "/v1/estudantes/lote/{id}/erros",
+      "method": "GET",
+      "status_code": "500",
+      "property": "data",
+      "covered": false
+    },
+    {
+      "path": "/v1/estudantes/lote/{id}/erros",
+      "method": "GET",
+      "status_code": "500",
+      "property": "errors.message",
+      "covered": true
+    },
+    {
+      "path": "/v1/estudantes/lote/{id}/erros",
+      "method": "GET",
+      "status_code": "500",
+      "property": "success",
+      "covered": true
+    },
+    {
+      "path": "/v1/estudantes/lote",
+      "method": "GET",
+      "status_code": "200",
+      "property": "pagination.current_page",
+      "covered": true
+    },
+    {
+      "path": "/v1/estudantes/lote",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.id",
+      "covered": false
+    },
+    {
+      "path": "/v1/estudantes/lote",
+      "method": "GET",
+      "status_code": "200",
+      "property": "pagination.per_page",
+      "covered": true
+    },
+    {
+      "path": "/v1/estudantes/lote",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.status_processamento",
+      "covered": true
+    },
+    {
+      "path": "/v1/estudantes/lote",
+      "method": "GET",
+      "status_code": "200",
+      "property": "pagination.total",
+      "covered": true
+    },
+    {
+      "path": "/v1/estudantes/lote",
+      "method": "GET",
+      "status_code": "200",
+      "property": "pagination.count",
+      "covered": true
+    },
+    {
+      "path": "/v1/estudantes/lote",
+      "method": "GET",
+      "status_code": "200",
+      "property": "pagination.links",
+      "covered": false
+    },
+    {
+      "path": "/v1/estudantes/lote",
+      "method": "GET",
+      "status_code": "200",
+      "property": "pagination.links.previous",
+      "covered": true
+    },
+    {
+      "path": "/v1/estudantes/lote",
+      "method": "GET",
+      "status_code": "200",
+      "property": "pagination.links.next",
+      "covered": true
+    },
+    {
+      "path": "/v1/estudantes/lote",
+      "method": "GET",
+      "status_code": "200",
+      "property": "pagination.total_pages",
+      "covered": true
+    },
+    {
+      "path": "/v1/estudantes/lote",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data",
+      "covered": true
+    },
+    {
+      "path": "/v1/estudantes/lote",
+      "method": "GET",
+      "status_code": "200",
+      "property": "pagination",
+      "covered": false
+    },
+    {
+      "path": "/v1/estudantes/lote",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.dataEnvio",
+      "covered": true
+    },
+    {
+      "path": "/v1/estudantes/lote",
+      "method": "GET",
+      "status_code": "500",
+      "property": "message",
+      "covered": false
+    },
+    {
+      "path": "/v1/estudantes/lote",
+      "method": "GET",
+      "status_code": "500",
+      "property": "errors",
+      "covered": false
+    },
+    {
+      "path": "/v1/estudantes/lote",
+      "method": "GET",
+      "status_code": "500",
+      "property": "data",
+      "covered": false
+    },
+    {
+      "path": "/v1/estudantes/lote",
+      "method": "GET",
+      "status_code": "500",
+      "property": "errors.message",
+      "covered": false
+    },
+    {
+      "path": "/v1/estudantes/lote",
+      "method": "GET",
+      "status_code": "500",
+      "property": "success",
+      "covered": false
+    },
+    {
+      "path": "/v1/estudantes/lote",
+      "method": "POST",
+      "status_code": "201",
+      "property": "message",
+      "covered": true
+    },
+    {
+      "path": "/v1/estudantes/lote",
+      "method": "POST",
+      "status_code": "201",
+      "property": "success",
+      "covered": true
+    },
+    {
+      "path": "/v1/estudantes/lote",
+      "method": "POST",
+      "status_code": "201",
+      "property": "id",
+      "covered": true
+    },
+    {
+      "path": "/v1/estudantes/lote",
+      "method": "POST",
+      "status_code": "422",
+      "property": "message",
+      "covered": false
+    },
+    {
+      "path": "/v1/estudantes/lote",
+      "method": "POST",
+      "status_code": "422",
+      "property": "success",
+      "covered": false
+    },
+    {
+      "path": "/v1/estudantes/lote",
+      "method": "POST",
+      "status_code": "500",
+      "property": "message",
+      "covered": true
+    },
+    {
+      "path": "/v1/estudantes/lote",
+      "method": "POST",
+      "status_code": "500",
+      "property": "success",
+      "covered": true
+    },
+    {
+      "path": "/v1/estudantes/lote",
+      "method": "PATCH",
+      "status_code": "200",
+      "property": "id",
+      "covered": false
+    },
+    {
+      "path": "/v1/estudantes/lote",
+      "method": "PATCH",
+      "status_code": "200",
+      "property": "message",
+      "covered": true
+    },
+    {
+      "path": "/v1/estudantes/lote",
+      "method": "PATCH",
+      "status_code": "200",
+      "property": "errors",
+      "covered": false
+    },
+    {
+      "path": "/v1/estudantes/lote",
+      "method": "PATCH",
+      "status_code": "200",
+      "property": "detalhesValidacao",
+      "covered": true
+    },
+    {
+      "path": "/v1/estudantes/lote",
+      "method": "PATCH",
+      "status_code": "200",
+      "property": "success",
+      "covered": true
+    },
+    {
+      "path": "/v1/estudantes/lote",
+      "method": "PATCH",
+      "status_code": "422",
+      "property": "data",
+      "covered": false
+    },
+    {
+      "path": "/v1/estudantes/lote",
+      "method": "PATCH",
+      "status_code": "422",
+      "property": "errors.message",
+      "covered": true
+    },
+    {
+      "path": "/v1/estudantes/lote",
+      "method": "PATCH",
+      "status_code": "422",
+      "property": "message",
+      "covered": true
+    },
+    {
+      "path": "/v1/estudantes/lote",
+      "method": "PATCH",
+      "status_code": "422",
+      "property": "success",
+      "covered": true
+    },
+    {
+      "path": "/v1/estudantes/lote",
+      "method": "PATCH",
+      "status_code": "422",
+      "property": "errors",
+      "covered": false
+    },
+    {
+      "path": "/v1/estudantes/inep/{inep}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.matriculas.dataConclusaoEnsinoMedio",
+      "covered": true
+    },
+    {
+      "path": "/v1/estudantes/inep/{inep}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.logradouro",
+      "covered": true
+    },
+    {
+      "path": "/v1/estudantes/inep/{inep}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.matriculas.formaOrganizacaoTurma",
+      "covered": true
+    },
+    {
+      "path": "/v1/estudantes/inep/{inep}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "pagination.per_page",
+      "covered": true
+    },
+    {
+      "path": "/v1/estudantes/inep/{inep}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "pagination.links.next",
+      "covered": true
+    },
+    {
+      "path": "/v1/estudantes/inep/{inep}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.matriculas.etapaEnsinoConsolidado",
+      "covered": true
+    },
+    {
+      "path": "/v1/estudantes/inep/{inep}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data",
+      "covered": true
+    },
+    {
+      "path": "/v1/estudantes/inep/{inep}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.matriculas.dataAtivacaoMatricula",
+      "covered": true
+    },
+    {
+      "path": "/v1/estudantes/inep/{inep}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.matriculas.estudantePpl",
+      "covered": true
+    },
+    {
+      "path": "/v1/estudantes/inep/{inep}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.numero",
+      "covered": true
+    },
+    {
+      "path": "/v1/estudantes/inep/{inep}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.bairro",
+      "covered": true
+    },
+    {
+      "path": "/v1/estudantes/inep/{inep}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.racaCor",
+      "covered": true
+    },
+    {
+      "path": "/v1/estudantes/inep/{inep}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.matriculas.codigoMatriculaSgp",
+      "covered": true
+    },
+    {
+      "path": "/v1/estudantes/inep/{inep}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.uf",
+      "covered": true
+    },
+    {
+      "path": "/v1/estudantes/inep/{inep}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "pagination.count",
+      "covered": true
+    },
+    {
+      "path": "/v1/estudantes/inep/{inep}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "pagination.links.previous",
+      "covered": true
+    },
+    {
+      "path": "/v1/estudantes/inep/{inep}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.nome",
+      "covered": true
+    },
+    {
+      "path": "/v1/estudantes/inep/{inep}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.numeroNIS",
+      "covered": true
+    },
+    {
+      "path": "/v1/estudantes/inep/{inep}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "pagination.total_pages",
+      "covered": true
+    },
+    {
+      "path": "/v1/estudantes/inep/{inep}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.matriculas.deletadaEm",
+      "covered": true
+    },
+    {
+      "path": "/v1/estudantes/inep/{inep}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.tipoDeficiencia",
+      "covered": true
+    },
+    {
+      "path": "/v1/estudantes/inep/{inep}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.matriculas.codInstituicao",
+      "covered": true
+    },
+    {
+      "path": "/v1/estudantes/inep/{inep}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.cpfResponsavel",
+      "covered": true
+    },
+    {
+      "path": "/v1/estudantes/inep/{inep}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.matriculas.dataFimOuAprovacao",
+      "covered": true
+    },
+    {
+      "path": "/v1/estudantes/inep/{inep}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.matriculas.matriculaRede",
+      "covered": true
+    },
+    {
+      "path": "/v1/estudantes/inep/{inep}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.matriculas.serieAno",
+      "covered": true
+    },
+    {
+      "path": "/v1/estudantes/inep/{inep}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.matriculas.inep",
+      "covered": true
+    },
+    {
+      "path": "/v1/estudantes/inep/{inep}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.id",
+      "covered": false
+    },
+    {
+      "path": "/v1/estudantes/inep/{inep}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.matriculas.estudanteSituacaoFinal",
+      "covered": true
+    },
+    {
+      "path": "/v1/estudantes/inep/{inep}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.genero",
+      "covered": true
+    },
+    {
+      "path": "/v1/estudantes/inep/{inep}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.cpf",
+      "covered": true
+    },
+    {
+      "path": "/v1/estudantes/inep/{inep}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "pagination.total",
+      "covered": true
+    },
+    {
+      "path": "/v1/estudantes/inep/{inep}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.matriculas.turmaOrganizacaoQuantidadeTotal",
+      "covered": true
+    },
+    {
+      "path": "/v1/estudantes/inep/{inep}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.matriculas.estudanteIntegral",
+      "covered": true
+    },
+    {
+      "path": "/v1/estudantes/inep/{inep}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.matriculas.estudanteAnoPeriodo",
+      "covered": true
+    },
+    {
+      "path": "/v1/estudantes/inep/{inep}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.numeroNISResponsavel",
+      "covered": true
+    },
+    {
+      "path": "/v1/estudantes/inep/{inep}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.situacaoCadastroValidado",
+      "covered": true
+    },
+    {
+      "path": "/v1/estudantes/inep/{inep}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.dataNascimento",
+      "covered": true
+    },
+    {
+      "path": "/v1/estudantes/inep/{inep}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.matriculas.situacaoMatricula",
+      "covered": true
+    },
+    {
+      "path": "/v1/estudantes/inep/{inep}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.rg",
+      "covered": true
+    },
+    {
+      "path": "/v1/estudantes/inep/{inep}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.orgaoEmissor",
+      "covered": true
+    },
+    {
+      "path": "/v1/estudantes/inep/{inep}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "pagination.current_page",
+      "covered": true
+    },
+    {
+      "path": "/v1/estudantes/inep/{inep}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.nomeMaeEstudante",
+      "covered": true
+    },
+    {
+      "path": "/v1/estudantes/inep/{inep}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.matriculas",
+      "covered": true
+    },
+    {
+      "path": "/v1/estudantes/inep/{inep}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.matriculas.dataInicioMatricula",
+      "covered": true
+    },
+    {
+      "path": "/v1/estudantes/inep/{inep}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "pagination.links",
+      "covered": false
+    },
+    {
+      "path": "/v1/estudantes/inep/{inep}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.municipio",
+      "covered": true
+    },
+    {
+      "path": "/v1/estudantes/inep/{inep}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.certidaoNascimento",
+      "covered": true
+    },
+    {
+      "path": "/v1/estudantes/inep/{inep}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.matriculas.dataInicioPeriodoLetivo",
+      "covered": true
+    },
+    {
+      "path": "/v1/estudantes/inep/{inep}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "pagination",
+      "covered": false
+    },
+    {
+      "path": "/v1/estudantes/inep/{inep}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.email",
+      "covered": true
+    },
+    {
+      "path": "/v1/estudantes/inep/{inep}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.telefone",
+      "covered": true
+    },
+    {
+      "path": "/v1/estudantes/inep/{inep}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.cnh",
+      "covered": true
+    },
+    {
+      "path": "/v1/estudantes/inep/{inep}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.nomeSocial",
+      "covered": true
+    },
+    {
+      "path": "/v1/estudantes/inep/{inep}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.cep",
+      "covered": true
+    },
+    {
+      "path": "/v1/estudantes/inep/{inep}",
+      "method": "GET",
+      "status_code": "500",
+      "property": "message",
+      "covered": true
+    },
+    {
+      "path": "/v1/estudantes/inep/{inep}",
+      "method": "GET",
+      "status_code": "500",
+      "property": "errors",
+      "covered": false
+    },
+    {
+      "path": "/v1/estudantes/inep/{inep}",
+      "method": "GET",
+      "status_code": "500",
+      "property": "data",
+      "covered": false
+    },
+    {
+      "path": "/v1/estudantes/inep/{inep}",
+      "method": "GET",
+      "status_code": "500",
+      "property": "errors.message",
+      "covered": true
+    },
+    {
+      "path": "/v1/estudantes/inep/{inep}",
+      "method": "GET",
+      "status_code": "500",
+      "property": "success",
+      "covered": true
+    },
+    {
+      "path": "/v1/estudantes/solicitacoes-alteracoes",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.nomeValidado",
+      "covered": true
+    },
+    {
+      "path": "/v1/estudantes/solicitacoes-alteracoes",
+      "method": "GET",
+      "status_code": "200",
+      "property": "pagination.per_page",
+      "covered": true
+    },
+    {
+      "path": "/v1/estudantes/solicitacoes-alteracoes",
+      "method": "GET",
+      "status_code": "200",
+      "property": "pagination.total",
+      "covered": true
+    },
+    {
+      "path": "/v1/estudantes/solicitacoes-alteracoes",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.tipoSituacaoCpf",
+      "covered": true
+    },
+    {
+      "path": "/v1/estudantes/solicitacoes-alteracoes",
+      "method": "GET",
+      "status_code": "200",
+      "property": "pagination.links.next",
+      "covered": true
+    },
+    {
+      "path": "/v1/estudantes/solicitacoes-alteracoes",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.cpfAtual",
+      "covered": true
+    },
+    {
+      "path": "/v1/estudantes/solicitacoes-alteracoes",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.nomeMaeEstudanteNovo",
+      "covered": true
+    },
+    {
+      "path": "/v1/estudantes/solicitacoes-alteracoes",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.nomeMaeEstudanteValidado",
+      "covered": true
+    },
+    {
+      "path": "/v1/estudantes/solicitacoes-alteracoes",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data",
+      "covered": true
+    },
+    {
+      "path": "/v1/estudantes/solicitacoes-alteracoes",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.nomeMaeEstudanteAtual",
+      "covered": true
+    },
+    {
+      "path": "/v1/estudantes/solicitacoes-alteracoes",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.cpfNovo",
+      "covered": true
+    },
+    {
+      "path": "/v1/estudantes/solicitacoes-alteracoes",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.descricaoSituacaoCpf",
+      "covered": true
+    },
+    {
+      "path": "/v1/estudantes/solicitacoes-alteracoes",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.situacaoCpf",
+      "covered": true
+    },
+    {
+      "path": "/v1/estudantes/solicitacoes-alteracoes",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.dataNascimentoNovo",
+      "covered": true
+    },
+    {
+      "path": "/v1/estudantes/solicitacoes-alteracoes",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.dataValidacaoCadastral",
+      "covered": true
+    },
+    {
+      "path": "/v1/estudantes/solicitacoes-alteracoes",
+      "method": "GET",
+      "status_code": "200",
+      "property": "pagination.current_page",
+      "covered": true
+    },
+    {
+      "path": "/v1/estudantes/solicitacoes-alteracoes",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.nomeNovo",
+      "covered": true
+    },
+    {
+      "path": "/v1/estudantes/solicitacoes-alteracoes",
+      "method": "GET",
+      "status_code": "200",
+      "property": "pagination.count",
+      "covered": true
+    },
+    {
+      "path": "/v1/estudantes/solicitacoes-alteracoes",
+      "method": "GET",
+      "status_code": "200",
+      "property": "pagination.links",
+      "covered": false
+    },
+    {
+      "path": "/v1/estudantes/solicitacoes-alteracoes",
+      "method": "GET",
+      "status_code": "200",
+      "property": "pagination.links.previous",
+      "covered": true
+    },
+    {
+      "path": "/v1/estudantes/solicitacoes-alteracoes",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.dataNascimentoValidada",
+      "covered": true
+    },
+    {
+      "path": "/v1/estudantes/solicitacoes-alteracoes",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.dataNascimentoAtual",
+      "covered": true
+    },
+    {
+      "path": "/v1/estudantes/solicitacoes-alteracoes",
+      "method": "GET",
+      "status_code": "200",
+      "property": "pagination.total_pages",
+      "covered": true
+    },
+    {
+      "path": "/v1/estudantes/solicitacoes-alteracoes",
+      "method": "GET",
+      "status_code": "200",
+      "property": "pagination",
+      "covered": false
+    },
+    {
+      "path": "/v1/estudantes/solicitacoes-alteracoes",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.nomeAtual",
+      "covered": true
+    },
+    {
+      "path": "/v1/estudantes/solicitacoes-alteracoes",
+      "method": "GET",
+      "status_code": "500",
+      "property": "data",
+      "covered": false
+    },
+    {
+      "path": "/v1/estudantes/solicitacoes-alteracoes",
+      "method": "GET",
+      "status_code": "500",
+      "property": "errors.message",
+      "covered": false
+    },
+    {
+      "path": "/v1/estudantes/solicitacoes-alteracoes",
+      "method": "GET",
+      "status_code": "500",
+      "property": "message",
+      "covered": false
+    },
+    {
+      "path": "/v1/estudantes/solicitacoes-alteracoes",
+      "method": "GET",
+      "status_code": "500",
+      "property": "success",
+      "covered": false
+    },
+    {
+      "path": "/v1/estudantes/solicitacoes-alteracoes",
+      "method": "GET",
+      "status_code": "500",
+      "property": "errors",
+      "covered": false
+    },
+    {
+      "path": "/v1/estudantes/validacao-cadastro",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.nomeValidado",
+      "covered": true
+    },
+    {
+      "path": "/v1/estudantes/validacao-cadastro",
+      "method": "GET",
+      "status_code": "200",
+      "property": "pagination.per_page",
+      "covered": true
+    },
+    {
+      "path": "/v1/estudantes/validacao-cadastro",
+      "method": "GET",
+      "status_code": "200",
+      "property": "pagination.total",
+      "covered": true
+    },
+    {
+      "path": "/v1/estudantes/validacao-cadastro",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.cpf",
+      "covered": true
+    },
+    {
+      "path": "/v1/estudantes/validacao-cadastro",
+      "method": "GET",
+      "status_code": "200",
+      "property": "pagination.links.next",
+      "covered": true
+    },
+    {
+      "path": "/v1/estudantes/validacao-cadastro",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.nomeMaeEstudanteValidado",
+      "covered": true
+    },
+    {
+      "path": "/v1/estudantes/validacao-cadastro",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data",
+      "covered": true
+    },
+    {
+      "path": "/v1/estudantes/validacao-cadastro",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.situacaoCadastral",
+      "covered": true
+    },
+    {
+      "path": "/v1/estudantes/validacao-cadastro",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.situacaoCpf",
+      "covered": true
+    },
+    {
+      "path": "/v1/estudantes/validacao-cadastro",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.dataNascimento",
+      "covered": true
+    },
+    {
+      "path": "/v1/estudantes/validacao-cadastro",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.dataValidacaoCadastral",
+      "covered": true
+    },
+    {
+      "path": "/v1/estudantes/validacao-cadastro",
+      "method": "GET",
+      "status_code": "200",
+      "property": "pagination.current_page",
+      "covered": true
+    },
+    {
+      "path": "/v1/estudantes/validacao-cadastro",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.nomeMaeEstudante",
+      "covered": true
+    },
+    {
+      "path": "/v1/estudantes/validacao-cadastro",
+      "method": "GET",
+      "status_code": "200",
+      "property": "pagination.count",
+      "covered": true
+    },
+    {
+      "path": "/v1/estudantes/validacao-cadastro",
+      "method": "GET",
+      "status_code": "200",
+      "property": "pagination.links",
+      "covered": false
+    },
+    {
+      "path": "/v1/estudantes/validacao-cadastro",
+      "method": "GET",
+      "status_code": "200",
+      "property": "pagination.links.previous",
+      "covered": true
+    },
+    {
+      "path": "/v1/estudantes/validacao-cadastro",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.nome",
+      "covered": true
+    },
+    {
+      "path": "/v1/estudantes/validacao-cadastro",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.numeroNIS",
+      "covered": true
+    },
+    {
+      "path": "/v1/estudantes/validacao-cadastro",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.dataNascimentoValidada",
+      "covered": true
+    },
+    {
+      "path": "/v1/estudantes/validacao-cadastro",
+      "method": "GET",
+      "status_code": "200",
+      "property": "pagination.total_pages",
+      "covered": true
+    },
+    {
+      "path": "/v1/estudantes/validacao-cadastro",
+      "method": "GET",
+      "status_code": "200",
+      "property": "pagination",
+      "covered": false
+    },
+    {
+      "path": "/v1/estudantes/validacao-cadastro",
+      "method": "GET",
+      "status_code": "500",
+      "property": "data",
+      "covered": false
+    },
+    {
+      "path": "/v1/estudantes/validacao-cadastro",
+      "method": "GET",
+      "status_code": "500",
+      "property": "errors.message",
+      "covered": false
+    },
+    {
+      "path": "/v1/estudantes/validacao-cadastro",
+      "method": "GET",
+      "status_code": "500",
+      "property": "message",
+      "covered": false
+    },
+    {
+      "path": "/v1/estudantes/validacao-cadastro",
+      "method": "GET",
+      "status_code": "500",
+      "property": "success",
+      "covered": false
+    },
+    {
+      "path": "/v1/estudantes/validacao-cadastro",
+      "method": "GET",
+      "status_code": "500",
+      "property": "errors",
+      "covered": false
+    },
+    {
+      "path": "/v1/profissionais/lote",
+      "method": "GET",
+      "status_code": "200",
+      "property": "pagination.current_page",
+      "covered": true
+    },
+    {
+      "path": "/v1/profissionais/lote",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.id",
+      "covered": false
+    },
+    {
+      "path": "/v1/profissionais/lote",
+      "method": "GET",
+      "status_code": "200",
+      "property": "message",
+      "covered": true
+    },
+    {
+      "path": "/v1/profissionais/lote",
+      "method": "GET",
+      "status_code": "200",
+      "property": "pagination.per_page",
+      "covered": true
+    },
+    {
+      "path": "/v1/profissionais/lote",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.status_processamento",
+      "covered": true
+    },
+    {
+      "path": "/v1/profissionais/lote",
+      "method": "GET",
+      "status_code": "200",
+      "property": "pagination.total",
+      "covered": true
+    },
+    {
+      "path": "/v1/profissionais/lote",
+      "method": "GET",
+      "status_code": "200",
+      "property": "pagination.count",
+      "covered": true
+    },
+    {
+      "path": "/v1/profissionais/lote",
+      "method": "GET",
+      "status_code": "200",
+      "property": "pagination.links",
+      "covered": false
+    },
+    {
+      "path": "/v1/profissionais/lote",
+      "method": "GET",
+      "status_code": "200",
+      "property": "pagination.links.previous",
+      "covered": true
+    },
+    {
+      "path": "/v1/profissionais/lote",
+      "method": "GET",
+      "status_code": "200",
+      "property": "pagination.links.next",
+      "covered": true
+    },
+    {
+      "path": "/v1/profissionais/lote",
+      "method": "GET",
+      "status_code": "200",
+      "property": "pagination.total_pages",
+      "covered": true
+    },
+    {
+      "path": "/v1/profissionais/lote",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data",
+      "covered": true
+    },
+    {
+      "path": "/v1/profissionais/lote",
+      "method": "GET",
+      "status_code": "200",
+      "property": "pagination",
+      "covered": false
+    },
+    {
+      "path": "/v1/profissionais/lote",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.dataEnvio",
+      "covered": true
+    },
+    {
+      "path": "/v1/profissionais/lote",
+      "method": "GET",
+      "status_code": "200",
+      "property": "success",
+      "covered": true
+    },
+    {
+      "path": "/v1/profissionais/lote",
+      "method": "GET",
+      "status_code": "500",
+      "property": "data",
+      "covered": false
+    },
+    {
+      "path": "/v1/profissionais/lote",
+      "method": "GET",
+      "status_code": "500",
+      "property": "errors.message",
+      "covered": false
+    },
+    {
+      "path": "/v1/profissionais/lote",
+      "method": "GET",
+      "status_code": "500",
+      "property": "message",
+      "covered": false
+    },
+    {
+      "path": "/v1/profissionais/lote",
+      "method": "GET",
+      "status_code": "500",
+      "property": "success",
+      "covered": false
+    },
+    {
+      "path": "/v1/profissionais/lote",
+      "method": "GET",
+      "status_code": "500",
+      "property": "errors",
+      "covered": false
+    },
+    {
+      "path": "/v1/profissionais/lote",
+      "method": "POST",
+      "status_code": "201",
+      "property": "id",
+      "covered": true
+    },
+    {
+      "path": "/v1/profissionais/lote",
+      "method": "POST",
+      "status_code": "422",
+      "property": "message",
+      "covered": true
+    },
+    {
+      "path": "/v1/profissionais/lote",
+      "method": "POST",
+      "status_code": "422",
+      "property": "success",
+      "covered": true
+    },
+    {
+      "path": "/v1/profissionais",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.logradouro",
+      "covered": true
+    },
+    {
+      "path": "/v1/profissionais",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.formacoesAcademicas.anoConclusaoFormacaoAcademica",
+      "covered": true
+    },
+    {
+      "path": "/v1/profissionais",
+      "method": "GET",
+      "status_code": "200",
+      "property": "pagination.per_page",
+      "covered": true
+    },
+    {
+      "path": "/v1/profissionais",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.formacoesAcademicas.tipoFormacaoAcademica",
+      "covered": true
+    },
+    {
+      "path": "/v1/profissionais",
+      "method": "GET",
+      "status_code": "200",
+      "property": "pagination.links.next",
+      "covered": true
+    },
+    {
+      "path": "/v1/profissionais",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.codigoFuncao",
+      "covered": true
+    },
+    {
+      "path": "/v1/profissionais",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data",
+      "covered": true
+    },
+    {
+      "path": "/v1/profissionais",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.formacoesAcademicas.principal",
+      "covered": true
+    },
+    {
+      "path": "/v1/profissionais",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.matriculaRede",
+      "covered": true
+    },
+    {
+      "path": "/v1/profissionais",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.numero",
+      "covered": true
+    },
+    {
+      "path": "/v1/profissionais",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.bairro",
+      "covered": true
+    },
+    {
+      "path": "/v1/profissionais",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.racaCor",
+      "covered": true
+    },
+    {
+      "path": "/v1/profissionais",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.uf",
+      "covered": true
+    },
+    {
+      "path": "/v1/profissionais",
+      "method": "GET",
+      "status_code": "200",
+      "property": "pagination.count",
+      "covered": true
+    },
+    {
+      "path": "/v1/profissionais",
+      "method": "GET",
+      "status_code": "200",
+      "property": "pagination.links.previous",
+      "covered": true
+    },
+    {
+      "path": "/v1/profissionais",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.nome",
+      "covered": true
+    },
+    {
+      "path": "/v1/profissionais",
+      "method": "GET",
+      "status_code": "200",
+      "property": "pagination.total_pages",
+      "covered": true
+    },
+    {
+      "path": "/v1/profissionais",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.cargaHoraria",
+      "covered": true
+    },
+    {
+      "path": "/v1/profissionais",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.tipoDeficiencia",
+      "covered": true
+    },
+    {
+      "path": "/v1/profissionais",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.nivelEscolaridade",
+      "covered": true
+    },
+    {
+      "path": "/v1/profissionais",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.dataFim",
+      "covered": true
+    },
+    {
+      "path": "/v1/profissionais",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.dataIngresso",
+      "covered": true
+    },
+    {
+      "path": "/v1/profissionais",
+      "method": "GET",
+      "status_code": "200",
+      "property": "message",
+      "covered": true
+    },
+    {
+      "path": "/v1/profissionais",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.genero",
+      "covered": true
+    },
+    {
+      "path": "/v1/profissionais",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.cpf",
+      "covered": true
+    },
+    {
+      "path": "/v1/profissionais",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.formacoesAcademicas.areaDoConhecimentoFormacaoAcademica",
+      "covered": true
+    },
+    {
+      "path": "/v1/profissionais",
+      "method": "GET",
+      "status_code": "200",
+      "property": "pagination.total",
+      "covered": true
+    },
+    {
+      "path": "/v1/profissionais",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.formacoesAcademicas.noInstituicaoEnsinoFormacaoAcademica",
+      "covered": true
+    },
+    {
+      "path": "/v1/profissionais",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.situacaoCadastroValidado",
+      "covered": false
+    },
+    {
+      "path": "/v1/profissionais",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.telefone",
+      "covered": true
+    },
+    {
+      "path": "/v1/profissionais",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.dataNascimento",
+      "covered": true
+    },
+    {
+      "path": "/v1/profissionais",
+      "method": "GET",
+      "status_code": "200",
+      "property": "success",
+      "covered": true
+    },
+    {
+      "path": "/v1/profissionais",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.formacoesAcademicas.anoInicioFormacaoAcademica",
+      "covered": true
+    },
+    {
+      "path": "/v1/profissionais",
+      "method": "GET",
+      "status_code": "200",
+      "property": "pagination.current_page",
+      "covered": true
+    },
+    {
+      "path": "/v1/profissionais",
+      "method": "GET",
+      "status_code": "200",
+      "property": "pagination.links",
+      "covered": false
+    },
+    {
+      "path": "/v1/profissionais",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.tipoEnsinoMedio",
+      "covered": true
+    },
+    {
+      "path": "/v1/profissionais",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.inep",
+      "covered": true
+    },
+    {
+      "path": "/v1/profissionais",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.municipio",
+      "covered": true
+    },
+    {
+      "path": "/v1/profissionais",
+      "method": "GET",
+      "status_code": "200",
+      "property": "pagination",
+      "covered": false
+    },
+    {
+      "path": "/v1/profissionais",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.email",
+      "covered": true
+    },
+    {
+      "path": "/v1/profissionais",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.tipoVinculo",
+      "covered": true
+    },
+    {
+      "path": "/v1/profissionais",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.nomeSocial",
+      "covered": true
+    },
+    {
+      "path": "/v1/profissionais",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.formacoesAcademicas",
+      "covered": true
+    },
+    {
+      "path": "/v1/profissionais",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.cep",
+      "covered": true
+    },
+    {
+      "path": "/v1/profissionais",
+      "method": "GET",
+      "status_code": "404",
+      "property": "data",
+      "covered": false
+    },
+    {
+      "path": "/v1/profissionais",
+      "method": "GET",
+      "status_code": "404",
+      "property": "errors.message",
+      "covered": false
+    },
+    {
+      "path": "/v1/profissionais",
+      "method": "GET",
+      "status_code": "404",
+      "property": "message",
+      "covered": false
+    },
+    {
+      "path": "/v1/profissionais",
+      "method": "GET",
+      "status_code": "404",
+      "property": "success",
+      "covered": false
+    },
+    {
+      "path": "/v1/profissionais",
+      "method": "GET",
+      "status_code": "404",
+      "property": "errors",
+      "covered": false
+    },
+    {
+      "path": "/v1/profissionais",
+      "method": "GET",
+      "status_code": "500",
+      "property": "data",
+      "covered": false
+    },
+    {
+      "path": "/v1/profissionais",
+      "method": "GET",
+      "status_code": "500",
+      "property": "errors.message",
+      "covered": false
+    },
+    {
+      "path": "/v1/profissionais",
+      "method": "GET",
+      "status_code": "500",
+      "property": "message",
+      "covered": false
+    },
+    {
+      "path": "/v1/profissionais",
+      "method": "GET",
+      "status_code": "500",
+      "property": "success",
+      "covered": false
+    },
+    {
+      "path": "/v1/profissionais",
+      "method": "GET",
+      "status_code": "500",
+      "property": "errors",
+      "covered": false
+    },
+    {
+      "path": "/v1/profissionais",
+      "method": "POST",
+      "status_code": "201",
+      "property": "numero",
+      "covered": false
+    },
+    {
+      "path": "/v1/profissionais",
+      "method": "POST",
+      "status_code": "201",
+      "property": "situacaoCadastroValidado",
+      "covered": false
+    },
+    {
+      "path": "/v1/profissionais",
+      "method": "POST",
+      "status_code": "201",
+      "property": "inep",
+      "covered": false
+    },
+    {
+      "path": "/v1/profissionais",
+      "method": "POST",
+      "status_code": "201",
+      "property": "tipoDeficiencia",
+      "covered": false
+    },
+    {
+      "path": "/v1/profissionais",
+      "method": "POST",
+      "status_code": "201",
+      "property": "formacoesAcademicas.areaDoConhecimentoFormacaoAcademica",
+      "covered": false
+    },
+    {
+      "path": "/v1/profissionais",
+      "method": "POST",
+      "status_code": "201",
+      "property": "genero",
+      "covered": false
+    },
+    {
+      "path": "/v1/profissionais",
+      "method": "POST",
+      "status_code": "201",
+      "property": "nivelEscolaridade",
+      "covered": false
+    },
+    {
+      "path": "/v1/profissionais",
+      "method": "POST",
+      "status_code": "201",
+      "property": "codigoFuncao",
+      "covered": false
+    },
+    {
+      "path": "/v1/profissionais",
+      "method": "POST",
+      "status_code": "201",
+      "property": "formacoesAcademicas.noInstituicaoEnsinoFormacaoAcademica",
+      "covered": false
+    },
+    {
+      "path": "/v1/profissionais",
+      "method": "POST",
+      "status_code": "201",
+      "property": "dataFim",
+      "covered": false
+    },
+    {
+      "path": "/v1/profissionais",
+      "method": "POST",
+      "status_code": "201",
+      "property": "cep",
+      "covered": false
+    },
+    {
+      "path": "/v1/profissionais",
+      "method": "POST",
+      "status_code": "201",
+      "property": "dataNascimento",
+      "covered": false
+    },
+    {
+      "path": "/v1/profissionais",
+      "method": "POST",
+      "status_code": "201",
+      "property": "logradouro",
+      "covered": false
+    },
+    {
+      "path": "/v1/profissionais",
+      "method": "POST",
+      "status_code": "201",
+      "property": "formacoesAcademicas.anoConclusaoFormacaoAcademica",
+      "covered": false
+    },
+    {
+      "path": "/v1/profissionais",
+      "method": "POST",
+      "status_code": "201",
+      "property": "telefone",
+      "covered": false
+    },
+    {
+      "path": "/v1/profissionais",
+      "method": "POST",
+      "status_code": "201",
+      "property": "cpf",
+      "covered": false
+    },
+    {
+      "path": "/v1/profissionais",
+      "method": "POST",
+      "status_code": "201",
+      "property": "cargaHoraria",
+      "covered": false
+    },
+    {
+      "path": "/v1/profissionais",
+      "method": "POST",
+      "status_code": "201",
+      "property": "municipio",
+      "covered": false
+    },
+    {
+      "path": "/v1/profissionais",
+      "method": "POST",
+      "status_code": "201",
+      "property": "formacoesAcademicas.anoInicioFormacaoAcademica",
+      "covered": false
+    },
+    {
+      "path": "/v1/profissionais",
+      "method": "POST",
+      "status_code": "201",
+      "property": "formacoesAcademicas",
+      "covered": false
+    },
+    {
+      "path": "/v1/profissionais",
+      "method": "POST",
+      "status_code": "201",
+      "property": "bairro",
+      "covered": false
+    },
+    {
+      "path": "/v1/profissionais",
+      "method": "POST",
+      "status_code": "201",
+      "property": "formacoesAcademicas.tipoFormacaoAcademica",
+      "covered": false
+    },
+    {
+      "path": "/v1/profissionais",
+      "method": "POST",
+      "status_code": "201",
+      "property": "tipoEnsinoMedio",
+      "covered": false
+    },
+    {
+      "path": "/v1/profissionais",
+      "method": "POST",
+      "status_code": "201",
+      "property": "racaCor",
+      "covered": false
+    },
+    {
+      "path": "/v1/profissionais",
+      "method": "POST",
+      "status_code": "201",
+      "property": "email",
+      "covered": false
+    },
+    {
+      "path": "/v1/profissionais",
+      "method": "POST",
+      "status_code": "201",
+      "property": "nomeSocial",
+      "covered": false
+    },
+    {
+      "path": "/v1/profissionais",
+      "method": "POST",
+      "status_code": "201",
+      "property": "dataIngresso",
+      "covered": false
+    },
+    {
+      "path": "/v1/profissionais",
+      "method": "POST",
+      "status_code": "201",
+      "property": "nome",
+      "covered": false
+    },
+    {
+      "path": "/v1/profissionais",
+      "method": "POST",
+      "status_code": "201",
+      "property": "formacoesAcademicas.principal",
+      "covered": false
+    },
+    {
+      "path": "/v1/profissionais",
+      "method": "POST",
+      "status_code": "201",
+      "property": "tipoVinculo",
+      "covered": false
+    },
+    {
+      "path": "/v1/profissionais",
+      "method": "POST",
+      "status_code": "201",
+      "property": "uf",
+      "covered": false
+    },
+    {
+      "path": "/v1/profissionais",
+      "method": "POST",
+      "status_code": "201",
+      "property": "matriculaRede",
+      "covered": false
+    },
+    {
+      "path": "/v1/profissionais",
+      "method": "POST",
+      "status_code": "422",
+      "property": "message",
+      "covered": true
+    },
+    {
+      "path": "/v1/profissionais",
+      "method": "POST",
+      "status_code": "422",
+      "property": "success",
+      "covered": true
+    },
+    {
+      "path": "/v1/profissionais/{cpf}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "numero",
+      "covered": false
+    },
+    {
+      "path": "/v1/profissionais/{cpf}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "situacaoCadastroValidado",
+      "covered": false
+    },
+    {
+      "path": "/v1/profissionais/{cpf}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "inep",
+      "covered": false
+    },
+    {
+      "path": "/v1/profissionais/{cpf}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "tipoDeficiencia",
+      "covered": false
+    },
+    {
+      "path": "/v1/profissionais/{cpf}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "formacoesAcademicas.areaDoConhecimentoFormacaoAcademica",
+      "covered": false
+    },
+    {
+      "path": "/v1/profissionais/{cpf}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "genero",
+      "covered": false
+    },
+    {
+      "path": "/v1/profissionais/{cpf}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "nivelEscolaridade",
+      "covered": false
+    },
+    {
+      "path": "/v1/profissionais/{cpf}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "codigoFuncao",
+      "covered": false
+    },
+    {
+      "path": "/v1/profissionais/{cpf}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "formacoesAcademicas.noInstituicaoEnsinoFormacaoAcademica",
+      "covered": false
+    },
+    {
+      "path": "/v1/profissionais/{cpf}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "dataFim",
+      "covered": false
+    },
+    {
+      "path": "/v1/profissionais/{cpf}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "cep",
+      "covered": false
+    },
+    {
+      "path": "/v1/profissionais/{cpf}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "dataNascimento",
+      "covered": false
+    },
+    {
+      "path": "/v1/profissionais/{cpf}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "logradouro",
+      "covered": false
+    },
+    {
+      "path": "/v1/profissionais/{cpf}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "formacoesAcademicas.anoConclusaoFormacaoAcademica",
+      "covered": false
+    },
+    {
+      "path": "/v1/profissionais/{cpf}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "telefone",
+      "covered": false
+    },
+    {
+      "path": "/v1/profissionais/{cpf}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "cpf",
+      "covered": false
+    },
+    {
+      "path": "/v1/profissionais/{cpf}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "cargaHoraria",
+      "covered": false
+    },
+    {
+      "path": "/v1/profissionais/{cpf}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "municipio",
+      "covered": false
+    },
+    {
+      "path": "/v1/profissionais/{cpf}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "formacoesAcademicas.anoInicioFormacaoAcademica",
+      "covered": false
+    },
+    {
+      "path": "/v1/profissionais/{cpf}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "formacoesAcademicas",
+      "covered": false
+    },
+    {
+      "path": "/v1/profissionais/{cpf}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "bairro",
+      "covered": false
+    },
+    {
+      "path": "/v1/profissionais/{cpf}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "formacoesAcademicas.tipoFormacaoAcademica",
+      "covered": false
+    },
+    {
+      "path": "/v1/profissionais/{cpf}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "tipoEnsinoMedio",
+      "covered": false
+    },
+    {
+      "path": "/v1/profissionais/{cpf}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "racaCor",
+      "covered": false
+    },
+    {
+      "path": "/v1/profissionais/{cpf}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "email",
+      "covered": false
+    },
+    {
+      "path": "/v1/profissionais/{cpf}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "nomeSocial",
+      "covered": false
+    },
+    {
+      "path": "/v1/profissionais/{cpf}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "dataIngresso",
+      "covered": false
+    },
+    {
+      "path": "/v1/profissionais/{cpf}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "nome",
+      "covered": false
+    },
+    {
+      "path": "/v1/profissionais/{cpf}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "formacoesAcademicas.principal",
+      "covered": false
+    },
+    {
+      "path": "/v1/profissionais/{cpf}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "tipoVinculo",
+      "covered": false
+    },
+    {
+      "path": "/v1/profissionais/{cpf}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "uf",
+      "covered": false
+    },
+    {
+      "path": "/v1/profissionais/{cpf}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "matriculaRede",
+      "covered": false
+    },
+    {
+      "path": "/v1/profissionais/{cpf}",
+      "method": "GET",
+      "status_code": "404",
+      "property": "message",
+      "covered": true
+    },
+    {
+      "path": "/v1/profissionais/{cpf}",
+      "method": "GET",
+      "status_code": "404",
+      "property": "success",
+      "covered": true
+    },
+    {
+      "path": "/v1/profissionais/{cpf}",
+      "method": "GET",
+      "status_code": "500",
+      "property": "data",
+      "covered": false
+    },
+    {
+      "path": "/v1/profissionais/{cpf}",
+      "method": "GET",
+      "status_code": "500",
+      "property": "errors.message",
+      "covered": false
+    },
+    {
+      "path": "/v1/profissionais/{cpf}",
+      "method": "GET",
+      "status_code": "500",
+      "property": "message",
+      "covered": false
+    },
+    {
+      "path": "/v1/profissionais/{cpf}",
+      "method": "GET",
+      "status_code": "500",
+      "property": "success",
+      "covered": false
+    },
+    {
+      "path": "/v1/profissionais/{cpf}",
+      "method": "GET",
+      "status_code": "500",
+      "property": "errors",
+      "covered": false
+    },
+    {
+      "path": "/v1/profissionais/inep/{inep}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.logradouro",
+      "covered": false
+    },
+    {
+      "path": "/v1/profissionais/inep/{inep}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.formacoesAcademicas.anoConclusaoFormacaoAcademica",
+      "covered": false
+    },
+    {
+      "path": "/v1/profissionais/inep/{inep}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "pagination.per_page",
+      "covered": true
+    },
+    {
+      "path": "/v1/profissionais/inep/{inep}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.formacoesAcademicas.tipoFormacaoAcademica",
+      "covered": false
+    },
+    {
+      "path": "/v1/profissionais/inep/{inep}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "pagination.links.next",
+      "covered": true
+    },
+    {
+      "path": "/v1/profissionais/inep/{inep}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.codigoFuncao",
+      "covered": false
+    },
+    {
+      "path": "/v1/profissionais/inep/{inep}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data",
+      "covered": true
+    },
+    {
+      "path": "/v1/profissionais/inep/{inep}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.formacoesAcademicas.principal",
+      "covered": false
+    },
+    {
+      "path": "/v1/profissionais/inep/{inep}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.matriculaRede",
+      "covered": false
+    },
+    {
+      "path": "/v1/profissionais/inep/{inep}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.numero",
+      "covered": false
+    },
+    {
+      "path": "/v1/profissionais/inep/{inep}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.bairro",
+      "covered": false
+    },
+    {
+      "path": "/v1/profissionais/inep/{inep}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.racaCor",
+      "covered": false
+    },
+    {
+      "path": "/v1/profissionais/inep/{inep}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.uf",
+      "covered": false
+    },
+    {
+      "path": "/v1/profissionais/inep/{inep}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "pagination.count",
+      "covered": true
+    },
+    {
+      "path": "/v1/profissionais/inep/{inep}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "pagination.links.previous",
+      "covered": true
+    },
+    {
+      "path": "/v1/profissionais/inep/{inep}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.nome",
+      "covered": false
+    },
+    {
+      "path": "/v1/profissionais/inep/{inep}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "pagination.total_pages",
+      "covered": true
+    },
+    {
+      "path": "/v1/profissionais/inep/{inep}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.cargaHoraria",
+      "covered": false
+    },
+    {
+      "path": "/v1/profissionais/inep/{inep}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.tipoDeficiencia",
+      "covered": false
+    },
+    {
+      "path": "/v1/profissionais/inep/{inep}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.nivelEscolaridade",
+      "covered": false
+    },
+    {
+      "path": "/v1/profissionais/inep/{inep}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.dataFim",
+      "covered": false
+    },
+    {
+      "path": "/v1/profissionais/inep/{inep}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.dataIngresso",
+      "covered": false
+    },
+    {
+      "path": "/v1/profissionais/inep/{inep}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "message",
+      "covered": true
+    },
+    {
+      "path": "/v1/profissionais/inep/{inep}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.genero",
+      "covered": false
+    },
+    {
+      "path": "/v1/profissionais/inep/{inep}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.cpf",
+      "covered": false
+    },
+    {
+      "path": "/v1/profissionais/inep/{inep}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.formacoesAcademicas.areaDoConhecimentoFormacaoAcademica",
+      "covered": false
+    },
+    {
+      "path": "/v1/profissionais/inep/{inep}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "pagination.total",
+      "covered": true
+    },
+    {
+      "path": "/v1/profissionais/inep/{inep}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.formacoesAcademicas.noInstituicaoEnsinoFormacaoAcademica",
+      "covered": false
+    },
+    {
+      "path": "/v1/profissionais/inep/{inep}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.situacaoCadastroValidado",
+      "covered": false
+    },
+    {
+      "path": "/v1/profissionais/inep/{inep}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.telefone",
+      "covered": false
+    },
+    {
+      "path": "/v1/profissionais/inep/{inep}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.dataNascimento",
+      "covered": false
+    },
+    {
+      "path": "/v1/profissionais/inep/{inep}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "success",
+      "covered": true
+    },
+    {
+      "path": "/v1/profissionais/inep/{inep}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.formacoesAcademicas.anoInicioFormacaoAcademica",
+      "covered": false
+    },
+    {
+      "path": "/v1/profissionais/inep/{inep}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "pagination.current_page",
+      "covered": true
+    },
+    {
+      "path": "/v1/profissionais/inep/{inep}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "pagination.links",
+      "covered": false
+    },
+    {
+      "path": "/v1/profissionais/inep/{inep}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.tipoEnsinoMedio",
+      "covered": false
+    },
+    {
+      "path": "/v1/profissionais/inep/{inep}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.inep",
+      "covered": false
+    },
+    {
+      "path": "/v1/profissionais/inep/{inep}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.municipio",
+      "covered": false
+    },
+    {
+      "path": "/v1/profissionais/inep/{inep}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "pagination",
+      "covered": false
+    },
+    {
+      "path": "/v1/profissionais/inep/{inep}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.email",
+      "covered": false
+    },
+    {
+      "path": "/v1/profissionais/inep/{inep}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.tipoVinculo",
+      "covered": false
+    },
+    {
+      "path": "/v1/profissionais/inep/{inep}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.nomeSocial",
+      "covered": false
+    },
+    {
+      "path": "/v1/profissionais/inep/{inep}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.formacoesAcademicas",
+      "covered": false
+    },
+    {
+      "path": "/v1/profissionais/inep/{inep}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.cep",
+      "covered": false
+    },
+    {
+      "path": "/v1/profissionais/inep/{inep}",
+      "method": "GET",
+      "status_code": "500",
+      "property": "data",
+      "covered": false
+    },
+    {
+      "path": "/v1/profissionais/inep/{inep}",
+      "method": "GET",
+      "status_code": "500",
+      "property": "errors.message",
+      "covered": false
+    },
+    {
+      "path": "/v1/profissionais/inep/{inep}",
+      "method": "GET",
+      "status_code": "500",
+      "property": "message",
+      "covered": false
+    },
+    {
+      "path": "/v1/profissionais/inep/{inep}",
+      "method": "GET",
+      "status_code": "500",
+      "property": "success",
+      "covered": false
+    },
+    {
+      "path": "/v1/profissionais/inep/{inep}",
+      "method": "GET",
+      "status_code": "500",
+      "property": "errors",
+      "covered": false
+    },
+    {
+      "path": "/v1/profissionais/lote/{id}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.logradouro",
+      "covered": false
+    },
+    {
+      "path": "/v1/profissionais/lote/{id}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.formacoesAcademicas.anoConclusaoFormacaoAcademica",
+      "covered": false
+    },
+    {
+      "path": "/v1/profissionais/lote/{id}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "pagination.per_page",
+      "covered": false
+    },
+    {
+      "path": "/v1/profissionais/lote/{id}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "errors",
+      "covered": false
+    },
+    {
+      "path": "/v1/profissionais/lote/{id}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.formacoesAcademicas.tipoFormacaoAcademica",
+      "covered": false
+    },
+    {
+      "path": "/v1/profissionais/lote/{id}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "pagination.links.next",
+      "covered": false
+    },
+    {
+      "path": "/v1/profissionais/lote/{id}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.codigoFuncao",
+      "covered": false
+    },
+    {
+      "path": "/v1/profissionais/lote/{id}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data",
+      "covered": false
+    },
+    {
+      "path": "/v1/profissionais/lote/{id}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.formacoesAcademicas.principal",
+      "covered": false
+    },
+    {
+      "path": "/v1/profissionais/lote/{id}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.matriculaRede",
+      "covered": false
+    },
+    {
+      "path": "/v1/profissionais/lote/{id}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.numero",
+      "covered": false
+    },
+    {
+      "path": "/v1/profissionais/lote/{id}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.bairro",
+      "covered": false
+    },
+    {
+      "path": "/v1/profissionais/lote/{id}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.racaCor",
+      "covered": false
+    },
+    {
+      "path": "/v1/profissionais/lote/{id}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.uf",
+      "covered": false
+    },
+    {
+      "path": "/v1/profissionais/lote/{id}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "pagination.count",
+      "covered": false
+    },
+    {
+      "path": "/v1/profissionais/lote/{id}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "pagination.links.previous",
+      "covered": false
+    },
+    {
+      "path": "/v1/profissionais/lote/{id}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.nome",
+      "covered": false
+    },
+    {
+      "path": "/v1/profissionais/lote/{id}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "pagination.total_pages",
+      "covered": false
+    },
+    {
+      "path": "/v1/profissionais/lote/{id}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.cargaHoraria",
+      "covered": false
+    },
+    {
+      "path": "/v1/profissionais/lote/{id}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.tipoDeficiencia",
+      "covered": false
+    },
+    {
+      "path": "/v1/profissionais/lote/{id}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.nivelEscolaridade",
+      "covered": false
+    },
+    {
+      "path": "/v1/profissionais/lote/{id}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.dataFim",
+      "covered": false
+    },
+    {
+      "path": "/v1/profissionais/lote/{id}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.dataIngresso",
+      "covered": false
+    },
+    {
+      "path": "/v1/profissionais/lote/{id}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "status_processamento",
+      "covered": true
+    },
+    {
+      "path": "/v1/profissionais/lote/{id}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.genero",
+      "covered": false
+    },
+    {
+      "path": "/v1/profissionais/lote/{id}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.cpf",
+      "covered": false
+    },
+    {
+      "path": "/v1/profissionais/lote/{id}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.formacoesAcademicas.areaDoConhecimentoFormacaoAcademica",
+      "covered": false
+    },
+    {
+      "path": "/v1/profissionais/lote/{id}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "pagination.total",
+      "covered": false
+    },
+    {
+      "path": "/v1/profissionais/lote/{id}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.formacoesAcademicas.noInstituicaoEnsinoFormacaoAcademica",
+      "covered": false
+    },
+    {
+      "path": "/v1/profissionais/lote/{id}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.situacaoCadastroValidado",
+      "covered": false
+    },
+    {
+      "path": "/v1/profissionais/lote/{id}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.telefone",
+      "covered": false
+    },
+    {
+      "path": "/v1/profissionais/lote/{id}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.dataNascimento",
+      "covered": false
+    },
+    {
+      "path": "/v1/profissionais/lote/{id}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.formacoesAcademicas.anoInicioFormacaoAcademica",
+      "covered": false
+    },
+    {
+      "path": "/v1/profissionais/lote/{id}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "pagination.current_page",
+      "covered": false
+    },
+    {
+      "path": "/v1/profissionais/lote/{id}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "pagination.links",
+      "covered": false
+    },
+    {
+      "path": "/v1/profissionais/lote/{id}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.tipoEnsinoMedio",
+      "covered": false
+    },
+    {
+      "path": "/v1/profissionais/lote/{id}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.inep",
+      "covered": false
+    },
+    {
+      "path": "/v1/profissionais/lote/{id}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.municipio",
+      "covered": false
+    },
+    {
+      "path": "/v1/profissionais/lote/{id}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "pagination",
+      "covered": false
+    },
+    {
+      "path": "/v1/profissionais/lote/{id}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.email",
+      "covered": false
+    },
+    {
+      "path": "/v1/profissionais/lote/{id}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.tipoVinculo",
+      "covered": false
+    },
+    {
+      "path": "/v1/profissionais/lote/{id}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.nomeSocial",
+      "covered": false
+    },
+    {
+      "path": "/v1/profissionais/lote/{id}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.formacoesAcademicas",
+      "covered": false
+    },
+    {
+      "path": "/v1/profissionais/lote/{id}",
+      "method": "GET",
+      "status_code": "200",
+      "property": "data.cep",
+      "covered": false
+    },
+    {
+      "path": "/v1/profissionais/lote/{id}",
+      "method": "GET",
+      "status_code": "400",
+      "property": "message",
+      "covered": true
+    },
+    {
+      "path": "/v1/profissionais/lote/{id}",
+      "method": "GET",
+      "status_code": "500",
+      "property": "message",
+      "covered": true
+    },
+    {
+      "path": "/v1/profissionais/lote/{id}",
+      "method": "GET",
+      "status_code": "500",
+      "property": "success",
+      "covered": true
+    },
+    {
+      "path": "/v1/profissionais/lote/{id}/erros",
+      "method": "GET",
+      "status_code": "200",
+      "property": "pagination.current_page",
+      "covered": false
+    },
+    {
+      "path": "/v1/profissionais/lote/{id}/erros",
+      "method": "GET",
+      "status_code": "200",
+      "property": "errors.cpf",
+      "covered": false
+    },
+    {
+      "path": "/v1/profissionais/lote/{id}/erros",
+      "method": "GET",
+      "status_code": "200",
+      "property": "status_processamento",
+      "covered": false
+    },
+    {
+      "path": "/v1/profissionais/lote/{id}/erros",
+      "method": "GET",
+      "status_code": "200",
+      "property": "pagination.per_page",
+      "covered": false
+    },
+    {
+      "path": "/v1/profissionais/lote/{id}/erros",
+      "method": "GET",
+      "status_code": "200",
+      "property": "pagination.total",
+      "covered": false
+    },
+    {
+      "path": "/v1/profissionais/lote/{id}/erros",
+      "method": "GET",
+      "status_code": "200",
+      "property": "pagination.count",
+      "covered": false
+    },
+    {
+      "path": "/v1/profissionais/lote/{id}/erros",
+      "method": "GET",
+      "status_code": "200",
+      "property": "errors",
+      "covered": false
+    },
+    {
+      "path": "/v1/profissionais/lote/{id}/erros",
+      "method": "GET",
+      "status_code": "200",
+      "property": "pagination.links",
+      "covered": false
+    },
+    {
+      "path": "/v1/profissionais/lote/{id}/erros",
+      "method": "GET",
+      "status_code": "200",
+      "property": "pagination.links.previous",
+      "covered": false
+    },
+    {
+      "path": "/v1/profissionais/lote/{id}/erros",
+      "method": "GET",
+      "status_code": "200",
+      "property": "pagination.links.next",
+      "covered": false
+    },
+    {
+      "path": "/v1/profissionais/lote/{id}/erros",
+      "method": "GET",
+      "status_code": "200",
+      "property": "pagination.total_pages",
+      "covered": false
+    },
+    {
+      "path": "/v1/profissionais/lote/{id}/erros",
+      "method": "GET",
+      "status_code": "200",
+      "property": "errors.erro",
+      "covered": false
+    },
+    {
+      "path": "/v1/profissionais/lote/{id}/erros",
+      "method": "GET",
+      "status_code": "200",
+      "property": "errors.nome",
+      "covered": false
+    },
+    {
+      "path": "/v1/profissionais/lote/{id}/erros",
+      "method": "GET",
+      "status_code": "200",
+      "property": "pagination",
+      "covered": false
+    },
+    {
+      "path": "/v1/profissionais/lote/{id}/erros",
+      "method": "GET",
+      "status_code": "500",
+      "property": "data",
+      "covered": false
+    },
+    {
+      "path": "/v1/profissionais/lote/{id}/erros",
+      "method": "GET",
+      "status_code": "500",
+      "property": "errors.message",
+      "covered": true
+    },
+    {
+      "path": "/v1/profissionais/lote/{id}/erros",
+      "method": "GET",
+      "status_code": "500",
+      "property": "message",
+      "covered": true
+    },
+    {
+      "path": "/v1/profissionais/lote/{id}/erros",
+      "method": "GET",
+      "status_code": "500",
+      "property": "success",
+      "covered": true
+    },
+    {
+      "path": "/v1/profissionais/lote/{id}/erros",
+      "method": "GET",
+      "status_code": "500",
+      "property": "errors",
+      "covered": false
+    }
+  ]
+}

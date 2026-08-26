@@ -1,0 +1,4 @@
+{
+  "algorithms": ["RANDOM", "SMARTS", "WTS"],
+  "number_of_repetitions": 10
+}

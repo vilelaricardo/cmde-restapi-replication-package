@@ -1,0 +1,233 @@
+{
+  "coverage": 84.21052631578947,
+  "required_elements": [
+    {
+      "path": "/v1/estudantes",
+      "method": "GET",
+      "status_code_class": "200",
+      "covered": true
+    },
+    {
+      "path": "/v1/estudantes",
+      "method": "GET",
+      "status_code_class": "400",
+      "covered": true
+    },
+    {
+      "path": "/v1/estudantes",
+      "method": "POST",
+      "status_code_class": "200",
+      "covered": false
+    },
+    {
+      "path": "/v1/estudantes",
+      "method": "POST",
+      "status_code_class": "400",
+      "covered": true
+    },
+    {
+      "path": "/v1/estudantes/{cpfNis}",
+      "method": "GET",
+      "status_code_class": "200",
+      "covered": true
+    },
+    {
+      "path": "/v1/estudantes/{cpfNis}",
+      "method": "GET",
+      "status_code_class": "400",
+      "covered": true
+    },
+    {
+      "path": "/v1/estudantes/lote/{id}",
+      "method": "GET",
+      "status_code_class": "200",
+      "covered": true
+    },
+    {
+      "path": "/v1/estudantes/lote/{id}",
+      "method": "GET",
+      "status_code_class": "400",
+      "covered": true
+    },
+    {
+      "path": "/v1/estudantes/lote/{id}/erros",
+      "method": "GET",
+      "status_code_class": "200",
+      "covered": false
+    },
+    {
+      "path": "/v1/estudantes/lote/{id}/erros",
+      "method": "GET",
+      "status_code_class": "400",
+      "covered": true
+    },
+    {
+      "path": "/v1/estudantes/lote",
+      "method": "GET",
+      "status_code_class": "200",
+      "covered": true
+    },
+    {
+      "path": "/v1/estudantes/lote",
+      "method": "GET",
+      "status_code_class": "400",
+      "covered": true
+    },
+    {
+      "path": "/v1/estudantes/lote",
+      "method": "POST",
+      "status_code_class": "200",
+      "covered": true
+    },
+    {
+      "path": "/v1/estudantes/lote",
+      "method": "POST",
+      "status_code_class": "400",
+      "covered": true
+    },
+    {
+      "path": "/v1/estudantes/lote",
+      "method": "PATCH",
+      "status_code_class": "200",
+      "covered": true
+    },
+    {
+      "path": "/v1/estudantes/lote",
+      "method": "PATCH",
+      "status_code_class": "400",
+      "covered": true
+    },
+    {
+      "path": "/v1/estudantes/inep/{inep}",
+      "method": "GET",
+      "status_code_class": "200",
+      "covered": true
+    },
+    {
+      "path": "/v1/estudantes/inep/{inep}",
+      "method": "GET",
+      "status_code_class": "400",
+      "covered": false
+    },
+    {
+      "path": "/v1/estudantes/solicitacoes-alteracoes",
+      "method": "GET",
+      "status_code_class": "200",
+      "covered": true
+    },
+    {
+      "path": "/v1/estudantes/solicitacoes-alteracoes",
+      "method": "GET",
+      "status_code_class": "400",
+      "covered": true
+    },
+    {
+      "path": "/v1/estudantes/validacao-cadastro",
+      "method": "GET",
+      "status_code_class": "200",
+      "covered": true
+    },
+    {
+      "path": "/v1/estudantes/validacao-cadastro",
+      "method": "GET",
+      "status_code_class": "400",
+      "covered": true
+    },
+    {
+      "path": "/v1/profissionais/lote",
+      "method": "GET",
+      "status_code_class": "200",
+      "covered": true
+    },
+    {
+      "path": "/v1/profissionais/lote",
+      "method": "GET",
+      "status_code_class": "400",
+      "covered": false
+    },
+    {
+      "path": "/v1/profissionais/lote",
+      "method": "POST",
+      "status_code_class": "200",
+      "covered": true
+    },
+    {
+      "path": "/v1/profissionais/lote",
+      "method": "POST",
+      "status_code_class": "400",
+      "covered": true
+    },
+    {
+      "path": "/v1/profissionais",
+      "method": "GET",
+      "status_code_class": "200",
+      "covered": true
+    },
+    {
+      "path": "/v1/profissionais",
+      "method": "GET",
+      "status_code_class": "400",
+      "covered": true
+    },
+    {
+      "path": "/v1/profissionais",
+      "method": "POST",
+      "status_code_class": "200",
+      "covered": false
+    },
+    {
+      "path": "/v1/profissionais",
+      "method": "POST",
+      "status_code_class": "400",
+      "covered": true
+    },
+    {
+      "path": "/v1/profissionais/{cpf}",
+      "method": "GET",
+      "status_code_class": "200",
+      "covered": true
+    },
+    {
+      "path": "/v1/profissionais/{cpf}",
+      "method": "GET",
+      "status_code_class": "400",
+      "covered": true
+    },
+    {
+      "path": "/v1/profissionais/inep/{inep}",
+      "method": "GET",
+      "status_code_class": "200",
+      "covered": true
+    },
+    {
+      "path": "/v1/profissionais/inep/{inep}",
+      "method": "GET",
+      "status_code_class": "400",
+      "covered": true
+    },
+    {
+      "path": "/v1/profissionais/lote/{id}",
+      "method": "GET",
+      "status_code_class": "200",
+      "covered": true
+    },
+    {
+      "path": "/v1/profissionais/lote/{id}",
+      "method": "GET",
+      "status_code_class": "400",
+      "covered": true
+    },
+    {
+      "path": "/v1/profissionais/lote/{id}/erros",
+      "method": "GET",
+      "status_code_class": "200",
+      "covered": false
+    },
+    {
+      "path": "/v1/profissionais/lote/{id}/erros",
+      "method": "GET",
+      "status_code_class": "400",
+      "covered": true
+    }
+  ]
+}

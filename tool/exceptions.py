@@ -1,0 +1,2 @@
+class SwaggerUrlNotFoundError(Exception):
+    pass

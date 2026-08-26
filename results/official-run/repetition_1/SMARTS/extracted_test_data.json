@@ -1,0 +1,5049 @@
+{
+  "EvoMaster_faults_Test.py": {
+    "test_0_with500": {
+      "paths": [
+        {
+          "status": "500",
+          "method": "POST",
+          "path": "/v1/estudantes",
+          "request": "/v1/estudantes",
+          "properties": [
+            "errors.message",
+            "message",
+            "success"
+          ],
+          "parameters": []
+        }
+      ]
+    },
+    "test_1_with500": {
+      "paths": [
+        {
+          "status": "500",
+          "method": "POST",
+          "path": "/v1/estudantes/lote",
+          "request": "/v1/estudantes/lote",
+          "properties": [
+            "errors.message",
+            "message",
+            "success"
+          ],
+          "parameters": []
+        }
+      ]
+    },
+    "test_2_with500": {
+      "paths": [
+        {
+          "status": "201",
+          "method": "POST",
+          "path": "/v1/estudantes/lote",
+          "request": "/v1/estudantes/lote",
+          "properties": [
+            "id",
+            "message",
+            "success"
+          ],
+          "parameters": []
+        },
+        {
+          "status": "500",
+          "method": "GET",
+          "path": "/v1/estudantes/lote/{id}/erros",
+          "request": null,
+          "properties": [
+            "errors.message",
+            "message",
+            "success"
+          ],
+          "parameters": []
+        }
+      ]
+    },
+    "test_3_with500": {
+      "paths": [
+        {
+          "status": "500",
+          "method": "GET",
+          "path": "/v1/estudantes/inep/{inep}",
+          "request": "/v1/estudantes/inep/0NHYWj?page=244&per_page=704&situacao_matricula=ATIVAS&situacao_final=APROVADAS",
+          "properties": [
+            "errors.message",
+            "message",
+            "success"
+          ],
+          "parameters": [
+            {
+              "parameter": "inep",
+              "value": "0NHYWj",
+              "parameter_type": "path"
+            },
+            {
+              "parameter": "page",
+              "value": [
+                "244"
+              ],
+              "parameter_type": "query"
+            },
+            {
+              "parameter": "per_page",
+              "value": [
+                "704"
+              ],
+              "parameter_type": "query"
+            },
+            {
+              "parameter": "situacao_matricula",
+              "value": [
+                "ATIVAS"
+              ],
+              "parameter_type": "query"
+            },
+            {
+              "parameter": "situacao_final",
+              "value": [
+                "APROVADAS"
+              ],
+              "parameter_type": "query"
+            }
+          ]
+        }
+      ]
+    },
+    "test_4_with500": {
+      "paths": [
+        {
+          "status": "201",
+          "method": "POST",
+          "path": "/v1/estudantes/lote",
+          "request": "/v1/estudantes/lote",
+          "properties": [
+            "id",
+            "message",
+            "success"
+          ],
+          "parameters": []
+        },
+        {
+          "status": "500",
+          "method": "GET",
+          "path": "/v1/estudantes/lote/{id}/erros",
+          "request": null,
+          "properties": [
+            "errors.message",
+            "message",
+            "success"
+          ],
+          "parameters": []
+        }
+      ]
+    },
+    "test_5_with500": {
+      "paths": [
+        {
+          "status": "201",
+          "method": "POST",
+          "path": "/v1/profissionais/lote",
+          "request": "/v1/profissionais/lote",
+          "properties": [
+            "id",
+            "message",
+            "success"
+          ],
+          "parameters": []
+        },
+        {
+          "status": "500",
+          "method": "GET",
+          "path": "/v1/profissionais/lote/{id}/erros",
+          "request": null,
+          "properties": [
+            "errors.message",
+            "message",
+            "success"
+          ],
+          "parameters": []
+        }
+      ]
+    },
+    "test_6_with500": {
+      "paths": [
+        {
+          "status": "500",
+          "method": "POST",
+          "path": "/v1/estudantes",
+          "request": "/v1/estudantes",
+          "properties": [
+            "errors.message",
+            "message",
+            "success"
+          ],
+          "parameters": []
+        },
+        {
+          "status": "500",
+          "method": "POST",
+          "path": "/v1/estudantes",
+          "request": "/v1/estudantes",
+          "properties": [
+            "errors.message",
+            "message",
+            "success"
+          ],
+          "parameters": []
+        },
+        {
+          "status": "500",
+          "method": "POST",
+          "path": "/v1/estudantes",
+          "request": "/v1/estudantes",
+          "properties": [
+            "errors.message",
+            "message",
+            "success"
+          ],
+          "parameters": []
+        },
+        {
+          "status": "500",
+          "method": "POST",
+          "path": "/v1/estudantes",
+          "request": "/v1/estudantes",
+          "properties": [
+            "errors.message",
+            "message",
+            "success"
+          ],
+          "parameters": []
+        },
+        {
+          "status": "500",
+          "method": "POST",
+          "path": "/v1/estudantes",
+          "request": "/v1/estudantes",
+          "properties": [
+            "errors.message",
+            "message",
+            "success"
+          ],
+          "parameters": []
+        },
+        {
+          "status": "500",
+          "method": "GET",
+          "path": "/v1/estudantes",
+          "request": "/v1/estudantes?per_page=10&situacao_final=REPROVADAS",
+          "properties": [
+            "errors.message",
+            "message",
+            "success"
+          ],
+          "parameters": [
+            {
+              "parameter": "per_page",
+              "value": [
+                "10"
+              ],
+              "parameter_type": "query"
+            },
+            {
+              "parameter": "situacao_final",
+              "value": [
+                "REPROVADAS"
+              ],
+              "parameter_type": "query"
+            }
+          ]
+        }
+      ]
+    },
+    "test_7_with500": {
+      "paths": [
+        {
+          "status": "500",
+          "method": "POST",
+          "path": "/v1/estudantes",
+          "request": "/v1/estudantes",
+          "properties": [
+            "errors.message",
+            "message",
+            "success"
+          ],
+          "parameters": []
+        },
+        {
+          "status": "500",
+          "method": "POST",
+          "path": "/v1/estudantes",
+          "request": "/v1/estudantes",
+          "properties": [
+            "errors.message",
+            "message",
+            "success"
+          ],
+          "parameters": []
+        },
+        {
+          "status": "500",
+          "method": "POST",
+          "path": "/v1/estudantes",
+          "request": "/v1/estudantes",
+          "properties": [
+            "errors.message",
+            "message",
+            "success"
+          ],
+          "parameters": []
+        },
+        {
+          "status": "500",
+          "method": "POST",
+          "path": "/v1/estudantes",
+          "request": "/v1/estudantes",
+          "properties": [
+            "errors.message",
+            "message",
+            "success"
+          ],
+          "parameters": []
+        },
+        {
+          "status": "500",
+          "method": "POST",
+          "path": "/v1/estudantes",
+          "request": "/v1/estudantes",
+          "properties": [
+            "errors.message",
+            "message",
+            "success"
+          ],
+          "parameters": []
+        },
+        {
+          "status": "500",
+          "method": "POST",
+          "path": "/v1/estudantes",
+          "request": "/v1/estudantes",
+          "properties": [
+            "errors.message",
+            "message",
+            "success"
+          ],
+          "parameters": []
+        },
+        {
+          "status": "500",
+          "method": "POST",
+          "path": "/v1/estudantes",
+          "request": "/v1/estudantes",
+          "properties": [
+            "errors.message",
+            "message",
+            "success"
+          ],
+          "parameters": []
+        },
+        {
+          "status": "200",
+          "method": "GET",
+          "path": "/v1/estudantes",
+          "request": "/v1/estudantes",
+          "properties": [
+            "data",
+            "data.bairro",
+            "data.cep",
+            "data.certidaoNascimento",
+            "data.cnh",
+            "data.cpf",
+            "data.cpfResponsavel",
+            "data.dataNascimento",
+            "data.email",
+            "data.genero",
+            "data.logradouro",
+            "data.matriculas",
+            "data.matriculas.anoMatricula",
+            "data.matriculas.codInstituicao",
+            "data.matriculas.codigoMatriculaSgp",
+            "data.matriculas.dataAtivacaoMatricula",
+            "data.matriculas.dataConclusaoEnsinoMedio",
+            "data.matriculas.dataFimOuAprovacao",
+            "data.matriculas.dataInicioMatricula",
+            "data.matriculas.dataInicioPeriodoLetivo",
+            "data.matriculas.deletadaEm",
+            "data.matriculas.estudanteAnoPeriodo",
+            "data.matriculas.estudanteIntegral",
+            "data.matriculas.estudantePpl",
+            "data.matriculas.estudanteSituacaoFinal",
+            "data.matriculas.etapaEnsinoConsolidado",
+            "data.matriculas.formaOrganizacaoTurma",
+            "data.matriculas.inep",
+            "data.matriculas.matriculaRede",
+            "data.matriculas.serieAno",
+            "data.matriculas.situacaoMatricula",
+            "data.matriculas.turmaOrganizacaoQuantidadeTotal",
+            "data.municipio",
+            "data.nome",
+            "data.nomeMaeEstudante",
+            "data.nomeSocial",
+            "data.numero",
+            "data.numeroNIS",
+            "data.numeroNISResponsavel",
+            "data.orgaoEmissor",
+            "data.outrasMatriculas",
+            "data.racaCor",
+            "data.rg",
+            "data.situacaoCadastroValidado",
+            "data.telefone",
+            "data.tipoDeficiencia",
+            "data.uf",
+            "message",
+            "pagination.count",
+            "pagination.current_page",
+            "pagination.links.next",
+            "pagination.links.previous",
+            "pagination.per_page",
+            "pagination.total",
+            "pagination.total_pages",
+            "success"
+          ],
+          "parameters": []
+        }
+      ]
+    },
+    "test_8_with500": {
+      "paths": [
+        {
+          "status": "201",
+          "method": "POST",
+          "path": "/v1/estudantes/lote",
+          "request": "/v1/estudantes/lote",
+          "properties": [
+            "message",
+            "success"
+          ],
+          "parameters": []
+        },
+        {
+          "status": "500",
+          "method": "POST",
+          "path": "/v1/estudantes/lote",
+          "request": "/v1/estudantes/lote",
+          "properties": [
+            "errors.message",
+            "message",
+            "success"
+          ],
+          "parameters": []
+        },
+        {
+          "status": "201",
+          "method": "POST",
+          "path": "/v1/estudantes/lote",
+          "request": "/v1/estudantes/lote",
+          "properties": [
+            "message",
+            "success"
+          ],
+          "parameters": []
+        },
+        {
+          "status": "201",
+          "method": "POST",
+          "path": "/v1/estudantes/lote",
+          "request": "/v1/estudantes/lote",
+          "properties": [
+            "message",
+            "success"
+          ],
+          "parameters": []
+        },
+        {
+          "status": "201",
+          "method": "POST",
+          "path": "/v1/estudantes/lote",
+          "request": "/v1/estudantes/lote",
+          "properties": [
+            "message",
+            "success"
+          ],
+          "parameters": []
+        },
+        {
+          "status": "200",
+          "method": "GET",
+          "path": "/v1/estudantes/lote",
+          "request": "/v1/estudantes/lote?per_page=730",
+          "properties": [
+            "data",
+            "data.dataEnvio",
+            "data.status_processamento",
+            "message",
+            "pagination.count",
+            "pagination.current_page",
+            "pagination.links.next",
+            "pagination.links.previous",
+            "pagination.per_page",
+            "pagination.total",
+            "pagination.total_pages",
+            "success"
+          ],
+          "parameters": [
+            {
+              "parameter": "per_page",
+              "value": [
+                "730"
+              ],
+              "parameter_type": "query"
+            }
+          ]
+        }
+      ]
+    },
+    "test_9_with500": {
+      "paths": [
+        {
+          "status": "201",
+          "method": "POST",
+          "path": "/v1/estudantes/lote",
+          "request": "/v1/estudantes/lote",
+          "properties": [
+            "message",
+            "success"
+          ],
+          "parameters": []
+        },
+        {
+          "status": "500",
+          "method": "POST",
+          "path": "/v1/estudantes/lote",
+          "request": "/v1/estudantes/lote",
+          "properties": [
+            "errors.message",
+            "message",
+            "success"
+          ],
+          "parameters": []
+        },
+        {
+          "status": "201",
+          "method": "POST",
+          "path": "/v1/estudantes/lote",
+          "request": "/v1/estudantes/lote",
+          "properties": [
+            "message",
+            "success"
+          ],
+          "parameters": []
+        },
+        {
+          "status": "201",
+          "method": "POST",
+          "path": "/v1/estudantes/lote",
+          "request": "/v1/estudantes/lote",
+          "properties": [
+            "message",
+            "success"
+          ],
+          "parameters": []
+        },
+        {
+          "status": "200",
+          "method": "GET",
+          "path": "/v1/estudantes/lote",
+          "request": "/v1/estudantes/lote?page=386&per_page=10",
+          "properties": [
+            "data",
+            "data.dataEnvio",
+            "data.status_processamento",
+            "message",
+            "pagination.count",
+            "pagination.current_page",
+            "pagination.links.next",
+            "pagination.links.previous",
+            "pagination.per_page",
+            "pagination.total",
+            "pagination.total_pages",
+            "success"
+          ],
+          "parameters": [
+            {
+              "parameter": "page",
+              "value": [
+                "386"
+              ],
+              "parameter_type": "query"
+            },
+            {
+              "parameter": "per_page",
+              "value": [
+                "10"
+              ],
+              "parameter_type": "query"
+            }
+          ]
+        }
+      ]
+    },
+    "test_10_with500": {
+      "paths": [
+        {
+          "status": "500",
+          "method": "POST",
+          "path": "/v1/estudantes",
+          "request": "/v1/estudantes",
+          "properties": [
+            "errors.message",
+            "message",
+            "success"
+          ],
+          "parameters": []
+        },
+        {
+          "status": "500",
+          "method": "POST",
+          "path": "/v1/estudantes",
+          "request": "/v1/estudantes",
+          "properties": [
+            "errors.message",
+            "message",
+            "success"
+          ],
+          "parameters": []
+        },
+        {
+          "status": "500",
+          "method": "POST",
+          "path": "/v1/estudantes",
+          "request": "/v1/estudantes",
+          "properties": [
+            "errors.message",
+            "message",
+            "success"
+          ],
+          "parameters": []
+        },
+        {
+          "status": "200",
+          "method": "GET",
+          "path": "/v1/estudantes",
+          "request": "/v1/estudantes?page=654&per_page=274&ano_matricula=2024",
+          "properties": [
+            "data",
+            "data.bairro",
+            "data.cep",
+            "data.certidaoNascimento",
+            "data.cnh",
+            "data.cpf",
+            "data.cpfResponsavel",
+            "data.dataNascimento",
+            "data.email",
+            "data.genero",
+            "data.logradouro",
+            "data.matriculas",
+            "data.matriculas.anoMatricula",
+            "data.matriculas.codInstituicao",
+            "data.matriculas.codigoMatriculaSgp",
+            "data.matriculas.dataAtivacaoMatricula",
+            "data.matriculas.dataConclusaoEnsinoMedio",
+            "data.matriculas.dataFimOuAprovacao",
+            "data.matriculas.dataInicioMatricula",
+            "data.matriculas.dataInicioPeriodoLetivo",
+            "data.matriculas.deletadaEm",
+            "data.matriculas.estudanteAnoPeriodo",
+            "data.matriculas.estudanteIntegral",
+            "data.matriculas.estudantePpl",
+            "data.matriculas.estudanteSituacaoFinal",
+            "data.matriculas.etapaEnsinoConsolidado",
+            "data.matriculas.formaOrganizacaoTurma",
+            "data.matriculas.inep",
+            "data.matriculas.matriculaRede",
+            "data.matriculas.serieAno",
+            "data.matriculas.situacaoMatricula",
+            "data.matriculas.turmaOrganizacaoQuantidadeTotal",
+            "data.municipio",
+            "data.nome",
+            "data.nomeMaeEstudante",
+            "data.nomeSocial",
+            "data.numero",
+            "data.numeroNIS",
+            "data.numeroNISResponsavel",
+            "data.orgaoEmissor",
+            "data.outrasMatriculas",
+            "data.racaCor",
+            "data.rg",
+            "data.situacaoCadastroValidado",
+            "data.telefone",
+            "data.tipoDeficiencia",
+            "data.uf",
+            "message",
+            "pagination.count",
+            "pagination.current_page",
+            "pagination.links.next",
+            "pagination.links.previous",
+            "pagination.per_page",
+            "pagination.total",
+            "pagination.total_pages",
+            "success"
+          ],
+          "parameters": [
+            {
+              "parameter": "page",
+              "value": [
+                "654"
+              ],
+              "parameter_type": "query"
+            },
+            {
+              "parameter": "per_page",
+              "value": [
+                "274"
+              ],
+              "parameter_type": "query"
+            },
+            {
+              "parameter": "ano_matricula",
+              "value": [
+                "2024"
+              ],
+              "parameter_type": "query"
+            }
+          ]
+        }
+      ]
+    },
+    "test_11_with500": {
+      "paths": [
+        {
+          "status": "500",
+          "method": "POST",
+          "path": "/v1/estudantes",
+          "request": "/v1/estudantes",
+          "properties": [
+            "errors.message",
+            "message",
+            "success"
+          ],
+          "parameters": []
+        },
+        {
+          "status": "500",
+          "method": "POST",
+          "path": "/v1/estudantes",
+          "request": "/v1/estudantes",
+          "properties": [
+            "errors.message",
+            "message",
+            "success"
+          ],
+          "parameters": []
+        },
+        {
+          "status": "500",
+          "method": "POST",
+          "path": "/v1/estudantes",
+          "request": "/v1/estudantes",
+          "properties": [
+            "errors.message",
+            "message",
+            "success"
+          ],
+          "parameters": []
+        },
+        {
+          "status": "500",
+          "method": "POST",
+          "path": "/v1/estudantes",
+          "request": "/v1/estudantes",
+          "properties": [
+            "errors.message",
+            "message",
+            "success"
+          ],
+          "parameters": []
+        },
+        {
+          "status": "200",
+          "method": "GET",
+          "path": "/v1/estudantes",
+          "request": "/v1/estudantes?situacao_matricula=ATIVAS&ano_matricula=2024&situacao_final=REPROVADAS",
+          "properties": [
+            "data",
+            "data.bairro",
+            "data.cep",
+            "data.certidaoNascimento",
+            "data.cnh",
+            "data.cpf",
+            "data.cpfResponsavel",
+            "data.dataNascimento",
+            "data.email",
+            "data.genero",
+            "data.logradouro",
+            "data.matriculas",
+            "data.matriculas.anoMatricula",
+            "data.matriculas.codInstituicao",
+            "data.matriculas.codigoMatriculaSgp",
+            "data.matriculas.dataAtivacaoMatricula",
+            "data.matriculas.dataConclusaoEnsinoMedio",
+            "data.matriculas.dataFimOuAprovacao",
+            "data.matriculas.dataInicioMatricula",
+            "data.matriculas.dataInicioPeriodoLetivo",
+            "data.matriculas.deletadaEm",
+            "data.matriculas.estudanteAnoPeriodo",
+            "data.matriculas.estudanteIntegral",
+            "data.matriculas.estudantePpl",
+            "data.matriculas.estudanteSituacaoFinal",
+            "data.matriculas.etapaEnsinoConsolidado",
+            "data.matriculas.formaOrganizacaoTurma",
+            "data.matriculas.inep",
+            "data.matriculas.matriculaRede",
+            "data.matriculas.serieAno",
+            "data.matriculas.situacaoMatricula",
+            "data.matriculas.turmaOrganizacaoQuantidadeTotal",
+            "data.municipio",
+            "data.nome",
+            "data.nomeMaeEstudante",
+            "data.nomeSocial",
+            "data.numero",
+            "data.numeroNIS",
+            "data.numeroNISResponsavel",
+            "data.orgaoEmissor",
+            "data.outrasMatriculas",
+            "data.racaCor",
+            "data.rg",
+            "data.situacaoCadastroValidado",
+            "data.telefone",
+            "data.tipoDeficiencia",
+            "data.uf",
+            "message",
+            "pagination.count",
+            "pagination.current_page",
+            "pagination.links.next",
+            "pagination.links.previous",
+            "pagination.per_page",
+            "pagination.total",
+            "pagination.total_pages",
+            "success"
+          ],
+          "parameters": [
+            {
+              "parameter": "situacao_matricula",
+              "value": [
+                "ATIVAS"
+              ],
+              "parameter_type": "query"
+            },
+            {
+              "parameter": "ano_matricula",
+              "value": [
+                "2024"
+              ],
+              "parameter_type": "query"
+            },
+            {
+              "parameter": "situacao_final",
+              "value": [
+                "REPROVADAS"
+              ],
+              "parameter_type": "query"
+            }
+          ]
+        }
+      ]
+    },
+    "test_12_with500": {
+      "paths": [
+        {
+          "status": "400",
+          "method": "GET",
+          "path": "/v1/estudantes/lote/{id}/erros",
+          "request": "/v1/estudantes/lote/31/erros",
+          "properties": [
+            "message",
+            "success"
+          ],
+          "parameters": [
+            {
+              "parameter": "id",
+              "value": "31",
+              "parameter_type": "path"
+            }
+          ]
+        },
+        {
+          "status": "500",
+          "method": "GET",
+          "path": "/v1/estudantes/lote/{id}",
+          "request": "/v1/estudantes/lote/dbc8ae0a-4144-484a-aa5e-4cfbf9cd78e1?page=768",
+          "properties": [
+            "message",
+            "success"
+          ],
+          "parameters": [
+            {
+              "parameter": "id",
+              "value": "dbc8ae0a-4144-484a-aa5e-4cfbf9cd78e1",
+              "parameter_type": "path"
+            },
+            {
+              "parameter": "page",
+              "value": [
+                "768"
+              ],
+              "parameter_type": "query"
+            }
+          ]
+        },
+        {
+          "status": "400",
+          "method": "GET",
+          "path": "/v1/estudantes/lote/{id}/erros",
+          "request": "/v1/estudantes/lote/35/erros?page=38",
+          "properties": [
+            "message",
+            "success"
+          ],
+          "parameters": [
+            {
+              "parameter": "id",
+              "value": "35",
+              "parameter_type": "path"
+            },
+            {
+              "parameter": "page",
+              "value": [
+                "38"
+              ],
+              "parameter_type": "query"
+            }
+          ]
+        },
+        {
+          "status": "200",
+          "method": "GET",
+          "path": "/v1/estudantes/lote",
+          "request": "/v1/estudantes/lote?page=351",
+          "properties": [
+            "data",
+            "data.dataEnvio",
+            "data.status_processamento",
+            "message",
+            "pagination.count",
+            "pagination.current_page",
+            "pagination.links.next",
+            "pagination.links.previous",
+            "pagination.per_page",
+            "pagination.total",
+            "pagination.total_pages",
+            "success"
+          ],
+          "parameters": [
+            {
+              "parameter": "page",
+              "value": [
+                "351"
+              ],
+              "parameter_type": "query"
+            }
+          ]
+        },
+        {
+          "status": "200",
+          "method": "GET",
+          "path": "/v1/estudantes/{cpfNis}",
+          "request": "/v1/estudantes/74130058835",
+          "properties": [
+            "data.bairro",
+            "data.cep",
+            "data.certidaoNascimento",
+            "data.cnh",
+            "data.cpf",
+            "data.cpfResponsavel",
+            "data.dataNascimento",
+            "data.email",
+            "data.genero",
+            "data.logradouro",
+            "data.matriculas",
+            "data.matriculas.anoMatricula",
+            "data.matriculas.codInstituicao",
+            "data.matriculas.codigoMatriculaSgp",
+            "data.matriculas.dataAtivacaoMatricula",
+            "data.matriculas.dataConclusaoEnsinoMedio",
+            "data.matriculas.dataFimOuAprovacao",
+            "data.matriculas.dataInicioMatricula",
+            "data.matriculas.dataInicioPeriodoLetivo",
+            "data.matriculas.deletadaEm",
+            "data.matriculas.estudanteAnoPeriodo",
+            "data.matriculas.estudanteIntegral",
+            "data.matriculas.estudantePpl",
+            "data.matriculas.estudanteSituacaoFinal",
+            "data.matriculas.etapaEnsinoConsolidado",
+            "data.matriculas.formaOrganizacaoTurma",
+            "data.matriculas.inep",
+            "data.matriculas.matriculaRede",
+            "data.matriculas.serieAno",
+            "data.matriculas.situacaoMatricula",
+            "data.matriculas.turmaOrganizacaoQuantidadeTotal",
+            "data.municipio",
+            "data.nome",
+            "data.nomeMaeEstudante",
+            "data.nomeSocial",
+            "data.numero",
+            "data.numeroNIS",
+            "data.numeroNISResponsavel",
+            "data.orgaoEmissor",
+            "data.outrasMatriculas",
+            "data.racaCor",
+            "data.rg",
+            "data.situacaoCadastroValidado",
+            "data.telefone",
+            "data.tipoDeficiencia",
+            "data.uf",
+            "message",
+            "success"
+          ],
+          "parameters": [
+            {
+              "parameter": "cpfNis",
+              "value": "74130058835",
+              "parameter_type": "path"
+            }
+          ]
+        },
+        {
+          "status": "500",
+          "method": "POST",
+          "path": "/v1/estudantes",
+          "request": "/v1/estudantes",
+          "properties": [
+            "errors.message",
+            "message",
+            "success"
+          ],
+          "parameters": []
+        },
+        {
+          "status": "400",
+          "method": "GET",
+          "path": "/v1/profissionais/lote/{id}/erros",
+          "request": "/v1/profissionais/lote/E6JB7EiEQRR/erros",
+          "properties": [
+            "message",
+            "success"
+          ],
+          "parameters": [
+            {
+              "parameter": "id",
+              "value": "E6JB7EiEQRR",
+              "parameter_type": "path"
+            }
+          ]
+        }
+      ]
+    },
+    "test_13_with500": {
+      "paths": [
+        {
+          "status": "500",
+          "method": "POST",
+          "path": "/v1/estudantes/lote",
+          "request": "/v1/estudantes/lote",
+          "properties": [
+            "errors.message",
+            "message",
+            "success"
+          ],
+          "parameters": []
+        },
+        {
+          "status": "401",
+          "method": "POST",
+          "path": "/v1/estudantes",
+          "request": "/v1/estudantes",
+          "properties": [
+            "message",
+            "success"
+          ],
+          "parameters": []
+        },
+        {
+          "status": "200",
+          "method": "GET",
+          "path": "/v1/profissionais/inep/{inep}",
+          "request": "/v1/profissionais/inep/te3xdfd?page=550",
+          "properties": [
+            "data",
+            "message",
+            "pagination.count",
+            "pagination.current_page",
+            "pagination.links.next",
+            "pagination.links.previous",
+            "pagination.per_page",
+            "pagination.total",
+            "pagination.total_pages",
+            "success"
+          ],
+          "parameters": [
+            {
+              "parameter": "inep",
+              "value": "te3xdfd",
+              "parameter_type": "path"
+            },
+            {
+              "parameter": "page",
+              "value": [
+                "550"
+              ],
+              "parameter_type": "query"
+            }
+          ]
+        },
+        {
+          "status": "200",
+          "method": "GET",
+          "path": "/v1/estudantes/inep/{inep}",
+          "request": "/v1/estudantes/inep/YP7OXo?page=829",
+          "properties": [
+            "data",
+            "message",
+            "pagination.count",
+            "pagination.current_page",
+            "pagination.links.next",
+            "pagination.links.previous",
+            "pagination.per_page",
+            "pagination.total",
+            "pagination.total_pages",
+            "success"
+          ],
+          "parameters": [
+            {
+              "parameter": "inep",
+              "value": "YP7OXo",
+              "parameter_type": "path"
+            },
+            {
+              "parameter": "page",
+              "value": [
+                "829"
+              ],
+              "parameter_type": "query"
+            }
+          ]
+        },
+        {
+          "status": "400",
+          "method": "GET",
+          "path": "/v1/estudantes/lote/{id}/erros",
+          "request": "/v1/estudantes/lote/13/erros",
+          "properties": [
+            "message",
+            "success"
+          ],
+          "parameters": [
+            {
+              "parameter": "id",
+              "value": "13",
+              "parameter_type": "path"
+            }
+          ]
+        },
+        {
+          "status": "200",
+          "method": "GET",
+          "path": "/v1/profissionais/lote",
+          "request": "/v1/profissionais/lote?page=698&per_page=280",
+          "properties": [
+            "data",
+            "message",
+            "pagination.count",
+            "pagination.current_page",
+            "pagination.links.next",
+            "pagination.links.previous",
+            "pagination.per_page",
+            "pagination.total",
+            "pagination.total_pages",
+            "success"
+          ],
+          "parameters": [
+            {
+              "parameter": "page",
+              "value": [
+                "698"
+              ],
+              "parameter_type": "query"
+            },
+            {
+              "parameter": "per_page",
+              "value": [
+                "280"
+              ],
+              "parameter_type": "query"
+            }
+          ]
+        }
+      ]
+    },
+    "test_14_with500": {
+      "paths": [
+        {
+          "status": "500",
+          "method": "POST",
+          "path": "/v1/estudantes",
+          "request": "/v1/estudantes",
+          "properties": [
+            "errors.message",
+            "message",
+            "success"
+          ],
+          "parameters": []
+        },
+        {
+          "status": "400",
+          "method": "GET",
+          "path": "/v1/estudantes/lote/{id}/erros",
+          "request": "/v1/estudantes/lote/42/erros",
+          "properties": [
+            "message",
+            "success"
+          ],
+          "parameters": [
+            {
+              "parameter": "id",
+              "value": "42",
+              "parameter_type": "path"
+            }
+          ]
+        },
+        {
+          "status": "404",
+          "method": "GET",
+          "path": "/v1/estudantes/validacao-cadastro",
+          "request": "/v1/estudantes/validacao-cadastro?page=605&per_page=10&cpf=62561945944",
+          "properties": [
+            "errors.message",
+            "message",
+            "success"
+          ],
+          "parameters": [
+            {
+              "parameter": "page",
+              "value": [
+                "605"
+              ],
+              "parameter_type": "query"
+            },
+            {
+              "parameter": "per_page",
+              "value": [
+                "10"
+              ],
+              "parameter_type": "query"
+            },
+            {
+              "parameter": "cpf",
+              "value": [
+                "62561945944"
+              ],
+              "parameter_type": "query"
+            }
+          ]
+        },
+        {
+          "status": "200",
+          "method": "GET",
+          "path": "/v1/profissionais/inep/{inep}",
+          "request": "/v1/profissionais/inep/29390109",
+          "properties": [
+            "data",
+            "message",
+            "pagination.count",
+            "pagination.current_page",
+            "pagination.links.next",
+            "pagination.links.previous",
+            "pagination.per_page",
+            "pagination.total",
+            "pagination.total_pages",
+            "success"
+          ],
+          "parameters": [
+            {
+              "parameter": "inep",
+              "value": "29390109",
+              "parameter_type": "path"
+            }
+          ]
+        },
+        {
+          "status": "200",
+          "method": "GET",
+          "path": "/v1/estudantes/inep/{inep}",
+          "request": "/v1/estudantes/inep/41136225?ano_matricula=2024&situacao_final=REPROVADAS",
+          "properties": [
+            "data",
+            "message",
+            "pagination.count",
+            "pagination.current_page",
+            "pagination.links.next",
+            "pagination.links.previous",
+            "pagination.per_page",
+            "pagination.total",
+            "pagination.total_pages",
+            "success"
+          ],
+          "parameters": [
+            {
+              "parameter": "inep",
+              "value": "41136225",
+              "parameter_type": "path"
+            },
+            {
+              "parameter": "ano_matricula",
+              "value": [
+                "2024"
+              ],
+              "parameter_type": "query"
+            },
+            {
+              "parameter": "situacao_final",
+              "value": [
+                "REPROVADAS"
+              ],
+              "parameter_type": "query"
+            }
+          ]
+        },
+        {
+          "status": "400",
+          "method": "GET",
+          "path": "/v1/estudantes/lote/{id}/erros",
+          "request": "/v1/estudantes/lote/42/erros?per_page=280",
+          "properties": [
+            "message",
+            "success"
+          ],
+          "parameters": [
+            {
+              "parameter": "id",
+              "value": "42",
+              "parameter_type": "path"
+            },
+            {
+              "parameter": "per_page",
+              "value": [
+                "280"
+              ],
+              "parameter_type": "query"
+            }
+          ]
+        },
+        {
+          "status": "400",
+          "method": "GET",
+          "path": "/v1/estudantes/lote/{id}/erros",
+          "request": "/v1/estudantes/lote/msvVAsMOTP_8xC/erros?page=300&per_page=470",
+          "properties": [
+            "message",
+            "success"
+          ],
+          "parameters": [
+            {
+              "parameter": "id",
+              "value": "msvVAsMOTP_8xC",
+              "parameter_type": "path"
+            },
+            {
+              "parameter": "page",
+              "value": [
+                "300"
+              ],
+              "parameter_type": "query"
+            },
+            {
+              "parameter": "per_page",
+              "value": [
+                "470"
+              ],
+              "parameter_type": "query"
+            }
+          ]
+        },
+        {
+          "status": "201",
+          "method": "POST",
+          "path": "/v1/estudantes/lote",
+          "request": "/v1/estudantes/lote",
+          "properties": [
+            "message",
+            "success"
+          ],
+          "parameters": []
+        },
+        {
+          "status": "404",
+          "method": "GET",
+          "path": "/v1/estudantes/{cpfNis}",
+          "request": "/v1/estudantes/VOg",
+          "properties": [
+            "message",
+            "success"
+          ],
+          "parameters": [
+            {
+              "parameter": "cpfNis",
+              "value": "VOg",
+              "parameter_type": "path"
+            }
+          ]
+        },
+        {
+          "status": "200",
+          "method": "GET",
+          "path": "/v1/estudantes/lote",
+          "request": "/v1/estudantes/lote?page=275",
+          "properties": [
+            "data",
+            "data.dataEnvio",
+            "data.status_processamento",
+            "message",
+            "pagination.count",
+            "pagination.current_page",
+            "pagination.links.next",
+            "pagination.links.previous",
+            "pagination.per_page",
+            "pagination.total",
+            "pagination.total_pages",
+            "success"
+          ],
+          "parameters": [
+            {
+              "parameter": "page",
+              "value": [
+                "275"
+              ],
+              "parameter_type": "query"
+            }
+          ]
+        }
+      ]
+    },
+    "test_15_with500": {
+      "paths": [
+        {
+          "status": "200",
+          "method": "GET",
+          "path": "/v1/estudantes/validacao-cadastro",
+          "request": "/v1/estudantes/validacao-cadastro",
+          "properties": [
+            "data",
+            "data.cpf",
+            "data.dataNascimento",
+            "data.dataNascimentoValidada",
+            "data.dataValidacaoCadastral",
+            "data.nome",
+            "data.nomeMaeEstudante",
+            "data.nomeMaeEstudanteValidado",
+            "data.nomeValidado",
+            "data.numeroNIS",
+            "data.situacaoCadastral",
+            "data.situacaoCpf",
+            "message",
+            "pagination.count",
+            "pagination.current_page",
+            "pagination.links.next",
+            "pagination.links.previous",
+            "pagination.per_page",
+            "pagination.total",
+            "pagination.total_pages",
+            "success"
+          ],
+          "parameters": []
+        },
+        {
+          "status": "400",
+          "method": "GET",
+          "path": "/v1/estudantes/lote/{id}",
+          "request": "/v1/estudantes/lote/XqpqcUh?page=607&incluir_objetos_processados=true",
+          "properties": [
+            "message",
+            "success"
+          ],
+          "parameters": [
+            {
+              "parameter": "id",
+              "value": "XqpqcUh",
+              "parameter_type": "path"
+            },
+            {
+              "parameter": "page",
+              "value": [
+                "607"
+              ],
+              "parameter_type": "query"
+            },
+            {
+              "parameter": "incluir_objetos_processados",
+              "value": [
+                "true"
+              ],
+              "parameter_type": "query"
+            }
+          ]
+        },
+        {
+          "status": "500",
+          "method": "POST",
+          "path": "/v1/estudantes",
+          "request": "/v1/estudantes",
+          "properties": [
+            "errors.message",
+            "message",
+            "success"
+          ],
+          "parameters": []
+        },
+        {
+          "status": "200",
+          "method": "GET",
+          "path": "/v1/estudantes/lote/{id}",
+          "request": "/v1/estudantes/lote/536df036-7b22-4f88-bf51-84625e61bedb",
+          "properties": [
+            "message",
+            "status_processamento",
+            "success"
+          ],
+          "parameters": [
+            {
+              "parameter": "id",
+              "value": "536df036-7b22-4f88-bf51-84625e61bedb",
+              "parameter_type": "path"
+            }
+          ]
+        },
+        {
+          "status": "404",
+          "method": "GET",
+          "path": "/v1/profissionais/{cpf}",
+          "request": "/v1/profissionais/81601036620",
+          "properties": [
+            "message",
+            "success"
+          ],
+          "parameters": [
+            {
+              "parameter": "cpf",
+              "value": "81601036620",
+              "parameter_type": "path"
+            }
+          ]
+        },
+        {
+          "status": "200",
+          "method": "GET",
+          "path": "/v1/profissionais",
+          "request": "/v1/profissionais",
+          "properties": [
+            "data",
+            "data.bairro",
+            "data.cargaHoraria",
+            "data.cep",
+            "data.codigoFuncao",
+            "data.codigoInstituicao",
+            "data.cpf",
+            "data.dataFim",
+            "data.dataIngresso",
+            "data.dataNascimento",
+            "data.email",
+            "data.formacoesAcademicas",
+            "data.formacoesAcademicas.anoConclusaoFormacaoAcademica",
+            "data.formacoesAcademicas.anoInicioFormacaoAcademica",
+            "data.formacoesAcademicas.areaDoConhecimentoFormacaoAcademica",
+            "data.formacoesAcademicas.noInstituicaoEnsinoFormacaoAcademica",
+            "data.formacoesAcademicas.principal",
+            "data.formacoesAcademicas.tipoFormacaoAcademica",
+            "data.genero",
+            "data.inep",
+            "data.logradouro",
+            "data.matriculaRede",
+            "data.municipio",
+            "data.nivelEscolaridade",
+            "data.nome",
+            "data.nomeSocial",
+            "data.numero",
+            "data.racaCor",
+            "data.situacaoAtiva",
+            "data.telefone",
+            "data.tipoDeficiencia",
+            "data.tipoEnsinoMedio",
+            "data.tipoVinculo",
+            "data.uf",
+            "message",
+            "pagination.count",
+            "pagination.current_page",
+            "pagination.links.next",
+            "pagination.links.previous",
+            "pagination.per_page",
+            "pagination.total",
+            "pagination.total_pages",
+            "success"
+          ],
+          "parameters": []
+        },
+        {
+          "status": "500",
+          "method": "GET",
+          "path": "/v1/profissionais/lote/{id}",
+          "request": "/v1/profissionais/lote/bc9938de-741e-4d9a-bf4c-a9890c8c4209?per_page=850&incluir_objetos_processados=false",
+          "properties": [
+            "message",
+            "success"
+          ],
+          "parameters": [
+            {
+              "parameter": "id",
+              "value": "bc9938de-741e-4d9a-bf4c-a9890c8c4209",
+              "parameter_type": "path"
+            },
+            {
+              "parameter": "per_page",
+              "value": [
+                "850"
+              ],
+              "parameter_type": "query"
+            },
+            {
+              "parameter": "incluir_objetos_processados",
+              "value": [
+                "false"
+              ],
+              "parameter_type": "query"
+            }
+          ]
+        }
+      ]
+    },
+    "test_16_with500": {
+      "paths": [
+        {
+          "status": "200",
+          "method": "GET",
+          "path": "/v1/estudantes/{cpfNis}",
+          "request": "/v1/estudantes/81601036620",
+          "properties": [
+            "data.bairro",
+            "data.cep",
+            "data.certidaoNascimento",
+            "data.cnh",
+            "data.cpf",
+            "data.cpfResponsavel",
+            "data.dataNascimento",
+            "data.email",
+            "data.genero",
+            "data.logradouro",
+            "data.matriculas",
+            "data.matriculas.anoMatricula",
+            "data.matriculas.codInstituicao",
+            "data.matriculas.codigoMatriculaSgp",
+            "data.matriculas.dataAtivacaoMatricula",
+            "data.matriculas.dataConclusaoEnsinoMedio",
+            "data.matriculas.dataFimOuAprovacao",
+            "data.matriculas.dataInicioMatricula",
+            "data.matriculas.dataInicioPeriodoLetivo",
+            "data.matriculas.deletadaEm",
+            "data.matriculas.estudanteAnoPeriodo",
+            "data.matriculas.estudanteIntegral",
+            "data.matriculas.estudantePpl",
+            "data.matriculas.estudanteSituacaoFinal",
+            "data.matriculas.etapaEnsinoConsolidado",
+            "data.matriculas.formaOrganizacaoTurma",
+            "data.matriculas.inep",
+            "data.matriculas.matriculaRede",
+            "data.matriculas.serieAno",
+            "data.matriculas.situacaoMatricula",
+            "data.matriculas.turmaOrganizacaoQuantidadeTotal",
+            "data.municipio",
+            "data.nome",
+            "data.nomeMaeEstudante",
+            "data.nomeSocial",
+            "data.numero",
+            "data.numeroNIS",
+            "data.numeroNISResponsavel",
+            "data.orgaoEmissor",
+            "data.outrasMatriculas",
+            "data.racaCor",
+            "data.rg",
+            "data.situacaoCadastroValidado",
+            "data.telefone",
+            "data.tipoDeficiencia",
+            "data.uf",
+            "message",
+            "success"
+          ],
+          "parameters": [
+            {
+              "parameter": "cpfNis",
+              "value": "81601036620",
+              "parameter_type": "path"
+            }
+          ]
+        },
+        {
+          "status": "400",
+          "method": "GET",
+          "path": "/v1/estudantes/lote/{id}/erros",
+          "request": "/v1/estudantes/lote/27/erros?per_page=787",
+          "properties": [
+            "message",
+            "success"
+          ],
+          "parameters": [
+            {
+              "parameter": "id",
+              "value": "27",
+              "parameter_type": "path"
+            },
+            {
+              "parameter": "per_page",
+              "value": [
+                "787"
+              ],
+              "parameter_type": "query"
+            }
+          ]
+        },
+        {
+          "status": "400",
+          "method": "GET",
+          "path": "/v1/profissionais/lote/{id}/erros",
+          "request": "/v1/profissionais/lote/27/erros?per_page=10",
+          "properties": [
+            "message",
+            "success"
+          ],
+          "parameters": [
+            {
+              "parameter": "id",
+              "value": "27",
+              "parameter_type": "path"
+            },
+            {
+              "parameter": "per_page",
+              "value": [
+                "10"
+              ],
+              "parameter_type": "query"
+            }
+          ]
+        },
+        {
+          "status": "401",
+          "method": "GET",
+          "path": "/v1/estudantes/inep/{inep}",
+          "request": "/v1/estudantes/inep/29193656?page=963&situacao_matricula=INATIVAS&ano_matricula=2024",
+          "properties": [
+            "message",
+            "success"
+          ],
+          "parameters": [
+            {
+              "parameter": "inep",
+              "value": "29193656",
+              "parameter_type": "path"
+            },
+            {
+              "parameter": "page",
+              "value": [
+                "963"
+              ],
+              "parameter_type": "query"
+            },
+            {
+              "parameter": "situacao_matricula",
+              "value": [
+                "INATIVAS"
+              ],
+              "parameter_type": "query"
+            },
+            {
+              "parameter": "ano_matricula",
+              "value": [
+                "2024"
+              ],
+              "parameter_type": "query"
+            }
+          ]
+        },
+        {
+          "status": "201",
+          "method": "POST",
+          "path": "/v1/estudantes/lote",
+          "request": "/v1/estudantes/lote",
+          "properties": [
+            "message",
+            "success"
+          ],
+          "parameters": []
+        },
+        {
+          "status": "500",
+          "method": "GET",
+          "path": "/v1/estudantes",
+          "request": "/v1/estudantes?page=467&per_page=604&situacao_matricula=EVOMASTER&ano_matricula=2024&situacao_final=REPROVADAS",
+          "properties": [
+            "errors.message",
+            "message",
+            "success"
+          ],
+          "parameters": [
+            {
+              "parameter": "page",
+              "value": [
+                "467"
+              ],
+              "parameter_type": "query"
+            },
+            {
+              "parameter": "per_page",
+              "value": [
+                "604"
+              ],
+              "parameter_type": "query"
+            },
+            {
+              "parameter": "situacao_matricula",
+              "value": [
+                "EVOMASTER"
+              ],
+              "parameter_type": "query"
+            },
+            {
+              "parameter": "ano_matricula",
+              "value": [
+                "2024"
+              ],
+              "parameter_type": "query"
+            },
+            {
+              "parameter": "situacao_final",
+              "value": [
+                "REPROVADAS"
+              ],
+              "parameter_type": "query"
+            }
+          ]
+        },
+        {
+          "status": "500",
+          "method": "GET",
+          "path": "/v1/estudantes",
+          "request": "/v1/estudantes?page=-1697350307&situacao_matricula=ATIVAS&situacao_final=REPROVADAS",
+          "properties": [
+            "errors.message",
+            "message",
+            "success"
+          ],
+          "parameters": [
+            {
+              "parameter": "page",
+              "value": [
+                "-1697350307"
+              ],
+              "parameter_type": "query"
+            },
+            {
+              "parameter": "situacao_matricula",
+              "value": [
+                "ATIVAS"
+              ],
+              "parameter_type": "query"
+            },
+            {
+              "parameter": "situacao_final",
+              "value": [
+                "REPROVADAS"
+              ],
+              "parameter_type": "query"
+            }
+          ]
+        },
+        {
+          "status": "200",
+          "method": "PATCH",
+          "path": "/v1/estudantes/lote",
+          "request": "/v1/estudantes/lote",
+          "properties": [
+            "detalhesValidacao",
+            "message",
+            "success"
+          ],
+          "parameters": []
+        },
+        {
+          "status": "200",
+          "method": "GET",
+          "path": "/v1/estudantes/validacao-cadastro",
+          "request": "/v1/estudantes/validacao-cadastro?page=1",
+          "properties": [
+            "data",
+            "data.cpf",
+            "data.dataNascimento",
+            "data.dataNascimentoValidada",
+            "data.dataValidacaoCadastral",
+            "data.nome",
+            "data.nomeMaeEstudante",
+            "data.nomeMaeEstudanteValidado",
+            "data.nomeValidado",
+            "data.numeroNIS",
+            "data.situacaoCadastral",
+            "data.situacaoCpf",
+            "message",
+            "pagination.count",
+            "pagination.current_page",
+            "pagination.links.next",
+            "pagination.links.previous",
+            "pagination.per_page",
+            "pagination.total",
+            "pagination.total_pages",
+            "success"
+          ],
+          "parameters": [
+            {
+              "parameter": "page",
+              "value": [
+                "1"
+              ],
+              "parameter_type": "query"
+            }
+          ]
+        }
+      ]
+    },
+    "test_17_with500": {
+      "paths": [
+        {
+          "status": "404",
+          "method": "GET",
+          "path": "/v1/estudantes/solicitacoes-alteracoes",
+          "request": "/v1/estudantes/solicitacoes-alteracoes?per_page=730&cpfNovo=57058746850",
+          "properties": [
+            "errors.message",
+            "message",
+            "success"
+          ],
+          "parameters": [
+            {
+              "parameter": "per_page",
+              "value": [
+                "730"
+              ],
+              "parameter_type": "query"
+            },
+            {
+              "parameter": "cpfNovo",
+              "value": [
+                "57058746850"
+              ],
+              "parameter_type": "query"
+            }
+          ]
+        },
+        {
+          "status": "422",
+          "method": "POST",
+          "path": "/v1/profissionais",
+          "request": "/v1/profissionais",
+          "properties": [
+            "message",
+            "success"
+          ],
+          "parameters": []
+        },
+        {
+          "status": "200",
+          "method": "GET",
+          "path": "/v1/profissionais/lote",
+          "request": "/v1/profissionais/lote?page=707",
+          "properties": [
+            "data",
+            "message",
+            "pagination.count",
+            "pagination.current_page",
+            "pagination.links.next",
+            "pagination.links.previous",
+            "pagination.per_page",
+            "pagination.total",
+            "pagination.total_pages",
+            "success"
+          ],
+          "parameters": [
+            {
+              "parameter": "page",
+              "value": [
+                "707"
+              ],
+              "parameter_type": "query"
+            }
+          ]
+        },
+        {
+          "status": "200",
+          "method": "GET",
+          "path": "/v1/estudantes/validacao-cadastro",
+          "request": "/v1/estudantes/validacao-cadastro?page=685",
+          "properties": [
+            "data",
+            "data.cpf",
+            "data.dataNascimento",
+            "data.dataNascimentoValidada",
+            "data.dataValidacaoCadastral",
+            "data.nome",
+            "data.nomeMaeEstudante",
+            "data.nomeMaeEstudanteValidado",
+            "data.nomeValidado",
+            "data.numeroNIS",
+            "data.situacaoCadastral",
+            "data.situacaoCpf",
+            "message",
+            "pagination.count",
+            "pagination.current_page",
+            "pagination.links.next",
+            "pagination.links.previous",
+            "pagination.per_page",
+            "pagination.total",
+            "pagination.total_pages",
+            "success"
+          ],
+          "parameters": [
+            {
+              "parameter": "page",
+              "value": [
+                "685"
+              ],
+              "parameter_type": "query"
+            }
+          ]
+        },
+        {
+          "status": "200",
+          "method": "GET",
+          "path": "/v1/estudantes/{cpfNis}",
+          "request": "/v1/estudantes/01120060869",
+          "properties": [
+            "data.bairro",
+            "data.cep",
+            "data.certidaoNascimento",
+            "data.cnh",
+            "data.cpf",
+            "data.cpfResponsavel",
+            "data.dataNascimento",
+            "data.email",
+            "data.genero",
+            "data.logradouro",
+            "data.matriculas",
+            "data.matriculas.anoMatricula",
+            "data.matriculas.codInstituicao",
+            "data.matriculas.codigoMatriculaSgp",
+            "data.matriculas.dataAtivacaoMatricula",
+            "data.matriculas.dataConclusaoEnsinoMedio",
+            "data.matriculas.dataFimOuAprovacao",
+            "data.matriculas.dataInicioMatricula",
+            "data.matriculas.dataInicioPeriodoLetivo",
+            "data.matriculas.deletadaEm",
+            "data.matriculas.estudanteAnoPeriodo",
+            "data.matriculas.estudanteIntegral",
+            "data.matriculas.estudantePpl",
+            "data.matriculas.estudanteSituacaoFinal",
+            "data.matriculas.etapaEnsinoConsolidado",
+            "data.matriculas.formaOrganizacaoTurma",
+            "data.matriculas.inep",
+            "data.matriculas.matriculaRede",
+            "data.matriculas.serieAno",
+            "data.matriculas.situacaoMatricula",
+            "data.matriculas.turmaOrganizacaoQuantidadeTotal",
+            "data.municipio",
+            "data.nome",
+            "data.nomeMaeEstudante",
+            "data.nomeSocial",
+            "data.numero",
+            "data.numeroNIS",
+            "data.numeroNISResponsavel",
+            "data.orgaoEmissor",
+            "data.outrasMatriculas",
+            "data.racaCor",
+            "data.rg",
+            "data.situacaoCadastroValidado",
+            "data.telefone",
+            "data.tipoDeficiencia",
+            "data.uf",
+            "message",
+            "success"
+          ],
+          "parameters": [
+            {
+              "parameter": "cpfNis",
+              "value": "01120060869",
+              "parameter_type": "path"
+            }
+          ]
+        },
+        {
+          "status": "401",
+          "method": "POST",
+          "path": "/v1/profissionais",
+          "request": "/v1/profissionais",
+          "properties": [
+            "message",
+            "success"
+          ],
+          "parameters": []
+        },
+        {
+          "status": "200",
+          "method": "GET",
+          "path": "/v1/profissionais/inep/{inep}",
+          "request": "/v1/profissionais/inep/ask6?page=630&per_page=15",
+          "properties": [
+            "data",
+            "message",
+            "pagination.count",
+            "pagination.current_page",
+            "pagination.links.next",
+            "pagination.links.previous",
+            "pagination.per_page",
+            "pagination.total",
+            "pagination.total_pages",
+            "success"
+          ],
+          "parameters": [
+            {
+              "parameter": "inep",
+              "value": "ask6",
+              "parameter_type": "path"
+            },
+            {
+              "parameter": "page",
+              "value": [
+                "630"
+              ],
+              "parameter_type": "query"
+            },
+            {
+              "parameter": "per_page",
+              "value": [
+                "15"
+              ],
+              "parameter_type": "query"
+            }
+          ]
+        },
+        {
+          "status": "200",
+          "method": "GET",
+          "path": "/v1/profissionais/lote/{id}",
+          "request": "/v1/profissionais/lote/ac7ced72-6a03-4c7b-a035-8eeba38414d4?page=245&per_page=535&incluir_objetos_processados=false",
+          "properties": [
+            "message",
+            "status_processamento",
+            "success"
+          ],
+          "parameters": [
+            {
+              "parameter": "id",
+              "value": "ac7ced72-6a03-4c7b-a035-8eeba38414d4",
+              "parameter_type": "path"
+            },
+            {
+              "parameter": "page",
+              "value": [
+                "245"
+              ],
+              "parameter_type": "query"
+            },
+            {
+              "parameter": "per_page",
+              "value": [
+                "535"
+              ],
+              "parameter_type": "query"
+            },
+            {
+              "parameter": "incluir_objetos_processados",
+              "value": [
+                "false"
+              ],
+              "parameter_type": "query"
+            }
+          ]
+        },
+        {
+          "status": "500",
+          "method": "GET",
+          "path": "/v1/estudantes/inep/{inep}",
+          "request": "/v1/estudantes/inep/32078650?page=68&situacao_matricula=EVOMASTER&situacao_final=APROVADAS",
+          "properties": [
+            "errors.message",
+            "message",
+            "success"
+          ],
+          "parameters": [
+            {
+              "parameter": "inep",
+              "value": "32078650",
+              "parameter_type": "path"
+            },
+            {
+              "parameter": "page",
+              "value": [
+                "68"
+              ],
+              "parameter_type": "query"
+            },
+            {
+              "parameter": "situacao_matricula",
+              "value": [
+                "EVOMASTER"
+              ],
+              "parameter_type": "query"
+            },
+            {
+              "parameter": "situacao_final",
+              "value": [
+                "APROVADAS"
+              ],
+              "parameter_type": "query"
+            }
+          ]
+        },
+        {
+          "status": "401",
+          "method": "GET",
+          "path": "/v1/estudantes/validacao-cadastro",
+          "request": "/v1/estudantes/validacao-cadastro?page=526351395&per_page=922&cpf=iYRcOw",
+          "properties": [
+            "message",
+            "success"
+          ],
+          "parameters": [
+            {
+              "parameter": "page",
+              "value": [
+                "526351395"
+              ],
+              "parameter_type": "query"
+            },
+            {
+              "parameter": "per_page",
+              "value": [
+                "922"
+              ],
+              "parameter_type": "query"
+            },
+            {
+              "parameter": "cpf",
+              "value": [
+                "iYRcOw"
+              ],
+              "parameter_type": "query"
+            }
+          ]
+        }
+      ]
+    },
+    "test_18_with500": {
+      "paths": [
+        {
+          "status": "200",
+          "method": "GET",
+          "path": "/v1/profissionais",
+          "request": "/v1/profissionais?page=328",
+          "properties": [
+            "data",
+            "message",
+            "pagination.count",
+            "pagination.current_page",
+            "pagination.links.next",
+            "pagination.links.previous",
+            "pagination.per_page",
+            "pagination.total",
+            "pagination.total_pages",
+            "success"
+          ],
+          "parameters": [
+            {
+              "parameter": "page",
+              "value": [
+                "328"
+              ],
+              "parameter_type": "query"
+            }
+          ]
+        },
+        {
+          "status": "200",
+          "method": "GET",
+          "path": "/v1/profissionais/lote",
+          "request": "/v1/profissionais/lote?per_page=535",
+          "properties": [
+            "data",
+            "data.dataEnvio",
+            "data.status_processamento",
+            "message",
+            "pagination.count",
+            "pagination.current_page",
+            "pagination.links.next",
+            "pagination.links.previous",
+            "pagination.per_page",
+            "pagination.total",
+            "pagination.total_pages",
+            "success"
+          ],
+          "parameters": [
+            {
+              "parameter": "per_page",
+              "value": [
+                "535"
+              ],
+              "parameter_type": "query"
+            }
+          ]
+        },
+        {
+          "status": "404",
+          "method": "GET",
+          "path": "/v1/estudantes/solicitacoes-alteracoes",
+          "request": "/v1/estudantes/solicitacoes-alteracoes?page=342",
+          "properties": [
+            "errors.message",
+            "message",
+            "success"
+          ],
+          "parameters": [
+            {
+              "parameter": "page",
+              "value": [
+                "342"
+              ],
+              "parameter_type": "query"
+            }
+          ]
+        },
+        {
+          "status": "200",
+          "method": "GET",
+          "path": "/v1/profissionais/inep/{inep}",
+          "request": "/v1/profissionais/inep/29182166?page=918",
+          "properties": [
+            "data",
+            "message",
+            "pagination.count",
+            "pagination.current_page",
+            "pagination.links.next",
+            "pagination.links.previous",
+            "pagination.per_page",
+            "pagination.total",
+            "pagination.total_pages",
+            "success"
+          ],
+          "parameters": [
+            {
+              "parameter": "inep",
+              "value": "29182166",
+              "parameter_type": "path"
+            },
+            {
+              "parameter": "page",
+              "value": [
+                "918"
+              ],
+              "parameter_type": "query"
+            }
+          ]
+        },
+        {
+          "status": "200",
+          "method": "GET",
+          "path": "/v1/profissionais/inep/{inep}",
+          "request": "/v1/profissionais/inep/W46x",
+          "properties": [
+            "data",
+            "message",
+            "pagination.count",
+            "pagination.current_page",
+            "pagination.links.next",
+            "pagination.links.previous",
+            "pagination.per_page",
+            "pagination.total",
+            "pagination.total_pages",
+            "success"
+          ],
+          "parameters": [
+            {
+              "parameter": "inep",
+              "value": "W46x",
+              "parameter_type": "path"
+            }
+          ]
+        },
+        {
+          "status": "200",
+          "method": "GET",
+          "path": "/v1/estudantes/inep/{inep}",
+          "request": "/v1/estudantes/inep/41083725?page=615",
+          "properties": [
+            "data",
+            "message",
+            "pagination.count",
+            "pagination.current_page",
+            "pagination.links.next",
+            "pagination.links.previous",
+            "pagination.per_page",
+            "pagination.total",
+            "pagination.total_pages",
+            "success"
+          ],
+          "parameters": [
+            {
+              "parameter": "inep",
+              "value": "41083725",
+              "parameter_type": "path"
+            },
+            {
+              "parameter": "page",
+              "value": [
+                "615"
+              ],
+              "parameter_type": "query"
+            }
+          ]
+        },
+        {
+          "status": "200",
+          "method": "PATCH",
+          "path": "/v1/estudantes/lote",
+          "request": "/v1/estudantes/lote",
+          "properties": [
+            "detalhesValidacao",
+            "message",
+            "success"
+          ],
+          "parameters": []
+        },
+        {
+          "status": "200",
+          "method": "GET",
+          "path": "/v1/profissionais/lote",
+          "request": "/v1/profissionais/lote?page=613",
+          "properties": [
+            "data",
+            "message",
+            "pagination.count",
+            "pagination.current_page",
+            "pagination.links.next",
+            "pagination.links.previous",
+            "pagination.per_page",
+            "pagination.total",
+            "pagination.total_pages",
+            "success"
+          ],
+          "parameters": [
+            {
+              "parameter": "page",
+              "value": [
+                "613"
+              ],
+              "parameter_type": "query"
+            }
+          ]
+        },
+        {
+          "status": "500",
+          "method": "POST",
+          "path": "/v1/estudantes",
+          "request": "/v1/estudantes",
+          "properties": [
+            "errors.message",
+            "message",
+            "success"
+          ],
+          "parameters": []
+        },
+        {
+          "status": "200",
+          "method": "GET",
+          "path": "/v1/estudantes/inep/{inep}",
+          "request": "/v1/estudantes/inep/KzaHO?situacao_matricula=ATIVAS",
+          "properties": [
+            "data",
+            "message",
+            "pagination.count",
+            "pagination.current_page",
+            "pagination.links.next",
+            "pagination.links.previous",
+            "pagination.per_page",
+            "pagination.total",
+            "pagination.total_pages",
+            "success"
+          ],
+          "parameters": [
+            {
+              "parameter": "inep",
+              "value": "KzaHO",
+              "parameter_type": "path"
+            },
+            {
+              "parameter": "situacao_matricula",
+              "value": [
+                "ATIVAS"
+              ],
+              "parameter_type": "query"
+            }
+          ]
+        }
+      ]
+    },
+    "test_19": {
+      "paths": [
+        {
+          "status": "200",
+          "method": "GET",
+          "path": "/v1/profissionais/inep/{inep}",
+          "request": "/v1/profissionais/inep/O6Syn_IvUAhM88kl?per_page=730",
+          "properties": [
+            "data",
+            "message",
+            "pagination.count",
+            "pagination.current_page",
+            "pagination.links.next",
+            "pagination.links.previous",
+            "pagination.per_page",
+            "pagination.total",
+            "pagination.total_pages",
+            "success"
+          ],
+          "parameters": [
+            {
+              "parameter": "inep",
+              "value": "O6Syn_IvUAhM88kl",
+              "parameter_type": "path"
+            },
+            {
+              "parameter": "per_page",
+              "value": [
+                "730"
+              ],
+              "parameter_type": "query"
+            }
+          ]
+        }
+      ]
+    },
+    "test_20": {
+      "paths": [
+        {
+          "status": "200",
+          "method": "GET",
+          "path": "/v1/profissionais",
+          "request": "/v1/profissionais",
+          "properties": [
+            "data",
+            "data.bairro",
+            "data.cargaHoraria",
+            "data.cep",
+            "data.codigoFuncao",
+            "data.codigoInstituicao",
+            "data.cpf",
+            "data.dataFim",
+            "data.dataIngresso",
+            "data.dataNascimento",
+            "data.email",
+            "data.formacoesAcademicas",
+            "data.formacoesAcademicas.anoConclusaoFormacaoAcademica",
+            "data.formacoesAcademicas.anoInicioFormacaoAcademica",
+            "data.formacoesAcademicas.areaDoConhecimentoFormacaoAcademica",
+            "data.formacoesAcademicas.noInstituicaoEnsinoFormacaoAcademica",
+            "data.formacoesAcademicas.principal",
+            "data.formacoesAcademicas.tipoFormacaoAcademica",
+            "data.genero",
+            "data.inep",
+            "data.logradouro",
+            "data.matriculaRede",
+            "data.municipio",
+            "data.nivelEscolaridade",
+            "data.nome",
+            "data.nomeSocial",
+            "data.numero",
+            "data.racaCor",
+            "data.situacaoAtiva",
+            "data.telefone",
+            "data.tipoDeficiencia",
+            "data.tipoEnsinoMedio",
+            "data.tipoVinculo",
+            "data.uf",
+            "message",
+            "pagination.count",
+            "pagination.current_page",
+            "pagination.links.next",
+            "pagination.links.previous",
+            "pagination.per_page",
+            "pagination.total",
+            "pagination.total_pages",
+            "success"
+          ],
+          "parameters": []
+        }
+      ]
+    },
+    "test_21": {
+      "paths": [
+        {
+          "status": "200",
+          "method": "GET",
+          "path": "/v1/estudantes/lote",
+          "request": "/v1/estudantes/lote?page=633",
+          "properties": [
+            "data",
+            "data.dataEnvio",
+            "data.status_processamento",
+            "message",
+            "pagination.count",
+            "pagination.current_page",
+            "pagination.links.next",
+            "pagination.links.previous",
+            "pagination.per_page",
+            "pagination.total",
+            "pagination.total_pages",
+            "success"
+          ],
+          "parameters": [
+            {
+              "parameter": "page",
+              "value": [
+                "633"
+              ],
+              "parameter_type": "query"
+            }
+          ]
+        }
+      ]
+    },
+    "test_22": {
+      "paths": [
+        {
+          "status": "200",
+          "method": "GET",
+          "path": "/v1/profissionais",
+          "request": "/v1/profissionais?page=3",
+          "properties": [
+            "data",
+            "message",
+            "pagination.count",
+            "pagination.current_page",
+            "pagination.links.next",
+            "pagination.links.previous",
+            "pagination.per_page",
+            "pagination.total",
+            "pagination.total_pages",
+            "success"
+          ],
+          "parameters": [
+            {
+              "parameter": "page",
+              "value": [
+                "3"
+              ],
+              "parameter_type": "query"
+            }
+          ]
+        },
+        {
+          "status": "422",
+          "method": "POST",
+          "path": "/v1/profissionais",
+          "request": "/v1/profissionais",
+          "properties": [
+            "message",
+            "success"
+          ],
+          "parameters": []
+        }
+      ]
+    },
+    "test_23": {
+      "paths": [
+        {
+          "status": "200",
+          "method": "GET",
+          "path": "/v1/estudantes",
+          "request": "/v1/estudantes?ano_matricula=669&situacao_final=APROVADAS",
+          "properties": [
+            "data",
+            "message",
+            "pagination.count",
+            "pagination.current_page",
+            "pagination.links.next",
+            "pagination.links.previous",
+            "pagination.per_page",
+            "pagination.total",
+            "pagination.total_pages",
+            "success"
+          ],
+          "parameters": [
+            {
+              "parameter": "ano_matricula",
+              "value": [
+                "669"
+              ],
+              "parameter_type": "query"
+            },
+            {
+              "parameter": "situacao_final",
+              "value": [
+                "APROVADAS"
+              ],
+              "parameter_type": "query"
+            }
+          ]
+        }
+      ]
+    },
+    "test_24": {
+      "paths": [
+        {
+          "status": "201",
+          "method": "POST",
+          "path": "/v1/estudantes/lote",
+          "request": "/v1/estudantes/lote",
+          "properties": [
+            "id",
+            "message",
+            "success"
+          ],
+          "parameters": []
+        },
+        {
+          "status": "200",
+          "method": "GET",
+          "path": "/v1/estudantes/lote/{id}",
+          "request": null,
+          "properties": [
+            "message",
+            "status_processamento",
+            "success"
+          ],
+          "parameters": []
+        }
+      ]
+    },
+    "test_25": {
+      "paths": [
+        {
+          "status": "201",
+          "method": "POST",
+          "path": "/v1/estudantes/lote",
+          "request": "/v1/estudantes/lote",
+          "properties": [
+            "id",
+            "message",
+            "success"
+          ],
+          "parameters": []
+        },
+        {
+          "status": "200",
+          "method": "GET",
+          "path": "/v1/estudantes/lote/{id}",
+          "request": null,
+          "properties": [
+            "message",
+            "status_processamento",
+            "success"
+          ],
+          "parameters": []
+        }
+      ]
+    },
+    "test_26": {
+      "paths": [
+        {
+          "status": "201",
+          "method": "POST",
+          "path": "/v1/estudantes/lote",
+          "request": "/v1/estudantes/lote",
+          "properties": [
+            "id",
+            "message",
+            "success"
+          ],
+          "parameters": []
+        },
+        {
+          "status": "200",
+          "method": "GET",
+          "path": "/v1/estudantes/lote/{id}",
+          "request": null,
+          "properties": [
+            "message",
+            "status_processamento",
+            "success"
+          ],
+          "parameters": []
+        }
+      ]
+    },
+    "test_27": {
+      "paths": [
+        {
+          "status": "201",
+          "method": "POST",
+          "path": "/v1/profissionais/lote",
+          "request": "/v1/profissionais/lote",
+          "properties": [
+            "id",
+            "message",
+            "success"
+          ],
+          "parameters": []
+        },
+        {
+          "status": "200",
+          "method": "GET",
+          "path": "/v1/profissionais/lote/{id}",
+          "request": null,
+          "properties": [
+            "message",
+            "status_processamento",
+            "success"
+          ],
+          "parameters": []
+        }
+      ]
+    },
+    "test_28": {
+      "paths": [
+        {
+          "status": "201",
+          "method": "POST",
+          "path": "/v1/profissionais/lote",
+          "request": "/v1/profissionais/lote",
+          "properties": [
+            "id",
+            "message",
+            "success"
+          ],
+          "parameters": []
+        },
+        {
+          "status": "200",
+          "method": "GET",
+          "path": "/v1/profissionais/lote/{id}",
+          "request": null,
+          "properties": [
+            "message",
+            "status_processamento",
+            "success"
+          ],
+          "parameters": []
+        }
+      ]
+    },
+    "test_29": {
+      "paths": [
+        {
+          "status": "201",
+          "method": "POST",
+          "path": "/v1/profissionais/lote",
+          "request": "/v1/profissionais/lote",
+          "properties": [
+            "id",
+            "message",
+            "success"
+          ],
+          "parameters": []
+        },
+        {
+          "status": "200",
+          "method": "GET",
+          "path": "/v1/profissionais/lote/{id}",
+          "request": null,
+          "properties": [
+            "message",
+            "status_processamento",
+            "success"
+          ],
+          "parameters": []
+        }
+      ]
+    },
+    "test_30": {
+      "paths": [
+        {
+          "status": "201",
+          "method": "POST",
+          "path": "/v1/estudantes/lote",
+          "request": "/v1/estudantes/lote",
+          "properties": [
+            "id",
+            "message",
+            "success"
+          ],
+          "parameters": []
+        },
+        {
+          "status": "200",
+          "method": "GET",
+          "path": "/v1/estudantes/lote/{id}",
+          "request": null,
+          "properties": [
+            "message",
+            "status_processamento",
+            "success"
+          ],
+          "parameters": []
+        }
+      ]
+    },
+    "test_31": {
+      "paths": [
+        {
+          "status": "201",
+          "method": "POST",
+          "path": "/v1/estudantes/lote",
+          "request": "/v1/estudantes/lote",
+          "properties": [
+            "id",
+            "message",
+            "success"
+          ],
+          "parameters": []
+        },
+        {
+          "status": "200",
+          "method": "GET",
+          "path": "/v1/estudantes/lote/{id}",
+          "request": null,
+          "properties": [
+            "message",
+            "status_processamento",
+            "success"
+          ],
+          "parameters": []
+        }
+      ]
+    },
+    "test_32": {
+      "paths": [
+        {
+          "status": "201",
+          "method": "POST",
+          "path": "/v1/profissionais/lote",
+          "request": "/v1/profissionais/lote",
+          "properties": [
+            "id",
+            "message",
+            "success"
+          ],
+          "parameters": []
+        },
+        {
+          "status": "200",
+          "method": "GET",
+          "path": "/v1/profissionais/lote/{id}",
+          "request": null,
+          "properties": [
+            "message",
+            "status_processamento",
+            "success"
+          ],
+          "parameters": []
+        }
+      ]
+    },
+    "test_33": {
+      "paths": [
+        {
+          "status": "201",
+          "method": "POST",
+          "path": "/v1/profissionais/lote",
+          "request": "/v1/profissionais/lote",
+          "properties": [
+            "id",
+            "message",
+            "success"
+          ],
+          "parameters": []
+        },
+        {
+          "status": "200",
+          "method": "GET",
+          "path": "/v1/profissionais/lote/{id}",
+          "request": null,
+          "properties": [
+            "message",
+            "status_processamento",
+            "success"
+          ],
+          "parameters": []
+        }
+      ]
+    },
+    "test_34": {
+      "paths": [
+        {
+          "status": "201",
+          "method": "POST",
+          "path": "/v1/profissionais/lote",
+          "request": "/v1/profissionais/lote",
+          "properties": [
+            "message",
+            "success"
+          ],
+          "parameters": []
+        },
+        {
+          "status": "201",
+          "method": "POST",
+          "path": "/v1/profissionais/lote",
+          "request": "/v1/profissionais/lote",
+          "properties": [
+            "message",
+            "success"
+          ],
+          "parameters": []
+        },
+        {
+          "status": "201",
+          "method": "POST",
+          "path": "/v1/profissionais/lote",
+          "request": "/v1/profissionais/lote",
+          "properties": [
+            "message",
+            "success"
+          ],
+          "parameters": []
+        },
+        {
+          "status": "200",
+          "method": "GET",
+          "path": "/v1/profissionais/lote",
+          "request": "/v1/profissionais/lote",
+          "properties": [
+            "data",
+            "data.dataEnvio",
+            "data.status_processamento",
+            "message",
+            "pagination.count",
+            "pagination.current_page",
+            "pagination.links.next",
+            "pagination.links.previous",
+            "pagination.per_page",
+            "pagination.total",
+            "pagination.total_pages",
+            "success"
+          ],
+          "parameters": []
+        }
+      ]
+    },
+    "test_35": {
+      "paths": [
+        {
+          "status": "201",
+          "method": "POST",
+          "path": "/v1/profissionais/lote",
+          "request": "/v1/profissionais/lote",
+          "properties": [
+            "message",
+            "success"
+          ],
+          "parameters": []
+        },
+        {
+          "status": "201",
+          "method": "POST",
+          "path": "/v1/profissionais/lote",
+          "request": "/v1/profissionais/lote",
+          "properties": [
+            "message",
+            "success"
+          ],
+          "parameters": []
+        },
+        {
+          "status": "201",
+          "method": "POST",
+          "path": "/v1/profissionais/lote",
+          "request": "/v1/profissionais/lote",
+          "properties": [
+            "message",
+            "success"
+          ],
+          "parameters": []
+        },
+        {
+          "status": "201",
+          "method": "POST",
+          "path": "/v1/profissionais/lote",
+          "request": "/v1/profissionais/lote",
+          "properties": [
+            "message",
+            "success"
+          ],
+          "parameters": []
+        },
+        {
+          "status": "201",
+          "method": "POST",
+          "path": "/v1/profissionais/lote",
+          "request": "/v1/profissionais/lote",
+          "properties": [
+            "message",
+            "success"
+          ],
+          "parameters": []
+        },
+        {
+          "status": "200",
+          "method": "GET",
+          "path": "/v1/profissionais/lote",
+          "request": "/v1/profissionais/lote",
+          "properties": [
+            "data",
+            "data.dataEnvio",
+            "data.status_processamento",
+            "message",
+            "pagination.count",
+            "pagination.current_page",
+            "pagination.links.next",
+            "pagination.links.previous",
+            "pagination.per_page",
+            "pagination.total",
+            "pagination.total_pages",
+            "success"
+          ],
+          "parameters": []
+        }
+      ]
+    },
+    "test_36": {
+      "paths": [
+        {
+          "status": "201",
+          "method": "POST",
+          "path": "/v1/profissionais/lote",
+          "request": "/v1/profissionais/lote",
+          "properties": [
+            "message",
+            "success"
+          ],
+          "parameters": []
+        },
+        {
+          "status": "201",
+          "method": "POST",
+          "path": "/v1/profissionais/lote",
+          "request": "/v1/profissionais/lote",
+          "properties": [
+            "message",
+            "success"
+          ],
+          "parameters": []
+        },
+        {
+          "status": "422",
+          "method": "POST",
+          "path": "/v1/profissionais/lote",
+          "request": "/v1/profissionais/lote",
+          "properties": [
+            "message",
+            "success"
+          ],
+          "parameters": []
+        },
+        {
+          "status": "201",
+          "method": "POST",
+          "path": "/v1/profissionais/lote",
+          "request": "/v1/profissionais/lote",
+          "properties": [
+            "message",
+            "success"
+          ],
+          "parameters": []
+        },
+        {
+          "status": "422",
+          "method": "POST",
+          "path": "/v1/profissionais/lote",
+          "request": "/v1/profissionais/lote",
+          "properties": [
+            "message",
+            "success"
+          ],
+          "parameters": []
+        },
+        {
+          "status": "201",
+          "method": "POST",
+          "path": "/v1/profissionais/lote",
+          "request": "/v1/profissionais/lote",
+          "properties": [
+            "message",
+            "success"
+          ],
+          "parameters": []
+        },
+        {
+          "status": "201",
+          "method": "POST",
+          "path": "/v1/profissionais/lote",
+          "request": "/v1/profissionais/lote",
+          "properties": [
+            "message",
+            "success"
+          ],
+          "parameters": []
+        },
+        {
+          "status": "200",
+          "method": "GET",
+          "path": "/v1/profissionais/lote",
+          "request": "/v1/profissionais/lote?per_page=15",
+          "properties": [
+            "data",
+            "data.dataEnvio",
+            "data.status_processamento",
+            "message",
+            "pagination.count",
+            "pagination.current_page",
+            "pagination.links.next",
+            "pagination.links.previous",
+            "pagination.per_page",
+            "pagination.total",
+            "pagination.total_pages",
+            "success"
+          ],
+          "parameters": [
+            {
+              "parameter": "per_page",
+              "value": [
+                "15"
+              ],
+              "parameter_type": "query"
+            }
+          ]
+        }
+      ]
+    },
+    "test_37": {
+      "paths": [
+        {
+          "status": "200",
+          "method": "GET",
+          "path": "/v1/estudantes/lote",
+          "request": "/v1/estudantes/lote",
+          "properties": [
+            "data",
+            "data.dataEnvio",
+            "data.status_processamento",
+            "message",
+            "pagination.count",
+            "pagination.current_page",
+            "pagination.links.next",
+            "pagination.links.previous",
+            "pagination.per_page",
+            "pagination.total",
+            "pagination.total_pages",
+            "success"
+          ],
+          "parameters": []
+        },
+        {
+          "status": "200",
+          "method": "GET",
+          "path": "/v1/estudantes/lote",
+          "request": "/v1/estudantes/lote",
+          "properties": [
+            "data",
+            "data.dataEnvio",
+            "data.status_processamento",
+            "message",
+            "pagination.count",
+            "pagination.current_page",
+            "pagination.links.next",
+            "pagination.links.previous",
+            "pagination.per_page",
+            "pagination.total",
+            "pagination.total_pages",
+            "success"
+          ],
+          "parameters": []
+        },
+        {
+          "status": "200",
+          "method": "GET",
+          "path": "/v1/estudantes/lote",
+          "request": "/v1/estudantes/lote?page=403&per_page=484",
+          "properties": [
+            "data",
+            "message",
+            "pagination.count",
+            "pagination.current_page",
+            "pagination.links.next",
+            "pagination.links.previous",
+            "pagination.per_page",
+            "pagination.total",
+            "pagination.total_pages",
+            "success"
+          ],
+          "parameters": [
+            {
+              "parameter": "page",
+              "value": [
+                "403"
+              ],
+              "parameter_type": "query"
+            },
+            {
+              "parameter": "per_page",
+              "value": [
+                "484"
+              ],
+              "parameter_type": "query"
+            }
+          ]
+        },
+        {
+          "status": "400",
+          "method": "GET",
+          "path": "/v1/profissionais/lote/{id}/erros",
+          "request": "/v1/profissionais/lote/27/erros",
+          "properties": [
+            "message",
+            "success"
+          ],
+          "parameters": [
+            {
+              "parameter": "id",
+              "value": "27",
+              "parameter_type": "path"
+            }
+          ]
+        },
+        {
+          "status": "201",
+          "method": "POST",
+          "path": "/v1/estudantes/lote",
+          "request": "/v1/estudantes/lote",
+          "properties": [
+            "message",
+            "success"
+          ],
+          "parameters": []
+        },
+        {
+          "status": "401",
+          "method": "GET",
+          "path": "/v1/estudantes",
+          "request": "/v1/estudantes?per_page=10&situacao_matricula=INATIVAS",
+          "properties": [
+            "message",
+            "success"
+          ],
+          "parameters": [
+            {
+              "parameter": "per_page",
+              "value": [
+                "10"
+              ],
+              "parameter_type": "query"
+            },
+            {
+              "parameter": "situacao_matricula",
+              "value": [
+                "INATIVAS"
+              ],
+              "parameter_type": "query"
+            }
+          ]
+        },
+        {
+          "status": "404",
+          "method": "GET",
+          "path": "/v1/profissionais/{cpf}",
+          "request": "/v1/profissionais/e",
+          "properties": [
+            "message",
+            "success"
+          ],
+          "parameters": [
+            {
+              "parameter": "cpf",
+              "value": "e",
+              "parameter_type": "path"
+            }
+          ]
+        },
+        {
+          "status": "422",
+          "method": "POST",
+          "path": "/v1/profissionais",
+          "request": "/v1/profissionais",
+          "properties": [
+            "message",
+            "success"
+          ],
+          "parameters": []
+        },
+        {
+          "status": "200",
+          "method": "GET",
+          "path": "/v1/profissionais/lote",
+          "request": "/v1/profissionais/lote?page=302&per_page=939",
+          "properties": [
+            "data",
+            "message",
+            "pagination.count",
+            "pagination.current_page",
+            "pagination.links.next",
+            "pagination.links.previous",
+            "pagination.per_page",
+            "pagination.total",
+            "pagination.total_pages",
+            "success"
+          ],
+          "parameters": [
+            {
+              "parameter": "page",
+              "value": [
+                "302"
+              ],
+              "parameter_type": "query"
+            },
+            {
+              "parameter": "per_page",
+              "value": [
+                "939"
+              ],
+              "parameter_type": "query"
+            }
+          ]
+        }
+      ]
+    },
+    "test_38": {
+      "paths": [
+        {
+          "status": "201",
+          "method": "POST",
+          "path": "/v1/profissionais/lote",
+          "request": "/v1/profissionais/lote",
+          "properties": [
+            "message",
+            "success"
+          ],
+          "parameters": []
+        },
+        {
+          "status": "201",
+          "method": "POST",
+          "path": "/v1/profissionais/lote",
+          "request": "/v1/profissionais/lote",
+          "properties": [
+            "message",
+            "success"
+          ],
+          "parameters": []
+        },
+        {
+          "status": "422",
+          "method": "POST",
+          "path": "/v1/profissionais/lote",
+          "request": "/v1/profissionais/lote",
+          "properties": [
+            "message",
+            "success"
+          ],
+          "parameters": []
+        },
+        {
+          "status": "201",
+          "method": "POST",
+          "path": "/v1/profissionais/lote",
+          "request": "/v1/profissionais/lote",
+          "properties": [
+            "message",
+            "success"
+          ],
+          "parameters": []
+        },
+        {
+          "status": "201",
+          "method": "POST",
+          "path": "/v1/profissionais/lote",
+          "request": "/v1/profissionais/lote",
+          "properties": [
+            "message",
+            "success"
+          ],
+          "parameters": []
+        },
+        {
+          "status": "201",
+          "method": "POST",
+          "path": "/v1/profissionais/lote",
+          "request": "/v1/profissionais/lote",
+          "properties": [
+            "message",
+            "success"
+          ],
+          "parameters": []
+        },
+        {
+          "status": "200",
+          "method": "GET",
+          "path": "/v1/profissionais/lote",
+          "request": "/v1/profissionais/lote?per_page=48",
+          "properties": [
+            "data",
+            "data.dataEnvio",
+            "data.status_processamento",
+            "message",
+            "pagination.count",
+            "pagination.current_page",
+            "pagination.links.next",
+            "pagination.links.previous",
+            "pagination.per_page",
+            "pagination.total",
+            "pagination.total_pages",
+            "success"
+          ],
+          "parameters": [
+            {
+              "parameter": "per_page",
+              "value": [
+                "48"
+              ],
+              "parameter_type": "query"
+            }
+          ]
+        }
+      ]
+    },
+    "test_39": {
+      "paths": [
+        {
+          "status": "201",
+          "method": "POST",
+          "path": "/v1/estudantes/lote",
+          "request": "/v1/estudantes/lote",
+          "properties": [
+            "message",
+            "success"
+          ],
+          "parameters": []
+        },
+        {
+          "status": "401",
+          "method": "GET",
+          "path": "/v1/estudantes/lote",
+          "request": "/v1/estudantes/lote",
+          "properties": [
+            "message",
+            "success"
+          ],
+          "parameters": []
+        },
+        {
+          "status": "200",
+          "method": "GET",
+          "path": "/v1/estudantes/inep/{inep}",
+          "request": "/v1/estudantes/inep/41355032?ano_matricula=2024",
+          "properties": [
+            "data",
+            "data.bairro",
+            "data.cep",
+            "data.certidaoNascimento",
+            "data.cnh",
+            "data.cpf",
+            "data.cpfResponsavel",
+            "data.dataNascimento",
+            "data.email",
+            "data.genero",
+            "data.logradouro",
+            "data.matriculas",
+            "data.matriculas.anoMatricula",
+            "data.matriculas.codInstituicao",
+            "data.matriculas.codigoMatriculaSgp",
+            "data.matriculas.dataAtivacaoMatricula",
+            "data.matriculas.dataConclusaoEnsinoMedio",
+            "data.matriculas.dataFimOuAprovacao",
+            "data.matriculas.dataInicioMatricula",
+            "data.matriculas.dataInicioPeriodoLetivo",
+            "data.matriculas.deletadaEm",
+            "data.matriculas.estudanteAnoPeriodo",
+            "data.matriculas.estudanteIntegral",
+            "data.matriculas.estudantePpl",
+            "data.matriculas.estudanteSituacaoFinal",
+            "data.matriculas.etapaEnsinoConsolidado",
+            "data.matriculas.formaOrganizacaoTurma",
+            "data.matriculas.inep",
+            "data.matriculas.matriculaRede",
+            "data.matriculas.serieAno",
+            "data.matriculas.situacaoMatricula",
+            "data.matriculas.turmaOrganizacaoQuantidadeTotal",
+            "data.municipio",
+            "data.nome",
+            "data.nomeMaeEstudante",
+            "data.nomeSocial",
+            "data.numero",
+            "data.numeroNIS",
+            "data.numeroNISResponsavel",
+            "data.orgaoEmissor",
+            "data.outrasMatriculas",
+            "data.racaCor",
+            "data.rg",
+            "data.situacaoCadastroValidado",
+            "data.telefone",
+            "data.tipoDeficiencia",
+            "data.uf",
+            "message",
+            "pagination.count",
+            "pagination.current_page",
+            "pagination.links.next",
+            "pagination.links.previous",
+            "pagination.per_page",
+            "pagination.total",
+            "pagination.total_pages",
+            "success"
+          ],
+          "parameters": [
+            {
+              "parameter": "inep",
+              "value": "41355032",
+              "parameter_type": "path"
+            },
+            {
+              "parameter": "ano_matricula",
+              "value": [
+                "2024"
+              ],
+              "parameter_type": "query"
+            }
+          ]
+        },
+        {
+          "status": "422",
+          "method": "POST",
+          "path": "/v1/profissionais",
+          "request": "/v1/profissionais",
+          "properties": [
+            "message",
+            "success"
+          ],
+          "parameters": []
+        },
+        {
+          "status": "200",
+          "method": "GET",
+          "path": "/v1/profissionais/inep/{inep}",
+          "request": "/v1/profissionais/inep/FlEU1x2Rj036K?page=419&per_page=48",
+          "properties": [
+            "data",
+            "message",
+            "pagination.count",
+            "pagination.current_page",
+            "pagination.links.next",
+            "pagination.links.previous",
+            "pagination.per_page",
+            "pagination.total",
+            "pagination.total_pages",
+            "success"
+          ],
+          "parameters": [
+            {
+              "parameter": "inep",
+              "value": "FlEU1x2Rj036K",
+              "parameter_type": "path"
+            },
+            {
+              "parameter": "page",
+              "value": [
+                "419"
+              ],
+              "parameter_type": "query"
+            },
+            {
+              "parameter": "per_page",
+              "value": [
+                "48"
+              ],
+              "parameter_type": "query"
+            }
+          ]
+        },
+        {
+          "status": "400",
+          "method": "GET",
+          "path": "/v1/profissionais/lote/{id}",
+          "request": "/v1/profissionais/lote/j0Jq1Ckqwg?page=502&incluir_objetos_processados=false",
+          "properties": [
+            "message",
+            "success"
+          ],
+          "parameters": [
+            {
+              "parameter": "id",
+              "value": "j0Jq1Ckqwg",
+              "parameter_type": "path"
+            },
+            {
+              "parameter": "page",
+              "value": [
+                "502"
+              ],
+              "parameter_type": "query"
+            },
+            {
+              "parameter": "incluir_objetos_processados",
+              "value": [
+                "false"
+              ],
+              "parameter_type": "query"
+            }
+          ]
+        },
+        {
+          "status": "200",
+          "method": "GET",
+          "path": "/v1/estudantes",
+          "request": "/v1/estudantes?situacao_matricula=INATIVAS&ano_matricula=2024&situacao_final=REPROVADAS",
+          "properties": [
+            "data",
+            "data.bairro",
+            "data.cep",
+            "data.certidaoNascimento",
+            "data.cnh",
+            "data.cpf",
+            "data.cpfResponsavel",
+            "data.dataNascimento",
+            "data.email",
+            "data.genero",
+            "data.logradouro",
+            "data.matriculas",
+            "data.matriculas.anoMatricula",
+            "data.matriculas.codInstituicao",
+            "data.matriculas.codigoMatriculaSgp",
+            "data.matriculas.dataAtivacaoMatricula",
+            "data.matriculas.dataConclusaoEnsinoMedio",
+            "data.matriculas.dataFimOuAprovacao",
+            "data.matriculas.dataInicioMatricula",
+            "data.matriculas.dataInicioPeriodoLetivo",
+            "data.matriculas.deletadaEm",
+            "data.matriculas.estudanteAnoPeriodo",
+            "data.matriculas.estudanteIntegral",
+            "data.matriculas.estudantePpl",
+            "data.matriculas.estudanteSituacaoFinal",
+            "data.matriculas.etapaEnsinoConsolidado",
+            "data.matriculas.formaOrganizacaoTurma",
+            "data.matriculas.inep",
+            "data.matriculas.matriculaRede",
+            "data.matriculas.serieAno",
+            "data.matriculas.situacaoMatricula",
+            "data.matriculas.turmaOrganizacaoQuantidadeTotal",
+            "data.municipio",
+            "data.nome",
+            "data.nomeMaeEstudante",
+            "data.nomeSocial",
+            "data.numero",
+            "data.numeroNIS",
+            "data.numeroNISResponsavel",
+            "data.orgaoEmissor",
+            "data.outrasMatriculas",
+            "data.racaCor",
+            "data.rg",
+            "data.situacaoCadastroValidado",
+            "data.telefone",
+            "data.tipoDeficiencia",
+            "data.uf",
+            "message",
+            "pagination.count",
+            "pagination.current_page",
+            "pagination.links.next",
+            "pagination.links.previous",
+            "pagination.per_page",
+            "pagination.total",
+            "pagination.total_pages",
+            "success"
+          ],
+          "parameters": [
+            {
+              "parameter": "situacao_matricula",
+              "value": [
+                "INATIVAS"
+              ],
+              "parameter_type": "query"
+            },
+            {
+              "parameter": "ano_matricula",
+              "value": [
+                "2024"
+              ],
+              "parameter_type": "query"
+            },
+            {
+              "parameter": "situacao_final",
+              "value": [
+                "REPROVADAS"
+              ],
+              "parameter_type": "query"
+            }
+          ]
+        }
+      ]
+    },
+    "test_40": {
+      "paths": [
+        {
+          "status": "201",
+          "method": "POST",
+          "path": "/v1/profissionais/lote",
+          "request": "/v1/profissionais/lote",
+          "properties": [
+            "message",
+            "success"
+          ],
+          "parameters": []
+        },
+        {
+          "status": "201",
+          "method": "POST",
+          "path": "/v1/profissionais/lote",
+          "request": "/v1/profissionais/lote",
+          "properties": [
+            "message",
+            "success"
+          ],
+          "parameters": []
+        },
+        {
+          "status": "422",
+          "method": "POST",
+          "path": "/v1/profissionais/lote",
+          "request": "/v1/profissionais/lote",
+          "properties": [
+            "message",
+            "success"
+          ],
+          "parameters": []
+        },
+        {
+          "status": "201",
+          "method": "POST",
+          "path": "/v1/profissionais/lote",
+          "request": "/v1/profissionais/lote",
+          "properties": [
+            "message",
+            "success"
+          ],
+          "parameters": []
+        },
+        {
+          "status": "201",
+          "method": "POST",
+          "path": "/v1/profissionais/lote",
+          "request": "/v1/profissionais/lote",
+          "properties": [
+            "message",
+            "success"
+          ],
+          "parameters": []
+        },
+        {
+          "status": "201",
+          "method": "POST",
+          "path": "/v1/profissionais/lote",
+          "request": "/v1/profissionais/lote",
+          "properties": [
+            "message",
+            "success"
+          ],
+          "parameters": []
+        },
+        {
+          "status": "201",
+          "method": "POST",
+          "path": "/v1/profissionais/lote",
+          "request": "/v1/profissionais/lote",
+          "properties": [
+            "message",
+            "success"
+          ],
+          "parameters": []
+        },
+        {
+          "status": "201",
+          "method": "POST",
+          "path": "/v1/profissionais/lote",
+          "request": "/v1/profissionais/lote",
+          "properties": [
+            "message",
+            "success"
+          ],
+          "parameters": []
+        },
+        {
+          "status": "201",
+          "method": "POST",
+          "path": "/v1/profissionais/lote",
+          "request": "/v1/profissionais/lote",
+          "properties": [
+            "message",
+            "success"
+          ],
+          "parameters": []
+        },
+        {
+          "status": "200",
+          "method": "GET",
+          "path": "/v1/profissionais/lote",
+          "request": "/v1/profissionais/lote?page=-1913238027&per_page=280",
+          "properties": [
+            "data",
+            "data.dataEnvio",
+            "data.status_processamento",
+            "message",
+            "pagination.count",
+            "pagination.current_page",
+            "pagination.links.next",
+            "pagination.links.previous",
+            "pagination.per_page",
+            "pagination.total",
+            "pagination.total_pages",
+            "success"
+          ],
+          "parameters": [
+            {
+              "parameter": "page",
+              "value": [
+                "-1913238027"
+              ],
+              "parameter_type": "query"
+            },
+            {
+              "parameter": "per_page",
+              "value": [
+                "280"
+              ],
+              "parameter_type": "query"
+            }
+          ]
+        }
+      ]
+    },
+    "test_41": {
+      "paths": [
+        {
+          "status": "200",
+          "method": "GET",
+          "path": "/v1/profissionais/lote",
+          "request": "/v1/profissionais/lote?per_page=484",
+          "properties": [
+            "data",
+            "data.dataEnvio",
+            "data.status_processamento",
+            "message",
+            "pagination.count",
+            "pagination.current_page",
+            "pagination.links.next",
+            "pagination.links.previous",
+            "pagination.per_page",
+            "pagination.total",
+            "pagination.total_pages",
+            "success"
+          ],
+          "parameters": [
+            {
+              "parameter": "per_page",
+              "value": [
+                "484"
+              ],
+              "parameter_type": "query"
+            }
+          ]
+        }
+      ]
+    },
+    "test_42": {
+      "paths": [
+        {
+          "status": "200",
+          "method": "GET",
+          "path": "/v1/profissionais",
+          "request": "/v1/profissionais?per_page=274",
+          "properties": [
+            "data",
+            "data.bairro",
+            "data.cargaHoraria",
+            "data.cep",
+            "data.codigoFuncao",
+            "data.codigoInstituicao",
+            "data.cpf",
+            "data.dataFim",
+            "data.dataIngresso",
+            "data.dataNascimento",
+            "data.email",
+            "data.formacoesAcademicas",
+            "data.formacoesAcademicas.anoConclusaoFormacaoAcademica",
+            "data.formacoesAcademicas.anoInicioFormacaoAcademica",
+            "data.formacoesAcademicas.areaDoConhecimentoFormacaoAcademica",
+            "data.formacoesAcademicas.noInstituicaoEnsinoFormacaoAcademica",
+            "data.formacoesAcademicas.principal",
+            "data.formacoesAcademicas.tipoFormacaoAcademica",
+            "data.genero",
+            "data.inep",
+            "data.logradouro",
+            "data.matriculaRede",
+            "data.municipio",
+            "data.nivelEscolaridade",
+            "data.nome",
+            "data.nomeSocial",
+            "data.numero",
+            "data.racaCor",
+            "data.situacaoAtiva",
+            "data.telefone",
+            "data.tipoDeficiencia",
+            "data.tipoEnsinoMedio",
+            "data.tipoVinculo",
+            "data.uf",
+            "message",
+            "pagination.count",
+            "pagination.current_page",
+            "pagination.links.next",
+            "pagination.links.previous",
+            "pagination.per_page",
+            "pagination.total",
+            "pagination.total_pages",
+            "success"
+          ],
+          "parameters": [
+            {
+              "parameter": "per_page",
+              "value": [
+                "274"
+              ],
+              "parameter_type": "query"
+            }
+          ]
+        },
+        {
+          "status": "200",
+          "method": "GET",
+          "path": "/v1/estudantes",
+          "request": "/v1/estudantes?ano_matricula=2024",
+          "properties": [
+            "data",
+            "data.bairro",
+            "data.cep",
+            "data.certidaoNascimento",
+            "data.cnh",
+            "data.cpf",
+            "data.cpfResponsavel",
+            "data.dataNascimento",
+            "data.email",
+            "data.genero",
+            "data.logradouro",
+            "data.matriculas",
+            "data.matriculas.anoMatricula",
+            "data.matriculas.codInstituicao",
+            "data.matriculas.codigoMatriculaSgp",
+            "data.matriculas.dataAtivacaoMatricula",
+            "data.matriculas.dataConclusaoEnsinoMedio",
+            "data.matriculas.dataFimOuAprovacao",
+            "data.matriculas.dataInicioMatricula",
+            "data.matriculas.dataInicioPeriodoLetivo",
+            "data.matriculas.deletadaEm",
+            "data.matriculas.estudanteAnoPeriodo",
+            "data.matriculas.estudanteIntegral",
+            "data.matriculas.estudantePpl",
+            "data.matriculas.estudanteSituacaoFinal",
+            "data.matriculas.etapaEnsinoConsolidado",
+            "data.matriculas.formaOrganizacaoTurma",
+            "data.matriculas.inep",
+            "data.matriculas.matriculaRede",
+            "data.matriculas.serieAno",
+            "data.matriculas.situacaoMatricula",
+            "data.matriculas.turmaOrganizacaoQuantidadeTotal",
+            "data.municipio",
+            "data.nome",
+            "data.nomeMaeEstudante",
+            "data.nomeSocial",
+            "data.numero",
+            "data.numeroNIS",
+            "data.numeroNISResponsavel",
+            "data.orgaoEmissor",
+            "data.outrasMatriculas",
+            "data.racaCor",
+            "data.rg",
+            "data.situacaoCadastroValidado",
+            "data.telefone",
+            "data.tipoDeficiencia",
+            "data.uf",
+            "message",
+            "pagination.count",
+            "pagination.current_page",
+            "pagination.links.next",
+            "pagination.links.previous",
+            "pagination.per_page",
+            "pagination.total",
+            "pagination.total_pages",
+            "success"
+          ],
+          "parameters": [
+            {
+              "parameter": "ano_matricula",
+              "value": [
+                "2024"
+              ],
+              "parameter_type": "query"
+            }
+          ]
+        },
+        {
+          "status": "404",
+          "method": "GET",
+          "path": "/v1/estudantes/solicitacoes-alteracoes",
+          "request": "/v1/estudantes/solicitacoes-alteracoes?page=830&per_page=576&cpfAtual=67827790569&cpfNovo=57058746850",
+          "properties": [
+            "errors.message",
+            "message",
+            "success"
+          ],
+          "parameters": [
+            {
+              "parameter": "page",
+              "value": [
+                "830"
+              ],
+              "parameter_type": "query"
+            },
+            {
+              "parameter": "per_page",
+              "value": [
+                "576"
+              ],
+              "parameter_type": "query"
+            },
+            {
+              "parameter": "cpfAtual",
+              "value": [
+                "67827790569"
+              ],
+              "parameter_type": "query"
+            },
+            {
+              "parameter": "cpfNovo",
+              "value": [
+                "57058746850"
+              ],
+              "parameter_type": "query"
+            }
+          ]
+        },
+        {
+          "status": "200",
+          "method": "GET",
+          "path": "/v1/estudantes/validacao-cadastro",
+          "request": "/v1/estudantes/validacao-cadastro?per_page=922",
+          "properties": [
+            "data",
+            "data.cpf",
+            "data.dataNascimento",
+            "data.dataNascimentoValidada",
+            "data.dataValidacaoCadastral",
+            "data.nome",
+            "data.nomeMaeEstudante",
+            "data.nomeMaeEstudanteValidado",
+            "data.nomeValidado",
+            "data.numeroNIS",
+            "data.situacaoCadastral",
+            "data.situacaoCpf",
+            "message",
+            "pagination.count",
+            "pagination.current_page",
+            "pagination.links.next",
+            "pagination.links.previous",
+            "pagination.per_page",
+            "pagination.total",
+            "pagination.total_pages",
+            "success"
+          ],
+          "parameters": [
+            {
+              "parameter": "per_page",
+              "value": [
+                "922"
+              ],
+              "parameter_type": "query"
+            }
+          ]
+        },
+        {
+          "status": "200",
+          "method": "GET",
+          "path": "/v1/profissionais/lote",
+          "request": "/v1/profissionais/lote?page=391",
+          "properties": [
+            "data",
+            "message",
+            "pagination.count",
+            "pagination.current_page",
+            "pagination.links.next",
+            "pagination.links.previous",
+            "pagination.per_page",
+            "pagination.total",
+            "pagination.total_pages",
+            "success"
+          ],
+          "parameters": [
+            {
+              "parameter": "page",
+              "value": [
+                "391"
+              ],
+              "parameter_type": "query"
+            }
+          ]
+        },
+        {
+          "status": "200",
+          "method": "GET",
+          "path": "/v1/profissionais/inep/{inep}",
+          "request": "/v1/profissionais/inep/16004213?page=841",
+          "properties": [
+            "data",
+            "message",
+            "pagination.count",
+            "pagination.current_page",
+            "pagination.links.next",
+            "pagination.links.previous",
+            "pagination.per_page",
+            "pagination.total",
+            "pagination.total_pages",
+            "success"
+          ],
+          "parameters": [
+            {
+              "parameter": "inep",
+              "value": "16004213",
+              "parameter_type": "path"
+            },
+            {
+              "parameter": "page",
+              "value": [
+                "841"
+              ],
+              "parameter_type": "query"
+            }
+          ]
+        }
+      ]
+    },
+    "test_43": {
+      "paths": [
+        {
+          "status": "201",
+          "method": "POST",
+          "path": "/v1/profissionais/lote",
+          "request": "/v1/profissionais/lote",
+          "properties": [
+            "message",
+            "success"
+          ],
+          "parameters": []
+        }
+      ]
+    },
+    "test_44": {
+      "paths": [
+        {
+          "status": "400",
+          "method": "GET",
+          "path": "/v1/profissionais/lote/{id}/erros",
+          "request": "/v1/profissionais/lote/a9mJZaXBsKfLxiPi/erros?page=353",
+          "properties": [
+            "message",
+            "success"
+          ],
+          "parameters": [
+            {
+              "parameter": "id",
+              "value": "a9mJZaXBsKfLxiPi",
+              "parameter_type": "path"
+            },
+            {
+              "parameter": "page",
+              "value": [
+                "353"
+              ],
+              "parameter_type": "query"
+            }
+          ]
+        }
+      ]
+    },
+    "test_45": {
+      "paths": [
+        {
+          "status": "400",
+          "method": "GET",
+          "path": "/v1/estudantes/lote/{id}/erros",
+          "request": "/v1/estudantes/lote/nyJSVC5n/erros?page=695&per_page=946",
+          "properties": [
+            "message",
+            "success"
+          ],
+          "parameters": [
+            {
+              "parameter": "id",
+              "value": "nyJSVC5n",
+              "parameter_type": "path"
+            },
+            {
+              "parameter": "page",
+              "value": [
+                "695"
+              ],
+              "parameter_type": "query"
+            },
+            {
+              "parameter": "per_page",
+              "value": [
+                "946"
+              ],
+              "parameter_type": "query"
+            }
+          ]
+        }
+      ]
+    },
+    "test_46": {
+      "paths": [
+        {
+          "status": "400",
+          "method": "GET",
+          "path": "/v1/profissionais/lote/{id}",
+          "request": "/v1/profissionais/lote/Z?page=806&per_page=399",
+          "properties": [
+            "message",
+            "success"
+          ],
+          "parameters": [
+            {
+              "parameter": "id",
+              "value": "Z",
+              "parameter_type": "path"
+            },
+            {
+              "parameter": "page",
+              "value": [
+                "806"
+              ],
+              "parameter_type": "query"
+            },
+            {
+              "parameter": "per_page",
+              "value": [
+                "399"
+              ],
+              "parameter_type": "query"
+            }
+          ]
+        }
+      ]
+    },
+    "test_47": {
+      "paths": [
+        {
+          "status": "400",
+          "method": "GET",
+          "path": "/v1/estudantes/lote/{id}",
+          "request": "/v1/estudantes/lote/FZzw5ZWlgXztlRL?per_page=613&incluir_objetos_processados=true",
+          "properties": [
+            "message",
+            "success"
+          ],
+          "parameters": [
+            {
+              "parameter": "id",
+              "value": "FZzw5ZWlgXztlRL",
+              "parameter_type": "path"
+            },
+            {
+              "parameter": "per_page",
+              "value": [
+                "613"
+              ],
+              "parameter_type": "query"
+            },
+            {
+              "parameter": "incluir_objetos_processados",
+              "value": [
+                "true"
+              ],
+              "parameter_type": "query"
+            }
+          ]
+        }
+      ]
+    },
+    "test_48": {
+      "paths": [
+        {
+          "status": "401",
+          "method": "GET",
+          "path": "/v1/profissionais/{cpf}",
+          "request": "/v1/profissionais/DyKtGN",
+          "properties": [
+            "message",
+            "success"
+          ],
+          "parameters": [
+            {
+              "parameter": "cpf",
+              "value": "DyKtGN",
+              "parameter_type": "path"
+            }
+          ]
+        }
+      ]
+    },
+    "test_49": {
+      "paths": [
+        {
+          "status": "401",
+          "method": "GET",
+          "path": "/v1/estudantes/{cpfNis}",
+          "request": "/v1/estudantes/XLa1vMcyU",
+          "properties": [
+            "message",
+            "success"
+          ],
+          "parameters": [
+            {
+              "parameter": "cpfNis",
+              "value": "XLa1vMcyU",
+              "parameter_type": "path"
+            }
+          ]
+        }
+      ]
+    },
+    "test_50": {
+      "paths": [
+        {
+          "status": "401",
+          "method": "POST",
+          "path": "/v1/profissionais",
+          "request": "/v1/profissionais",
+          "properties": [
+            "message",
+            "success"
+          ],
+          "parameters": []
+        }
+      ]
+    },
+    "test_51": {
+      "paths": [
+        {
+          "status": "401",
+          "method": "POST",
+          "path": "/v1/estudantes",
+          "request": "/v1/estudantes",
+          "properties": [
+            "message",
+            "success"
+          ],
+          "parameters": []
+        }
+      ]
+    },
+    "test_52": {
+      "paths": [
+        {
+          "status": "401",
+          "method": "POST",
+          "path": "/v1/profissionais/lote",
+          "request": "/v1/profissionais/lote",
+          "properties": [
+            "message",
+            "success"
+          ],
+          "parameters": []
+        }
+      ]
+    },
+    "test_53": {
+      "paths": [
+        {
+          "status": "401",
+          "method": "PATCH",
+          "path": "/v1/estudantes/lote",
+          "request": "/v1/estudantes/lote",
+          "properties": [
+            "message",
+            "success"
+          ],
+          "parameters": []
+        }
+      ]
+    },
+    "test_54": {
+      "paths": [
+        {
+          "status": "401",
+          "method": "POST",
+          "path": "/v1/estudantes/lote",
+          "request": "/v1/estudantes/lote",
+          "properties": [
+            "message",
+            "success"
+          ],
+          "parameters": []
+        }
+      ]
+    },
+    "test_55": {
+      "paths": [
+        {
+          "status": "401",
+          "method": "GET",
+          "path": "/v1/profissionais/lote/{id}/erros",
+          "request": "/v1/profissionais/lote/wwO8GYjuDcSC0/erros",
+          "properties": [
+            "message",
+            "success"
+          ],
+          "parameters": [
+            {
+              "parameter": "id",
+              "value": "wwO8GYjuDcSC0",
+              "parameter_type": "path"
+            }
+          ]
+        }
+      ]
+    },
+    "test_56": {
+      "paths": [
+        {
+          "status": "401",
+          "method": "GET",
+          "path": "/v1/profissionais/lote/{id}",
+          "request": "/v1/profissionais/lote/CExFYrQJGm4",
+          "properties": [
+            "message",
+            "success"
+          ],
+          "parameters": [
+            {
+              "parameter": "id",
+              "value": "CExFYrQJGm4",
+              "parameter_type": "path"
+            }
+          ]
+        }
+      ]
+    },
+    "test_57": {
+      "paths": [
+        {
+          "status": "401",
+          "method": "GET",
+          "path": "/v1/profissionais/lote",
+          "request": "/v1/profissionais/lote?page=328",
+          "properties": [
+            "message",
+            "success"
+          ],
+          "parameters": [
+            {
+              "parameter": "page",
+              "value": [
+                "328"
+              ],
+              "parameter_type": "query"
+            }
+          ]
+        }
+      ]
+    },
+    "test_58": {
+      "paths": [
+        {
+          "status": "401",
+          "method": "GET",
+          "path": "/v1/estudantes/lote/{id}/erros",
+          "request": "/v1/estudantes/lote/bjT/erros?page=790",
+          "properties": [
+            "message",
+            "success"
+          ],
+          "parameters": [
+            {
+              "parameter": "id",
+              "value": "bjT",
+              "parameter_type": "path"
+            },
+            {
+              "parameter": "page",
+              "value": [
+                "790"
+              ],
+              "parameter_type": "query"
+            }
+          ]
+        }
+      ]
+    },
+    "test_59": {
+      "paths": [
+        {
+          "status": "401",
+          "method": "GET",
+          "path": "/v1/profissionais/inep/{inep}",
+          "request": "/v1/profissionais/inep/hpbhzF2OGvFAem9?per_page=10",
+          "properties": [
+            "message",
+            "success"
+          ],
+          "parameters": [
+            {
+              "parameter": "inep",
+              "value": "hpbhzF2OGvFAem9",
+              "parameter_type": "path"
+            },
+            {
+              "parameter": "per_page",
+              "value": [
+                "10"
+              ],
+              "parameter_type": "query"
+            }
+          ]
+        }
+      ]
+    },
+    "test_60": {
+      "paths": [
+        {
+          "status": "401",
+          "method": "GET",
+          "path": "/v1/estudantes/lote",
+          "request": "/v1/estudantes/lote?page=1",
+          "properties": [
+            "message",
+            "success"
+          ],
+          "parameters": [
+            {
+              "parameter": "page",
+              "value": [
+                "1"
+              ],
+              "parameter_type": "query"
+            }
+          ]
+        }
+      ]
+    },
+    "test_61": {
+      "paths": [
+        {
+          "status": "401",
+          "method": "GET",
+          "path": "/v1/profissionais",
+          "request": "/v1/profissionais?page=425&per_page=458",
+          "properties": [
+            "message",
+            "success"
+          ],
+          "parameters": [
+            {
+              "parameter": "page",
+              "value": [
+                "425"
+              ],
+              "parameter_type": "query"
+            },
+            {
+              "parameter": "per_page",
+              "value": [
+                "458"
+              ],
+              "parameter_type": "query"
+            }
+          ]
+        }
+      ]
+    },
+    "test_62": {
+      "paths": [
+        {
+          "status": "401",
+          "method": "GET",
+          "path": "/v1/estudantes/validacao-cadastro",
+          "request": "/v1/estudantes/validacao-cadastro?page=1&cpf=yBZ",
+          "properties": [
+            "message",
+            "success"
+          ],
+          "parameters": [
+            {
+              "parameter": "page",
+              "value": [
+                "1"
+              ],
+              "parameter_type": "query"
+            },
+            {
+              "parameter": "cpf",
+              "value": [
+                "yBZ"
+              ],
+              "parameter_type": "query"
+            }
+          ]
+        }
+      ]
+    },
+    "test_63": {
+      "paths": [
+        {
+          "status": "401",
+          "method": "GET",
+          "path": "/v1/estudantes/lote/{id}",
+          "request": "/v1/estudantes/lote/4IFR61o9CA0zT?page=163&incluir_objetos_processados=false",
+          "properties": [
+            "message",
+            "success"
+          ],
+          "parameters": [
+            {
+              "parameter": "id",
+              "value": "4IFR61o9CA0zT",
+              "parameter_type": "path"
+            },
+            {
+              "parameter": "page",
+              "value": [
+                "163"
+              ],
+              "parameter_type": "query"
+            },
+            {
+              "parameter": "incluir_objetos_processados",
+              "value": [
+                "false"
+              ],
+              "parameter_type": "query"
+            }
+          ]
+        }
+      ]
+    },
+    "test_64": {
+      "paths": [
+        {
+          "status": "401",
+          "method": "GET",
+          "path": "/v1/estudantes",
+          "request": "/v1/estudantes",
+          "properties": [
+            "message",
+            "success"
+          ],
+          "parameters": []
+        }
+      ]
+    },
+    "test_65": {
+      "paths": [
+        {
+          "status": "401",
+          "method": "GET",
+          "path": "/v1/estudantes/solicitacoes-alteracoes",
+          "request": "/v1/estudantes/solicitacoes-alteracoes?page=701&cpfNovo=Zgvzg9RzwsO",
+          "properties": [
+            "message",
+            "success"
+          ],
+          "parameters": [
+            {
+              "parameter": "page",
+              "value": [
+                "701"
+              ],
+              "parameter_type": "query"
+            },
+            {
+              "parameter": "cpfNovo",
+              "value": [
+                "Zgvzg9RzwsO"
+              ],
+              "parameter_type": "query"
+            }
+          ]
+        }
+      ]
+    },
+    "test_66": {
+      "paths": [
+        {
+          "status": "401",
+          "method": "GET",
+          "path": "/v1/estudantes/inep/{inep}",
+          "request": "/v1/estudantes/inep/OTLV2oth4?page=4&per_page=223&situacao_matricula=EVOMASTER&situacao_final=EVOMASTER",
+          "properties": [
+            "message",
+            "success"
+          ],
+          "parameters": [
+            {
+              "parameter": "inep",
+              "value": "OTLV2oth4",
+              "parameter_type": "path"
+            },
+            {
+              "parameter": "page",
+              "value": [
+                "4"
+              ],
+              "parameter_type": "query"
+            },
+            {
+              "parameter": "per_page",
+              "value": [
+                "223"
+              ],
+              "parameter_type": "query"
+            },
+            {
+              "parameter": "situacao_matricula",
+              "value": [
+                "EVOMASTER"
+              ],
+              "parameter_type": "query"
+            },
+            {
+              "parameter": "situacao_final",
+              "value": [
+                "EVOMASTER"
+              ],
+              "parameter_type": "query"
+            }
+          ]
+        }
+      ]
+    },
+    "test_67": {
+      "paths": [
+        {
+          "status": "404",
+          "method": "GET",
+          "path": "/v1/estudantes/validacao-cadastro",
+          "request": "/v1/estudantes/validacao-cadastro?page=270&cpf=AN3PIgbnC2",
+          "properties": [
+            "errors.message",
+            "message",
+            "success"
+          ],
+          "parameters": [
+            {
+              "parameter": "page",
+              "value": [
+                "270"
+              ],
+              "parameter_type": "query"
+            },
+            {
+              "parameter": "cpf",
+              "value": [
+                "AN3PIgbnC2"
+              ],
+              "parameter_type": "query"
+            }
+          ]
+        }
+      ]
+    },
+    "test_68": {
+      "paths": [
+        {
+          "status": "404",
+          "method": "GET",
+          "path": "/v1/estudantes/solicitacoes-alteracoes",
+          "request": "/v1/estudantes/solicitacoes-alteracoes?cpfAtual=Ib6",
+          "properties": [
+            "errors.message",
+            "message",
+            "success"
+          ],
+          "parameters": [
+            {
+              "parameter": "cpfAtual",
+              "value": [
+                "Ib6"
+              ],
+              "parameter_type": "query"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "EvoMaster_others_Test.py": {
+    "test_0": {
+      "paths": [
+        {
+          "status": "201",
+          "method": "POST",
+          "path": "/v1/estudantes/lote",
+          "request": "/v1/estudantes/lote",
+          "properties": [
+            "message",
+            "success"
+          ],
+          "parameters": []
+        },
+        {
+          "status": "422",
+          "method": "PATCH",
+          "path": "/v1/estudantes/lote",
+          "request": "/v1/estudantes/lote",
+          "properties": [
+            "errors.message",
+            "message",
+            "success"
+          ],
+          "parameters": []
+        },
+        {
+          "status": "200",
+          "method": "PATCH",
+          "path": "/v1/estudantes/lote",
+          "request": "/v1/estudantes/lote",
+          "properties": [
+            "detalhesValidacao",
+            "message",
+            "success"
+          ],
+          "parameters": []
+        }
+      ]
+    },
+    "test_1": {
+      "paths": [
+        {
+          "status": "404",
+          "method": "GET",
+          "path": "/v1/profissionais/{cpf}",
+          "request": "/v1/profissionais/0_U2PEP9BezRz",
+          "properties": [
+            "message",
+            "success"
+          ],
+          "parameters": [
+            {
+              "parameter": "cpf",
+              "value": "0_U2PEP9BezRz",
+              "parameter_type": "path"
+            }
+          ]
+        }
+      ]
+    },
+    "test_2": {
+      "paths": [
+        {
+          "status": "404",
+          "method": "GET",
+          "path": "/v1/estudantes/{cpfNis}",
+          "request": "/v1/estudantes/rvUAX",
+          "properties": [
+            "message",
+            "success"
+          ],
+          "parameters": [
+            {
+              "parameter": "cpfNis",
+              "value": "rvUAX",
+              "parameter_type": "path"
+            }
+          ]
+        }
+      ]
+    },
+    "test_3": {
+      "paths": [
+        {
+          "status": "422",
+          "method": "POST",
+          "path": "/v1/profissionais",
+          "request": "/v1/profissionais",
+          "properties": [
+            "message",
+            "success"
+          ],
+          "parameters": []
+        }
+      ]
+    },
+    "test_4": {
+      "paths": [
+        {
+          "status": "422",
+          "method": "POST",
+          "path": "/v1/profissionais/lote",
+          "request": "/v1/profissionais/lote",
+          "properties": [
+            "message",
+            "success"
+          ],
+          "parameters": []
+        }
+      ]
+    }
+  },
+  "EvoMaster_successes_Test.py": {
+    "test_0": {
+      "paths": [
+        {
+          "status": "200",
+          "method": "PATCH",
+          "path": "/v1/estudantes/lote",
+          "request": "/v1/estudantes/lote",
+          "properties": [
+            "detalhesValidacao",
+            "message",
+            "success"
+          ],
+          "parameters": []
+        }
+      ]
+    },
+    "test_1": {
+      "paths": [
+        {
+          "status": "201",
+          "method": "POST",
+          "path": "/v1/estudantes/lote",
+          "request": "/v1/estudantes/lote",
+          "properties": [
+            "message",
+            "success"
+          ],
+          "parameters": []
+        }
+      ]
+    }
+  }
+}

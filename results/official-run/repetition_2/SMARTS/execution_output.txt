@@ -1,0 +1,589 @@
+* [34m
+ _____          ___  ___          _
+|  ___|         |  \/  |         | |
+| |____   _____ | .  . | __ _ ___| |_ ___ _ __
+|  __\ \ / / _ \| |\/| |/ _` / __| __/ _ \ '__|
+| |___\ V / (_) | |  | | (_| \__ \ ||  __/ |
+\____/ \_/ \___/\_|  |_/\__,_|___/\__\___|_|
+
+                    [0m
+* EvoMaster version: 3.4.0
+* Loading configuration file from: /home/wanderson/Documentos/tcc/tool/configs/em.yaml
+* Applying following 9 configuration settings: [blackBox, outputFormat, problemType, maxTime, ratePerMinute, exportCoveredTarget, header0, bbSwaggerUrl, endpointTagFilter]
+* [31mWARNING: You are doing Black-Box testing, but you did not specify the 'outputFormat'. The system will default to PYTHON_UNITTEST.[0m
+* Initializing...
+03:03:02.879 [main] WARN  o.t.u.TestcontainersConfiguration - Attempted to read Testcontainers configuration file at file:/home/wanderson/.testcontainers.properties but the file was not found. Exception message: FileNotFoundException: /home/wanderson/.testcontainers.properties (Arquivo ou diretório inexistente)
+03:03:03.649 [main] WARN  o.e.c.p.rest.RestActionBuilderV3 - No cpfResponsavel among the object definitions in the OpenApi file
+03:03:03.650 [main] WARN  o.e.c.p.rest.RestActionBuilderV3 - No numeroNISResponsavel among the object definitions in the OpenApi file
+03:03:03.650 [main] WARN  o.e.c.p.rest.RestActionBuilderV3 - No genero among the object definitions in the OpenApi file
+03:03:03.650 [main] WARN  o.e.c.p.rest.RestActionBuilderV3 - No racaCor among the object definitions in the OpenApi file
+03:03:03.650 [main] WARN  o.e.c.p.rest.RestActionBuilderV3 - No email among the object definitions in the OpenApi file
+03:03:03.650 [main] WARN  o.e.c.p.rest.RestActionBuilderV3 - No telefone among the object definitions in the OpenApi file
+03:03:03.650 [main] WARN  o.e.c.p.rest.RestActionBuilderV3 - No rg among the object definitions in the OpenApi file
+03:03:03.650 [main] WARN  o.e.c.p.rest.RestActionBuilderV3 - No orgaoEmissor among the object definitions in the OpenApi file
+03:03:03.650 [main] WARN  o.e.c.p.rest.RestActionBuilderV3 - No certidaoNascimento among the object definitions in the OpenApi file
+03:03:03.650 [main] WARN  o.e.c.p.rest.RestActionBuilderV3 - No cnh among the object definitions in the OpenApi file
+03:03:03.651 [main] WARN  o.e.c.p.rest.RestActionBuilderV3 - No tipoDeficiencia among the object definitions in the OpenApi file
+03:03:03.651 [main] WARN  o.e.c.p.rest.RestActionBuilderV3 - No numeroNIS among the object definitions in the OpenApi file
+03:03:03.651 [main] WARN  o.e.c.p.rest.RestActionBuilderV3 - No type/format information provided for 'numeroNIS'. Defaulting to 'string'
+03:03:03.657 [main] WARN  o.e.c.p.rest.RestActionBuilderV3 - No cpf among the object definitions in the OpenApi file
+03:03:03.657 [main] WARN  o.e.c.p.rest.RestActionBuilderV3 - No nomeMaeEstudante among the object definitions in the OpenApi file
+03:03:03.657 [main] WARN  o.e.c.p.rest.RestActionBuilderV3 - No type/format information provided for 'nomeMaeEstudante'. Defaulting to 'string'
+03:03:03.658 [main] WARN  o.e.c.p.rest.RestActionBuilderV3 - No dataNascimento among the object definitions in the OpenApi file
+03:03:03.658 [main] WARN  o.e.c.p.rest.RestActionBuilderV3 - No type/format information provided for 'dataNascimento'. Defaulting to 'string'
+03:03:03.658 [main] WARN  o.e.c.p.rest.RestActionBuilderV3 - No nome among the object definitions in the OpenApi file
+03:03:03.658 [main] WARN  o.e.c.p.rest.RestActionBuilderV3 - No type/format information provided for 'nome'. Defaulting to 'string'
+03:03:03.658 [main] WARN  o.e.c.p.rest.RestActionBuilderV3 - No nomeSocial among the object definitions in the OpenApi file
+* Skipped 39 endpoints from the schema configuration
+* There are 19 usable RESTful API endpoints defined in the schema configuration
+* [31mThere are 23 detected issues when analyzing the schema. These are not necessarily problems in the schema, but possible (temporary) limitations of EvoMaster itself.[0m
+* [33m0: The use of 'example' inside a Schema Object is deprecated in OpenAPI. Rather use 'examples'. If you are wrongly passing to it an array of values, the parser would read it as an array string or simply ignore it. Read value: [1,2,3][0m
+* [33m1: Unable to handle 'examples': [1,2,3][0m
+* [33m2: The use of 'example' inside a Schema Object is deprecated in OpenAPI. Rather use 'examples'. Read value: 25[0m
+* [33m3: The use of 'example' inside a Schema Object is deprecated in OpenAPI. Rather use 'examples'. Read value: 2025[0m
+* [33m4: No fields for object definition: numeroNIS[0m
+* [33m5: No fields for object definition: nomeMaeEstudante[0m
+* [33m6: No fields for object definition: dataNascimento[0m
+* [33m7: No fields for object definition: nome[0m
+* [33m8: cannot handle oneOf and allOf/oneOf at same time for a schema with name body_item[0m
+* [33m9: No fields for object definition: body_item[0m
+* [33m10: The use of 'example' inside a Schema Object is deprecated in OpenAPI. Rather use 'examples'. Read value: 1[0m
+* [33m11: The use of 'example' inside a Schema Object is deprecated in OpenAPI. Rather use 'examples'. Read value: 5[0m
+* [33m12: The use of 'example' inside a Schema Object is deprecated in OpenAPI. Rather use 'examples'. If you are wrongly passing to it an array of values, the parser would read it as an array string or simply ignore it. Read value: [1,2,3][0m
+* [33m13: Unable to handle 'examples': [1,2,3][0m
+* [33m14: The use of 'example' inside a Schema Object is deprecated in OpenAPI. Rather use 'examples'. Read value: 1[0m
+* [33m15: The use of 'example' inside a Schema Object is deprecated in OpenAPI. Rather use 'examples'. Read value: 1[0m
+* [33m16: The use of 'example' inside a Schema Object is deprecated in OpenAPI. Rather use 'examples'. Read value: Universidade Federal do Rio de Janeiro[0m
+* [33m17: The use of 'example' inside a Schema Object is deprecated in OpenAPI. Rather use 'examples'. Read value: 2010[0m
+* [33m18: The use of 'example' inside a Schema Object is deprecated in OpenAPI. Rather use 'examples'. Read value: 2014[0m
+* [33m19: The use of 'example' inside a Schema Object is deprecated in OpenAPI. Rather use 'examples'. Read value: 123456789[0m
+* [33m20: The use of 'example' inside a Schema Object is deprecated in OpenAPI. Rather use 'examples'. Read value: 1[0m
+* [33m21: The use of 'example' inside a Schema Object is deprecated in OpenAPI. Rather use 'examples'. Read value: 1[0m
+* [33m22: The use of 'example' inside a Schema Object is deprecated in OpenAPI. Rather use 'examples'. Read value: 44[0m
+* Starting to generate test cases
+03:03:05.734 [main] WARN  o.e.c.s.service.SearchTimeController - The SUT sent a 'Connection: close' HTTP header. This should be avoided, if possible
+
+
+[1A[2K[1A[2K* Consumed search budget: 0,092%
+* Covered targets: 0; time per test: 1659,0ms (1,0 actions); since last improvement: 1s
+[1A[2K[1A[2K* Consumed search budget: 0,183%
+* Covered targets: 0; time per test: 1646,5ms (1,0 actions); since last improvement: 1s
+[1A[2K[1A[2K* Consumed search budget: 0,382%
+* Covered targets: 0; time per test: 2289,0ms (1,0 actions); since last improvement: 3s
+[1A[2K[1A[2K* Consumed search budget: 0,489%
+* Covered targets: 0; time per test: 2199,0ms (1,0 actions); since last improvement: 1s
+[1A[2K[1A[2K* Consumed search budget: 0,578%
+* Covered targets: 0; time per test: 2080,4ms (1,0 actions); since last improvement: 1s
+[1A[2K[1A[2K* Consumed search budget: 0,937%
+* Covered targets: 0; time per test: 2808,3ms (1,0 actions); since last improvement: 6s
+[1A[2K[1A[2K* Consumed search budget: 1,026%
+* Covered targets: 40; time per test: 2638,0ms (1,0 actions); since last improvement: 1s
+[1A[2K[1A[2K* Consumed search budget: 1,155%
+* Covered targets: 40; time per test: 2596,5ms (1,0 actions); since last improvement: 2s
+[1A[2K[1A[2K* Consumed search budget: 1,365%
+* Covered targets: 40; time per test: 2729,0ms (1,0 actions); since last improvement: 3s
+[1A[2K[1A[2K* Consumed search budget: 1,490%
+* Covered targets: 40; time per test: 2681,7ms (1,0 actions); since last improvement: 2s
+[1A[2K[1A[2K* Consumed search budget: 1,581%
+* Covered targets: 40; time per test: 2585,6ms (1,0 actions); since last improvement: 1s
+[1A[2K[1A[2K* Consumed search budget: 1,865%
+* Covered targets: 40; time per test: 2796,4ms (1,0 actions); since last improvement: 5s
+[1A[2K[1A[2K* Consumed search budget: 2,157%
+* Covered targets: 106; time per test: 2986,0ms (1,0 actions); since last improvement: 5s
+[1A[2K[1A[2K* Consumed search budget: 2,401%
+* Covered targets: 106; time per test: 3085,5ms (1,0 actions); since last improvement: 4s
+[1A[2K[1A[2K* Consumed search budget: 2,490%
+* Covered targets: 106; time per test: 2987,0ms (1,0 actions); since last improvement: 1s
+[1A[2K[1A[2K* Consumed search budget: 2,588%
+* Covered targets: 106; time per test: 2910,9ms (1,0 actions); since last improvement: 1s
+[1A[2K[1A[2K* Consumed search budget: 2,696%
+* Covered targets: 106; time per test: 2853,9ms (1,0 actions); since last improvement: 1s
+[1A[2K[1A[2K* Consumed search budget: 2,873%
+* Covered targets: 106; time per test: 2871,9ms (1,0 actions); since last improvement: 3s
+[1A[2K[1A[2K* Consumed search budget: 4,021%
+* Covered targets: 146; time per test: 3808,8ms (1,0 actions); since last improvement: 20s
+[1A[2K[1A[2K* Consumed search budget: 4,078%
+* Covered targets: 146; time per test: 3494,6ms (1,0 actions); since last improvement: 1s
+[1A[2K[1A[2K* Consumed search budget: 4,134%
+* Covered targets: 146; time per test: 3381,7ms (1,0 actions); since last improvement: 1s
+[1A[2K[1A[2K* Consumed search budget: 4,191%
+* Covered targets: 146; time per test: 3279,1ms (1,0 actions); since last improvement: 1s
+[1A[2K[1A[2K* Consumed search budget: 4,247%
+* Covered targets: 146; time per test: 3184,1ms (1,0 actions); since last improvement: 0s
+[1A[2K[1A[2K* Consumed search budget: 4,302%
+* Covered targets: 146; time per test: 3096,8ms (1,0 actions); since last improvement: 1s
+[1A[2K[1A[2K* Consumed search budget: 4,358%
+* Covered targets: 146; time per test: 3016,4ms (1,0 actions); since last improvement: 1s
+[1A[2K[1A[2K* Consumed search budget: 4,413%
+* Covered targets: 146; time per test: 2941,3ms (1,0 actions); since last improvement: 0s
+[1A[2K[1A[2K* Consumed search budget: 4,469%
+* Covered targets: 146; time per test: 2872,0ms (1,0 actions); since last improvement: 1s
+[1A[2K[1A[2K* Consumed search budget: 4,525%
+* Covered targets: 146; time per test: 2807,7ms (1,0 actions); since last improvement: 1s
+[1A[2K[1A[2K* Consumed search budget: 4,581%
+* Covered targets: 146; time per test: 2747,4ms (1,0 actions); since last improvement: 1s
+[1A[2K[1A[2K* Consumed search budget: 4,636%
+* Covered targets: 146; time per test: 2691,1ms (1,0 actions); since last improvement: 1s
+[1A[2K[1A[2K* Consumed search budget: 4,692%
+* Covered targets: 146; time per test: 2638,5ms (1,0 actions); since last improvement: 1s
+[1A[2K[1A[2K* Consumed search budget: 4,748%
+* Covered targets: 146; time per test: 2588,8ms (1,0 actions); since last improvement: 0s
+[1A[2K[1A[2K* Consumed search budget: 4,804%
+* Covered targets: 146; time per test: 2542,2ms (1,0 actions); since last improvement: 1s
+[1A[2K[1A[2K* Consumed search budget: 4,860%
+* Covered targets: 146; time per test: 2498,5ms (1,0 actions); since last improvement: 1s
+[1A[2K[1A[2K* Consumed search budget: 4,915%
+* Covered targets: 146; time per test: 2456,9ms (1,0 actions); since last improvement: 0s
+[1A[2K[1A[2K* Consumed search budget: 4,971%
+* Covered targets: 146; time per test: 2417,6ms (1,0 actions); since last improvement: 1s
+[1A[2K[1A[2K* Consumed search budget: 5,027%
+* Covered targets: 224; time per test: 2380,4ms (1,0 actions); since last improvement: 1s
+[1A[2K[1A[2K* Consumed search budget: 5,172%
+* Covered targets: 224; time per test: 2386,1ms (1,0 actions); since last improvement: 2s
+[1A[2K[1A[2K* Consumed search budget: 5,448%
+* Covered targets: 224; time per test: 2450,3ms (1,1 actions); since last improvement: 7s
+[1A[2K[1A[2K* Consumed search budget: 7,117%
+* Covered targets: 237; time per test: 3122,3ms (1,2 actions); since last improvement: 30s
+[1A[2K[1A[2K* Consumed search budget: 7,207%
+* Covered targets: 237; time per test: 3086,3ms (1,2 actions); since last improvement: 1s
+[1A[2K[1A[2K* Consumed search budget: 7,485%
+* Covered targets: 237; time per test: 3130,9ms (1,2 actions); since last improvement: 6s
+[1A[2K[1A[2K* Consumed search budget: 7,884%
+* Covered targets: 237; time per test: 3223,1ms (1,3 actions); since last improvement: 13s
+[1A[2K[1A[2K* Consumed search budget: 8,271%
+* Covered targets: 253; time per test: 3306,2ms (1,3 actions); since last improvement: 6s
+[1A[2K[1A[2K* Consumed search budget: 8,361%
+* Covered targets: 253; time per test: 3269,5ms (1,3 actions); since last improvement: 1s
+[1A[2K[1A[2K* Consumed search budget: 8,453%
+* Covered targets: 253; time per test: 3235,1ms (1,3 actions); since last improvement: 3s
+[1A[2K[1A[2K* Consumed search budget: 8,543%
+* Covered targets: 253; time per test: 3201,1ms (1,3 actions); since last improvement: 4s
+[1A[2K[1A[2K* Consumed search budget: 9,040%
+* Covered targets: 268; time per test: 3318,3ms (1,3 actions); since last improvement: 13s
+[1A[2K[1A[2K* Consumed search budget: 9,346%
+* Covered targets: 268; time per test: 3362,3ms (1,3 actions); since last improvement: 5s
+[1A[2K[1A[2K* Consumed search budget: 9,436%
+* Covered targets: 268; time per test: 3328,0ms (1,3 actions); since last improvement: 1s
+[1A[2K[1A[2K* Consumed search budget: 9,526%
+* Covered targets: 268; time per test: 3295,1ms (1,3 actions); since last improvement: 3s
+[1A[2K[1A[2K* Consumed search budget: 9,616%
+* Covered targets: 268; time per test: 3263,3ms (1,3 actions); since last improvement: 4s
+[1A[2K[1A[2K* Consumed search budget: 9,706%
+* Covered targets: 268; time per test: 3232,7ms (1,4 actions); since last improvement: 6s
+[1A[2K[1A[2K* Consumed search budget: 9,870%
+* Covered targets: 268; time per test: 3227,8ms (1,4 actions); since last improvement: 9s
+[1A[2K[1A[2K* Consumed search budget: 9,960%
+* Covered targets: 268; time per test: 3198,8ms (1,4 actions); since last improvement: 11s
+[1A[2K[1A[2K* Consumed search budget: 10,050%
+* Covered targets: 290; time per test: 3171,0ms (1,4 actions); since last improvement: 12s
+[1A[2K[1A[2K* Consumed search budget: 10,316%
+* Covered targets: 290; time per test: 3198,9ms (1,4 actions); since last improvement: 17s
+[1A[2K[1A[2K* Consumed search budget: 10,695%
+* Covered targets: 290; time per test: 3260,3ms (1,4 actions); since last improvement: 24s
+[1A[2K[1A[2K* Consumed search budget: 11,020%
+* Covered targets: 299; time per test: 3303,2ms (1,4 actions); since last improvement: 5s
+[1A[2K[1A[2K* Consumed search budget: 11,520%
+* Covered targets: 299; time per test: 3396,5ms (1,4 actions); since last improvement: 8s
+[1A[2K[1A[2K* Consumed search budget: 11,803%
+* Covered targets: 299; time per test: 3424,0ms (1,4 actions); since last improvement: 14s
+[1A[2K[1A[2K* Consumed search budget: 13,130%
+* Covered targets: 309; time per test: 3748,1ms (1,5 actions); since last improvement: 23s
+[1A[2K[1A[2K* Consumed search budget: 13,404%
+* Covered targets: 309; time per test: 3766,5ms (1,5 actions); since last improvement: 4s
+[1A[2K[1A[2K* Consumed search budget: 13,579%
+* Covered targets: 309; time per test: 3756,9ms (1,5 actions); since last improvement: 8s
+[1A[2K[1A[2K* Consumed search budget: 13,925%
+* Covered targets: 309; time per test: 3794,3ms (1,5 actions); since last improvement: 14s
+[1A[2K[1A[2K* Consumed search budget: 14,016%
+* Covered targets: 319; time per test: 3761,9ms (1,5 actions); since last improvement: 15s
+[1A[2K[1A[2K* Consumed search budget: 14,105%
+* Covered targets: 319; time per test: 3730,2ms (1,5 actions); since last improvement: 17s
+[1A[2K[1A[2K* Consumed search budget: 14,194%
+* Covered targets: 319; time per test: 3699,5ms (1,5 actions); since last improvement: 19s
+[1A[2K[1A[2K* Consumed search budget: 14,283%
+* Covered targets: 319; time per test: 3669,5ms (1,5 actions); since last improvement: 20s
+[1A[2K[1A[2K* Consumed search budget: 14,461%
+* Covered targets: 319; time per test: 3662,8ms (1,5 actions); since last improvement: 23s
+[1A[2K[1A[2K* Consumed search budget: 15,923%
+* Covered targets: 319; time per test: 3976,9ms (1,6 actions); since last improvement: 50s
+[1A[2K[1A[2K* Consumed search budget: 16,014%
+* Covered targets: 323; time per test: 3944,7ms (1,6 actions); since last improvement: 1s
+[1A[2K[1A[2K* Consumed search budget: 17,078%
+* Covered targets: 323; time per test: 4150,0ms (1,7 actions); since last improvement: 20s
+[1A[2K[1A[2K* Consumed search budget: 17,169%
+* Covered targets: 323; time per test: 4116,3ms (1,7 actions); since last improvement: 1s
+[1A[2K[1A[2K* Consumed search budget: 18,074%
+* Covered targets: 334; time per test: 4276,1ms (1,7 actions); since last improvement: 17s
+[1A[2K[1A[2K* Consumed search budget: 19,156%
+* Covered targets: 334; time per test: 4473,1ms (1,8 actions); since last improvement: 37s
+[1A[2K[1A[2K* Consumed search budget: 19,331%
+* Covered targets: 334; time per test: 4456,0ms (1,8 actions); since last improvement: 40s
+[1A[2K[1A[2K* Consumed search budget: 19,638%
+* Covered targets: 334; time per test: 4469,5ms (1,8 actions); since last improvement: 46s
+[1A[2K[1A[2K* Consumed search budget: 19,728%
+* Covered targets: 334; time per test: 4433,9ms (1,8 actions); since last improvement: 1s
+[1A[2K[1A[2K* Consumed search budget: 20,082%
+* Covered targets: 336; time per test: 4457,9ms (1,8 actions); since last improvement: 7s
+[1A[2K[1A[2K* Consumed search budget: 20,378%
+* Covered targets: 336; time per test: 4468,3ms (1,8 actions); since last improvement: 13s
+[1A[2K[1A[2K* Consumed search budget: 20,467%
+* Covered targets: 336; time per test: 4433,9ms (1,8 actions); since last improvement: 14s
+[1A[2K[1A[2K* Consumed search budget: 20,963%
+* Covered targets: 336; time per test: 4487,3ms (1,8 actions); since last improvement: 23s
+[1A[2K[1A[2K* Consumed search budget: 21,054%
+* Covered targets: 336; time per test: 4453,5ms (1,8 actions); since last improvement: 25s
+[1A[2K[1A[2K* Consumed search budget: 21,208%
+* Covered targets: 336; time per test: 4434,1ms (1,8 actions); since last improvement: 28s
+[1A[2K[1A[2K* Consumed search budget: 21,885%
+* Covered targets: 336; time per test: 4523,0ms (1,9 actions); since last improvement: 40s
+[1A[2K[1A[2K* Consumed search budget: 22,266%
+* Covered targets: 336; time per test: 4549,7ms (1,9 actions); since last improvement: 47s
+[1A[2K[1A[2K* Consumed search budget: 22,356%
+* Covered targets: 336; time per test: 4516,7ms (1,9 actions); since last improvement: 48s
+[1A[2K[1A[2K* Consumed search budget: 22,446%
+* Covered targets: 336; time per test: 4484,4ms (1,9 actions); since last improvement: 50s
+[1A[2K[1A[2K* Consumed search budget: 22,834%
+* Covered targets: 336; time per test: 4511,9ms (1,9 actions); since last improvement: 57s
+[1A[2K[1A[2K* Consumed search budget: 23,011%
+* Covered targets: 336; time per test: 4497,5ms (1,9 actions); since last improvement: 60s
+[1A[2K[1A[2K* Consumed search budget: 24,423%
+* Covered targets: 336; time per test: 4722,2ms (1,9 actions); since last improvement: 86s
+[1A[2K[1A[2K* Consumed search budget: 24,929%
+* Covered targets: 336; time per test: 4768,8ms (1,9 actions); since last improvement: 9s
+[1A[2K[1A[2K* Consumed search budget: 25,018%
+* Covered targets: 337; time per test: 4735,4ms (1,9 actions); since last improvement: 10s
+[1A[2K[1A[2K* Consumed search budget: 26,381%
+* Covered targets: 337; time per test: 4941,2ms (2,0 actions); since last improvement: 35s
+[1A[2K[1A[2K* Consumed search budget: 27,336%
+* Covered targets: 340; time per test: 5067,3ms (2,0 actions); since last improvement: 17s
+[1A[2K[1A[2K* Consumed search budget: 27,426%
+* Covered targets: 340; time per test: 5032,1ms (2,0 actions); since last improvement: 1s
+[1A[2K[1A[2K* Consumed search budget: 29,001%
+* Covered targets: 352; time per test: 5267,4ms (2,1 actions); since last improvement: 29s
+[1A[2K[1A[2K* Consumed search budget: 29,091%
+* Covered targets: 352; time per test: 5230,9ms (2,1 actions); since last improvement: 1s
+[1A[2K[1A[2K* Consumed search budget: 30,754%
+* Covered targets: 356; time per test: 5513,1ms (2,1 actions); since last improvement: 31s
+[1A[2K[1A[2K* Consumed search budget: 30,844%
+* Covered targets: 356; time per test: 5512,9ms (2,1 actions); since last improvement: 33s
+[1A[2K[1A[2K* Consumed search budget: 31,128%
+* Covered targets: 356; time per test: 5528,2ms (2,2 actions); since last improvement: 38s
+[1A[2K[1A[2K* Consumed search budget: 31,761%
+* Covered targets: 356; time per test: 5622,6ms (2,2 actions); since last improvement: 49s
+[1A[2K[1A[2K* Consumed search budget: 32,291%
+* Covered targets: 361; time per test: 5701,9ms (2,2 actions); since last improvement: 9s
+[1A[2K[1A[2K* Consumed search budget: 32,382%
+* Covered targets: 361; time per test: 5653,7ms (2,2 actions); since last improvement: 11s
+[1A[2K[1A[2K* Consumed search budget: 32,472%
+* Covered targets: 361; time per test: 5653,8ms (2,2 actions); since last improvement: 12s
+[1A[2K[1A[2K* Consumed search budget: 32,767%
+* Covered targets: 361; time per test: 5683,7ms (2,2 actions); since last improvement: 18s
+[1A[2K[1A[2K* Consumed search budget: 33,745%
+* Covered targets: 361; time per test: 5821,2ms (2,3 actions); since last improvement: 35s
+[1A[2K[1A[2K* Consumed search budget: 33,922%
+* Covered targets: 361; time per test: 5830,5ms (2,3 actions); since last improvement: 3s
+[1A[2K[1A[2K* Consumed search budget: 34,230%
+* Covered targets: 367; time per test: 5869,7ms (2,3 actions); since last improvement: 8s
+[1A[2K[1A[2K* Consumed search budget: 34,493%
+* Covered targets: 367; time per test: 5865,9ms (2,3 actions); since last improvement: 4s
+[1A[2K[1A[2K* Consumed search budget: 34,953%
+* Covered targets: 367; time per test: 5896,0ms (2,3 actions); since last improvement: 13s
+[1A[2K[1A[2K* Consumed search budget: 35,131%
+* Covered targets: 369; time per test: 5884,2ms (2,3 actions); since last improvement: 16s
+[1A[2K[1A[2K* Consumed search budget: 35,305%
+* Covered targets: 369; time per test: 5899,5ms (2,3 actions); since last improvement: 19s
+[1A[2K[1A[2K* Consumed search budget: 35,470%
+* Covered targets: 369; time per test: 5911,5ms (2,4 actions); since last improvement: 22s
+[1A[2K[1A[2K* Consumed search budget: 35,561%
+* Covered targets: 369; time per test: 5908,4ms (2,4 actions); since last improvement: 23s
+[1A[2K[1A[2K* Consumed search budget: 35,744%
+* Covered targets: 369; time per test: 5909,6ms (2,4 actions); since last improvement: 27s
+[1A[2K[1A[2K* Consumed search budget: 37,603%
+* Covered targets: 369; time per test: 6036,9ms (2,4 actions); since last improvement: 60s
+[1A[2K[1A[2K* Consumed search budget: 37,780%
+* Covered targets: 369; time per test: 6068,5ms (2,5 actions); since last improvement: 3s
+[1A[2K[1A[2K* Consumed search budget: 38,144%
+* Covered targets: 373; time per test: 6124,0ms (2,5 actions); since last improvement: 9s
+[1A[2K[1A[2K* Consumed search budget: 40,135%
+* Covered targets: 373; time per test: 6472,1ms (2,6 actions); since last improvement: 45s
+[1A[2K[1A[2K* Consumed search budget: 40,562%
+* Covered targets: 373; time per test: 6538,5ms (2,6 actions); since last improvement: 53s
+[1A[2K[1A[2K* Consumed search budget: 41,080%
+* Covered targets: 373; time per test: 6621,8ms (2,6 actions); since last improvement: 62s
+[1A[2K[1A[2K* Consumed search budget: 41,174%
+* Covered targets: 373; time per test: 6628,7ms (2,6 actions); since last improvement: 1s
+[1A[2K[1A[2K* Consumed search budget: 41,264%
+* Covered targets: 373; time per test: 6634,9ms (2,6 actions); since last improvement: 3s
+[1A[2K[1A[2K* Consumed search budget: 41,973%
+* Covered targets: 373; time per test: 6752,5ms (2,6 actions); since last improvement: 16s
+[1A[2K[1A[2K* Consumed search budget: 42,063%
+* Covered targets: 393; time per test: 6758,7ms (2,6 actions); since last improvement: 17s
+[1A[2K[1A[2K* Consumed search budget: 42,155%
+* Covered targets: 393; time per test: 6765,0ms (2,6 actions); since last improvement: 19s
+[1A[2K[1A[2K* Consumed search budget: 42,332%
+* Covered targets: 393; time per test: 6786,9ms (2,6 actions); since last improvement: 22s
+[1A[2K[1A[2K* Consumed search budget: 42,985%
+* Covered targets: 393; time per test: 6894,3ms (2,6 actions); since last improvement: 34s
+[1A[2K[1A[2K* Consumed search budget: 43,075%
+* Covered targets: 393; time per test: 6900,3ms (2,7 actions); since last improvement: 35s
+[1A[2K[1A[2K* Consumed search budget: 43,543%
+* Covered targets: 393; time per test: 6974,7ms (2,7 actions); since last improvement: 44s
+[1A[2K[1A[2K* Consumed search budget: 43,719%
+* Covered targets: 393; time per test: 6996,2ms (2,7 actions); since last improvement: 3s
+[1A[2K[1A[2K* Consumed search budget: 45,212%
+* Covered targets: 394; time per test: 7254,6ms (2,7 actions); since last improvement: 30s
+[1A[2K[1A[2K* Consumed search budget: 45,944%
+* Covered targets: 394; time per test: 7376,4ms (2,8 actions); since last improvement: 43s
+[1A[2K[1A[2K* Consumed search budget: 47,690%
+* Covered targets: 395; time per test: 7680,3ms (2,9 actions); since last improvement: 31s
+[1A[2K[1A[2K* Consumed search budget: 47,867%
+* Covered targets: 395; time per test: 7702,0ms (2,9 actions); since last improvement: 34s
+[1A[2K[1A[2K* Consumed search budget: 48,162%
+* Covered targets: 395; time per test: 7729,0ms (2,9 actions); since last improvement: 39s
+[1A[2K[1A[2K* Consumed search budget: 48,252%
+* Covered targets: 395; time per test: 7695,7ms (2,9 actions); since last improvement: 1s
+[1A[2K[1A[2K* Consumed search budget: 48,343%
+* Covered targets: 395; time per test: 7411,9ms (2,8 actions); since last improvement: 3s
+[1A[2K[1A[2K* Consumed search budget: 48,624%
+* Covered targets: 395; time per test: 7446,5ms (2,8 actions); since last improvement: 8s
+[1A[2K[1A[2K* Consumed search budget: 49,407%
+* Covered targets: 398; time per test: 7536,9ms (2,9 actions); since last improvement: 22s
+[1A[2K[1A[2K* Consumed search budget: 49,590%
+* Covered targets: 398; time per test: 7497,9ms (2,8 actions); since last improvement: 3s
+[1A[2K[1A[2K* Consumed search budget: 49,890%
+* Covered targets: 398; time per test: 7482,3ms (2,8 actions); since last improvement: 8s
+[1A[2K[1A[2K* Consumed search budget: 49,980%
+* Covered targets: 398; time per test: 7482,2ms (2,9 actions); since last improvement: 10s
+[1A[2K[1A[2K* Consumed search budget: 50,513%
+* Covered targets: 399; time per test: 7561,6ms (2,9 actions); since last improvement: 19s
+[1A[2K[1A[2K* Consumed search budget: 50,899%
+* Covered targets: 399; time per test: 7615,0ms (2,9 actions); since last improvement: 26s
+[1A[2K[1A[2K* Consumed search budget: 50,989%
+* Covered targets: 399; time per test: 7541,8ms (2,9 actions); since last improvement: 28s
+[1A[2K[1A[2K* Consumed search budget: 51,079%
+* Covered targets: 399; time per test: 7502,7ms (2,9 actions); since last improvement: 30s
+[1A[2K[1A[2K* Consumed search budget: 51,168%
+* Covered targets: 399; time per test: 7502,7ms (2,9 actions); since last improvement: 31s
+[1A[2K[1A[2K* Consumed search budget: 51,337%
+* Covered targets: 399; time per test: 7516,8ms (2,9 actions); since last improvement: 34s
+[1A[2K[1A[2K* Consumed search budget: 51,542%
+* Covered targets: 399; time per test: 7537,6ms (2,9 actions); since last improvement: 38s
+[1A[2K[1A[2K* Consumed search budget: 51,631%
+* Covered targets: 399; time per test: 7537,5ms (2,9 actions); since last improvement: 40s
+[1A[2K[1A[2K* Consumed search budget: 52,321%
+* Covered targets: 399; time per test: 7632,0ms (2,9 actions); since last improvement: 52s
+[1A[2K[1A[2K* Consumed search budget: 52,492%
+* Covered targets: 399; time per test: 7646,6ms (2,9 actions); since last improvement: 3s
+[1A[2K[1A[2K* Consumed search budget: 52,639%
+* Covered targets: 399; time per test: 7657,1ms (2,9 actions); since last improvement: 5s
+[1A[2K[1A[2K* Consumed search budget: 54,785%
+* Covered targets: 404; time per test: 7994,9ms (3,0 actions); since last improvement: 44s
+[1A[2K[1A[2K* Consumed search budget: 54,875%
+* Covered targets: 404; time per test: 7942,9ms (3,0 actions); since last improvement: 45s
+[1A[2K[1A[2K* Consumed search budget: 55,170%
+* Covered targets: 404; time per test: 7937,7ms (3,0 actions); since last improvement: 51s
+[1A[2K[1A[2K* Consumed search budget: 55,261%
+* Covered targets: 404; time per test: 7864,1ms (3,0 actions); since last improvement: 52s
+[1A[2K[1A[2K* Consumed search budget: 55,350%
+* Covered targets: 404; time per test: 7829,1ms (2,9 actions); since last improvement: 54s
+[1A[2K[1A[2K* Consumed search budget: 55,842%
+* Covered targets: 404; time per test: 7679,3ms (2,9 actions); since last improvement: 63s
+[1A[2K[1A[2K* Consumed search budget: 56,458%
+* Covered targets: 404; time per test: 7740,7ms (2,9 actions); since last improvement: 74s
+[1A[2K[1A[2K* Consumed search budget: 57,382%
+* Covered targets: 404; time per test: 7875,7ms (3,0 actions); since last improvement: 91s
+[1A[2K[1A[2K* Consumed search budget: 57,475%
+* Covered targets: 404; time per test: 7830,1ms (3,0 actions); since last improvement: 1s
+[1A[2K[1A[2K* Consumed search budget: 59,108%
+* Covered targets: 418; time per test: 8107,5ms (3,0 actions); since last improvement: 31s
+[1A[2K[1A[2K* Consumed search budget: 59,198%
+* Covered targets: 418; time per test: 8107,7ms (3,0 actions); since last improvement: 1s
+[1A[2K[1A[2K* Consumed search budget: 59,288%
+* Covered targets: 418; time per test: 8107,8ms (3,0 actions); since last improvement: 3s
+[1A[2K[1A[2K* Consumed search budget: 59,460%
+* Covered targets: 418; time per test: 8122,8ms (3,0 actions); since last improvement: 6s
+[1A[2K[1A[2K* Consumed search budget: 59,550%
+* Covered targets: 418; time per test: 8107,0ms (3,0 actions); since last improvement: 7s
+[1A[2K[1A[2K* Consumed search budget: 59,640%
+* Covered targets: 418; time per test: 7860,4ms (2,9 actions); since last improvement: 9s
+[1A[2K[1A[2K* Consumed search budget: 60,764%
+* Covered targets: 427; time per test: 8046,3ms (3,0 actions); since last improvement: 29s
+[1A[2K[1A[2K* Consumed search budget: 61,070%
+* Covered targets: 427; time per test: 7910,0ms (2,9 actions); since last improvement: 35s
+[1A[2K[1A[2K* Consumed search budget: 61,480%
+* Covered targets: 427; time per test: 7967,5ms (2,9 actions); since last improvement: 42s
+[1A[2K[1A[2K* Consumed search budget: 61,658%
+* Covered targets: 427; time per test: 7836,8ms (2,9 actions); since last improvement: 3s
+[1A[2K[1A[2K* Consumed search budget: 61,931%
+* Covered targets: 427; time per test: 7691,6ms (2,8 actions); since last improvement: 8s
+[1A[2K[1A[2K* Consumed search budget: 62,020%
+* Covered targets: 428; time per test: 7676,1ms (2,8 actions); since last improvement: 9s
+[1A[2K[1A[2K* Consumed search budget: 62,442%
+* Covered targets: 428; time per test: 7696,8ms (2,8 actions); since last improvement: 17s
+[1A[2K[1A[2K* Consumed search budget: 62,838%
+* Covered targets: 428; time per test: 7752,0ms (2,8 actions); since last improvement: 24s
+[1A[2K[1A[2K* Consumed search budget: 64,546%
+* Covered targets: 428; time per test: 7995,2ms (2,9 actions); since last improvement: 55s
+[1A[2K[1A[2K* Consumed search budget: 64,865%
+* Covered targets: 428; time per test: 7999,4ms (2,9 actions); since last improvement: 60s
+[1A[2K[1A[2K* Consumed search budget: 66,276%
+* Covered targets: 430; time per test: 8236,7ms (3,0 actions); since last improvement: 25s
+[1A[2K[1A[2K* Consumed search budget: 66,452%
+* Covered targets: 430; time per test: 8179,2ms (3,0 actions); since last improvement: 3s
+[1A[2K[1A[2K* Consumed search budget: 66,726%
+* Covered targets: 430; time per test: 8212,3ms (3,0 actions); since last improvement: 8s
+[1A[2K[1A[2K* Consumed search budget: 66,816%
+* Covered targets: 430; time per test: 8200,5ms (3,0 actions); since last improvement: 9s
+[1A[2K[1A[2K* Consumed search budget: 68,461%
+* Covered targets: 432; time per test: 8374,4ms (3,0 actions); since last improvement: 39s
+[1A[2K[1A[2K* Consumed search budget: 68,745%
+* Covered targets: 432; time per test: 8356,7ms (3,0 actions); since last improvement: 44s
+[1A[2K[1A[2K* Consumed search budget: 69,587%
+* Covered targets: 432; time per test: 8492,0ms (3,0 actions); since last improvement: 59s
+[1A[2K[1A[2K* Consumed search budget: 69,681%
+* Covered targets: 432; time per test: 8492,8ms (3,0 actions); since last improvement: 61s
+[1A[2K[1A[2K* Consumed search budget: 71,009%
+* Covered targets: 432; time per test: 8661,8ms (3,1 actions); since last improvement: 85s
+[1A[2K[1A[2K* Consumed search budget: 71,284%
+* Covered targets: 432; time per test: 8679,4ms (3,1 actions); since last improvement: 90s
+[1A[2K[1A[2K* Consumed search budget: 71,558%
+* Covered targets: 432; time per test: 8474,8ms (3,1 actions); since last improvement: 95s
+[1A[2K[1A[2K* Consumed search budget: 71,726%
+* Covered targets: 432; time per test: 8413,9ms (3,1 actions); since last improvement: 98s
+[1A[2K[1A[2K* Consumed search budget: 73,644%
+* Covered targets: 432; time per test: 8742,5ms (3,1 actions); since last improvement: 132s
+[1A[2K[1A[2K* Consumed search budget: 73,734%
+* Covered targets: 432; time per test: 8513,8ms (3,1 actions); since last improvement: 134s
+[1A[2K[1A[2K* Consumed search budget: 73,823%
+* Covered targets: 432; time per test: 8358,1ms (3,0 actions); since last improvement: 135s
+[1A[2K[1A[2K* Consumed search budget: 74,397%
+* Covered targets: 432; time per test: 8445,1ms (3,0 actions); since last improvement: 146s
+[1A[2K[1A[2K* Consumed search budget: 74,810%
+* Covered targets: 432; time per test: 8236,1ms (3,0 actions); since last improvement: 153s
+[1A[2K[1A[2K* Consumed search budget: 74,904%
+* Covered targets: 432; time per test: 8237,0ms (3,0 actions); since last improvement: 1s
+[1A[2K[1A[2K* Consumed search budget: 75,194%
+* Covered targets: 433; time per test: 7990,3ms (2,9 actions); since last improvement: 6s
+[1A[2K[1A[2K* Consumed search budget: 75,492%
+* Covered targets: 433; time per test: 8027,9ms (2,9 actions); since last improvement: 12s
+[1A[2K[1A[2K* Consumed search budget: 75,670%
+* Covered targets: 433; time per test: 8008,7ms (2,9 actions); since last improvement: 15s
+[1A[2K[1A[2K* Consumed search budget: 76,468%
+* Covered targets: 433; time per test: 8038,5ms (2,9 actions); since last improvement: 29s
+[1A[2K[1A[2K* Consumed search budget: 76,760%
+* Covered targets: 433; time per test: 7995,8ms (2,9 actions); since last improvement: 35s
+[1A[2K[1A[2K* Consumed search budget: 76,936%
+* Covered targets: 433; time per test: 8011,0ms (2,9 actions); since last improvement: 38s
+[1A[2K[1A[2K* Consumed search budget: 77,026%
+* Covered targets: 433; time per test: 8011,0ms (2,9 actions); since last improvement: 39s
+[1A[2K[1A[2K* Consumed search budget: 77,116%
+* Covered targets: 433; time per test: 7974,2ms (2,9 actions); since last improvement: 41s
+[1A[2K[1A[2K* Consumed search budget: 79,071%
+* Covered targets: 433; time per test: 8150,3ms (2,9 actions); since last improvement: 76s
+[1A[2K[1A[2K* Consumed search budget: 79,160%
+* Covered targets: 433; time per test: 8134,5ms (2,9 actions); since last improvement: 78s
+[1A[2K[1A[2K* Consumed search budget: 79,308%
+* Covered targets: 433; time per test: 8105,6ms (2,9 actions); since last improvement: 80s
+[1A[2K[1A[2K* Consumed search budget: 80,111%
+* Covered targets: 433; time per test: 8202,5ms (2,9 actions); since last improvement: 95s
+[1A[2K[1A[2K* Consumed search budget: 80,418%
+* Covered targets: 433; time per test: 8175,0ms (2,9 actions); since last improvement: 100s
+[1A[2K[1A[2K* Consumed search budget: 80,720%
+* Covered targets: 433; time per test: 8197,2ms (2,9 actions); since last improvement: 106s
+[1A[2K[1A[2K* Consumed search budget: 83,031%
+* Covered targets: 433; time per test: 8581,2ms (3,0 actions); since last improvement: 147s
+[1A[2K[1A[2K* Consumed search budget: 83,917%
+* Covered targets: 433; time per test: 8710,6ms (3,1 actions); since last improvement: 163s
+[1A[2K[1A[2K* Consumed search budget: 84,008%
+* Covered targets: 433; time per test: 8710,6ms (3,1 actions); since last improvement: 165s
+[1A[2K[1A[2K* Consumed search budget: 84,098%
+* Covered targets: 433; time per test: 8693,8ms (3,1 actions); since last improvement: 167s
+[1A[2K[1A[2K* Consumed search budget: 85,075%
+* Covered targets: 433; time per test: 8535,4ms (3,1 actions); since last improvement: 184s
+[1A[2K[1A[2K* Consumed search budget: 85,677%
+* Covered targets: 433; time per test: 8611,9ms (3,1 actions); since last improvement: 10s
+[1A[2K[1A[2K* Consumed search budget: 85,772%
+* Covered targets: 433; time per test: 8563,4ms (3,1 actions); since last improvement: 12s
+[1A[2K[1A[2K* Consumed search budget: 85,861%
+* Covered targets: 433; time per test: 8221,3ms (3,0 actions); since last improvement: 14s
+[1A[2K[1A[2K* Consumed search budget: 86,120%
+* Covered targets: 434; time per test: 8191,3ms (3,0 actions); since last improvement: 18s
+[1A[2K[1A[2K* Consumed search budget: 86,210%
+* Covered targets: 434; time per test: 8114,2ms (3,0 actions); since last improvement: 20s
+[1A[2K[1A[2K* Consumed search budget: 86,551%
+* Covered targets: 434; time per test: 8158,6ms (3,0 actions); since last improvement: 26s
+[1A[2K[1A[2K* Consumed search budget: 88,696%
+* Covered targets: 434; time per test: 8528,4ms (3,1 actions); since last improvement: 65s
+[1A[2K[1A[2K* Consumed search budget: 88,786%
+* Covered targets: 434; time per test: 8417,1ms (3,1 actions); since last improvement: 1s
+[1A[2K[1A[2K* Consumed search budget: 88,876%
+* Covered targets: 434; time per test: 8417,1ms (3,1 actions); since last improvement: 3s
+[1A[2K[1A[2K* Consumed search budget: 90,097%
+* Covered targets: 444; time per test: 8619,9ms (3,1 actions); since last improvement: 25s
+[1A[2K[1A[2K* Consumed search budget: 90,187%
+* Covered targets: 444; time per test: 8604,1ms (3,2 actions); since last improvement: 26s
+[1A[2K[1A[2K* Consumed search budget: 92,168%
+* Covered targets: 444; time per test: 8842,6ms (3,2 actions); since last improvement: 62s
+[1A[2K[1A[2K* Consumed search budget: 92,259%
+* Covered targets: 444; time per test: 8842,8ms (3,2 actions); since last improvement: 1s
+[1A[2K[1A[2K* Consumed search budget: 92,349%
+* Covered targets: 444; time per test: 8774,7ms (3,2 actions); since last improvement: 3s
+[1A[2K[1A[2K* Consumed search budget: 92,531%
+* Covered targets: 444; time per test: 8775,8ms (3,2 actions); since last improvement: 6s
+[1A[2K[1A[2K* Consumed search budget: 92,621%
+* Covered targets: 444; time per test: 8523,5ms (3,2 actions); since last improvement: 8s
+[1A[2K[1A[2K* Consumed search budget: 92,798%
+* Covered targets: 444; time per test: 8423,4ms (3,1 actions); since last improvement: 11s
+[1A[2K[1A[2K* Consumed search budget: 93,156%
+* Covered targets: 2927; time per test: 8173,9ms (3,0 actions); since last improvement: 17s
+[1A[2K[1A[2K* Consumed search budget: 94,316%
+* Covered targets: 2927; time per test: 8350,8ms (3,1 actions); since last improvement: 38s
+[1A[2K[1A[2K* Consumed search budget: 94,487%
+* Covered targets: 2927; time per test: 8328,7ms (3,1 actions); since last improvement: 3s
+[1A[2K[1A[2K* Consumed search budget: 95,785%
+* Covered targets: 2936; time per test: 8545,8ms (3,2 actions); since last improvement: 26s
+[1A[2K[1A[2K* Consumed search budget: 96,069%
+* Covered targets: 3062; time per test: 8580,5ms (3,2 actions); since last improvement: 5s
+[1A[2K[1A[2K* Consumed search budget: 96,829%
+* Covered targets: 3062; time per test: 8666,5ms (3,2 actions); since last improvement: 18s
+[1A[2K[1A[2K* Consumed search budget: 96,918%
+* Covered targets: 3062; time per test: 8542,2ms (3,2 actions); since last improvement: 1s
+[1A[2K[1A[2K* Consumed search budget: 97,287%
+* Covered targets: 3072; time per test: 8575,6ms (3,2 actions); since last improvement: 8s
+[1A[2K[1A[2K* Consumed search budget: 98,663%
+* Covered targets: 3073; time per test: 8769,0ms (3,2 actions); since last improvement: 24s
+[1A[2K[1A[2K* Consumed search budget: 98,964%
+* Covered targets: 3073; time per test: 8807,1ms (3,2 actions); since last improvement: 30s
+[1A[2K[1A[2K* Consumed search budget: 99,053%
+* Covered targets: 3073; time per test: 8727,2ms (3,2 actions); since last improvement: 31s
+[1A[2K[1A[2K* Consumed search budget: 99,143%
+* Covered targets: 3073; time per test: 8673,9ms (3,2 actions); since last improvement: 33s
+[1A[2K[1A[2K* Consumed search budget: 99,562%
+* Covered targets: 3073; time per test: 8733,0ms (3,2 actions); since last improvement: 40s
+[1A[2K[1A[2K* Consumed search budget: 99,651%
+* Covered targets: 3073; time per test: 8732,9ms (3,2 actions); since last improvement: 42s
+[1A[2K[1A[2K* Consumed search budget: 99,740%
+* Covered targets: 3073; time per test: 8732,8ms (3,2 actions); since last improvement: 44s
+[1A[2K[1A[2K* Consumed search budget: 100,119%
+* Covered targets: 3073; time per test: 8770,8ms (3,2 actions); since last improvement: 50s
+* Starting to apply minimization phase
+* Recomputing full coverage for 81 tests
+* Analyzing 41 tests with size greater than 1
+
+[1A[2K* Minimization progress: 0/41
+* Minimization phase has timed-out. You can use --minimizeTimeout to increase it.
+* Minimization phase took 679 seconds
+03:44:25.820 [main] WARN  o.e.c.p.rest.RestActionBuilderV3 - Currently not supporting a GET RestAction with the url 'http://localhost:8000/docs?api-docs.json' , as all query parameters should be in the form key=value
+* Evaluated tests: 252
+* Evaluated actions: 677
+* Needed budget: 99%
+* Passed time (seconds): 2481
+* Execution time per test (ms): Avg=7143,29 , min=16,00 , max=41530,00
+* Execution time per action (ms): Avg=2361,62 , min=16,00 , max=20674,00
+* Computation overhead between tests (ms): Avg=8,11 , min=0,00 , max=69,00
+* Going to save 81 tests to data_generated/experiment-date-03-05-25-time-21-29-51-725/repetition_2/SMARTS/generated_tests
+* Potential faults: 2819
+03:44:26.031 [main] WARN  o.e.c.p.rest.RestActionBuilderV3 - Currently not supporting a GET RestAction with the url 'http://localhost:8000/docs?api-docs.json' , as all query parameters should be in the form key=value
+* Successfully executed (HTTP code 2xx) 14 endpoints out of 19 (74%)
+* EvoMaster process has completed successfully
+* Use [32m--help[0m and visit [34mhttp://www.evomaster.org[0m to learn more about available options

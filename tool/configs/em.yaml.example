@@ -1,0 +1,10 @@
+configs:
+    blackBox: true
+    bbSwaggerUrl: ""
+    outputFormat: DEFAULT
+    problemType: REST
+    maxTime: 
+    ratePerMinute: 
+    exportCoveredTarget: true
+    header0: ""
+    endpointTagFilter: ""

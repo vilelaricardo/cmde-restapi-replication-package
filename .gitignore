@@ -1,0 +1,9 @@
+__pycache__
+*.pyc
+myenv
+venv
+tool/configs/em.yaml
+tool/data_generated
+tool/evomaster.jar
+analysis/output
+node_modules
