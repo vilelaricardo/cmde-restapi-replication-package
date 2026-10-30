@@ -1,7 +1,11 @@
 """Recomputes the official run (03/05/2025) from the archived specification and the
-generated tests, and compares it with the published results. Passing tests mean the
-tool in this repository reproduces the numbers reported in the paper; the xfail
-tests measure, on the real suites, defects also covered by test_criteria.py.
+generated tests, using the tool as it is now.
+
+The archived criteria/ and extracted data, and the published CSV, are only used as
+the historical reference to compare against: the tests that reproduce them pass
+while the tool is the one that produced the paper, and are expected to diverge for
+the criteria a fix changes. The xfail tests measure, on the recomputed data, defects
+also covered by test_criteria.py, so they react to fixes in the tool.
 """
 import csv
 import json
@@ -9,13 +13,14 @@ import re
 import shutil
 from collections import Counter
 from pathlib import Path
+from types import SimpleNamespace
 
 import pytest
 
 from criteria_analyzer import run_criteria_analyzer
 from extract_criteria_from_swagger import filter_endpoints
 from extract_tests_data import extract_calls, extract_function_lines, extract_request_lines_blocks, run_extract_test_data
-from support import CRITERIA
+from support import CRITERIA, as_text
 
 pytestmark = pytest.mark.published
 
@@ -32,6 +37,11 @@ def generated_test_files(run_dir):
     return sorted(f.name for f in folder.iterdir() if f.name.startswith('EvoMaster') and f.name.endswith('Test.py'))
 
 
+def as_multiset(criterion_file):
+    # Response body properties come out of a Python set, so their order varies between runs.
+    return Counter(json.dumps(e, sort_keys=True) for e in json.loads(criterion_file.read_text())['required_elements'])
+
+
 @pytest.fixture(scope='module')
 def criteria_dir(tmp_path_factory):
     main_dir = tmp_path_factory.mktemp('official-run')
@@ -41,46 +51,48 @@ def criteria_dir(tmp_path_factory):
 
 
 @pytest.fixture(scope='module')
+def recomputed(criteria_dir, tmp_path_factory):
+    """The 30 official runs analysed again by the current tool, keyed by (repetition, technique)."""
+    runs = {}
+    for repetition, technique in RUNS:
+        source = OFFICIAL_RUN / f'repetition_{repetition}' / technique
+        run_dir = tmp_path_factory.mktemp(f'rep{repetition}-{technique}')
+        (run_dir / 'generated_tests').symlink_to(source / 'generated_tests')
+        run_extract_test_data(str(run_dir), generated_test_files(source), str(criteria_dir))
+        run_criteria_analyzer(str(criteria_dir), str(run_dir))
+        runs[(repetition, technique)] = SimpleNamespace(
+            extracted=json.loads((run_dir / 'extracted_test_data.json').read_text()),
+            criteria={name: json.loads((run_dir / 'criteria_analyzed' / f'{name}.json').read_text())
+                      for name in CRITERIA})
+    return runs
+
+
+@pytest.fixture(scope='module')
 def published():
     with PUBLISHED_CSV.open(newline='', encoding='utf-8') as f:
         return {(row['algorithm'], int(row['repetition'])): row for row in csv.DictReader(f)}
 
 
-def as_multiset(criterion_file):
-    # Response body properties come out of a Python set, so their order varies between runs.
-    return Counter(json.dumps(e, sort_keys=True) for e in json.loads(criterion_file.read_text())['required_elements'])
-
-
 @pytest.mark.parametrize('criterion', CRITERIA)
 def test_required_elements_match_the_archived_ones(criteria_dir, criterion):
-    recomputed = as_multiset(criteria_dir / 'criteria' / f'{criterion}.json')
-    archived = as_multiset(OFFICIAL_RUN / 'criteria' / f'{criterion}.json')
-    assert recomputed == archived
+    recomputed_elements = as_multiset(criteria_dir / 'criteria' / f'{criterion}.json')
+    archived_elements = as_multiset(OFFICIAL_RUN / 'criteria' / f'{criterion}.json')
+    assert recomputed_elements == archived_elements
 
 
 @pytest.mark.parametrize('repetition, technique', RUNS)
-def test_recomputed_coverage_matches_the_published_csv(criteria_dir, published, tmp_path, repetition, technique):
-    source = OFFICIAL_RUN / f'repetition_{repetition}' / technique
-    run_dir = tmp_path / 'run'
-    run_dir.mkdir()
-    (run_dir / 'generated_tests').symlink_to(source / 'generated_tests')
-
-    run_extract_test_data(str(run_dir), generated_test_files(source), str(criteria_dir))
-    run_criteria_analyzer(str(criteria_dir), str(run_dir))
-
+def test_recomputed_coverage_matches_the_published_csv(recomputed, published, repetition, technique):
+    run = recomputed[(repetition, technique)]
     row = published[(technique, repetition)]
-    extracted = json.loads((run_dir / 'extracted_test_data.json').read_text())
-    assert sum(len(tests) for tests in extracted.values()) == int(row['num_tests'])
+    assert sum(len(tests) for tests in run.extracted.values()) == int(row['num_tests'])
     for criterion in CRITERIA:
-        coverage = json.loads((run_dir / 'criteria_analyzed' / f'{criterion}.json').read_text())['coverage']
-        assert coverage == pytest.approx(float(row[f'{criterion}_coverage']), abs=1e-9), criterion
+        assert run.criteria[criterion]['coverage'] == pytest.approx(
+            float(row[f'{criterion}_coverage']), abs=1e-9), criterion
 
 
-def official_calls():
-    """Every recorded call of the 30 official suites, as extracted by the tool."""
-    for repetition, technique in RUNS:
-        data = json.loads((OFFICIAL_RUN / f'repetition_{repetition}' / technique / 'extracted_test_data.json').read_text())
-        for tests in data.values():
+def recomputed_calls(recomputed):
+    for (repetition, technique), run in recomputed.items():
+        for tests in run.extracted.values():
             for test in tests.values():
                 for call in test['paths']:
                     yield technique, call
@@ -100,23 +112,24 @@ def test_every_call_comment_has_its_request_block():
 
 
 @pytest.mark.xfail(reason='calls whose URL is written with resolve_location(...) or str(...) lose their '
-                          'request, so their parameters are not counted (mostly SMARTS suites)')
-def test_no_call_loses_its_request_url():
-    lost = Counter(technique for technique, call in official_calls() if not call['request'])
+                          'request, so their parameters are not counted (SMARTS suites)', raises=AssertionError)
+def test_no_call_loses_its_request_url(recomputed):
+    lost = Counter(technique for technique, call in recomputed_calls(recomputed) if not call['request'])
     assert not lost, dict(lost)
 
 
-@pytest.mark.xfail(reason='boolean query values are sent but never counted by Request Parameter Value Coverage')
-def test_boolean_values_sent_are_counted():
+@pytest.mark.xfail(reason='boolean query values are sent but never counted by Request Parameter Value Coverage',
+                   raises=AssertionError)
+def test_boolean_values_sent_are_counted(recomputed):
     sent = Counter()
-    for technique, call in official_calls():
+    for technique, call in recomputed_calls(recomputed):
         for parameter in call.get('parameters', []):
-            for value in parameter['value'] if isinstance(parameter['value'], list) else [parameter['value']]:
-                if re.fullmatch(r'true|false', str(value)):
-                    sent[technique] += 1
+            values = parameter['value'] if isinstance(parameter['value'], list) else [parameter['value']]
+            sent[technique] += sum(bool(re.fullmatch(r'true|false', str(v))) for v in values)
     covered = Counter()
-    for repetition, technique in RUNS:
-        analyzed = json.loads((OFFICIAL_RUN / f'repetition_{repetition}' / technique / 'criteria_analyzed'
-                               / 'input_parameter_value.json').read_text())
-        covered[technique] += sum(e['covered'] for e in analyzed['required_elements'] if e['value_type'] == 'boolean')
-    assert all(covered[t] > 0 for t in sent), {'boolean values sent': dict(sent), 'boolean elements covered': dict(covered)}
+    for (repetition, technique), run in recomputed.items():
+        covered[technique] += sum(e['covered'] for e in run.criteria['input_parameter_value']['required_elements']
+                                  if as_text(e['value']) in ('true', 'false'))
+    techniques_that_sent = [t for t in TECHNIQUES if sent[t]]
+    assert techniques_that_sent and all(covered[t] > 0 for t in techniques_that_sent), {
+        'boolean values sent': dict(sent), 'boolean elements covered': dict(covered)}

@@ -23,11 +23,11 @@ def json_content(schema_ref):
     return {'application/json': {'schema': {'$ref': f'#/components/schemas/{schema_ref}'}}}
 
 
-# Small OpenAPI 3 specification whose required elements can be counted by hand.
+# Small OpenAPI 3 specification whose required elements can be listed by hand.
 # Under the definitions given in the paper (Section 2.1) it has:
-#   paths 3, operations 4, parameters 12 (4 query, 3 path, 1 header, 4 body fields),
-#   enum/boolean values 12, status codes 7, status code classes 8 (2 per operation),
-#   response body properties 16.
+#   paths 3, operations 4, parameters 13 (6 query, 2 path, 1 header, 4 body fields),
+#   enum/boolean values 14 (10 in query/path, 4 in the body), status codes 7,
+#   status code classes 8 (2 per operation), response body properties 16.
 # /other is tagged differently and must be left out by the tag filter.
 MINI_SPEC = {
     'openapi': '3.0.0',
@@ -41,6 +41,7 @@ MINI_SPEC = {
                     {'name': 'page', 'in': 'query', 'schema': {'type': 'integer'}},
                     {'name': 'status', 'in': 'query', 'schema': {'type': 'string', 'enum': ['A', 'B']}},
                     {'name': 'flag', 'in': 'query', 'schema': {'type': 'boolean'}},
+                    {'name': 'level', 'in': 'query', 'schema': {'type': 'integer', 'enum': [1, 2]}},
                     {'name': 'X-Trace', 'in': 'header', 'schema': {'type': 'string'}},
                 ],
                 'responses': {
@@ -201,3 +202,13 @@ def is_covered(result, criterion, **match):
 
 def covered_set(result, criterion, key):
     return {element[key] for element in result[criterion]['required_elements'] if element['covered']}
+
+
+def as_text(value):
+    """Spec values may be stored as Python True/1 or as the strings sent in a URL."""
+    return str(value).lower() if isinstance(value, bool) else str(value)
+
+
+def value_coverage(result, **match):
+    """{value as text: covered} for the Request Parameter Value Coverage elements matching `match`."""
+    return {as_text(e['value']): e['covered'] for e in elements(result, 'input_parameter_value', **match)}
