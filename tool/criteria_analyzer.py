@@ -1,131 +1,43 @@
-from helpers import load_json, save_json, as_text
+from helpers import load_json, save_json
+from coverage_criteria import CRITERIA
 import os
 
 
-def same_parameter(element, param):
-    # HTTP header names are case-insensitive.
-    if element['parameter_type'] != param['parameter_type']:
-        return False
-    if param['parameter_type'] == 'header':
-        return element['parameter'].lower() == param['parameter'].lower()
-    return element['parameter'] == param['parameter']
-
-
-def class_covers(status_code_class, status):
-    # '2XX' is covered by any 2xx status, '4XX/5XX' by any 4xx or 5xx status.
-    return status[:1] in {cls[0] for cls in status_code_class.split('/')}
-
 def calculate_coverage(criteria):
     num_test_criteria_covered = 0
-    
+
     if(criteria['required_elements']):
         for required_element in criteria['required_elements']:
             if required_element['covered']:
                 num_test_criteria_covered += 1
     else:
         return 0.0
-            
+
     return (num_test_criteria_covered / len(criteria['required_elements'])) * 100.0
+
+
+def recorded_calls(extracted_test_data):
+    for tests in extracted_test_data.values():
+        for test in tests.values():
+            yield from test['paths']
+
 
 def run_criteria_analyzer(main_directory, specific_directory):
     extracted_test_data = load_json(f'{specific_directory}/extracted_test_data.json')
-    
-    criteria_files = {
-        'input_path': 'input_path.json',
-        'input_operation': 'input_operation.json',
-        'output_status_code_class': 'output_status_code_class.json',
-        'output_status_code': 'output_status_code.json',
-        'input_parameter': 'input_parameter.json',
-        'input_parameter_value': 'input_parameter_value.json',
-        'output_response_body_properties': 'output_response_body_properties.json'
-    }
-    
-    criteria = {}
+    calls = list(recorded_calls(extracted_test_data))
 
-    for name, file in criteria_files.items():
-        file_path = f'{main_directory}/criteria/{file}'
-        if os.path.exists(file_path):
-            criteria[name] = load_json(file_path)
+    for name, criterion in CRITERIA.items():
+        file_path = f'{main_directory}/criteria/{name}.json'
+        if not os.path.exists(file_path):
+            continue
 
-    for file in extracted_test_data:
-        for test in extracted_test_data[file]:
-            for path in extracted_test_data[file][test]['paths']:
-                path_info = path['path']
-                method = path['method']
-                status = path['status']
-                     
-                # Input Path Coverage Analysis
-                if 'input_path' in criteria:
-                    for index, element in enumerate(criteria['input_path']['required_elements']):
-                        if element['path'] == path_info:
-                            criteria['input_path']['required_elements'][index]['covered'] = True
-                            break
-                
-                # Input Operation Coverage Analysis
-                if 'input_operation' in criteria:
-                    for index, element in enumerate(criteria['input_operation']['required_elements']):
-                        if element['path'] == path_info and element['method'] == method:
-                            criteria['input_operation']['required_elements'][index]['covered'] = True
-                            break
-                
-                # Output Status Code Class Analysis
-                if 'output_status_code_class' in criteria:
-                    for index, element in enumerate(criteria['output_status_code_class']['required_elements']):
-                        if (element['path'] == path_info and
-                            element['method'] == method and
-                            class_covers(element['status_code_class'], status)
-                        ):
-                            criteria['output_status_code_class']['required_elements'][index]['covered'] = True
-                            break
-                
-                # Output Status Code Analysis
-                if 'output_status_code' in criteria:
-                    for index, element in enumerate(criteria['output_status_code']['required_elements']):
-                        if (
-                            element['path'] == path_info and 
-                            element['method'] == method and 
-                            element['status_code'] == status
-                        ):
-                            criteria['output_status_code']['required_elements'][index]['covered'] = True
-                            break
-                
-                # Input Parameter and Input Parameter Value Analysis
-                if 'input_parameter' in criteria and 'input_parameter_value' in criteria and 'parameters' in path:
-                    for param in path['parameters']:
-                        for index, element in enumerate(criteria['input_parameter']['required_elements']):
-                            if (
-                                element['path'] == path_info and
-                                element['method'] == method and
-                                same_parameter(element, param)
-                            ):
-                                criteria['input_parameter']['required_elements'][index]['covered'] = True
-                                break
+        criteria = load_json(file_path)
+        covered = set()
+        for call in calls:
+            covered.update(criterion.covered_keys(call))
 
-                        values = param['value'] if isinstance(param['value'], list) else [param['value']]
-                        for value in values:
-                            for index, element in enumerate(criteria['input_parameter_value']['required_elements']):
-                                if (
-                                    element['path'] == path_info and
-                                    element['method'] == method and
-                                    same_parameter(element, param) and
-                                    as_text(element['value']) == as_text(value)
-                                ):
-                                    criteria['input_parameter_value']['required_elements'][index]['covered'] = True
-                                    break
-                
-                # Output Response Body Properties Analysis (novo)
-                if 'output_response_body_properties' in criteria and 'properties' in path:
-                    for property in path['properties']:
-                        for index, element in enumerate(criteria['output_response_body_properties']['required_elements']):
-                            if (
-                                element['path'] == path_info and 
-                                element['method'] == method and 
-                                element['status_code'] == status and 
-                                element['property'] == property
-                            ):
-                                criteria['output_response_body_properties']['required_elements'][index]['covered'] = True
-                                break
-    
-    for name in criteria:
-        criteria[name]['coverage'] = calculate_coverage(criteria[name])
-        save_json(criteria[name], f'{specific_directory}/criteria_analyzed/{name}.json')
+        for element in criteria['required_elements']:
+            element['covered'] = criterion.element_key(element) in covered
+
+        criteria['coverage'] = calculate_coverage(criteria)
+        save_json(criteria, f'{specific_directory}/criteria_analyzed/{name}.json')

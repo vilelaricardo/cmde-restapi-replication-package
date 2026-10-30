@@ -2,19 +2,12 @@ import json
 import textwrap
 from types import SimpleNamespace
 
+import coverage_criteria
 from extract_criteria_from_swagger import filter_endpoints
 from extract_tests_data import run_extract_test_data
 from criteria_analyzer import run_criteria_analyzer
 
-CRITERIA = [
-    'input_path',
-    'input_operation',
-    'input_parameter',
-    'input_parameter_value',
-    'output_status_code',
-    'output_status_code_class',
-    'output_response_body_properties',
-]
+CRITERIA = list(coverage_criteria.CRITERIA)
 
 TARGET_TAG = 'Items'
 
@@ -150,6 +143,58 @@ def generated_test(name, calls, code):
     body = textwrap.indent(textwrap.dedent(code).strip('\n'), ' ' * 8)
     return '\n'.join(['    # Calls:', *comments, '    @timeout_decorator.timeout(60)',
                       f'    def {name}(self):', '        ', body, ''])
+
+
+def get_items(query, status=200, asserts=''):
+    return generated_test('test_0', [(status, 'GET', '/items')], fr'''
+        headers = {{}}
+        headers["x-api-key"] = "key"
+        headers['Accept'] = "application/json"
+        res_0 = requests \
+                .get(self.baseUrlOfSut + "/items{query}",
+                    headers=headers)
+
+        assert res_0.status_code == {status}
+        {asserts}
+    ''')
+
+
+def post_items(body, status=201, asserts=''):
+    return generated_test('test_0', [(status, 'POST', '/items')], fr'''
+        headers = {{}}
+        headers["x-api-key"] = "key"
+        headers["content-type"] = "application/json"
+        body = {{}}
+        body = " {{ " + \
+            {body} + \
+            " }} "
+        headers['Accept'] = "application/json"
+        res_0 = requests \
+                .post(self.baseUrlOfSut + "/items",
+                    headers=headers, data=body)
+
+        assert res_0.status_code == {status}
+        {asserts}
+    ''')
+
+
+def get_path(template, url, status=200, name='test_0'):
+    return generated_test(name, [(status, 'GET', template)], fr'''
+        headers = {{}}
+        headers["x-api-key"] = "key"
+        headers['Accept'] = "application/json"
+        res_0 = requests \
+                .get(self.baseUrlOfSut + "{url}",
+                    headers=headers)
+
+        assert res_0.status_code == {status}
+    ''')
+
+
+def call(path, method='GET', status='200', parameters=(), properties=()):
+    """A call as extract_tests_data records it, for testing a criterion module directly."""
+    return {'path': path, 'method': method, 'status': status,
+            'parameters': list(parameters), 'properties': list(properties)}
 
 
 def evomaster_file(*tests, class_name='EvoMaster_successes_Test'):
