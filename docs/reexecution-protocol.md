@@ -1,0 +1,138 @@
+# Re-execution protocol (2026)
+
+This document fixes, before the campaign starts, how the study is re-executed for the
+revision of the paper. Any change made after the campaign starts is recorded under
+[Deviations](#deviations), with its date and reason.
+
+The original study (May 2025, EvoMaster 3.4.0, `results/official-run/`) is kept as it
+is; its coverage is recomputed with the revised coverage tool.
+
+## Why a re-execution, and why EvoMaster 6.2.0
+
+Checking the three techniques against the behavior of EvoMaster 3.4.0 (its source code
+and pilot executions against the API) showed that, in black-box mode:
+
+- **MIO cannot run.** The black-box module of 3.4.0 binds no mutator, so MIO stops with
+  `UninitializedPropertyAccessException: lateinit property mutator has not been
+  initialized` at its first mutation. The defect was fixed upstream in February 2026
+  (issue #1442, commit `ae877255b`); the first release with the fix is 5.1.0.
+- **WTS behaved as random sampling in the original study.** WTS first builds an initial
+  population of 30 suites of 1 to 50 random tests each (about 765 tests on average)
+  and only then starts crossover and mutation. In the original executions it evaluated
+  84 to 107 tests in the 30-minute budget, so the search ended inside the initial
+  population. Had it reached its mutation step, it would have stopped on the same
+  missing mutator.
+
+Version 3.4.0 therefore cannot run two of the four techniques as designed in black-box
+mode. The re-execution uses EvoMaster **6.2.0** (released on 15 September 2026), the
+latest release when this protocol was written (October 2026).
+
+## Tool
+
+| Item | Value |
+|---|---|
+| EvoMaster | 6.2.0, `evomaster.jar` from the GitHub release, SHA-256 `93f9c4a0de88b01395d2a1009776aa739973e9f64343778d2fd49c212fd17915` |
+| Java | Eclipse Temurin 17.0.21+9 (6.2.0 requires Java 17) |
+| Mode | black-box, REST, Python unittest output |
+| Campaign file | [`tool/configs/campaign-6.2.0.json`](../tool/configs/campaign-6.2.0.json) |
+| Runner | [`tool/campaign.py`](../tool/campaign.py) |
+
+## Techniques and settings
+
+- **Techniques:** MIO, RANDOM, SMARTS and WTS, each with EvoMaster's default parameters.
+- **Search budget:** 30 minutes of search per execution (`maxTime 30m`, stopping
+  criterion TIME), as in the original study.
+- **Request rate:** no limit (`ratePerMinute 0`, EvoMaster's default). The original
+  study limited it to 70 requests per minute to protect a shared environment; here the
+  API is local and dedicated. With 70 requests per minute, WTS would again not finish
+  its initial population (about 430 tests in 30 minutes in a pilot).
+- **Phases after the search are disabled:** minimization (`minimize false`), security
+  testing (`security false`) and the additional HTTP oracles (`httpOracles false`).
+  They add or change tests after the search, independently of the technique, and in
+  the original study the minimization never finished (it timed out in all 30
+  executions). The generated suite is therefore exactly what each technique's search
+  kept.
+- **Connection to the API** (`tool/configs/em.yaml`, not versioned because it holds the
+  API key): `blackBox true`, `bbSwaggerUrl http://localhost:8000/docs?api-docs.json`,
+  `endpointTagFilter "Estudantes, Profissionais da Educação"` (the same 19 operations
+  as the original study), `header0 "x-api-key: …"`.
+
+## Repetitions and order
+
+- **30 repetitions per technique**, organized in 30 blocks. Each block executes the
+  four techniques once, in an order drawn from the campaign seed (`20261030`).
+- Each execution has its own EvoMaster seed, drawn from the same generator. The order
+  and the seeds are saved in `plan.json` before the first execution.
+- The campaign may only stop between blocks, so every technique always has the same
+  number of repetitions.
+- An execution that fails is executed again, with the same seed, after the remaining
+  ones; what it left behind is kept in `incomplete/`.
+
+## Environment
+
+The CMDE API runs locally from the same code used in the original study, with:
+
+- PostgreSQL 17 created from a schema dump and from the tables that hold domain data
+  (codes, schools, institutions, API keys), with no personal data;
+- Kumo emulating the SQS queues and the S3 bucket that the API uses in AWS;
+- a queue worker consuming the batch queue (in the original study nothing consumed it).
+
+Differences from the original environment, to be reported in the paper:
+
+| | Original study (2025) | Re-execution (2026) |
+|---|---|---|
+| Database | development database on AWS RDS (us-east-1), shared | local PostgreSQL 17, reset before each execution |
+| Queues and storage | AWS SQS and S3 | Kumo (local) |
+| Queue consumer | none | worker running |
+| Request rate | about 20 requests per minute, bounded by latency to AWS | bounded only by the local API |
+| API key | a key of one education network (*rede*) in the development environment | another existing key of the same network |
+
+The machine, operating system, Java, Python, Docker and container image versions are
+recorded automatically at every invocation of the runner (`invocations/*.json`). The
+machine runs only the campaign while it is in progress.
+
+## Each execution
+
+1. Reset: all containers and volumes are recreated (database reloaded from the dumps,
+   empty queues and bucket), the Laravel log and cache are emptied, and the API is
+   polled until it answers.
+2. EvoMaster search with the technique and seed of the plan.
+3. The API logs of the search are saved: nginx access and error logs, Laravel log,
+   worker log.
+4. The generated suite is executed twice, each time after a new reset and with every
+   HTTP exchange recorded (request, response, status, time and the test that made it;
+   the API key is not recorded), and the API logs of each execution are saved:
+   - **as generated**, which gives the time to execute the suite and which tests pass;
+   - **without assertions** (`python -O`). The tests were generated against the state
+     the search had built up, so on a reset environment some assertions no longer hold
+     (in a pilot, 17 to 46 tests out of 80 to 109) and the test stops before its
+     remaining requests. Without assertions every request in the suite is made, which
+     is what the analysis of the responses reads.
+5. The coverage criteria are computed from the generated tests with the revised tool.
+
+Every phase has its start, end and duration recorded in `run.json`.
+
+## Measures
+
+- **Generated suite:** number of tests and of HTTP calls (from the tests and from the
+  recorded traffic).
+- **Time:** search time, time to execute the generated suite, and the other phases.
+- **Coverage:** the seven criteria (path, operation, parameter, parameter value, status
+  code class, status code, response body properties) as defined in the revised paper.
+- **Responses:** the response bodies actually returned while executing the suite,
+  recorded for the analysis of response body properties.
+- **Search effort:** tests and HTTP calls evaluated during the search (EvoMaster
+  output and statistics file).
+
+## Pilots
+
+Pilot campaigns check the whole procedure before the campaign and are not part of the
+results. They use the same campaign file with fewer blocks and a shorter budget, e.g.
+
+```
+python campaign.py --config configs/campaign-6.2.0.json --output data_generated/pilot-01 --blocks 1 --max-time 2m
+```
+
+## Deviations
+
+None so far.

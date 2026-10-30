@@ -1,0 +1,27 @@
+{
+  "evomaster_version": "6.2.0",
+  "java": "~/experimento/jdks/jdk-17.0.21+9/bin/java",
+  "jar": "~/experimento/evomaster-jars/6.2.0/evomaster.jar",
+  "algorithms": ["MIO", "RANDOM", "SMARTS", "WTS"],
+  "blocks": 30,
+  "seed": 20261030,
+  "evomaster_options": {
+    "maxTime": "30m",
+    "ratePerMinute": 0,
+    "minimize": false,
+    "security": false,
+    "httpOracles": false,
+    "exportCoveredTarget": true,
+    "writeStatistics": true,
+    "showProgress": false
+  },
+  "suite_timeout_minutes": 120,
+  "environment": {
+    "compose_dir": "~/experimento/api-cmde-local",
+    "compose_file": "docker-compose.local.yml",
+    "health_url": "http://localhost:8000/docs?api-docs.json",
+    "php_container": "api-cmde_php",
+    "nginx_container": "api-cmde_nginx",
+    "worker_container": "api-cmde_worker"
+  }
+}

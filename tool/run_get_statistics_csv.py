@@ -2,17 +2,10 @@ import csv
 import argparse
 from pathlib import Path
 from helpers import load_json
+from coverage_criteria import CRITERIA
 
 
-CRITERIA_FILES = {
-    'input_path': 'input_path.json',
-    'input_operation': 'input_operation.json',
-    'input_parameter': 'input_parameter.json',
-    'input_parameter_value': 'input_parameter_value.json',
-    'output_status_code_class': 'output_status_code_class.json',
-    'output_status_code': 'output_status_code.json',
-    'output_response_body_properties': 'output_response_body_properties.json'
-}
+CRITERIA_FILES = {name: f'{name}.json' for name in CRITERIA}
 
 
 CRITERIA_COVERAGE_KEYS = [f'{key}_coverage' for key in CRITERIA_FILES]

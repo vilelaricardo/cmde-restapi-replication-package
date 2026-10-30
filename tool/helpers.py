@@ -115,7 +115,19 @@ def extract_experiment_data(base_directory):
 
 def is_integer(s):
     try:
-        int(s)  
+        int(s)
         return True
     except ValueError:
         return False
+
+
+def as_text(value):
+    # Values from the specification (True, 1, "A") and values sent in a request
+    # ("true", "1", "A") are compared in the form they travel in HTTP.
+    if isinstance(value, bool):
+        return 'true' if value else 'false'
+    if value is None:
+        return 'null'
+    if isinstance(value, str):
+        return value
+    return json.dumps(value)
