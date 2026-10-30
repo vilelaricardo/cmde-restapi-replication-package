@@ -1,9 +1,10 @@
 """Checks each coverage criterion against hand-computed results on MINI_SPEC.
 
-Expected values follow the definitions in the paper (Section 2.1). A test marked
-xfail documents one known divergence between those definitions and the current
-implementation, and only the exception that divergence raises is accepted; once the
-divergence is fixed the test passes and strict xfail turns that into a failure.
+Expected values follow the definitions in the paper (Section 2.1): request parameters
+include header, query and path parameters and request-body fields; parameter values are
+the enum and boolean values of those inputs; the status code classes of an operation are
+one correct (2XX) and one erroneous (4XX or 5XX) class. The checkpoint pre-revisao-jss
+holds the earlier version of these tests, with the defects they found marked xfail.
 """
 import copy
 
@@ -11,10 +12,6 @@ import pytest
 
 from support import (MINI_SPEC, as_text, covered_set, elements, generated_test, is_covered, run_pipeline,
                      value_coverage)
-
-
-def known_defect(reason, raises=AssertionError):
-    return pytest.mark.xfail(reason=reason, raises=raises)
 
 
 def get_items(query, status=200, asserts=''):
@@ -89,11 +86,9 @@ class TestRequiredElements:
             ('GET', '/items/{id}', 'id', 'path'), ('GET', '/items/{id}', 'include', 'query'),
             ('GET', '/items/{id}', 'per_page', 'query'), ('GET', '/types/{kind}', 'kind', 'path')])
 
-    @known_defect('header parameters declared in the specification are not extracted')
     def test_header_parameter(self, criteria):
         assert len(elements(criteria, 'input_parameter', method='GET', path='/items', parameter='X-Trace')) == 1
 
-    @known_defect('request-body fields are not extracted as parameters')
     def test_request_body_fields(self, criteria):
         found = {e['parameter'] for e in elements(criteria, 'input_parameter', method='POST', path='/items')}
         assert found == {'name', 'kind', 'active', 'tags'}
@@ -109,7 +104,6 @@ class TestRequiredElements:
             ('GET', '/items/{id}', 'include', 'true'), ('GET', '/items/{id}', 'include', 'false'),
             ('GET', '/types/{kind}', 'kind', 'alpha'), ('GET', '/types/{kind}', 'kind', 'beta')])
 
-    @known_defect('enum/boolean fields of the request body are not extracted')
     def test_request_body_values(self, criteria):
         found = {(e['parameter'], as_text(e['value']))
                  for e in elements(criteria, 'input_parameter_value', method='POST', path='/items')}
@@ -122,12 +116,12 @@ class TestRequiredElements:
             ('GET', '/items/{id}', '200'), ('GET', '/items/{id}', '500'), ('GET', '/types/{kind}', '200')])
 
     def test_status_code_classes(self, criteria):
-        # Definition currently stated in the paper: one 2XX and one 4XX target per operation.
+        # One correct and one erroneous class per operation, whatever the operation documents.
         assert sorted((e['method'], e['path'], e['status_code_class'])
                       for e in criteria['output_status_code_class']['required_elements']) == sorted(
             (method, path, cls)
             for method, path in [('GET', '/items'), ('POST', '/items'), ('GET', '/items/{id}'), ('GET', '/types/{kind}')]
-            for cls in ('200', '400'))
+            for cls in ('2XX', '4XX/5XX'))
 
     def test_response_body_properties(self, criteria):
         found = sorted((e['method'], e['path'], e['status_code'], e['property'])
@@ -144,8 +138,6 @@ class TestRequiredElements:
         for criterion in criteria:
             assert not elements(criteria, criterion, path='/other'), criterion
 
-    @known_defect('a "parameters" list declared on the path item is taken for an HTTP method',
-                  raises=AttributeError)
     def test_parameters_declared_on_the_path_item(self, tmp_path):
         spec = copy.deepcopy(MINI_SPEC)
         operation = spec['paths']['/items/{id}']['get']
@@ -196,27 +188,22 @@ class TestRequestParameterCoverage:
         assert {e['parameter'] for e in elements(result.criteria, 'input_parameter', path='/items')
                 if e['covered']} == {'status', 'flag'}
 
-    @known_defect('header parameters declared in the specification are not extracted')
     def test_declared_header_parameter_sent_is_covered(self, tmp_path):
         test = get_items('?page=1').replace('headers["x-api-key"] = "key"',
                                             'headers["x-api-key"] = "key"\n        headers["X-Trace"] = "t1"')
         result = run_pipeline(tmp_path, test)
         assert is_covered(result.criteria, 'input_parameter', path='/items', parameter='X-Trace')
 
-    @known_defect('request-body fields are neither required elements nor read from the tests')
     def test_request_body_fields_sent_are_covered(self, tmp_path):
         result = run_pipeline(tmp_path, post_items(
             r'" \"name\": \"n\", " + " \"kind\": \"x\", " + " \"active\": true "'))
         assert {e['parameter'] for e in elements(result.criteria, 'input_parameter', method='POST', path='/items')
                 if e['covered']} == {'name', 'kind', 'active'}
 
-    @known_defect('parse_qs drops parameters sent with an empty value')
     def test_query_parameter_sent_empty_is_covered(self, tmp_path):
         result = run_pipeline(tmp_path, get_items('?page=&status=A'))
         assert is_covered(result.criteria, 'input_parameter', path='/items', parameter='page')
 
-    @known_defect('URLs written as resolve_location(..., self.baseUrlOfSut + str("...")) are not recovered, '
-                  'so the parameters of the call are lost')
     def test_parameters_of_call_using_resolved_location(self, tmp_path):
         test = generated_test('test_0', [(201, 'POST', '/items'), (200, 'GET', '/items/{id}')], r'''
             headers = {}
@@ -257,29 +244,22 @@ class TestRequestParameterValueCoverage:
         assert not covered_set(result.criteria, 'input_parameter_value', 'value')
 
     @pytest.mark.parametrize('sent, not_sent', [('true', 'false'), ('false', 'true')])
-    @known_defect("boolean values are stored as Python True/False but compared with the strings "
-                  "'true'/'false' read from the URL, so they can never be covered")
     def test_boolean_value_sent_in_query_is_covered(self, tmp_path, sent, not_sent):
         result = run_pipeline(tmp_path, get_items(f'?flag={sent}'))
         assert value_coverage(result.criteria, path='/items', parameter='flag') == {sent: True, not_sent: False}
 
-    @known_defect('numeric enum values are stored as integers but compared with the strings read from the URL')
     def test_numeric_enum_value_sent_in_query_is_covered(self, tmp_path):
         result = run_pipeline(tmp_path, get_items('?level=1'))
         assert value_coverage(result.criteria, path='/items', parameter='level') == {'1': True, '2': False}
 
-    @known_defect('a path parameter value is a string, and the analyser iterates over its characters '
-                  'instead of comparing the whole value')
     def test_enum_value_sent_in_path_is_covered(self, tmp_path):
         result = run_pipeline(tmp_path, get_path('/types/{kind}', '/types/alpha'))
         assert value_coverage(result.criteria, path='/types/{kind}', parameter='kind') == {'alpha': True, 'beta': False}
 
-    @known_defect('enum fields of the request body are not considered')
     def test_enum_value_in_request_body_is_covered(self, tmp_path):
         result = run_pipeline(tmp_path, post_items(r'" \"kind\": \"x\" "'))
         assert value_coverage(result.criteria, method='POST', path='/items', parameter='kind') == {'x': True, 'y': False}
 
-    @known_defect('boolean fields of the request body are not considered')
     def test_boolean_value_in_request_body_is_covered(self, tmp_path):
         result = run_pipeline(tmp_path, post_items(r'" \"active\": false "'))
         assert value_coverage(result.criteria, method='POST', path='/items', parameter='active') == {
@@ -312,27 +292,33 @@ class TestStatusCodeClassCoverage:
                               post_items(r'" \"name\": \"n\" "').replace('test_0', 'test_2'))
         covered = {(e['method'], e['path'], e['status_code_class'])
                    for e in result.criteria['output_status_code_class']['required_elements'] if e['covered']}
-        assert covered == {('GET', '/items', '200'), ('GET', '/items', '400'), ('POST', '/items', '200')}
+        assert covered == {('GET', '/items', '2XX'), ('GET', '/items', '4XX/5XX'), ('POST', '/items', '2XX')}
 
-    def test_server_error_does_not_cover_the_client_error_class(self, tmp_path):
-        # Matches the definition currently stated in the paper (2XX and 4XX). Reviewer 1
-        # questions it for operations that document 5XX but no 4XX, such as /items/{id}.
+    def test_server_error_covers_only_the_erroneous_class(self, tmp_path):
         result = run_pipeline(tmp_path, get_path('/items/{id}', '/items/abc', status=500))
-        assert not covered_set(result.criteria, 'output_status_code_class', 'status_code_class')
+        classes = {e['status_code_class']: e['covered']
+                   for e in elements(result.criteria, 'output_status_code_class', path='/items/{id}')}
+        assert classes == {'2XX': False, '4XX/5XX': True}
 
-    @pytest.mark.skip(reason='pending decision on how the erroneous class is defined (Reviewer 1); once settled, '
-                             'this test must list the exact classes required and covered for /items/{id}')
     def test_operation_documenting_only_5xx_errors_can_reach_full_coverage(self, tmp_path):
+        # Reviewer 1: /items/{id} documents 200 and 500 but no 4XX.
         result = run_pipeline(tmp_path,
                               get_path('/items/{id}', '/items/abc', status=200),
                               get_path('/items/{id}', '/items/abc', status=500, name='test_1'))
-        classes = elements(result.criteria, 'output_status_code_class', path='/items/{id}')
-        assert classes and all(e['covered'] for e in classes)
+        classes = {e['status_code_class']: e['covered']
+                   for e in elements(result.criteria, 'output_status_code_class', path='/items/{id}')}
+        assert classes == {'2XX': True, '4XX/5XX': True}
+
+    def test_redirect_covers_no_class(self, tmp_path):
+        result = run_pipeline(tmp_path, get_items('', status=302))
+        assert not covered_set(result.criteria, 'output_status_code_class', 'status_code_class')
 
 
 class TestResponseBodyPropertiesCoverage:
-    """In the current implementation a property counts as covered when a generated
-    test asserts on it; the paper describes properties present in the responses."""
+    """A property counts as covered when a generated test reads it from the response,
+    together with the enclosing properties that reading proves present. The tests
+    record only what they assert on, so this is a lower bound of the properties the
+    responses actually contained."""
 
     def test_asserted_properties_including_nested_ones(self, tmp_path):
         result = run_pipeline(tmp_path, get_items('', asserts='\n        '.join([
@@ -345,8 +331,6 @@ class TestResponseBodyPropertiesCoverage:
         assert {'total', 'data.id', 'data.meta.created'} <= covered
         assert 'data.name' not in covered
 
-    @known_defect('only the asserted path itself is counted; the enclosing properties it proves present '
-                  '(data, data.meta) are not')
     def test_parents_of_asserted_nested_property(self, tmp_path):
         result = run_pipeline(tmp_path, get_items('', asserts='assert res_0.json()["data"][0]["meta"]["created"] == "x"'))
         covered = {e['property'] for e in elements(result.criteria, 'output_response_body_properties',

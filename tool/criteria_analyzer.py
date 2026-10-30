@@ -1,5 +1,19 @@
-from helpers import load_json, save_json
+from helpers import load_json, save_json, as_text
 import os
+
+
+def same_parameter(element, param):
+    # HTTP header names are case-insensitive.
+    if element['parameter_type'] != param['parameter_type']:
+        return False
+    if param['parameter_type'] == 'header':
+        return element['parameter'].lower() == param['parameter'].lower()
+    return element['parameter'] == param['parameter']
+
+
+def class_covers(status_code_class, status):
+    # '2XX' is covered by any 2xx status, '4XX/5XX' by any 4xx or 5xx status.
+    return status[:1] in {cls[0] for cls in status_code_class.split('/')}
 
 def calculate_coverage(criteria):
     num_test_criteria_covered = 0
@@ -57,9 +71,9 @@ def run_criteria_analyzer(main_directory, specific_directory):
                 # Output Status Code Class Analysis
                 if 'output_status_code_class' in criteria:
                     for index, element in enumerate(criteria['output_status_code_class']['required_elements']):
-                        if (element['path'] == path_info and 
-                            element['method'] == method and 
-                            element['status_code_class'][0] == status[0]
+                        if (element['path'] == path_info and
+                            element['method'] == method and
+                            class_covers(element['status_code_class'], status)
                         ):
                             criteria['output_status_code_class']['required_elements'][index]['covered'] = True
                             break
@@ -80,22 +94,21 @@ def run_criteria_analyzer(main_directory, specific_directory):
                     for param in path['parameters']:
                         for index, element in enumerate(criteria['input_parameter']['required_elements']):
                             if (
-                                element['path'] == path_info and 
-                                element['method'] == method and 
-                                element['parameter'] == param['parameter'] and 
-                                element['parameter_type'] == param['parameter_type']
+                                element['path'] == path_info and
+                                element['method'] == method and
+                                same_parameter(element, param)
                             ):
                                 criteria['input_parameter']['required_elements'][index]['covered'] = True
                                 break
-                        
-                        for value in param['value']:
+
+                        values = param['value'] if isinstance(param['value'], list) else [param['value']]
+                        for value in values:
                             for index, element in enumerate(criteria['input_parameter_value']['required_elements']):
                                 if (
-                                    element['path'] == path_info and 
-                                    element['method'] == method and 
-                                    element['parameter'] == param['parameter'] and 
-                                    element['parameter_type'] == param['parameter_type'] and 
-                                    element['value'] == value
+                                    element['path'] == path_info and
+                                    element['method'] == method and
+                                    same_parameter(element, param) and
+                                    as_text(element['value']) == as_text(value)
                                 ):
                                     criteria['input_parameter_value']['required_elements'][index]['covered'] = True
                                     break

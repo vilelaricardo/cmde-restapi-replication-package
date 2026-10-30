@@ -1,5 +1,7 @@
 import re
-from helpers import save_json, load_json
+import ast
+import json
+from helpers import save_json, load_json, as_text
 from urllib.parse import urlparse, parse_qs
 
 
@@ -27,14 +29,14 @@ def extract_parameters(path, request):
     query_string = parsed_url.query
     if isinstance(query_string, bytes):
         query_string = query_string.decode('utf-8')
-    query_params = parse_qs(query_string)
-    
+    query_params = parse_qs(query_string, keep_blank_values=True)
+
     parameters = {"parameters": []}
-    
+
     for path_param in path_params_dict:
         parameters["parameters"].append({
             "parameter": path_param,
-            "value": path_params_dict[path_param],
+            "value": [path_params_dict[path_param]],
             "parameter_type": "path"
         })
         
@@ -58,15 +60,69 @@ def extract_properties_from_test(test_code_str):
         path = re.sub(r'\[\d+\]', '', path)
         path = re.sub(r'\[["\']([^"\']+)["\']\]', r'.\1', path)
         path = path.strip('.')
-        
+
         if path:
-            properties.add(path)
-    
+            # Reading a.b.c from the response also shows that a and a.b are present.
+            names = path.split('.')
+            properties.update('.'.join(names[:i]) for i in range(1, len(names) + 1))
+
     return sorted(properties)
 
 
+def concatenated_string(source):
+    # Value of an expression made only of string literals joined with "+", or None.
+    def evaluate(node):
+        if isinstance(node, ast.Constant) and isinstance(node.value, str):
+            return node.value
+        if isinstance(node, ast.BinOp) and isinstance(node.op, ast.Add):
+            left, right = evaluate(node.left), evaluate(node.right)
+            return None if left is None or right is None else left + right
+        return None
+
+    try:
+        return evaluate(ast.parse(source.strip(), mode='eval').body)
+    except SyntaxError:
+        return None
+
+
+def extract_header_parameters(block):
+    headers = re.findall(r'headers\[["\']([^"\']+)["\']\]\s*=\s*"([^"]*)"', block)
+    return [{"parameter": name, "value": [value], "parameter_type": "header"} for name, value in headers]
+
+
+def flatten_body(value, prefix, fields):
+    # Field names follow the specification side: dotted, with array items under the array's name.
+    if isinstance(value, dict):
+        for key, item in value.items():
+            name = f"{prefix}.{key}" if prefix else key
+            fields.setdefault(name, [])
+            flatten_body(item, name, fields)
+    elif isinstance(value, list):
+        for item in value:
+            flatten_body(item, prefix, fields)
+    elif prefix:
+        fields[prefix].append(as_text(value))
+
+
+def extract_body_parameters(block):
+    match = re.search(r'^\s*body = ((?!\{\})(?:.*\\\n)*.*)', block, re.MULTILINE)
+    if not match:
+        return []
+
+    body = concatenated_string(match.group(1).replace('\\\n', ' '))
+    try:
+        document = json.loads(body) if body is not None else None
+    except ValueError:
+        return []
+
+    fields = {}
+    flatten_body(document, '', fields)
+    return [{"parameter": name, "value": values, "parameter_type": "body"} for name, values in fields.items()]
+
+
 def extract_requests(block):
-    baseurl_pattern = re.compile(r'self\.baseUrlOfSut\s*\+\s*(?:(?:"[^"]*")|(?:\w+))(?:(?:\s*\+\s*(?:"[^"]*"|\w+))*)')
+    operand = r'(?:"[^"]*"|str\("[^"]*"\)|\w+)'
+    baseurl_pattern = re.compile(rf'self\.baseUrlOfSut\s*\+\s*{operand}(?:\s*\+\s*{operand})*')
     
     resolve_pattern = re.compile(r'resolve_location\([^,]+,\s*(self\.baseUrlOfSut\s*\+.+?)\)')
 
@@ -216,6 +272,8 @@ def run_extract_test_data(experiment_directory, test_file_names, specification_d
                 extracted_data[def_name]['paths'][index]['request'] = normalized_request
                 extracted_data[def_name]['paths'][index]['properties'] = extract_properties_from_test(request_block_line)
                 parameters = extract_parameters(extracted_data[def_name]['paths'][index]['path'], normalized_request)
+                parameters['parameters'] += extract_header_parameters(request_block_line)
+                parameters['parameters'] += extract_body_parameters(request_block_line)
                 extracted_data[def_name]['paths'][index].update(parameters)
         
         all_extracted_data[test_file] = extracted_data
