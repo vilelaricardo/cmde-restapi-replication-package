@@ -195,12 +195,47 @@ def wait_until_up(url, timeout=300):
         time.sleep(2)
 
 
-def reset_environment(settings):
-    """Recreates every container and volume: database reloaded from its dumps, empty queues
-    and buckets, empty Laravel log and cache."""
+def run_sql(settings, *statements):
+    """Connects to template1 because the statements replace the database the API uses."""
+    commands = [argument for statement in statements for argument in ('-c', statement)]
+    docker('exec', settings['db_container'], 'psql', '-v', 'ON_ERROR_STOP=1', '-U', settings['db_user'],
+           '-d', 'template1', *commands)
+
+
+def check_database_loaded(settings):
+    """When a dump fails to load, the container restarts and Postgres comes up healthy with
+    what it had loaded so far, so a healthy database does not show that the load worked."""
+    check = settings['database_check']
+    result = docker('exec', settings['db_container'], 'psql', '-U', settings['db_user'], '-d', settings['database'],
+                    '-Atc', check['query'])
+    if result.stdout.strip() != str(check['expected']):
+        raise RuntimeError(f"database not loaded: {check['query']} gave {result.stdout.strip()!r}, "
+                           f"expected {check['expected']}")
+
+
+def build_database_base(settings):
+    """Creates the database from its dumps and keeps a copy of it, the base that every reset
+    restores. Runs once per invocation of the runner."""
     directory = Path(settings['compose_dir']).expanduser()
     compose = ['compose', '-f', settings['compose_file']]
     docker(*compose, 'down', '-v', cwd=directory)
+    docker(*compose, 'up', '-d', '--wait', settings['db_service'], cwd=directory)
+    check_database_loaded(settings)
+    run_sql(settings, f"CREATE DATABASE {settings['database_base']} TEMPLATE {settings['database']}")
+
+
+def reset_environment(settings):
+    """Undoes what the requests changed, without loading the records again: the database goes
+    back to its base and the API containers are recreated, with empty queues and buckets and
+    empty Laravel log and cache. Records changed by a request are restored too, which deleting
+    the rows it created would not do."""
+    directory = Path(settings['compose_dir']).expanduser()
+    compose = ['compose', '-f', settings['compose_file']]
+    docker(*compose, 'rm', '--stop', '--force', *settings['api_services'], cwd=directory)
+    docker('volume', 'rm', '--force', settings['queue_volume'])
+    docker(*compose, 'up', '-d', '--wait', settings['db_service'], cwd=directory)
+    run_sql(settings, f"DROP DATABASE {settings['database']} WITH (FORCE)",
+            f"CREATE DATABASE {settings['database']} TEMPLATE {settings['database_base']}")
     docker(*compose, 'up', '-d', cwd=directory)
     wait_until_up(settings['health_url'])
     docker('exec', settings['php_container'], 'sh', '-c', ': > storage/logs/laravel.log && php artisan cache:clear')
@@ -341,6 +376,7 @@ def describe_environment(java, jar, settings):
         'python_packages': command_output([sys.executable, '-m', 'pip', 'freeze']).splitlines(),
         'docker': command_output(['docker', 'version', '--format', '{{.Server.Version}}']),
         'containers': containers,
+        'database_files': {name: sha256(compose_directory / name) for name in settings['database_files']},
         'replication_package': {
             'commit': command_output(['git', 'rev-parse', 'HEAD'], cwd=TOOL_DIRECTORY),
             'uncommitted_changes': command_output(['git', 'status', '--porcelain'], cwd=TOOL_DIRECTORY).splitlines(),
@@ -393,6 +429,8 @@ def main():
         sys.exit(f"{jar} is EvoMaster {jar_version(jar)}, the campaign file asks for {config['evomaster_version']}")
 
     plan = load_or_create_plan(output, config['algorithms'], config['blocks'], config['seed'])
+    build_database_base(config['environment'])
+    reset_environment(config['environment'])
     stamp = datetime.now().strftime('%Y%m%d-%H%M%S')
     save_json({'config': config, 'arguments': vars(arguments),
                'environment': describe_environment(java, jar, config['environment'])},
@@ -400,7 +438,6 @@ def main():
     data = experiment_data(config, em_configs)
     save_json(data, output / 'experiment_data.json')
     if not (output / 'criteria').exists():
-        reset_environment(config['environment'])
         run_extract_criteria_from_swagger(str(output), data)
 
     context = {'output': output, 'java': java, 'jar': jar, 'em_config': em_config,

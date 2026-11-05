@@ -73,7 +73,8 @@ latest release when this protocol was written (October 2026).
 The CMDE API runs locally from the same code used in the original study, with:
 
 - PostgreSQL 17 created from a schema dump and from the tables that hold domain data
-  (codes, schools, institutions, API keys), with no personal data;
+  (codes, schools, institutions, API keys), filled with fictitious records of students
+  and education professionals (see [Records in the database](#records-in-the-database));
 - Kumo emulating the SQS queues and the S3 bucket that the API uses in AWS;
 - a queue worker consuming the batch queue (in the original study nothing consumed it).
 
@@ -81,21 +82,57 @@ Differences from the original environment, to be reported in the paper:
 
 | | Original study (2025) | Re-execution (2026) |
 |---|---|---|
-| Database | development database on AWS RDS (us-east-1), shared | local PostgreSQL 17, reset before each execution |
+| Database | test database on AWS RDS (us-east-1), shared, with fictitious records | local PostgreSQL 17 with fictitious records generated for this study, restored before each execution |
+| Students of the network of the API key | 598,780 | 5,000 |
+| Registration validations | 54,714 | 457 |
+| Change requests | 72 | 72 |
+| Education professionals | 3 | 3 |
 | Queues and storage | AWS SQS and S3 | Kumo (local) |
 | Queue consumer | none | worker running |
 | Request rate | about 20 requests per minute, bounded by latency to AWS | bounded only by the local API |
 | API key | a key of one education network (*rede*) in the development environment | another existing key of the same network |
 
-The machine, operating system, Java, Python, Docker and container image versions are
-recorded automatically at every invocation of the runner (`invocations/*.json`). The
-machine runs only the campaign while it is in progress.
+The counts of the original study are the pagination totals recorded in its generated tests.
+
+In both environments the API runs without Redis, which it uses only as a cache. Every attempt
+to reach it fails and is written to the Laravel log ("Falha ao utilizar Redis"), and the API
+runs the same query on PostgreSQL, so the responses do not change. This is not a difference
+between the environments.
+
+The machine, operating system, Java, Python, Docker and container image versions, and the
+SHA-256 of the files that create the database, are recorded automatically at every invocation
+of the runner (`invocations/*.json`). The machine runs only the campaign while it is in
+progress.
+
+### Records in the database
+
+The local database would otherwise hold no record of a person: every list would come back
+empty and the operations that look up one record would never answer 200, so most of the
+responses the study analyzes would not be observed.
+[`tool/generate_synthetic_data.py`](../tool/generate_synthetic_data.py) writes the records,
+always the same ones (fixed seed).
+
+- **Nothing can belong to a real person.** CPFs and NISs have a wrong check digit on purpose,
+  telephone numbers use the nonexistent area code 00, e-mail addresses use the reserved
+  `.invalid` domain, addresses are invented and names are random combinations of common names.
+  Because of the wrong check digit, a request that writes one of these CPFs is rejected by the
+  API's validation, as any invalid CPF is.
+- **Volumes follow the original study.** Students are scaled down to 5,000, which keeps the time
+  of a request close to that of the rest of the API; validations keep their proportion (9.1%);
+  the two small counts are kept. The other proportions (optional fields, inactive enrollments)
+  are choices of the script and are stated in it.
+
+The records use the 25 first active schools of the network of the API key. A few students are
+also enrolled in another network, which the responses report.
 
 ## Each execution
 
-1. Reset: all containers and volumes are recreated (database reloaded from the dumps,
-   empty queues and bucket), the Laravel log and cache are emptied, and the API is
-   polled until it answers.
+1. Reset: what the requests changed is undone, without loading the records again. The
+   database is created once per invocation of the runner, from the dumps and the fictitious
+   records, and a copy of it is kept; each reset replaces the database with that copy, which
+   also restores records that a request changed. The API containers are recreated (empty
+   queues and bucket), the Laravel log and cache are emptied, and the API is polled until it
+   answers.
 2. EvoMaster search with the technique and seed of the plan.
 3. The API logs of the search are saved: nginx access and error logs, Laravel log,
    worker log.
@@ -121,8 +158,10 @@ Every phase has its start, end and duration recorded in `run.json`.
   code class, status code, response body properties) as defined in the revised paper.
 - **Responses:** the response bodies actually returned while executing the suite,
   recorded for the analysis of response body properties.
-- **Search effort:** tests and HTTP calls evaluated during the search (EvoMaster
-  output and statistics file).
+- **Search effort:** tests evaluated during the search (EvoMaster output and statistics
+  file) and requests the API received (nginx access log of the search). EvoMaster's own
+  count of HTTP calls can be higher than what the API received: in a pilot, by 2% for MIO
+  and 11% for SMARTS, with no difference for RANDOM and WTS.
 
 ## Pilots
 
@@ -132,6 +171,11 @@ results. They use the same campaign file with fewer blocks and a shorter budget,
 ```
 python campaign.py --config configs/campaign-6.2.0.json --output data_generated/pilot-01 --blocks 1 --max-time 2m
 ```
+
+One pilot had the full size of the campaign (30 blocks, 30 minutes per execution) on a
+database with no records of people. It showed the limitation described in
+[Records in the database](#records-in-the-database), which is why the records were added
+before the campaign.
 
 ## Deviations
 

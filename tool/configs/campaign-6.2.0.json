@@ -22,6 +22,20 @@
     "health_url": "http://localhost:8000/docs?api-docs.json",
     "php_container": "api-cmde_php",
     "nginx_container": "api-cmde_nginx",
-    "worker_container": "api-cmde_worker"
+    "worker_container": "api-cmde_worker",
+    "api_services": ["nginx", "php", "worker", "kumo", "kumo-init"],
+    "queue_volume": "api-cmde-local_kumo_data",
+    "db_service": "db",
+    "db_container": "api-cmde-local-db-1",
+    "db_user": "postgres",
+    "database": "postgres",
+    "database_base": "cmde_base",
+    "database_check": {"query": "select count(*) from pessoa.tb_pessoa", "expected": 5003},
+    "database_files": [
+      "docker/postgres/01-schema.sql",
+      "docker/postgres/02-data.sql",
+      "docker/postgres/02-z-dados-sinteticos.sql",
+      "docker/postgres/03-refresh-matviews.sql"
+    ]
   }
 }
