@@ -163,6 +163,26 @@ Every phase has its start, end and duration recorded in `run.json`.
   count of HTTP calls can be higher than what the API received: in a pilot, by 2% for MIO
   and 11% for SMARTS, with no difference for RANDOM and WTS.
 
+## Low-budget campaign
+
+A second campaign repeats the procedure with the request rate of the original study, to
+test whether the differences between techniques depend on how many requests the search
+can make. In the original study the API was slow (its database was remote), so the
+searches made 413 to 767 requests in 30 minutes, about 20 per minute, although the limit
+was set to 70. The low-budget campaign (`configs/campaign-6.2.0-low-budget.json`) differs
+from the main one in two settings only:
+
+- **Request rate:** 20 requests per minute (`ratePerMinute 20`), about 600 requests in
+  the 30 minutes of search. EvoMaster waits between requests; the API is not slowed down.
+- **Repetitions:** 10 per technique (10 blocks), as in the original study. The plan comes
+  from the same campaign seed, so its order and EvoMaster seeds are those of the first 10
+  blocks of the main campaign.
+
+With this budget WTS does not finish its initial population, as in the original study.
+EvoMaster checks the budget between tests, so the last test of a search can end after
+the 30 minutes; with 3 seconds between requests this adds up to about half a minute (21
+seconds in a pilot).
+
 ## Pilots
 
 Pilot campaigns check the whole procedure before the campaign and are not part of the

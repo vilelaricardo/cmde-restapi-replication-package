@@ -1,0 +1,41 @@
+{
+  "evomaster_version": "6.2.0",
+  "java": "~/experimento/jdks/jdk-17.0.21+9/bin/java",
+  "jar": "~/experimento/evomaster-jars/6.2.0/evomaster.jar",
+  "algorithms": ["MIO", "RANDOM", "SMARTS", "WTS"],
+  "blocks": 10,
+  "seed": 20261030,
+  "evomaster_options": {
+    "maxTime": "30m",
+    "ratePerMinute": 20,
+    "minimize": false,
+    "security": false,
+    "httpOracles": false,
+    "exportCoveredTarget": true,
+    "writeStatistics": true,
+    "showProgress": false
+  },
+  "suite_timeout_minutes": 120,
+  "environment": {
+    "compose_dir": "~/experimento/api-cmde-local",
+    "compose_file": "docker-compose.local.yml",
+    "health_url": "http://localhost:8000/docs?api-docs.json",
+    "php_container": "api-cmde_php",
+    "nginx_container": "api-cmde_nginx",
+    "worker_container": "api-cmde_worker",
+    "api_services": ["nginx", "php", "worker", "kumo", "kumo-init"],
+    "queue_volume": "api-cmde-local_kumo_data",
+    "db_service": "db",
+    "db_container": "api-cmde-local-db-1",
+    "db_user": "postgres",
+    "database": "postgres",
+    "database_base": "cmde_base",
+    "database_check": {"query": "select count(*) from pessoa.tb_pessoa", "expected": 5003},
+    "database_files": [
+      "docker/postgres/01-schema.sql",
+      "docker/postgres/02-data.sql",
+      "docker/postgres/02-z-dados-sinteticos.sql",
+      "docker/postgres/03-refresh-matviews.sql"
+    ]
+  }
+}
