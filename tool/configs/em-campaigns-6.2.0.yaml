@@ -1,0 +1,12 @@
+# EvoMaster configuration used in the 2026 campaigns (official-6.2.0 and low-budget-6.2.0),
+# with the API key removed. campaign.py passes it to EvoMaster with --configPath and adds the
+# options of the campaign configuration (configs/campaign-6.2.0*.json) on the command line.
+# To reuse it, copy it to configs/em.yaml and replace the placeholder with the API key of
+# your deployment.
+configs:
+  blackBox: true
+  bbSwaggerUrl: http://localhost:8000/docs?api-docs.json
+  outputFormat: DEFAULT
+  problemType: REST
+  header0: 'x-api-key: <API key removed>'
+  endpointTagFilter: Estudantes, Profissionais da Educação

@@ -54,8 +54,11 @@ latest release when this protocol was written (October 2026).
   kept.
 - **Connection to the API** (`tool/configs/em.yaml`, not versioned because it holds the
   API key): `blackBox true`, `bbSwaggerUrl http://localhost:8000/docs?api-docs.json`,
+  `outputFormat DEFAULT` (Python unittest in black-box mode), `problemType REST`,
   `endpointTagFilter "Estudantes, Profissionais da Educação"` (the same 19 operations
-  as the original study), `header0 "x-api-key: …"`.
+  as the original study), `header0 "x-api-key: …"`. The file used in the campaigns, with
+  the key removed, is `tool/configs/em-campaigns-6.2.0.yaml`. Every other EvoMaster
+  setting kept its default value.
 
 ## Repetitions and order
 
