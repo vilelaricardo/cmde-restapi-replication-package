@@ -1,5 +1,8 @@
+# Versions used to produce the outputs in analysis/jss-revision/output/ (Python 3.12.13).
+# The scripts of the initial study (compute_statistics.py, generate_figures.py) also run with them.
 pandas==3.0.3
 numpy==2.4.6
 scipy==1.18.0
 scikit-posthocs==0.14.0
-matplotlib==3.10.9
+statsmodels==0.14.4
+matplotlib==3.11.2

@@ -1,0 +1,22 @@
+
+=== prof/inep: calls during the search, 200 responses, 200 with a non-empty list (median [min, max])
+  MIO     calls 200 [84, 1024]   200 159 [54, 982]    non-empty 1 [0, 668]     | executions with none non-empty: 13 | suite kept a non-empty one: 17
+  RANDOM  calls 894 [804, 953]   200 836 [756, 899]   non-empty 44 [37, 60]    | executions with none non-empty: 0 | suite kept a non-empty one: 30
+  SMARTS  calls 82 [59, 103]     200 74 [55, 95]      non-empty 4 [1, 8]       | executions with none non-empty: 0 | suite kept a non-empty one: 30
+  WTS     calls 832 [665, 1002]  200 749 [613, 924]   non-empty 38 [19, 125]   | executions with none non-empty: 0 | suite kept a non-empty one: 30
+  MIO: cross-tabulation "saw a non-empty list during the search" x "suite kept a non-empty list"
+prof_kept_nonempty  False  True 
+prof_nonempty                   
+False                  13      0
+True                    0     17
+
+=== est/inep: calls during the search, 200 responses, 200 with a non-empty list (median [min, max])
+  MIO     calls 164 [71, 1590]   200 72 [33, 1068]    non-empty 6 [0, 141]     | executions with none non-empty: 1 | suite kept a non-empty one: 23
+  RANDOM  calls 888 [850, 946]   200 464 [416, 506]   non-empty 161 [114, 183] | executions with none non-empty: 0 | suite kept a non-empty one: 30
+  SMARTS  calls 83 [68, 97]      200 42 [30, 51]      non-empty 14 [5, 22]     | executions with none non-empty: 0 | suite kept a non-empty one: 30
+  WTS     calls 890 [708, 1024]  200 473 [360, 582]   non-empty 148 [109, 245] | executions with none non-empty: 0 | suite kept a non-empty one: 30
+  MIO: cross-tabulation "saw a non-empty list during the search" x "suite kept a non-empty list"
+est_kept_nonempty  False  True 
+est_nonempty                   
+False                  1      0
+True                   6     23

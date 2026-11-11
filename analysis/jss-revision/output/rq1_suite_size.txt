@@ -1,0 +1,136 @@
+
+==========================================================================================
+RQ1: descriptive
+==========================================================================================
+
+NT
+  MIO     med    138.50  IQR [   137.00 -    143.00]  min-max (   126.00 -    152.00)  mean    139.90
+  RANDOM  med    152.50  IQR [   149.25 -    156.00]  min-max (   146.00 -    161.00)  mean    152.87
+  SMARTS  med    140.00  IQR [   137.00 -    142.00]  min-max (   130.00 -    154.00)  mean    139.63
+  WTS     med    154.00  IQR [   152.00 -    155.00]  min-max (   143.00 -    158.00)  mean    152.97
+
+HTTP_suite
+  MIO     med    385.50  IQR [   363.25 -    400.75]  min-max (   327.00 -    469.00)  mean    386.00
+  RANDOM  med    306.00  IQR [   285.75 -    320.75]  min-max (   260.00 -    332.00)  mean    302.60
+  SMARTS  med    344.50  IQR [   321.75 -    353.00]  min-max (   285.00 -    393.00)  mean    339.57
+  WTS     med    345.50  IQR [   332.25 -    361.75]  min-max (   298.00 -    390.00)  mean    348.17
+
+LOC
+  MIO     med  13156.00  IQR [ 12292.75 -  13733.00]  min-max ( 10695.00 -  16407.00)  mean  13202.13
+  RANDOM  med  10179.00  IQR [  9456.75 -  10544.25]  min-max (  8420.00 -  11542.00)  mean  10038.50
+  SMARTS  med  12835.00  IQR [ 12493.50 -  13609.00]  min-max ( 10686.00 -  14481.00)  mean  12931.87
+  WTS     med  11227.00  IQR [ 10749.25 -  12068.25]  min-max (  9281.00 -  13503.00)  mean  11387.27
+
+assertions
+  MIO     med   5396.00  IQR [  4878.75 -   5936.25]  min-max (  4056.00 -   7496.00)  mean   5482.87
+  RANDOM  med   5877.50  IQR [  5277.75 -   6022.25]  min-max (  4425.00 -   6652.00)  mean   5679.20
+  SMARTS  med   5012.00  IQR [  4584.75 -   5406.75]  min-max (  4108.00 -   5828.00)  mean   4975.77
+  WTS     med   6339.00  IQR [  5891.50 -   6525.25]  min-max (  4924.00 -   8136.00)  mean   6304.03
+
+suite_na_s
+  MIO     med     41.72  IQR [    38.80 -     43.34]  min-max (    34.96 -     50.64)  mean     41.45
+  RANDOM  med     31.74  IQR [    29.67 -     33.57]  min-max (    27.07 -     35.13)  mean     31.55
+  SMARTS  med     37.78  IQR [    35.30 -     38.97]  min-max (    31.51 -     42.48)  mean     37.31
+  WTS     med     36.29  IQR [    34.74 -     37.96]  min-max (    31.04 -     40.34)  mean     36.28
+
+requests_api
+  MIO     med  16696.00  IQR [ 16459.50 -  16832.50]  min-max ( 16156.00 -  17362.00)  mean  16669.50
+  RANDOM  med  16960.00  IQR [ 16929.00 -  16975.75]  min-max ( 16874.00 -  17070.00)  mean  16956.60
+  SMARTS  med  15046.50  IQR [ 15003.00 -  15076.50]  min-max ( 14941.00 -  15118.00)  mean  15041.27
+  WTS     med  15757.50  IQR [ 15658.25 -  15887.00]  min-max ( 15440.00 -  16057.00)  mean  15765.80
+
+calls_per_test
+  MIO     med      2.74  IQR [     2.62 -      2.87]  min-max (     2.38 -      3.33)  mean      2.76
+  RANDOM  med      2.00  IQR [     1.91 -      2.04]  min-max (     1.72 -      2.17)  mean      1.98
+  SMARTS  med      2.44  IQR [     2.36 -      2.49]  min-max (     2.19 -      2.77)  mean      2.43
+  WTS     med      2.25  IQR [     2.19 -      2.36]  min-max (     2.03 -      2.55)  mean      2.28
+
+assertions_per_test
+  MIO     med     38.71  IQR [    36.00 -     41.66]  min-max (    29.61 -     49.32)  mean     39.13
+  RANDOM  med     37.71  IQR [    34.40 -     39.18]  min-max (    30.31 -     44.05)  mean     37.13
+  SMARTS  med     35.43  IQR [    33.11 -     38.26]  min-max (    29.11 -     41.29)  mean     35.63
+  WTS     med     41.19  IQR [    38.41 -     43.27]  min-max (    32.23 -     52.49)  mean     41.22
+
+LOC_per_test
+  MIO     med     93.40  IQR [    89.86 -     97.29]  min-max (    78.07 -    107.96)  mean     94.33
+  RANDOM  med     65.46  IQR [    63.13 -     67.77]  min-max (    57.67 -     76.44)  mean     65.63
+  SMARTS  med     92.63  IQR [    88.35 -     96.25]  min-max (    82.20 -    101.98)  mean     92.58
+  WTS     med     74.56  IQR [    69.47 -     79.32]  min-max (    63.00 -     88.84)  mean     74.47
+
+==========================================================================================
+RQ1: Kruskal-Wallis, Dunn-Bonferroni, A12 [95% CI]
+==========================================================================================
+
+[NT] Kruskal-Wallis H=80.49 p=2.41e-17 eta2_H=0.67
+    MIO     x RANDOM   Dunn p=3.33e-09*  A12=0.03 [0.00, 0.08] large  medians 138.50 x 152.50
+    MIO     x SMARTS   Dunn p=1   A12=0.51 [0.36, 0.67] negl  medians 138.50 x 140.00
+    MIO     x WTS      Dunn p=1.06e-09*  A12=0.02 [0.00, 0.06] large  medians 138.50 x 154.00
+    RANDOM  x SMARTS   Dunn p=1.75e-09*  A12=0.98 [0.93, 1.00] large  medians 152.50 x 140.00
+    RANDOM  x WTS      Dunn p=1   A12=0.48 [0.33, 0.63] negl  medians 152.50 x 154.00
+    SMARTS  x WTS      Dunn p=5.45e-10*  A12=0.02 [0.00, 0.07] large  medians 140.00 x 154.00
+
+[HTTP_suite] Kruskal-Wallis H=71.52 p=2.01e-15 eta2_H=0.59
+    MIO     x RANDOM   Dunn p=3.46e-16*  A12=1.00 [0.98, 1.00] large  medians 385.50 x 306.00
+    MIO     x SMARTS   Dunn p=0.00013*  A12=0.86 [0.76, 0.94] large  medians 385.50 x 344.50
+    MIO     x WTS      Dunn p=0.00774*  A12=0.82 [0.71, 0.92] large  medians 385.50 x 345.50
+    RANDOM  x SMARTS   Dunn p=0.000224*  A12=0.13 [0.05, 0.23] large  medians 306.00 x 344.50
+    RANDOM  x WTS      Dunn p=1.55e-06*  A12=0.04 [0.01, 0.10] large  medians 306.00 x 345.50
+    SMARTS  x WTS      Dunn p=1   A12=0.41 [0.27, 0.56] small  medians 344.50 x 345.50
+
+[LOC] Kruskal-Wallis H=76.60 p=1.65e-16 eta2_H=0.63
+    MIO     x RANDOM   Dunn p=2.67e-13*  A12=0.99 [0.97, 1.00] large  medians 13156.00 x 10179.00
+    MIO     x SMARTS   Dunn p=1   A12=0.56 [0.42, 0.70] small  medians 13156.00 x 12835.00
+    MIO     x WTS      Dunn p=5.29e-05*  A12=0.88 [0.77, 0.95] large  medians 13156.00 x 11227.00
+    RANDOM  x SMARTS   Dunn p=6.82e-12*  A12=0.01 [0.00, 0.03] large  medians 10179.00 x 12835.00
+    RANDOM  x WTS      Dunn p=0.0115*  A12=0.15 [0.06, 0.26] large  medians 10179.00 x 11227.00
+    SMARTS  x WTS      Dunn p=0.000364*  A12=0.87 [0.78, 0.95] large  medians 12835.00 x 11227.00
+
+[assertions] Kruskal-Wallis H=43.61 p=1.83e-09 eta2_H=0.35
+    MIO     x RANDOM   Dunn p=1   A12=0.39 [0.24, 0.54] small  medians 5396.00 x 5877.50
+    MIO     x SMARTS   Dunn p=0.0587   A12=0.69 [0.55, 0.82] medium  medians 5396.00 x 5012.00
+    MIO     x WTS      Dunn p=0.000567*  A12=0.22 [0.11, 0.35] large  medians 5396.00 x 6339.00
+    RANDOM  x SMARTS   Dunn p=0.000816*  A12=0.83 [0.72, 0.92] large  medians 5877.50 x 5012.00
+    RANDOM  x WTS      Dunn p=0.0452*  A12=0.24 [0.13, 0.38] large  medians 5877.50 x 6339.00
+    SMARTS  x WTS      Dunn p=5.24e-10*  A12=0.06 [0.01, 0.13] large  medians 5012.00 x 6339.00
+
+[suite_na_s] Kruskal-Wallis H=76.02 p=2.19e-16 eta2_H=0.63
+    MIO     x RANDOM   Dunn p=4.66e-17*  A12=1.00 [0.99, 1.00] large  medians 41.72 x 31.74
+    MIO     x SMARTS   Dunn p=0.0118*  A12=0.80 [0.69, 0.91] large  medians 41.72 x 37.78
+    MIO     x WTS      Dunn p=0.000235*  A12=0.88 [0.79, 0.95] large  medians 41.72 x 36.29
+    RANDOM  x SMARTS   Dunn p=2.18e-07*  A12=0.05 [0.01, 0.12] large  medians 31.74 x 37.78
+    RANDOM  x WTS      Dunn p=4.26e-05*  A12=0.05 [0.01, 0.11] large  medians 31.74 x 36.29
+    SMARTS  x WTS      Dunn p=1   A12=0.61 [0.46, 0.75] small  medians 37.78 x 36.29
+
+[requests_api] Kruskal-Wallis H=106.06 p=7.73e-23 eta2_H=0.89
+    MIO     x RANDOM   Dunn p=0.105   A12=0.14 [0.04, 0.27] large  medians 16696.00 x 16960.00
+    MIO     x SMARTS   Dunn p=4.73e-12*  A12=1.00 [1.00, 1.00] large  medians 16696.00 x 15046.50
+    MIO     x WTS      Dunn p=0.000792*  A12=1.00 [1.00, 1.00] large  medians 16696.00 x 15757.50
+    RANDOM  x SMARTS   Dunn p=8.7e-21*  A12=1.00 [1.00, 1.00] large  medians 16960.00 x 15046.50
+    RANDOM  x WTS      Dunn p=3.43e-09*  A12=1.00 [1.00, 1.00] large  medians 16960.00 x 15757.50
+    SMARTS  x WTS      Dunn p=0.00502*  A12=0.00 [0.00, 0.00] large  medians 15046.50 x 15757.50
+
+[calls_per_test] Kruskal-Wallis H=96.25 p=9.96e-21 eta2_H=0.80
+    MIO     x RANDOM   Dunn p=9.04e-21*  A12=1.00 [1.00, 1.00] large  medians 2.74 x 2.00
+    MIO     x SMARTS   Dunn p=0.00544*  A12=0.91 [0.82, 0.97] large  medians 2.74 x 2.44
+    MIO     x WTS      Dunn p=1.4e-07*  A12=0.97 [0.93, 1.00] large  medians 2.74 x 2.25
+    RANDOM  x SMARTS   Dunn p=3.05e-09*  A12=0.00 [0.00, 0.00] large  medians 2.00 x 2.44
+    RANDOM  x WTS      Dunn p=0.000471*  A12=0.03 [0.00, 0.06] large  medians 2.00 x 2.25
+    SMARTS  x WTS      Dunn p=0.14   A12=0.79 [0.67, 0.90] large  medians 2.44 x 2.25
+
+[assertions_per_test] Kruskal-Wallis H=25.06 p=1.5e-05 eta2_H=0.19
+    MIO     x RANDOM   Dunn p=0.728   A12=0.62 [0.48, 0.77] small  medians 38.71 x 37.71
+    MIO     x SMARTS   Dunn p=0.0212*  A12=0.71 [0.57, 0.83] large  medians 38.71 x 35.43
+    MIO     x WTS      Dunn p=0.402   A12=0.37 [0.23, 0.51] small  medians 38.71 x 41.19
+    RANDOM  x SMARTS   Dunn p=1   A12=0.62 [0.48, 0.77] small  medians 37.71 x 35.43
+    RANDOM  x WTS      Dunn p=0.00433*  A12=0.23 [0.11, 0.36] large  medians 37.71 x 41.19
+    SMARTS  x WTS      Dunn p=1.23e-05*  A12=0.16 [0.07, 0.27] large  medians 35.43 x 41.19
+
+==========================================================================================
+RQ1: sensitivity to the blocks (Friedman + paired Wilcoxon, Bonferroni)
+==========================================================================================
+[NT] Friedman p=1.1e-13 | MIO-RANDOM 1e-05*  MIO-SMARTS 1  MIO-WTS 1.3e-05*  RANDOM-SMARTS 1.2e-05*  RANDOM-WTS 1  SMARTS-WTS 1.1e-05*
+[HTTP_suite] Friedman p=8.9e-12 | MIO-RANDOM 1.2e-05*  MIO-SMARTS 2.3e-05*  MIO-WTS 0.00061*  RANDOM-SMARTS 0.00013*  RANDOM-WTS 2.8e-05*  SMARTS-WTS 1
+[LOC] Friedman p=8.9e-13 | MIO-RANDOM 1.1e-08*  MIO-SMARTS 1  MIO-WTS 7.2e-06*  RANDOM-SMARTS 1.1e-08*  RANDOM-WTS 3.1e-05*  SMARTS-WTS 0.00022*
+[assertions] Friedman p=1.4e-07 | MIO-RANDOM 0.74  MIO-SMARTS 0.04*  MIO-WTS 0.003*  RANDOM-SMARTS 0.00053*  RANDOM-WTS 0.005*  SMARTS-WTS 9.8e-07*
+[suite_na_s] Friedman p=1.2e-12 | MIO-RANDOM 1.1e-08*  MIO-SMARTS 0.00036*  MIO-WTS 1.4e-05*  RANDOM-SMARTS 1.6e-07*  RANDOM-WTS 2.1e-07*  SMARTS-WTS 1
+[requests_api] Friedman p=1.1e-18 | MIO-RANDOM 2.7e-05*  MIO-SMARTS 1.1e-08*  MIO-WTS 1e-05*  RANDOM-SMARTS 1e-05*  RANDOM-WTS 1.1e-08*  SMARTS-WTS 1e-05*

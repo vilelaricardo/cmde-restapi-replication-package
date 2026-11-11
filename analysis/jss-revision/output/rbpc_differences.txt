@@ -1,0 +1,38 @@
+MIO covered through assertions and not observed in the re-execution (sum over 30 executions):
+     410  GET /v1/estudantes/lote/{id}/erros 200
+     368  GET /v1/profissionais/lote/{id}/erros 200
+MIO observed in the re-execution and not covered through assertions:
+     233  GET /v1/estudantes 200
+      30  GET /v1/estudantes/lote 200
+      30  PATCH /v1/estudantes/lote 200
+      30  GET /v1/profissionais/lote 200
+      23  GET /v1/estudantes/inep/{inep} 200
+RANDOM covered through assertions and not observed in the re-execution (sum over 30 executions):
+      30  GET /v1/estudantes/lote/{id} 200
+      30  GET /v1/profissionais/lote/{id} 200
+RANDOM observed in the re-execution and not covered through assertions:
+     240  GET /v1/estudantes 200
+      30  GET /v1/estudantes/lote 200
+      30  POST /v1/estudantes/lote 201
+      30  PATCH /v1/estudantes/lote 200
+      30  GET /v1/estudantes/inep/{inep} 200
+      30  GET /v1/profissionais/lote 200
+SMARTS covered through assertions and not observed in the re-execution (sum over 30 executions):
+     416  GET /v1/estudantes/lote/{id}/erros 200
+     392  GET /v1/profissionais/lote/{id}/erros 200
+SMARTS observed in the re-execution and not covered through assertions:
+     233  GET /v1/estudantes 200
+      30  GET /v1/estudantes/lote 200
+      30  PATCH /v1/estudantes/lote 200
+      30  GET /v1/estudantes/inep/{inep} 200
+      30  GET /v1/profissionais/lote 200
+WTS covered through assertions and not observed in the re-execution (sum over 30 executions):
+      30  GET /v1/estudantes/lote/{id} 200
+      30  GET /v1/profissionais/lote/{id} 200
+WTS observed in the re-execution and not covered through assertions:
+     233  GET /v1/estudantes 200
+      30  GET /v1/estudantes/lote 200
+      30  POST /v1/estudantes/lote 201
+      30  PATCH /v1/estudantes/lote 200
+      30  GET /v1/estudantes/inep/{inep} 200
+      30  GET /v1/profissionais/lote 200

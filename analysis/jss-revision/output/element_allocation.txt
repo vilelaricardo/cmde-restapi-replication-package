@@ -1,0 +1,193 @@
+
+==========================================================================================
+F. Elements: how many vary and which separate the techniques (frequency in 30 executions)
+==========================================================================================
+RPC: elements=201 never covered=23 always covered by all=170 vary=8
+    covered at least once: {'MIO': 178, 'RANDOM': 178, 'SMARTS': 178, 'WTS': 178}
+RPVC: elements=132 never covered=16 always covered by all=13 vary=103
+    covered at least once: {'MIO': 116, 'RANDOM': 116, 'SMARTS': 116, 'WTS': 116}
+SCCC: elements=38 never covered=2 always covered by all=33 vary=3
+    covered at least once: {'MIO': 36, 'RANDOM': 34, 'SMARTS': 36, 'WTS': 34}
+SCC: elements=45 never covered=11 always covered by all=27 vary=7
+    covered at least once: {'MIO': 33, 'RANDOM': 30, 'SMARTS': 34, 'WTS': 29}
+RBPC: elements=678 never covered=319 always covered by all=233 vary=126
+    covered at least once: {'MIO': 351, 'RANDOM': 313, 'SMARTS': 359, 'WTS': 319}
+
+RPVC: elements with a difference >= 10 executions between techniques (34)
+                                                   MIO  RANDOM  SMARTS  WTS
+/v1/estudantes/lote | POST | genero | body | 8      30      20      29   22
+/v1/estudantes/lote | POST | genero | body | 9      30      19      30   23
+/v1/estudantes/lote | POST | genero | body | 5      29      20      28   18
+/v1/estudantes/lote | POST | genero | body | 2      29      19      30   23
+/v1/estudantes | POST | racaCor | body | 3          29      19      26   18
+/v1/estudantes | POST | racaCor | body | 2          29      18      28   17
+/v1/estudantes | POST | sexo | body | 3             29      17      25   17
+/v1/profissionais | POST | sexo | body | 0          29      17      24   19
+/v1/estudantes | POST | racaCor | body | 4          29      13      25   14
+/v1/estudantes | POST | racaCor | body | 1          29      12      27   18
+/v1/estudantes/lote | POST | genero | body | 1      28      21      29   18
+/v1/estudantes/lote | POST | genero | body | 4      28      19      29   17
+/v1/estudantes | POST | racaCor | body | 0          28      15      26   19
+/v1/estudantes | POST | sexo | body | 0             28      15      26   15
+/v1/profissionais/lote | POST | genero | body | 5   27      20      30   26
+/v1/estudantes/lote | POST | genero | body | 6      27      18      30   15
+/v1/estudantes | POST | sexo | body | 4             27      15      27   15
+/v1/estudantes | POST | racaCor | body | 5          27      13      27   17
+/v1/estudantes | POST | sexo | body | 5             27       9      27   21
+/v1/estudantes | POST | genero | body | 8           27       9      18   16
+/v1/profissionais | POST | sexo | body | 2          26      16      25   18
+/v1/estudantes | POST | sexo | body | 2             26      15      26   20
+/v1/estudantes | POST | genero | body | 3           26      13      22   12
+/v1/estudantes | POST | genero | body | 1           26      12      18   12
+/v1/profissionais | POST | sexo | body | 1          25      15      24   17
+/v1/estudantes | POST | genero | body | 6           25      13      25   16
+/v1/estudantes | POST | sexo | body | 1             24      15      26   19
+/v1/estudantes | POST | genero | body | 9           23       9      25   12
+/v1/estudantes | POST | genero | body | 0           23       9      24   10
+/v1/estudantes | POST | genero | body | 4           22      15      17   12
+/v1/estudantes | POST | genero | body | 5           22       9      22   10
+/v1/estudantes | POST | genero | body | 7           22       7      22   14
+/v1/profissionais | POST | genero | body | 4        20      13      23   17
+/v1/profissionais | POST | genero | body | 8        15      19      21   11
+
+SCCC: elements with a difference >= 10 executions between techniques (3)
+                                               MIO  RANDOM  SMARTS  WTS
+/v1/estudantes/lote/{id}/erros | GET | 2XX      30       0      30    0
+/v1/profissionais/lote/{id}/erros | GET | 2XX   30       0      30    0
+/v1/profissionais/{cpf} | GET | 2XX             13      30      26   30
+
+SCC: elements with a difference >= 10 executions between techniques (6)
+                                               MIO  RANDOM  SMARTS  WTS
+/v1/profissionais/inep/{inep} | GET | 500       30      30      20   30
+/v1/estudantes/lote/{id}/erros | GET | 200      30       0      30    0
+/v1/estudantes/lote/{id}/erros | GET | 500      30       0      30    0
+/v1/profissionais/lote/{id}/erros | GET | 200   30       0      30    0
+/v1/profissionais/lote/{id}/erros | GET | 500   30       0      30    0
+/v1/profissionais/{cpf} | GET | 200             13      30      26   30
+
+==========================================================================================
+F2. RBPC per group (path, method, status): % of elements covered, mean over the 30 executions
+==========================================================================================
+                                                     n    MIO  RANDOM  SMARTS    WTS
+group                                                                               
+/v1/estudantes | GET | 200                          65   87.7    87.7    88.1   88.1
+/v1/estudantes/lote/{id} | GET | 200                65    1.5     1.5     1.5    1.5
+/v1/estudantes/inep/{inep} | GET | 200              55   79.5    98.2    98.2   98.2
+/v1/estudantes/{cpfNis} | GET | 200                 45    0.0     0.0     0.0    0.0
+/v1/estudantes | POST | 201                         45    0.0     0.0     0.0    0.0
+/v1/profissionais | GET | 200                       44   97.7    97.7    97.7   97.7
+/v1/profissionais/lote/{id} | GET | 200             44    2.3     2.3     2.3    2.3
+/v1/profissionais/inep/{inep} | GET | 200           44   67.2    97.7    97.7   97.7
+/v1/profissionais/{cpf} | GET | 200                 32    0.0     0.0     0.0    0.0
+/v1/profissionais | POST | 201                      32    0.0     0.0     0.0    0.0
+/v1/estudantes/solicitacoes-alteracoes | GET | 200  25  100.0   100.0   100.0  100.0
+/v1/estudantes/validacao-cadastro | GET | 200       21  100.0   100.0   100.0  100.0
+/v1/profissionais/lote | GET | 200                  15   93.3    93.3    93.3   93.3
+/v1/estudantes/lote/{id}/erros | GET | 200          15   91.1     0.0    97.3    0.0
+/v1/profissionais/lote/{id}/erros | GET | 200       14   94.3     0.0   100.0    0.0
+/v1/estudantes/lote | GET | 200                     13   92.3    92.3    92.3   92.3
+/v1/profissionais/lote | GET | 500                   5    0.0     0.0     0.0    0.0
+/v1/profissionais | GET | 500                        5   80.0    80.0    80.0   80.0
+/v1/profissionais | GET | 404                        5    0.0     0.0     0.0    0.0
+/v1/profissionais/lote/{id}/erros | GET | 500        5   80.0     0.0    80.0    0.0
+/v1/estudantes/{cpfNis} | GET | 500                  5    0.0     0.0     0.0    0.0
+/v1/profissionais/inep/{inep} | GET | 500            5   80.0    80.0    53.3   80.0
+/v1/estudantes/validacao-cadastro | GET | 500        5    0.0     0.0     0.0    0.0
+/v1/estudantes | GET | 404                           5    0.0     0.0     0.0    0.0
+/v1/estudantes/lote | PATCH | 422                    5   80.0    80.0    80.0   80.0
+/v1/estudantes | GET | 500                           5   80.0    80.0    80.0   80.0
+/v1/estudantes/inep/{inep} | GET | 500               5   80.0    80.0    80.0   80.0
+/v1/estudantes/lote | GET | 500                      5    0.0     0.0     0.0    0.0
+/v1/estudantes/lote | PATCH | 200                    5   60.0    60.0    60.0   60.0
+/v1/estudantes/lote/{id}/erros | GET | 500           5   80.0     0.0    80.0    0.0
+/v1/estudantes/solicitacoes-alteracoes | GET | 500   5    0.0     0.0     0.0    0.0
+/v1/profissionais/{cpf} | GET | 500                  5    0.0     0.0     0.0    0.0
+/v1/estudantes/lote | POST | 201                     3  100.0    66.7   100.0   66.7
+/v1/estudantes/lote | POST | 500                     2  100.0   100.0   100.0  100.0
+/v1/profissionais | POST | 422                       2  100.0   100.0   100.0  100.0
+/v1/estudantes/lote | POST | 422                     2    0.0     0.0     0.0    0.0
+/v1/estudantes/{cpfNis} | GET | 404                  2  100.0   100.0   100.0  100.0
+/v1/profissionais/lote | POST | 422                  2  100.0   100.0   100.0  100.0
+/v1/estudantes/lote/{id} | GET | 500                 2  100.0   100.0   100.0  100.0
+/v1/profissionais/lote/{id} | GET | 500              2  100.0   100.0   100.0  100.0
+/v1/estudantes | POST | 422                          2    0.0     3.3     3.3    0.0
+/v1/profissionais/{cpf} | GET | 404                  2  100.0   100.0   100.0  100.0
+/v1/estudantes/lote/{id} | GET | 400                 1  100.0   100.0   100.0  100.0
+/v1/profissionais/lote | POST | 201                  1  100.0     0.0   100.0    0.0
+/v1/profissionais/lote/{id} | GET | 400              1  100.0   100.0   100.0  100.0
+
+==========================================================================================
+F3. RBPC: what explains the dispersion of MIO
+==========================================================================================
+RBPC elements in /erros: 39
+ block      RBPC  errors_covered
+    29 40.265487              34
+    19 40.707965              37
+     1 44.247788              30
+    15 44.690265              33
+    27 45.280236              37
+    22 45.280236              37
+     6 45.280236              37
+     0 46.165192              30
+    11 46.607670              33
+    28 46.607670              33
+    16 46.607670              33
+    13 46.755162              34
+     8 47.197640              37
+     9 47.197640              37
+    25 47.197640              37
+    12 47.197640              37
+    17 47.197640              37
+     4 47.197640              37
+    23 50.737463              30
+    21 51.179941              33
+    18 51.179941              33
+     7 51.179941              33
+    10 51.327434              34
+     2 51.327434              34
+    20 51.327434              34
+     3 51.769912              37
+     5 51.769912              37
+    24 51.769912              37
+    26 51.769912              37
+    14 51.769912              37
+MIO elements of /erros covered per execution: Counter({37: 15, 33: 7, 34: 5, 30: 3})
+RANDOM elements of /erros covered per execution: Counter({0: 30})
+SMARTS elements of /erros covered per execution: Counter({37: 27, 33: 3})
+WTS elements of /erros covered per execution: Counter({0: 30})
+
+==========================================================================================
+F4. RBPC elements that separate MIO/SMARTS from RANDOM/WTS (difference >= 15 executions)
+==========================================================================================
+39 elements; Counter({'/v1/estudantes/lote/{id}/erros | GET | 200': 15, '/v1/profissionais/lote/{id}/erros | GET | 200': 14, '/v1/estudantes/lote/{id}/erros | GET | 500': 4, '/v1/profissionais/lote/{id}/erros | GET | 500': 4, '/v1/estudantes/lote | POST | 201': 1, '/v1/profissionais/lote | POST | 201': 1})
+SMARTS >= MIO + 10: 31 Counter({'/v1/profissionais/inep/{inep} | GET | 200': 31})
+
+==========================================================================================
+G. Allocation of the search requests per operation (% of the technique total, mean over the 30 executions)
+==========================================================================================
+                                 operation  MIO  RANDOM  SMARTS  WTS
+                       POST /v1/estudantes  7.6     5.3    21.0  5.1
+                  POST /v1/estudantes/lote  4.9     5.2    18.9  5.3
+               POST /v1/profissionais/lote  8.2     5.3    17.4  5.2
+                    POST /v1/profissionais  9.8     5.2    17.0  5.4
+                 PATCH /v1/estudantes/lote  6.5     5.3     3.5  5.0
+                GET /v1/profissionais/lote  7.5     5.3     2.6  5.3
+                        GET /v1/estudantes  2.3     5.2     2.5  5.3
+                     GET /v1/profissionais  2.1     5.3     2.5  5.2
+                   GET /v1/estudantes/lote  7.3     5.3     2.5  5.3
+              GET /v1/estudantes/lote/{id}  2.5     5.3     2.2  5.4
+        GET /v1/estudantes/lote/{id}/erros  2.4     5.2     2.2  5.1
+     GET /v1/profissionais/lote/{id}/erros  2.0     5.2     2.2  5.2
+           GET /v1/profissionais/lote/{id}  1.9     5.3     2.2  5.3
+            GET /v1/estudantes/inep/{inep}  1.8     5.3     0.6  5.6
+     GET /v1/estudantes/validacao-cadastro  7.9     5.3     0.6  5.1
+               GET /v1/profissionais/{cpf}  9.2     5.3     0.6  5.3
+               GET /v1/estudantes/{cpfNis}  6.4     5.3     0.6  5.0
+GET /v1/estudantes/solicitacoes-alteracoes  8.2     5.3     0.6  5.5
+         GET /v1/profissionais/inep/{inep}  1.8     5.3     0.5  5.2
+
+by method:
+        MIO  RANDOM  SMARTS   WTS
+GET    63.1    73.7    22.2  74.0
+POST   30.4    21.0    74.3  21.0
+PATCH   6.5     5.3     3.5   5.0

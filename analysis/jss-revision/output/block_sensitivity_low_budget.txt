@@ -1,0 +1,49 @@
+[NT] Friedman chi2=14.13 p=0.0027 W=0.47
+    MIO    x RANDOM  Wilcoxon p_bonf=0.727   MIO>RANDOM in 8, < in 2, = in 0 blocks
+    MIO    x SMARTS  Wilcoxon p_bonf=1   MIO>SMARTS in 2, < in 7, = in 1 blocks
+    MIO    x WTS     Wilcoxon p_bonf=0.141   MIO>WTS in 7, < in 1, = in 2 blocks
+    RANDOM x SMARTS  Wilcoxon p_bonf=0.0469*  RANDOM>SMARTS in 1, < in 9, = in 0 blocks
+    RANDOM x WTS     Wilcoxon p_bonf=1   RANDOM>WTS in 7, < in 3, = in 0 blocks
+    SMARTS x WTS     Wilcoxon p_bonf=0.0352*  SMARTS>WTS in 9, < in 1, = in 0 blocks
+[requests_api] Friedman chi2=18.23 p=0.00039 W=0.61
+    MIO    x RANDOM  Wilcoxon p_bonf=0.0117*  MIO>RANDOM in 0, < in 10, = in 0 blocks
+    MIO    x SMARTS  Wilcoxon p_bonf=0.188   MIO>SMARTS in 0, < in 6, = in 4 blocks
+    MIO    x WTS     Wilcoxon p_bonf=0.281   MIO>WTS in 1, < in 7, = in 2 blocks
+    RANDOM x SMARTS  Wilcoxon p_bonf=0.0938   RANDOM>SMARTS in 9, < in 1, = in 0 blocks
+    RANDOM x WTS     Wilcoxon p_bonf=0.328   RANDOM>WTS in 8, < in 1, = in 1 blocks
+    SMARTS x WTS     Wilcoxon p_bonf=1   SMARTS>WTS in 4, < in 5, = in 1 blocks
+[RPC] Friedman chi2=12.00 p=0.0074 W=0.40
+    MIO    x RANDOM  Wilcoxon p_bonf=0.375   MIO>RANDOM in 0, < in 5, = in 5 blocks
+    MIO    x SMARTS  Wilcoxon p_bonf=1   MIO>SMARTS in 3, < in 3, = in 4 blocks
+    MIO    x WTS     Wilcoxon p_bonf=0.375   MIO>WTS in 0, < in 5, = in 5 blocks
+    RANDOM x SMARTS  Wilcoxon p_bonf=0.375   RANDOM>SMARTS in 5, < in 0, = in 5 blocks
+    RANDOM x WTS     all differences = 0
+    SMARTS x WTS     Wilcoxon p_bonf=0.375   SMARTS>WTS in 0, < in 5, = in 5 blocks
+[RPVC] Friedman chi2=18.39 p=0.00036 W=0.61
+    MIO    x RANDOM  Wilcoxon p_bonf=0.0117*  MIO>RANDOM in 0, < in 10, = in 0 blocks
+    MIO    x SMARTS  Wilcoxon p_bonf=0.0117*  MIO>SMARTS in 0, < in 10, = in 0 blocks
+    MIO    x WTS     Wilcoxon p_bonf=0.0117*  MIO>WTS in 0, < in 10, = in 0 blocks
+    RANDOM x SMARTS  Wilcoxon p_bonf=1   RANDOM>SMARTS in 3, < in 7, = in 0 blocks
+    RANDOM x WTS     Wilcoxon p_bonf=1   RANDOM>WTS in 6, < in 4, = in 0 blocks
+    SMARTS x WTS     Wilcoxon p_bonf=1   SMARTS>WTS in 4, < in 5, = in 1 blocks
+[SCCC] Friedman chi2=10.33 p=0.016 W=0.34
+    MIO    x RANDOM  Wilcoxon p_bonf=0.562   MIO>RANDOM in 1, < in 6, = in 3 blocks
+    MIO    x SMARTS  Wilcoxon p_bonf=0.0938   MIO>SMARTS in 1, < in 8, = in 1 blocks
+    MIO    x WTS     Wilcoxon p_bonf=0.656   MIO>WTS in 1, < in 6, = in 3 blocks
+    RANDOM x SMARTS  Wilcoxon p_bonf=0.375   RANDOM>SMARTS in 0, < in 5, = in 5 blocks
+    RANDOM x WTS     Wilcoxon p_bonf=1   RANDOM>WTS in 3, < in 5, = in 2 blocks
+    SMARTS x WTS     Wilcoxon p_bonf=1   SMARTS>WTS in 6, < in 2, = in 2 blocks
+[SCC] Friedman chi2=13.13 p=0.0044 W=0.44
+    MIO    x RANDOM  Wilcoxon p_bonf=0.0469*  MIO>RANDOM in 1, < in 8, = in 1 blocks
+    MIO    x SMARTS  Wilcoxon p_bonf=1   MIO>SMARTS in 2, < in 8, = in 0 blocks
+    MIO    x WTS     Wilcoxon p_bonf=0.0703   MIO>WTS in 1, < in 8, = in 1 blocks
+    RANDOM x SMARTS  Wilcoxon p_bonf=0.188   RANDOM>SMARTS in 7, < in 1, = in 2 blocks
+    RANDOM x WTS     Wilcoxon p_bonf=1   RANDOM>WTS in 5, < in 5, = in 0 blocks
+    SMARTS x WTS     Wilcoxon p_bonf=0.0938   SMARTS>WTS in 0, < in 7, = in 3 blocks
+[RBPC] Friedman chi2=22.90 p=4.2e-05 W=0.76
+    MIO    x RANDOM  Wilcoxon p_bonf=0.0117*  MIO>RANDOM in 0, < in 10, = in 0 blocks
+    MIO    x SMARTS  Wilcoxon p_bonf=0.504   MIO>SMARTS in 3, < in 7, = in 0 blocks
+    MIO    x WTS     Wilcoxon p_bonf=0.0117*  MIO>WTS in 0, < in 10, = in 0 blocks
+    RANDOM x SMARTS  Wilcoxon p_bonf=0.0117*  RANDOM>SMARTS in 10, < in 0, = in 0 blocks
+    RANDOM x WTS     Wilcoxon p_bonf=1   RANDOM>WTS in 4, < in 4, = in 2 blocks
+    SMARTS x WTS     Wilcoxon p_bonf=0.0352*  SMARTS>WTS in 1, < in 9, = in 0 blocks

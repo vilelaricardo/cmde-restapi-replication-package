@@ -1,0 +1,65 @@
+Pagination.links: {'previous': 'string', 'next': 'string'}
+MatriculaSaida.situacaoMatricula: {'type': 'boolean', 'enum': ['0', '1']}
+
+=== Operations evaluated (19): n = 19
+  declare 401 ........................................ 0
+  declare no 4XX response ............................ 8
+  responses use Pagination (cat. 3) .................. 12
+  responses use MatriculaSaida (cat. 4) .............. 5
+  responses with boolean + string enum ............... 5
+  responses with oneOf/allOf/anyOf (cat. 5) .......... 14
+  200/201 schema without "data" and with root properties 9
+  per tag: {'Estudantes': 11, 'Profissionais da Educação': 8}
+
+=== Operations excluded (39): n = 39
+  declare 401 ........................................ 0
+  declare no 4XX response ............................ 39
+  responses use Pagination (cat. 3) .................. 20
+  responses use MatriculaSaida (cat. 4) .............. 3
+  responses with boolean + string enum ............... 3
+  responses with oneOf/allOf/anyOf (cat. 5) .......... 15
+  200/201 schema without "data" and with root properties 23
+  per tag: {'Elegibilidade': 3, 'Frequencia Mensal': 9, 'Incentivos': 3, 'Matrícula': 22, 'Unidade de Ensino': 2}
+
+Excluded: detail
+  GET /v1/elegibilidades                                                 200,500            pagination
+  GET /v1/elegibilidades/inep/{inep}                                     200,500            pagination
+  GET /v1/elegibilidades/{cpfNis}                                        200,500            root_props
+  GET /v1/frequencia-mensal                                              200                pagination composition
+  GET /v1/frequencia-mensal/faltantes/{anoReferencia}/{mesReferencia}    200                pagination composition
+  GET /v1/frequencia-mensal/inep/{inep}                                  200                pagination composition
+  GET /v1/frequencia-mensal/lote                                         200                pagination
+  GET /v1/frequencia-mensal/lote/{id}                                    200                pagination composition
+  GET /v1/frequencia-mensal/lote/{id}/erros                              200                pagination composition root_props
+  GET /v1/frequencia-mensal/{cpfNis}                                     200                pagination composition
+  GET /v1/incentivos                                                     200,500            pagination
+  GET /v1/incentivos/inep/{inep}                                         200,500            pagination
+  GET /v1/incentivos/{cpfNis}                                            200,500            root_props
+  GET /v1/matriculas/confirmar-matriculas/lote/{id}                      200                root_props
+  GET /v1/matriculas/confirmar-matriculas/lote/{id}/erros                200                pagination composition root_props
+  GET /v1/matriculas/inativas-com-frequencias/lote/{id}                  200                root_props
+  GET /v1/matriculas/inativas-com-frequencias/lote/{id}/erros            200                pagination composition root_props
+  GET /v1/matriculas/lote                                                200                pagination
+  GET /v1/matriculas/lote/{id}                                           200                matricula_saida composition bool_str_enum
+  GET /v1/matriculas/lote/{id}/erros                                     200                pagination composition root_props
+  GET /v1/matriculas/movimentar/confirmar-conclusao/lote/{id}            200                root_props
+  GET /v1/matriculas/movimentar/confirmar-conclusao/lote/{id}/erros      200                pagination composition root_props
+  GET /v1/matriculas/movimentar/lote                                     200                pagination
+  GET /v1/matriculas/movimentar/lote/{id}                                200                matricula_saida composition bool_str_enum
+  GET /v1/matriculas/movimentar/lote/{id}/erros                          200                pagination composition root_props
+  GET /v1/matriculas/movimentar/reativar/lote/{id}                       200                root_props
+  GET /v1/matriculas/movimentar/reativar/lote/{id}/erros                 200                pagination composition root_props
+  GET /v1/matriculas/{codigoMatriculaSgp}                                200,500            matricula_saida composition bool_str_enum root_props
+  GET /v1/unidades-de-ensino                                             200                pagination
+  GET /v1/unidades-de-ensino/{id}                                        200,500            
+  PATCH /v1/frequencia-mensal/lote                                       200                root_props
+  PATCH /v1/matriculas/lote                                              200                root_props
+  PATCH /v1/matriculas/movimentar/lote                                   201                root_props
+  PATCH /v1/matriculas/movimentar/reativar/lote                          201                root_props
+  POST /v1/frequencia-mensal/lote                                        201                root_props
+  POST /v1/matriculas/confirmar-matriculas/lote                          201                root_props
+  POST /v1/matriculas/inativas-com-frequencias/lote                      201                root_props
+  POST /v1/matriculas/movimentar/confirmar-conclusao/lote                201                root_props
+  POST /v1/matriculas/movimentar/lote                                    201                root_props
+
+Evaluated with root properties (without data): ['POST /v1/estudantes', 'GET /v1/estudantes/{cpfNis}', 'GET /v1/estudantes/lote/{id}/erros', 'POST /v1/estudantes/lote', 'PATCH /v1/estudantes/lote', 'POST /v1/profissionais/lote', 'POST /v1/profissionais', 'GET /v1/profissionais/{cpf}', 'GET /v1/profissionais/lote/{id}/erros']

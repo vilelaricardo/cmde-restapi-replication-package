@@ -1,0 +1,124 @@
+tests whose number of requests does not match extracted_test_data: {'2025': 3, '2026': 0}
+
+GET 200 operations with a list length asserted in some test: ['/v1/estudantes', '/v1/estudantes/inep/{inep}', '/v1/estudantes/lote', '/v1/estudantes/solicitacoes-alteracoes', '/v1/estudantes/validacao-cadastro', '/v1/profissionais', '/v1/profissionais/inep/{inep}', '/v1/profissionais/lote']
+
+=== Group coverage vs. largest asserted list (per operation, year, technique) ===
+
+--- /v1/estudantes (elements in the group: 65)
+  2025 RANDOM  executions=10  non-empty list asserted=10  coverage with a non-empty list=[(57, 7), (64, 3)]  without=[]
+  2025 SMARTS  executions=10  non-empty list asserted= 8  coverage with a non-empty list=[(57, 5), (64, 3)]  without=[(12, 2)]
+  2025 WTS     executions=10  non-empty list asserted=10  coverage with a non-empty list=[(57, 6), (64, 4)]  without=[]
+  2026 MIO     executions=30  non-empty list asserted=30  coverage with a non-empty list=[(57, 30)]  without=[]
+  2026 RANDOM  executions=30  non-empty list asserted=30  coverage with a non-empty list=[(57, 30)]  without=[]
+  2026 SMARTS  executions=30  non-empty list asserted=30  coverage with a non-empty list=[(57, 29), (64, 1)]  without=[]
+  2026 WTS     executions=30  non-empty list asserted=30  coverage with a non-empty list=[(57, 29), (64, 1)]  without=[]
+
+--- /v1/estudantes/inep/{inep} (elements in the group: 55)
+  2025 RANDOM  executions=10  non-empty list asserted=10  coverage with a non-empty list=[(54, 10)]  without=[]
+  2025 SMARTS  executions=10  non-empty list asserted= 4  coverage with a non-empty list=[(54, 4)]  without=[(0, 1), (10, 5)]
+  2025 WTS     executions=10  non-empty list asserted=10  coverage with a non-empty list=[(54, 10)]  without=[]
+  2026 MIO     executions=30  non-empty list asserted=23  coverage with a non-empty list=[(54, 23)]  without=[(10, 7)]
+  2026 RANDOM  executions=30  non-empty list asserted=30  coverage with a non-empty list=[(54, 30)]  without=[]
+  2026 SMARTS  executions=30  non-empty list asserted=30  coverage with a non-empty list=[(54, 30)]  without=[]
+  2026 WTS     executions=30  non-empty list asserted=30  coverage with a non-empty list=[(54, 30)]  without=[]
+
+--- /v1/estudantes/lote (elements in the group: 13)
+  2025 RANDOM  executions=10  non-empty list asserted=10  coverage with a non-empty list=[(12, 10)]  without=[]
+  2025 SMARTS  executions=10  non-empty list asserted=10  coverage with a non-empty list=[(12, 10)]  without=[]
+  2025 WTS     executions=10  non-empty list asserted=10  coverage with a non-empty list=[(12, 10)]  without=[]
+  2026 MIO     executions=30  non-empty list asserted=30  coverage with a non-empty list=[(12, 30)]  without=[]
+  2026 RANDOM  executions=30  non-empty list asserted=30  coverage with a non-empty list=[(12, 30)]  without=[]
+  2026 SMARTS  executions=30  non-empty list asserted=30  coverage with a non-empty list=[(12, 30)]  without=[]
+  2026 WTS     executions=30  non-empty list asserted=30  coverage with a non-empty list=[(12, 30)]  without=[]
+
+--- /v1/estudantes/solicitacoes-alteracoes (elements in the group: 25)
+  2025 RANDOM  executions=10  non-empty list asserted=10  coverage with a non-empty list=[(25, 10)]  without=[]
+  2025 SMARTS  executions=10  non-empty list asserted= 5  coverage with a non-empty list=[(25, 5)]  without=[(0, 5)]
+  2025 WTS     executions=10  non-empty list asserted=10  coverage with a non-empty list=[(25, 10)]  without=[]
+  2026 MIO     executions=30  non-empty list asserted=30  coverage with a non-empty list=[(25, 30)]  without=[]
+  2026 RANDOM  executions=30  non-empty list asserted=30  coverage with a non-empty list=[(25, 30)]  without=[]
+  2026 SMARTS  executions=30  non-empty list asserted=30  coverage with a non-empty list=[(25, 30)]  without=[]
+  2026 WTS     executions=30  non-empty list asserted=30  coverage with a non-empty list=[(25, 30)]  without=[]
+
+--- /v1/estudantes/validacao-cadastro (elements in the group: 21)
+  2025 RANDOM  executions=10  non-empty list asserted=10  coverage with a non-empty list=[(21, 10)]  without=[]
+  2025 SMARTS  executions=10  non-empty list asserted= 9  coverage with a non-empty list=[(21, 9)]  without=[(0, 1)]
+  2025 WTS     executions=10  non-empty list asserted=10  coverage with a non-empty list=[(21, 10)]  without=[]
+  2026 MIO     executions=30  non-empty list asserted=30  coverage with a non-empty list=[(21, 30)]  without=[]
+  2026 RANDOM  executions=30  non-empty list asserted=30  coverage with a non-empty list=[(21, 30)]  without=[]
+  2026 SMARTS  executions=30  non-empty list asserted=30  coverage with a non-empty list=[(21, 30)]  without=[]
+  2026 WTS     executions=30  non-empty list asserted=30  coverage with a non-empty list=[(21, 30)]  without=[]
+
+--- /v1/profissionais (elements in the group: 44)
+  2025 RANDOM  executions=10  non-empty list asserted=10  coverage with a non-empty list=[(43, 10)]  without=[]
+  2025 SMARTS  executions=10  non-empty list asserted=10  coverage with a non-empty list=[(43, 10)]  without=[]
+  2025 WTS     executions=10  non-empty list asserted=10  coverage with a non-empty list=[(43, 10)]  without=[]
+  2026 MIO     executions=30  non-empty list asserted=30  coverage with a non-empty list=[(43, 30)]  without=[]
+  2026 RANDOM  executions=30  non-empty list asserted=30  coverage with a non-empty list=[(43, 30)]  without=[]
+  2026 SMARTS  executions=30  non-empty list asserted=30  coverage with a non-empty list=[(43, 30)]  without=[]
+  2026 WTS     executions=30  non-empty list asserted=30  coverage with a non-empty list=[(43, 30)]  without=[]
+
+--- /v1/profissionais/inep/{inep} (elements in the group: 44)
+  2025 RANDOM  executions=10  non-empty list asserted= 9  coverage with a non-empty list=[(43, 9)]  without=[(12, 1)]
+  2025 SMARTS  executions=10  non-empty list asserted= 4  coverage with a non-empty list=[(43, 4)]  without=[(12, 6)]
+  2025 WTS     executions=10  non-empty list asserted= 6  coverage with a non-empty list=[(43, 6)]  without=[(12, 4)]
+  2026 MIO     executions=30  non-empty list asserted=17  coverage with a non-empty list=[(43, 17)]  without=[(12, 13)]
+  2026 RANDOM  executions=30  non-empty list asserted=30  coverage with a non-empty list=[(43, 30)]  without=[]
+  2026 SMARTS  executions=30  non-empty list asserted=30  coverage with a non-empty list=[(43, 30)]  without=[]
+  2026 WTS     executions=30  non-empty list asserted=30  coverage with a non-empty list=[(43, 30)]  without=[]
+
+--- /v1/profissionais/lote (elements in the group: 15)
+  2025 RANDOM  executions=10  non-empty list asserted=10  coverage with a non-empty list=[(14, 10)]  without=[]
+  2025 SMARTS  executions=10  non-empty list asserted=10  coverage with a non-empty list=[(14, 10)]  without=[]
+  2025 WTS     executions=10  non-empty list asserted=10  coverage with a non-empty list=[(14, 10)]  without=[]
+  2026 MIO     executions=30  non-empty list asserted=30  coverage with a non-empty list=[(14, 30)]  without=[]
+  2026 RANDOM  executions=30  non-empty list asserted=30  coverage with a non-empty list=[(14, 30)]  without=[]
+  2026 SMARTS  executions=30  non-empty list asserted=30  coverage with a non-empty list=[(14, 30)]  without=[]
+  2026 WTS     executions=30  non-empty list asserted=30  coverage with a non-empty list=[(14, 30)]  without=[]
+
+=== Hypothesis test: coverage above the group minimum <=> some non-empty list asserted ===
+
+/v1/estudantes  (group minimum = 12 of 65)
+above_floor  False  True 
+nonempty                 
+False            2      0
+True             0    148
+
+/v1/estudantes/inep/{inep}  (group minimum = 0 of 55)
+above_floor  False  True 
+nonempty                 
+False            1     12
+True             0    137
+
+/v1/estudantes/lote  (group minimum = 12 of 13)
+above_floor  False
+nonempty          
+True           150
+
+/v1/estudantes/solicitacoes-alteracoes  (group minimum = 0 of 25)
+above_floor  False  True 
+nonempty                 
+False            5      0
+True             0    145
+
+/v1/estudantes/validacao-cadastro  (group minimum = 0 of 21)
+above_floor  False  True 
+nonempty                 
+False            1      0
+True             0    149
+
+/v1/profissionais  (group minimum = 43 of 44)
+above_floor  False
+nonempty          
+True           150
+
+/v1/profissionais/inep/{inep}  (group minimum = 12 of 44)
+above_floor  False  True 
+nonempty                 
+False           24      0
+True             0    126
+
+/v1/profissionais/lote  (group minimum = 14 of 15)
+above_floor  False
+nonempty          
+True           150

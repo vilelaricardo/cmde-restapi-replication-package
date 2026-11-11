@@ -1,0 +1,102 @@
+
+==========================================================================================
+A. RBPC decomposition: list groups (GET 200) vs. the rest
+==========================================================================================
+RBPC elements: 678 | in the list groups: 282 | best coverage of each group: {'/v1/estudantes': 64, '/v1/estudantes/lote': 12, '/v1/estudantes/inep/{inep}': 54, '/v1/estudantes/solicitacoes-alteracoes': 25, '/v1/estudantes/validacao-cadastro': 21, '/v1/profissionais/lote': 14, '/v1/profissionais': 43, '/v1/profissionais/inep/{inep}': 43} = 276
+
+--- 2025
+        cov_all  cov_list  rest
+tech                           
+RANDOM    308.0     269.0  39.0
+SMARTS    253.5     208.5  45.0
+WTS       304.0     269.0  35.0
+  RBPC: medians RANDOM 45.43, SMARTS 37.39, WTS 44.84 | KW H=17.47 p=0.00016 eta2=0.573
+      A12(RANDOM,SMARTS)=0.99 [0.94,1.00] large
+      A12(RANDOM,WTS)=0.65 [0.37,0.87] medium
+      A12(SMARTS,WTS)=0.07 [0.00,0.20] large
+  RBPC_list: medians RANDOM 95.39, SMARTS 73.94, WTS 95.39 | KW H=19.64 p=5.4e-05 eta2=0.653
+      A12(RANDOM,SMARTS)=0.99 [0.97,1.00] large
+      A12(RANDOM,WTS)=0.60 [0.36,0.83] small
+      A12(SMARTS,WTS)=0.01 [0.00,0.06] large
+  RBPC_rest: medians RANDOM 9.85, SMARTS 11.36, WTS 8.84 | KW H=20.43 p=3.7e-05 eta2=0.683
+      A12(RANDOM,SMARTS)=0.02 [0.00,0.08] large
+      A12(RANDOM,WTS)=0.68 [0.47,0.89] medium
+      A12(SMARTS,WTS)=0.98 [0.92,1.00] large
+  RBPC_cf: medians RANDOM 46.46, SMARTS 47.35, WTS 45.87 | KW H=20.43 p=3.7e-05 eta2=0.683
+      A12(RANDOM,SMARTS)=0.02 [0.00,0.08] large
+      A12(RANDOM,WTS)=0.68 [0.46,0.90] medium
+      A12(SMARTS,WTS)=0.98 [0.92,1.00] large
+
+--- 2026
+        cov_all  cov_list  rest
+tech                           
+MIO       320.0     238.0  82.0
+RANDOM    312.0     269.0  43.0
+SMARTS    351.0     269.0  82.0
+WTS       312.0     269.0  43.0
+  RBPC: medians MIO 47.20, RANDOM 46.02, SMARTS 51.77, WTS 46.02 | KW H=74.85 p=3.9e-16 eta2=0.619
+      A12(MIO,RANDOM)=0.77 [0.60,0.90] large
+      A12(MIO,SMARTS)=0.17 [0.08,0.29] large
+      A12(MIO,WTS)=0.76 [0.60,0.90] large
+      A12(RANDOM,SMARTS)=0.00 [0.00,0.00] large
+      A12(RANDOM,WTS)=0.52 [0.47,0.57] negl
+      A12(SMARTS,WTS)=1.00 [1.00,1.00] large
+  RBPC_list: medians MIO 84.40, RANDOM 95.39, SMARTS 95.39, WTS 95.39 | KW H=59.14 p=9e-13 eta2=0.484
+      A12(MIO,RANDOM)=0.20 [0.12,0.28] large
+      A12(MIO,SMARTS)=0.19 [0.11,0.28] large
+      A12(MIO,WTS)=0.19 [0.11,0.28] large
+      A12(RANDOM,SMARTS)=0.48 [0.45,0.50] negl
+      A12(RANDOM,WTS)=0.48 [0.45,0.50] negl
+      A12(SMARTS,WTS)=0.50 [0.45,0.55] negl
+  RBPC_rest: medians MIO 20.33, RANDOM 10.86, SMARTS 20.71, WTS 10.86 | KW H=103.32 p=3e-22 eta2=0.865
+      A12(MIO,RANDOM)=1.00 [1.00,1.00] large
+      A12(MIO,SMARTS)=0.46 [0.33,0.59] negl
+      A12(MIO,WTS)=1.00 [1.00,1.00] large
+      A12(RANDOM,SMARTS)=0.00 [0.00,0.00] large
+      A12(RANDOM,WTS)=0.53 [0.50,0.58] negl
+      A12(SMARTS,WTS)=1.00 [1.00,1.00] large
+  RBPC_cf: medians MIO 52.58, RANDOM 47.05, SMARTS 52.80, WTS 47.05 | KW H=103.32 p=3e-22 eta2=0.865
+      A12(MIO,RANDOM)=1.00 [1.00,1.00] large
+      A12(MIO,SMARTS)=0.46 [0.32,0.58] negl
+      A12(MIO,WTS)=1.00 [1.00,1.00] large
+      A12(RANDOM,SMARTS)=0.00 [0.00,0.00] large
+      A12(RANDOM,WTS)=0.53 [0.50,0.58] negl
+      A12(SMARTS,WTS)=1.00 [1.00,1.00] large
+
+==========================================================================================
+B. RBPC from the responses observed in the re-execution without assertions (2026)
+==========================================================================================
+responses with invalid JSON (total): 0
+        cov_all  cov_obs  cov_union  cov_list  cov_obs_list
+tech                                                       
+MIO       320.0    303.0      332.0     238.0         249.0
+RANDOM    312.0    324.0      326.0     269.0         280.0
+SMARTS    351.0    334.0      363.0     269.0         280.0
+WTS       312.0    324.0      326.0     269.0         280.0
+  RBPC: medians MIO 47.20, RANDOM 46.02, SMARTS 51.77, WTS 46.02 | KW H=74.85 p=3.9e-16 eta2=0.619
+      A12(MIO,RANDOM)=0.77 [0.60,0.90] large
+      A12(MIO,SMARTS)=0.17 [0.08,0.28] large
+      A12(MIO,WTS)=0.76 [0.60,0.90] large
+      A12(RANDOM,SMARTS)=0.00 [0.00,0.00] large
+      A12(RANDOM,WTS)=0.52 [0.47,0.57] negl
+      A12(SMARTS,WTS)=1.00 [1.00,1.00] large
+  RBPC_obs: medians MIO 44.69, RANDOM 47.79, SMARTS 49.26, WTS 47.79 | KW H=55.56 p=5.2e-12 eta2=0.453
+      A12(MIO,RANDOM)=0.40 [0.23,0.57] small
+      A12(MIO,SMARTS)=0.23 [0.12,0.33] large
+      A12(MIO,WTS)=0.40 [0.23,0.57] small
+      A12(RANDOM,SMARTS)=0.00 [0.00,0.00] large
+      A12(RANDOM,WTS)=0.53 [0.50,0.58] negl
+      A12(SMARTS,WTS)=1.00 [1.00,1.00] large
+  RBPC_union: medians MIO 48.97, RANDOM 48.08, SMARTS 53.54, WTS 48.08 | KW H=72.49 p=1.2e-15 eta2=0.599
+      A12(MIO,RANDOM)=0.73 [0.57,0.87] large
+      A12(MIO,SMARTS)=0.17 [0.08,0.29] large
+      A12(MIO,WTS)=0.73 [0.57,0.87] large
+      A12(RANDOM,SMARTS)=0.00 [0.00,0.00] large
+      A12(RANDOM,WTS)=0.53 [0.50,0.58] negl
+      A12(SMARTS,WTS)=1.00 [1.00,1.00] large
+
+Spearman between assertion-based RBPC and observed RBPC (per technique):
+  MIO: rho=0.95 p=2.4e-15
+  RANDOM: rho=1.00 p=0
+  SMARTS: rho=0.60 p=0.00046
+  WTS: rho=nan p=nan

@@ -1,0 +1,232 @@
+
+==========================================================================================
+A. Integrity
+==========================================================================================
+executions 120 {'done': 120} {'MIO': 30, 'RANDOM': 30, 'SMARTS': 30, 'WTS': 30}
+NT (pytest) == NT extracted by the criteria tool: True
+EvoMaster reports more tests than it wrote: {'MIO': 8, 'SMARTS': 2}
+search (s): 1802.718 - 1804.062
+requests outside the spec: 0
+evaluated_actions - requests to the API, per technique (median): {'MIO': 285.5, 'RANDOM': 0.0, 'SMARTS': 1962.0, 'WTS': 0.0}
+
+==========================================================================================
+B. Descriptive: cost and effort
+==========================================================================================
+
+NT
+  MIO     med    138.50  IQR [   137.00 -    143.00]  min-max (   126.00 -    152.00)  mean    139.90
+  RANDOM  med    152.50  IQR [   149.25 -    156.00]  min-max (   146.00 -    161.00)  mean    152.87
+  SMARTS  med    140.00  IQR [   137.00 -    142.00]  min-max (   130.00 -    154.00)  mean    139.63
+  WTS     med    154.00  IQR [   152.00 -    155.00]  min-max (   143.00 -    158.00)  mean    152.97
+
+HTTP_suite
+  MIO     med    385.50  IQR [   363.25 -    400.75]  min-max (   327.00 -    469.00)  mean    386.00
+  RANDOM  med    306.00  IQR [   285.75 -    320.75]  min-max (   260.00 -    332.00)  mean    302.60
+  SMARTS  med    344.50  IQR [   321.75 -    353.00]  min-max (   285.00 -    393.00)  mean    339.57
+  WTS     med    345.50  IQR [   332.25 -    361.75]  min-max (   298.00 -    390.00)  mean    348.17
+
+suite_na_s
+  MIO     med     41.72  IQR [    38.80 -     43.34]  min-max (    34.96 -     50.64)  mean     41.45
+  RANDOM  med     31.74  IQR [    29.67 -     33.57]  min-max (    27.07 -     35.13)  mean     31.55
+  SMARTS  med     37.78  IQR [    35.30 -     38.97]  min-max (    31.51 -     42.48)  mean     37.31
+  WTS     med     36.29  IQR [    34.74 -     37.96]  min-max (    31.04 -     40.34)  mean     36.28
+
+requests_api
+  MIO     med  16696.00  IQR [ 16459.50 -  16832.50]  min-max ( 16156.00 -  17362.00)  mean  16669.50
+  RANDOM  med  16960.00  IQR [ 16929.00 -  16975.75]  min-max ( 16874.00 -  17070.00)  mean  16956.60
+  SMARTS  med  15046.50  IQR [ 15003.00 -  15076.50]  min-max ( 14941.00 -  15118.00)  mean  15041.27
+  WTS     med  15757.50  IQR [ 15658.25 -  15887.00]  min-max ( 15440.00 -  16057.00)  mean  15765.80
+
+evaluated_tests
+  MIO     med   6710.50  IQR [  5859.25 -   7368.75]  min-max (  4003.00 -   9606.00)  mean   6907.07
+  RANDOM  med   3070.50  IQR [  3055.00 -   3088.00]  min-max (  3002.00 -   3141.00)  mean   3073.33
+  SMARTS  med   5891.50  IQR [  5840.25 -   5974.50]  min-max (  5735.00 -   6052.00)  mean   5895.63
+  WTS     med   2699.50  IQR [  2648.00 -   2745.00]  min-max (  2586.00 -   2845.00)  mean   2703.80
+
+suite_2xx
+  MIO     med    179.50  IQR [   170.00 -    193.00]  min-max (   144.00 -    229.00)  mean    183.13
+  RANDOM  med    142.00  IQR [   137.25 -    151.25]  min-max (   116.00 -    164.00)  mean    142.73
+  SMARTS  med    167.50  IQR [   159.00 -    176.50]  min-max (   139.00 -    193.00)  mean    167.20
+  WTS     med    157.00  IQR [   151.00 -    166.25]  min-max (   133.00 -    179.00)  mean    158.10
+
+suite_4xx
+  MIO     med    127.00  IQR [   120.25 -    132.75]  min-max (    94.00 -    172.00)  mean    127.30
+  RANDOM  med     97.50  IQR [    91.25 -    103.75]  min-max (    86.00 -    114.00)  mean     97.90
+  SMARTS  med     95.50  IQR [    88.00 -    101.75]  min-max (    72.00 -    122.00)  mean     95.40
+  WTS     med    117.50  IQR [   110.25 -    125.75]  min-max (   103.00 -    147.00)  mean    118.57
+
+suite_5xx
+  MIO     med     76.00  IQR [    63.25 -     82.75]  min-max (    56.00 -    104.00)  mean     75.57
+  RANDOM  med     63.00  IQR [    57.25 -     66.00]  min-max (    47.00 -     78.00)  mean     61.97
+  SMARTS  med     76.50  IQR [    69.25 -     87.00]  min-max (    56.00 -     98.00)  mean     76.97
+  WTS     med     71.50  IQR [    65.25 -     74.75]  min-max (    61.00 -     88.00)  mean     71.50
+
+==========================================================================================
+B2. Descriptive: criteria
+==========================================================================================
+
+PC
+  MIO     med    100.00  IQR [   100.00 -    100.00]  min-max (   100.00 -    100.00)  mean    100.00
+  RANDOM  med    100.00  IQR [   100.00 -    100.00]  min-max (   100.00 -    100.00)  mean    100.00
+  SMARTS  med    100.00  IQR [   100.00 -    100.00]  min-max (   100.00 -    100.00)  mean    100.00
+  WTS     med    100.00  IQR [   100.00 -    100.00]  min-max (   100.00 -    100.00)  mean    100.00
+
+OC
+  MIO     med    100.00  IQR [   100.00 -    100.00]  min-max (   100.00 -    100.00)  mean    100.00
+  RANDOM  med    100.00  IQR [   100.00 -    100.00]  min-max (   100.00 -    100.00)  mean    100.00
+  SMARTS  med    100.00  IQR [   100.00 -    100.00]  min-max (   100.00 -    100.00)  mean    100.00
+  WTS     med    100.00  IQR [   100.00 -    100.00]  min-max (   100.00 -    100.00)  mean    100.00
+
+RPC
+  MIO     med     88.56  IQR [    88.56 -     88.56]  min-max (    88.56 -     88.56)  mean     88.56
+  RANDOM  med     88.56  IQR [    88.56 -     88.56]  min-max (    85.57 -     88.56)  mean     88.41
+  SMARTS  med     88.56  IQR [    88.56 -     88.56]  min-max (    88.56 -     88.56)  mean     88.56
+  WTS     med     88.56  IQR [    88.56 -     88.56]  min-max (    88.56 -     88.56)  mean     88.56
+
+RPVC
+  MIO     med     81.06  IQR [    78.79 -     82.58]  min-max (    72.73 -     86.36)  mean     80.66
+  RANDOM  med     63.64  IQR [    59.09 -     67.42]  min-max (    52.27 -     71.21)  mean     63.18
+  SMARTS  med     80.30  IQR [    78.03 -     81.06]  min-max (    73.48 -     86.36)  mean     79.39
+  WTS     med     65.91  IQR [    64.58 -     68.18]  min-max (    59.09 -     75.00)  mean     66.59
+
+SCCC
+  MIO     med     92.11  IQR [    92.11 -     94.74]  min-max (    92.11 -     94.74)  mean     93.25
+  RANDOM  med     89.47  IQR [    89.47 -     89.47]  min-max (    89.47 -     89.47)  mean     89.47
+  SMARTS  med     94.74  IQR [    94.74 -     94.74]  min-max (    92.11 -     94.74)  mean     94.39
+  WTS     med     89.47  IQR [    89.47 -     89.47]  min-max (    89.47 -     89.47)  mean     89.47
+
+SCC
+  MIO     med     71.11  IQR [    71.11 -     73.33]  min-max (    71.11 -     73.33)  mean     72.07
+  RANDOM  med     64.44  IQR [    64.44 -     64.44]  min-max (    64.44 -     66.67)  mean     64.59
+  SMARTS  med     73.33  IQR [    71.11 -     73.33]  min-max (    68.89 -     75.56)  mean     72.44
+  WTS     med     64.44  IQR [    64.44 -     64.44]  min-max (    64.44 -     64.44)  mean     64.44
+
+RBPC
+  MIO     med     47.20  IQR [    46.28 -     51.29]  min-max (    40.27 -     51.77)  mean     47.96
+  RANDOM  med     46.02  IQR [    46.02 -     46.02]  min-max (    46.02 -     46.17)  mean     46.03
+  SMARTS  med     51.77  IQR [    51.18 -     51.77]  min-max (    50.59 -     52.80)  mean     51.56
+  WTS     med     46.02  IQR [    46.02 -     46.02]  min-max (    46.02 -     47.05)  mean     46.05
+
+==========================================================================================
+C. Inference (Kruskal-Wallis, Dunn-Bonferroni, A12 with bootstrap 95% CI)
+==========================================================================================
+
+[NT] Kruskal-Wallis H=80.49 p=2.41e-17 eta2_H=0.67
+    MIO     x RANDOM   Dunn p=3.33e-09*  A12=0.03 [0.00, 0.07] large  medians 138.50 x 152.50
+    MIO     x SMARTS   Dunn p=1   A12=0.51 [0.37, 0.65] negl  medians 138.50 x 140.00
+    MIO     x WTS      Dunn p=1.06e-09*  A12=0.02 [0.00, 0.06] large  medians 138.50 x 154.00
+    RANDOM  x SMARTS   Dunn p=1.75e-09*  A12=0.98 [0.93, 1.00] large  medians 152.50 x 140.00
+    RANDOM  x WTS      Dunn p=1   A12=0.48 [0.32, 0.63] negl  medians 152.50 x 154.00
+    SMARTS  x WTS      Dunn p=5.45e-10*  A12=0.02 [0.00, 0.07] large  medians 140.00 x 154.00
+
+[HTTP_suite] Kruskal-Wallis H=71.52 p=2.01e-15 eta2_H=0.59
+    MIO     x RANDOM   Dunn p=3.46e-16*  A12=1.00 [0.99, 1.00] large  medians 385.50 x 306.00
+    MIO     x SMARTS   Dunn p=0.00013*  A12=0.86 [0.76, 0.94] large  medians 385.50 x 344.50
+    MIO     x WTS      Dunn p=0.00774*  A12=0.82 [0.72, 0.92] large  medians 385.50 x 345.50
+    RANDOM  x SMARTS   Dunn p=0.000224*  A12=0.13 [0.05, 0.23] large  medians 306.00 x 344.50
+    RANDOM  x WTS      Dunn p=1.55e-06*  A12=0.04 [0.01, 0.10] large  medians 306.00 x 345.50
+    SMARTS  x WTS      Dunn p=1   A12=0.41 [0.26, 0.56] small  medians 344.50 x 345.50
+
+[suite_na_s] Kruskal-Wallis H=76.02 p=2.19e-16 eta2_H=0.63
+    MIO     x RANDOM   Dunn p=4.66e-17*  A12=1.00 [0.99, 1.00] large  medians 41.72 x 31.74
+    MIO     x SMARTS   Dunn p=0.0118*  A12=0.80 [0.67, 0.91] large  medians 41.72 x 37.78
+    MIO     x WTS      Dunn p=0.000235*  A12=0.88 [0.78, 0.95] large  medians 41.72 x 36.29
+    RANDOM  x SMARTS   Dunn p=2.18e-07*  A12=0.05 [0.01, 0.12] large  medians 31.74 x 37.78
+    RANDOM  x WTS      Dunn p=4.26e-05*  A12=0.05 [0.01, 0.12] large  medians 31.74 x 36.29
+    SMARTS  x WTS      Dunn p=1   A12=0.61 [0.47, 0.75] small  medians 37.78 x 36.29
+
+[requests_api] Kruskal-Wallis H=106.06 p=7.73e-23 eta2_H=0.89
+    MIO     x RANDOM   Dunn p=0.105   A12=0.14 [0.04, 0.27] large  medians 16696.00 x 16960.00
+    MIO     x SMARTS   Dunn p=4.73e-12*  A12=1.00 [1.00, 1.00] large  medians 16696.00 x 15046.50
+    MIO     x WTS      Dunn p=0.000792*  A12=1.00 [1.00, 1.00] large  medians 16696.00 x 15757.50
+    RANDOM  x SMARTS   Dunn p=8.7e-21*  A12=1.00 [1.00, 1.00] large  medians 16960.00 x 15046.50
+    RANDOM  x WTS      Dunn p=3.43e-09*  A12=1.00 [1.00, 1.00] large  medians 16960.00 x 15757.50
+    SMARTS  x WTS      Dunn p=0.00502*  A12=0.00 [0.00, 0.00] large  medians 15046.50 x 15757.50
+
+[RPC] Kruskal-Wallis H=12.31 p=0.0064 eta2_H=0.08
+    MIO     x RANDOM   Dunn p=0.0251*  A12=0.57 [0.52, 0.63] small  medians 88.56 x 88.56
+    MIO     x SMARTS   Dunn p=1   A12=0.50 [0.50, 0.50] negl  medians 88.56 x 88.56
+    MIO     x WTS      Dunn p=1   A12=0.50 [0.50, 0.50] negl  medians 88.56 x 88.56
+    RANDOM  x SMARTS   Dunn p=0.0251*  A12=0.43 [0.37, 0.48] small  medians 88.56 x 88.56
+    RANDOM  x WTS      Dunn p=0.0251*  A12=0.43 [0.37, 0.48] small  medians 88.56 x 88.56
+    SMARTS  x WTS      Dunn p=1   A12=0.50 [0.50, 0.50] negl  medians 88.56 x 88.56
+
+[RPVC] Kruskal-Wallis H=90.39 p=1.81e-19 eta2_H=0.75
+    MIO     x RANDOM   Dunn p=1.09e-13*  A12=1.00 [1.00, 1.00] large  medians 81.06 x 63.64
+    MIO     x SMARTS   Dunn p=1   A12=0.65 [0.50, 0.78] medium  medians 81.06 x 80.30
+    MIO     x WTS      Dunn p=2.11e-10*  A12=1.00 [0.98, 1.00] large  medians 81.06 x 65.91
+    RANDOM  x SMARTS   Dunn p=1.56e-10*  A12=0.00 [0.00, 0.00] large  medians 63.64 x 80.30
+    RANDOM  x WTS      Dunn p=1   A12=0.35 [0.22, 0.50] medium  medians 63.64 x 65.91
+    SMARTS  x WTS      Dunn p=1.1e-07*  A12=0.99 [0.97, 1.00] large  medians 80.30 x 65.91
+
+[SCCC] Kruskal-Wallis H=109.35 p=1.51e-23 eta2_H=0.92
+    MIO     x RANDOM   Dunn p=4.3e-10*  A12=1.00 [1.00, 1.00] large  medians 92.11 x 89.47
+    MIO     x SMARTS   Dunn p=0.68   A12=0.28 [0.17, 0.40] large  medians 92.11 x 94.74
+    MIO     x WTS      Dunn p=4.3e-10*  A12=1.00 [1.00, 1.00] large  medians 92.11 x 89.47
+    RANDOM  x SMARTS   Dunn p=3.27e-15*  A12=0.00 [0.00, 0.00] large  medians 89.47 x 94.74
+    RANDOM  x WTS      Dunn p=1   A12=0.50 [0.50, 0.50] negl  medians 89.47 x 89.47
+    SMARTS  x WTS      Dunn p=3.27e-15*  A12=1.00 [1.00, 1.00] large  medians 94.74 x 89.47
+
+[SCC] Kruskal-Wallis H=104.33 p=1.82e-22 eta2_H=0.87
+    MIO     x RANDOM   Dunn p=6.45e-11*  A12=1.00 [1.00, 1.00] large  medians 71.11 x 64.44
+    MIO     x SMARTS   Dunn p=1   A12=0.42 [0.31, 0.55] small  medians 71.11 x 73.33
+    MIO     x WTS      Dunn p=1.18e-11*  A12=1.00 [1.00, 1.00] large  medians 71.11 x 64.44
+    RANDOM  x SMARTS   Dunn p=9.44e-13*  A12=0.00 [0.00, 0.00] large  medians 64.44 x 73.33
+    RANDOM  x WTS      Dunn p=1   A12=0.53 [0.50, 0.58] negl  medians 64.44 x 64.44
+    SMARTS  x WTS      Dunn p=1.51e-13*  A12=1.00 [1.00, 1.00] large  medians 73.33 x 64.44
+
+[RBPC] Kruskal-Wallis H=74.85 p=3.91e-16 eta2_H=0.62
+    MIO     x RANDOM   Dunn p=0.00466*  A12=0.77 [0.60, 0.90] large  medians 47.20 x 46.02
+    MIO     x SMARTS   Dunn p=0.000353*  A12=0.17 [0.08, 0.28] large  medians 47.20 x 51.77
+    MIO     x WTS      Dunn p=0.00329*  A12=0.76 [0.60, 0.90] large  medians 47.20 x 46.02
+    RANDOM  x SMARTS   Dunn p=9.57e-13*  A12=0.00 [0.00, 0.00] large  medians 46.02 x 51.77
+    RANDOM  x WTS      Dunn p=1   A12=0.52 [0.47, 0.57] negl  medians 46.02 x 46.02
+    SMARTS  x WTS      Dunn p=4.68e-13*  A12=1.00 [1.00, 1.00] large  medians 51.77 x 46.02
+
+==========================================================================================
+D. RQ2: Spearman NT x criterion, over all executions and within each technique
+==========================================================================================
+RPC   all rho=-0.15 p=0.102 | MIO +nan (p=nan)  RANDOM +0.03 (p=0.87)  SMARTS +nan (p=nan)  WTS +nan (p=nan)
+RPVC  all rho=-0.67 p=3.31e-17 | MIO +0.01 (p=0.97)  RANDOM +0.35 (p=0.06)  SMARTS +0.44 (p=0.01)  WTS -0.43 (p=0.02)
+SCCC  all rho=-0.80 p=5.45e-28 | MIO -0.36 (p=0.05)  RANDOM +nan (p=nan)  SMARTS +0.15 (p=0.44)  WTS +nan (p=nan)
+SCC   all rho=-0.77 p=4.92e-25 | MIO -0.36 (p=0.05)  RANDOM +0.15 (p=0.41)  SMARTS +0.22 (p=0.25)  WTS +nan (p=nan)
+RBPC  all rho=-0.49 p=1.01e-08 | MIO +0.31 (p=0.09)  RANDOM +0.15 (p=0.41)  SMARTS +0.21 (p=0.27)  WTS +0.14 (p=0.46)
+
+==========================================================================================
+E. Comparison between studies: medians per technique
+==========================================================================================
+             study technique   RPC  RPVC  SCCC   SCC  RBPC
+2025 (3.4.0, n=10)    RANDOM 88.06 71.21 85.53 60.00 45.43
+2025 (3.4.0, n=10)    SMARTS 87.81 76.89 84.21 60.00 37.39
+2025 (3.4.0, n=10)       WTS 88.06 73.11 86.84 60.00 44.84
+  2026 main (n=30)       MIO 88.56 81.06 92.11 71.11 47.20
+  2026 main (n=30)    RANDOM 88.56 63.64 89.47 64.44 46.02
+  2026 main (n=30)    SMARTS 88.56 80.30 94.74 73.33 51.77
+  2026 main (n=30)       WTS 88.56 65.91 89.47 64.44 46.02
+
+2025 recomputed, inference among RANDOM, SMARTS, and WTS:
+
+[RPC] Kruskal-Wallis H=11.54 p=0.00312 eta2_H=0.35
+    RANDOM  x SMARTS   Dunn p=0.00979*  A12=0.75 [0.60, 0.90] large  medians 88.06 x 87.81
+    RANDOM  x WTS      Dunn p=1   A12=0.50 [0.50, 0.50] negl  medians 88.06 x 88.06
+    SMARTS  x WTS      Dunn p=0.00979*  A12=0.25 [0.10, 0.40] large  medians 87.81 x 88.06
+
+[RPVC] Kruskal-Wallis H=9.38 p=0.00917 eta2_H=0.27
+    RANDOM  x SMARTS   Dunn p=0.0073*  A12=0.12 [0.00, 0.29] large  medians 71.21 x 76.89
+    RANDOM  x WTS      Dunn p=0.771   A12=0.34 [0.12, 0.61] medium  medians 71.21 x 73.11
+    SMARTS  x WTS      Dunn p=0.173   A12=0.76 [0.53, 0.93] large  medians 76.89 x 73.11
+
+[SCCC] Kruskal-Wallis H=2.90 p=0.235 eta2_H=0.03
+    RANDOM  x SMARTS   Dunn p=0.601   A12=0.63 [0.40, 0.85] small  medians 85.53 x 84.21
+    RANDOM  x WTS      Dunn p=1   A12=0.48 [0.20, 0.75] negl  medians 85.53 x 86.84
+    SMARTS  x WTS      Dunn p=0.322   A12=0.28 [0.10, 0.48] large  medians 84.21 x 86.84
+
+[SCC] Kruskal-Wallis H=0.39 p=0.824 eta2_H=-0.06
+    RANDOM  x SMARTS   Dunn p=1   A12=0.56 [0.32, 0.80] small  medians 60.00 x 60.00
+    RANDOM  x WTS      Dunn p=1   A12=0.57 [0.35, 0.80] small  medians 60.00 x 60.00
+    SMARTS  x WTS      Dunn p=1   A12=0.49 [0.24, 0.73] negl  medians 60.00 x 60.00
+
+[RBPC] Kruskal-Wallis H=17.47 p=0.000161 eta2_H=0.57
+    RANDOM  x SMARTS   Dunn p=0.000208*  A12=0.99 [0.94, 1.00] large  medians 45.43 x 37.39
+    RANDOM  x WTS      Dunn p=1   A12=0.65 [0.36, 0.86] medium  medians 45.43 x 44.84
+    SMARTS  x WTS      Dunn p=0.00583*  A12=0.07 [0.00, 0.19] large  medians 37.39 x 44.84
