@@ -7,3 +7,4 @@ tool/data_generated
 tool/evomaster.jar
 analysis/output
 node_modules
+dist
