@@ -8,6 +8,9 @@ EvoMaster reports more tests than it wrote: {'MIO': 8, 'SMARTS': 2}
 search (s): 1802.718 - 1804.062
 requests outside the spec: 0
 evaluated_actions - requests to the API, per technique (median): {'MIO': 285.5, 'RANDOM': 0.0, 'SMARTS': 1962.0, 'WTS': 0.0}
+campaign duration (first phase start to last phase end): 63.7 h
+requests to the API per minute of search: 497 - 578
+tests failing when the suite is re-executed with assertions, % (median per technique): {'MIO': 33.2, 'RANDOM': 28.1, 'SMARTS': 32.7, 'WTS': 30.0} | overall median 31.3
 
 ==========================================================================================
 B. Descriptive: cost and effort

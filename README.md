@@ -110,6 +110,36 @@ cd analysis/jss-revision
 # see README.md there for the order of the scripts and what each one produces
 ```
 
+## Corrections to the coverage tool
+
+The revised paper measures coverage with a corrected version of the tool in
+`tool/`, which also recomputes the initial study
+(`analysis/jss-revision/recompute_2025.py`). The corrections (commit
+`c58c91d`) are:
+
+- Request Parameter Coverage (RPC) now includes the declared header parameters
+  and the request-body fields, and Request Parameter Value Coverage (RPVC) the
+  enum and boolean values of those inputs. For the initial study this adds 158
+  body fields (RPC: 43 to 201 elements) and 120 body values (RPVC: 12 to 132).
+- Status Code Class Coverage (SCCC) expects one success class (2XX) and one
+  error class (any 4XX or 5XX response) per operation; the earlier version
+  counted only 4XX as the error class.
+- Boolean and numeric enum values were compared as Python values against the
+  strings sent in the request and could never be covered; they are now
+  compared as text. A path parameter value was compared character by
+  character; it is now compared as a whole.
+- Calls whose URL was built with `resolve_location(...)` were lost (130 SMARTS
+  calls in the initial study), query parameters sent with an empty value were
+  dropped, and a `parameters` list declared on a path item stopped the
+  extraction; all three are now handled.
+- Reading a nested response property now also covers the enclosing properties
+  whose presence it proves.
+
+With the corrected tool, Path, Operation, and Status Code Coverage, and the
+required elements of Response Body Properties Coverage, still reproduce the
+published results of the initial study in all 30 of its runs. The tool's test
+suite is in `tool/tests/`.
+
 ## Reproducing the 2026 campaigns
 
 The campaigns ran with `tool/campaign.py`, Java 17 (Eclipse Temurin 17.0.21+9),

@@ -77,6 +77,10 @@ for name, d in [('full, 30 blocks', full_all), ('low', low), ('full 0-9 + low', 
     rho, p = stats.spearmanr(d.post, d.RPVC)
     print(f'  {name:20s} all executions: rho={rho:.2f} p={p:.2g}')
 for t in TECHS:
+    d = full_all[full_all.algorithm == t]
+    rho, p = stats.spearmanr(d.post, d.RPVC)
+    print(f'  {t:7s} full, 30 blocks (n={len(d)}): rho={rho:.2f} p={p:.2g}')
+for t in TECHS:
     d = both[both.algorithm == t]
     rho, p = stats.spearmanr(d.post, d.RPVC)
     print(f'  {t:7s} full 0-9 + low (n={len(d)}): rho={rho:.2f} p={p:.2g}')

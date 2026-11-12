@@ -171,6 +171,17 @@ def main():
           sum(v for ops in allocation.values() for k, v in ops.items() if 'outside the spec' in k))
     print('evaluated_actions - requests to the API, per technique (median):',
           (df.evaluated_actions - df.requests_api).groupby(df.algorithm).median().to_dict())
+    starts, ends = [], []
+    for run_file in OFFICIAL.glob('repetition_*/*/run.json'):
+        phases = json.load(open(run_file))['phases'].values()
+        starts += [pd.Timestamp(p['started']) for p in phases]
+        ends += [pd.Timestamp(p['finished']) for p in phases]
+    print(f'campaign duration (first phase start to last phase end): {(max(ends) - min(starts)).total_seconds() / 3600:.1f} h')
+    rate = df.requests_api / (df.search_s / 60)
+    print(f'requests to the API per minute of search: {rate.min():.0f} - {rate.max():.0f}')
+    failing = 100 * df.suite_failures / df.NT
+    print('tests failing when the suite is re-executed with assertions, % (median per technique):',
+          failing.groupby(df.algorithm).median().round(1).to_dict(), f'| overall median {failing.median():.1f}')
 
     hr('B. Descriptive: cost and effort')
     describe(df, ['NT', 'HTTP_suite', 'suite_na_s', 'requests_api', 'evaluated_tests', 'suite_2xx', 'suite_4xx', 'suite_5xx'])
