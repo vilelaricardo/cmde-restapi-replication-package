@@ -1,0 +1,14 @@
+{
+  "title": "Replication package: Automatic Test Data Generation for RESTful APIs: A Case Study on a Governmental System",
+  "upload_type": "software",
+  "creators": [
+    {"name": "Vilela, Ricardo Ferreira", "affiliation": "Universidade Estadual de Campinas"}
+  ],
+  "description": "<p>Replication package of the paper \"Automatic Test Data Generation for RESTful APIs: A Case Study on a Governmental System\". It contains the campaign runner and the coverage tool, the protocol of the 2026 campaigns, the analysis of the revised evaluation, the archived and the corrected OpenAPI specifications of the CMDE API, and the raw data of the initial study (2025). The raw data of the 2026 campaigns are published separately at <a href=\"https://doi.org/10.5281/zenodo.24148473\">https://doi.org/10.5281/zenodo.24148473</a>.</p>",
+  "access_right": "open",
+  "license": "cc-by-4.0",
+  "keywords": ["RESTful API testing", "automated test generation", "EvoMaster", "OpenAPI", "search-based software testing"],
+  "related_identifiers": [
+    {"identifier": "10.5281/zenodo.24148473", "relation": "isSupplementedBy", "resource_type": "dataset"}
+  ]
+}

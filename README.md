@@ -27,12 +27,13 @@ The package has two parts:
 | `specification/` | The archived and the corrected OpenAPI specification (see its README) |
 | `results/official-run/` | Raw data of the initial study |
 | `results/statistics/` | Aggregated results of the 2025 runs |
-| Zenodo only | Raw data of the 2026 campaigns (see below) |
+| [10.5281/zenodo.24148473](https://doi.org/10.5281/zenodo.24148473) | Raw data of the 2026 campaigns, on Zenodo (see below) |
 
 ## Raw data of the 2026 campaigns
 
 The raw data of the two 2026 campaigns (about 2.7 GB) are not in Git because of
-their size. They are published with this version on Zenodo as two archives:
+their size. They are published on Zenodo,
+<https://doi.org/10.5281/zenodo.24148473>, as two archives:
 
 | Archive | Size | Campaign | Executions | Files |
 |---|---|---|---|---|
